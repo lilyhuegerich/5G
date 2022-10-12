@@ -4,4 +4,5 @@ sudo gnome-terminal --title="gnb" -- ./gnb.sh &
 echo "started gnb"
 sleep 3
 sudo  gnome-terminal --title="ue" -- ./start_all_ue.sh
-./Test_Scripts/test_all.sh
+sleep 10
+../Test_Scripts/test_all.sh
