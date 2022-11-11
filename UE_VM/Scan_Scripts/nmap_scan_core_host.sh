@@ -11,5 +11,8 @@ echo -e "${color_off}"
 #nmap -v -Pn -e $interfave $host #if the hosts is bloking the pings try parralel dns
 
 #sudo nmap -p0- -A -T3 -e $interface $host # getting more aggresive
-sudo nmap -p ssh -e $interface $host #check ssh
+#sudo nmap -p ssh -e $interface $host #check ssh
 
+#sudo nmap -p 3868 -e $interface $host # check diameter
+sudo nmap -p 477 -e $interface $host #check ss7ns (udp)
+sudo nmap -p 53 -e $interface $host #check DNS
