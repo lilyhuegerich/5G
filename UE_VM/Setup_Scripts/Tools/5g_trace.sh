@@ -9,7 +9,7 @@ if [ ! -f ./5g_trace-visualizer/plantuml.zip ]; then
 	curl -L  http://sourceforge.net/projects/plantuml/files/plantuml-jar-asl-1.2019.12.zip/download --output 5g-trace-visualizer/plantuml.zip
 fi
 
-unzip 5g-trace-visualizer/plantuml.zip
+unzip ./5g-trace-visualizer/plantuml.zip 
 
 sudo apt -y install wireshark tshark
 
