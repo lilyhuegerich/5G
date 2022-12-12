@@ -8,20 +8,348 @@ skinparam sequence {
     ParticipantBorderColor white
     ParticipantBackgroundColor #e6e6e6
 }
-participant "N1\n(10.0.2.15)" as 10.0.2.15
-participant "8.8.8.8"
-participant "10.45.0.73"
-participant "N1\n(10.0.2.4)" as 10.0.2.4
 participant "127.0.0.6"
-participant "10.45.0.76"
-participant "127.0.0.8"
-participant "10.45.0.74"
 participant "127.0.0.4"
-participant "127.0.0.9"
-participant "127.0.0.7"
 participant "127.0.0.3"
-participant "127.0.0.2"
+participant "127.0.0.7"
+participant "10.45.0.73"
 participant "10.45.0.75"
+participant "8.8.8.8"
+participant "N1\n(10.0.2.4)" as 10.0.2.4
+participant "127.0.0.8"
+participant "127.0.0.9"
+participant "10.45.0.76"
+participant "127.0.0.2"
+participant "N1\n(10.0.2.15)" as 10.0.2.15
+participant "10.45.0.74"
+
+"10.0.2.15" -> "10.0.2.4": 1149, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.2.4**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.45.0.73" -> "8.8.8.8": 1150, ICMP
+
+note right
+**10.45.0.73 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.0.2.4" -> "8.8.8.8": 1151, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.0.2.4": 1152, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.45.0.73": 1153, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.73**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.2.4" -> "10.0.2.15": 1154, GTP<ICMP>
+
+note right
+**10.0.2.4 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"127.0.0.4" -> "127.0.0.7": 1160, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 3009'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1161'
+
+end note
+
+"127.0.0.7" -> "127.0.0.4": 1161, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 3009'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1160'
+pfcp.response_time: 'Response Time: 0.000166405 seconds'
+
+end note
+
+"127.0.0.7" -> "127.0.0.4": 1162, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2734'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1163'
+
+end note
+
+"127.0.0.4" -> "127.0.0.7": 1163, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2734'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1162'
+pfcp.response_time: 'Response Time: 0.000111639 seconds'
+
+end note
+
+"10.0.2.15" -> "10.0.2.4": 1164, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.2.4**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.45.0.73" -> "8.8.8.8": 1165, ICMP
+
+note right
+**10.45.0.73 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.0.2.4" -> "8.8.8.8": 1166, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.0.2.4": 1167, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.45.0.73": 1168, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.73**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.2.4" -> "10.0.2.15": 1169, GTP<ICMP>
+
+note right
+**10.0.2.4 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"127.0.0.6" -> "127.0.0.3": 1170, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2738'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1171'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 1171, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2738'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1170'
+pfcp.response_time: 'Response Time: 0.000221137 seconds'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 1172, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2738'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1173'
+
+end note
+
+"127.0.0.6" -> "127.0.0.3": 1173, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2738'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1172'
+pfcp.response_time: 'Response Time: 0.000200127 seconds'
+
+end note
+
+"10.0.2.15" -> "10.0.2.4": 1174, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.2.4**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.45.0.74" -> "8.8.8.8": 1175, ICMP
+
+note right
+**10.45.0.74 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.0.2.4" -> "8.8.8.8": 1176, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"8.8.8.8" -> "10.0.2.4": 1177, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"8.8.8.8" -> "10.45.0.74": 1178, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.74**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.2.4" -> "10.0.2.15": 1179, GTP<ICMP>
+
+note right
+**10.0.2.4 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.2.15" -> "10.0.2.4": 1184, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.2.4**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.45.0.74" -> "8.8.8.8": 1185, ICMP
+
+note right
+**10.45.0.74 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
 
 "10.0.2.4" -> "8.8.8.8": 1186, ICMP
 
@@ -513,88 +841,51 @@ note right
 Type: 0 (Echo (ping) reply) seq=3/768
 end note
 
-"10.0.2.15" -> "10.0.2.4": 1324, GTP<ICMP>
+"127.0.0.4" -> "127.0.0.7": 1316, PFCP req.\nPFCP Heartbeat Request (1)
 
-note right
-**10.0.2.15 to 10.0.2.4**
-Type: 8 (Echo (ping) request) seq=4/1024
+note right #80b3ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 3010'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1317'
+
 end note
 
-"10.45.0.76" -> "8.8.8.8": 1325, ICMP
+"127.0.0.7" -> "127.0.0.4": 1317, PFCP rsp.\nPFCP Heartbeat Response (2)
 
-note right
-**10.45.0.76 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=4/1024
-end note
+note right #cce0ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 3010'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1316'
+pfcp.response_time: 'Response Time: 0.000089284 seconds'
 
-"10.0.2.4" -> "8.8.8.8": 1326, ICMP
-
-note right
-**10.0.2.4 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=4/1024
-end note
-
-"8.8.8.8" -> "10.0.2.4": 1327, ICMP
-
-note right
-**8.8.8.8 to 10.0.2.4**
-Type: 0 (Echo (ping) reply) seq=4/1024
-end note
-
-"8.8.8.8" -> "10.45.0.76": 1328, ICMP
-
-note right
-**8.8.8.8 to 10.45.0.76**
-Type: 0 (Echo (ping) reply) seq=4/1024
-end note
-
-"10.0.2.4" -> "10.0.2.15": 1329, GTP<ICMP>
-
-note right
-**10.0.2.4 to 10.0.2.15**
-Type: 0 (Echo (ping) reply) seq=4/1024
-end note
-
-"10.0.2.15" -> "10.0.2.4": 1334, GTP<ICMP>
-
-note right
-**10.0.2.15 to 10.0.2.4**
-Type: 8 (Echo (ping) request) seq=5/1280
-end note
-
-"10.45.0.76" -> "8.8.8.8": 1335, ICMP
-
-note right
-**10.45.0.76 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=5/1280
-end note
-
-"10.0.2.4" -> "8.8.8.8": 1336, ICMP
-
-note right
-**10.0.2.4 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=5/1280
-end note
-
-"8.8.8.8" -> "10.0.2.4": 1337, ICMP
-
-note right
-**8.8.8.8 to 10.0.2.4**
-Type: 0 (Echo (ping) reply) seq=5/1280
-end note
-
-"8.8.8.8" -> "10.45.0.76": 1338, ICMP
-
-note right
-**8.8.8.8 to 10.45.0.76**
-Type: 0 (Echo (ping) reply) seq=5/1280
-end note
-
-"10.0.2.4" -> "10.0.2.15": 1339, GTP<ICMP>
-
-note right
-**10.0.2.4 to 10.0.2.15**
-Type: 0 (Echo (ping) reply) seq=5/1280
 end note
 
 @enduml

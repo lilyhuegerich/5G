@@ -9,19 +9,207 @@ skinparam sequence {
     ParticipantBackgroundColor #e6e6e6
 }
 participant "N1\n(10.0.2.15)" as 10.0.2.15
-participant "127.0.0.4"
-participant "127.0.0.7"
-participant "8.8.8.8"
-participant "10.45.0.73"
-participant "N1\n(10.0.2.4)" as 10.0.2.4
 participant "127.0.0.6"
-participant "10.45.0.76"
-participant "127.0.0.8"
-participant "10.45.0.74"
-participant "127.0.0.9"
+participant "127.0.0.4"
 participant "127.0.0.3"
-participant "127.0.0.2"
+participant "127.0.0.7"
+participant "10.45.0.73"
 participant "10.45.0.75"
+participant "8.8.8.8"
+participant "N1\n(10.0.2.4)" as 10.0.2.4
+participant "127.0.0.8"
+participant "127.0.0.9"
+participant "10.45.0.76"
+participant "127.0.0.2"
+participant "10.45.0.74"
+
+"127.0.0.4" -> "127.0.0.7": 19, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2999'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 20'
+
+end note
+
+"127.0.0.7" -> "127.0.0.4": 20, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2999'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 19'
+pfcp.response_time: 'Response Time: 0.000159798 seconds'
+
+end note
+
+"127.0.0.7" -> "127.0.0.4": 21, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2732'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 22'
+
+end note
+
+"127.0.0.4" -> "127.0.0.7": 22, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2732'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 21'
+pfcp.response_time: 'Response Time: 0.000118017 seconds'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 23, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2736'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 24'
+
+end note
+
+"127.0.0.6" -> "127.0.0.3": 24, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2736'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 23'
+pfcp.response_time: 'Response Time: 0.000244998 seconds'
+
+end note
+
+"127.0.0.6" -> "127.0.0.3": 25, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2736'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 26'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 26, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2736'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 25'
+pfcp.response_time: 'Response Time: 0.000158600 seconds'
+
+end note
 
 "10.0.2.15" -> "10.0.2.4": 73, NGAP NGSetup (21)
 
@@ -184,6 +372,143 @@ ngap.value_element:
                                                 per.extension_bit: '..0. .... Extension Bit: False'
                                                 per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
                                                 ngap.sST: 'sST: 01'
+
+end note
+
+"127.0.0.8" -> "127.0.0.2": 85, Diameter, 280 DWR Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.8 to 127.0.0.2**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 76'
+diameter.flags:
+-   diameter.flags.request: '1... .... = Request: Set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x7f7fcd97'
+diameter.endtoendid: 'End-to-End Identifier: 0x41707f72'
+diameter.answer_in: 'Answer In: 86'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 23'
+    diameter.Origin-Host: 'Origin-Host: hss.localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670509591'
+
+end note
+
+"127.0.0.2" -> "127.0.0.8": 86, Diameter, 280 DWA Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.2 to 127.0.0.8**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 88'
+diameter.flags:
+-   diameter.flags.request: '0... .... = Request: Not set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x7f7fcd97'
+diameter.endtoendid: 'End-to-End Identifier: 0x41707f72'
+diameter.answer_to: 'Request In: 85'
+diameter.resp_time: 'Response Time: 0.000582719 seconds'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 268 Result-Code'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Result-Code: 'Result-Code: DIAMETER_SUCCESS (2001)'
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 23'
+    diameter.Origin-Host: 'Origin-Host: mme.localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670519910'
 
 end note
 
@@ -2128,6 +2453,194 @@ pfcp.response_time: 'Response Time: 0.007237483 seconds'
 
 end note
 
+"127.0.0.4" -> "127.0.0.7": 556, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 3002'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 557'
+
+end note
+
+"127.0.0.7" -> "127.0.0.4": 557, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 3002'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 556'
+pfcp.response_time: 'Response Time: 0.000122019 seconds'
+
+end note
+
+"127.0.0.7" -> "127.0.0.4": 558, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2733'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 559'
+
+end note
+
+"127.0.0.4" -> "127.0.0.7": 559, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2733'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 558'
+pfcp.response_time: 'Response Time: 0.000155967 seconds'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 560, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2737'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 561'
+
+end note
+
+"127.0.0.6" -> "127.0.0.3": 561, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2737'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 560'
+pfcp.response_time: 'Response Time: 0.000223332 seconds'
+
+end note
+
+"127.0.0.6" -> "127.0.0.3": 562, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2737'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 563'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 563, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2737'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 562'
+pfcp.response_time: 'Response Time: 0.000420284 seconds'
+
+end note
+
 "10.0.2.15" -> "10.0.2.4": 569, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)
 
 note right #8cd98c
@@ -4066,6 +4579,142 @@ pfcp.spare_oct: 'Spare: 0'
     pfcp.cause: 'Cause: Request accepted(success) (1)'
 pfcp.response_to: 'Response To: 733'
 pfcp.response_time: 'Response Time: 0.002038644 seconds'
+
+end note
+
+"127.0.0.4" -> "127.0.0.9": 742, Diameter, 280 DWR Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.4 to 127.0.0.9**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 76'
+diameter.flags:
+-   diameter.flags.request: '1... .... = Request: Set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x082fa900'
+diameter.endtoendid: 'End-to-End Identifier: 0x410358ce'
+diameter.answer_in: 'Answer In: 743'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 23'
+    diameter.Origin-Host: 'Origin-Host: smf.localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670509584'
+
+end note
+
+"127.0.0.9" -> "127.0.0.4": 743, Diameter, 280 DWA Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.9 to 127.0.0.4**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 88'
+diameter.flags:
+-   diameter.flags.request: '0... .... = Request: Not set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x082fa900'
+diameter.endtoendid: 'End-to-End Identifier: 0x410358ce'
+diameter.answer_to: 'Request In: 742'
+diameter.resp_time: 'Response Time: 0.000191745 seconds'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 268 Result-Code'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Result-Code: 'Result-Code: DIAMETER_SUCCESS (2001)'
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 24'
+    diameter.Origin-Host: 'Origin-Host: pcrf.localdomain'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670509591'
 
 end note
 
@@ -8075,146 +8724,6 @@ end note
 note right
 **10.0.2.4 to 10.0.2.15**
 Type: 0 (Echo (ping) reply) seq=3/768
-end note
-
-"10.0.2.15" -> "10.0.2.4": 1149, GTP<ICMP>
-
-note right
-**10.0.2.15 to 10.0.2.4**
-Type: 8 (Echo (ping) request) seq=4/1024
-end note
-
-"10.45.0.73" -> "8.8.8.8": 1150, ICMP
-
-note right
-**10.45.0.73 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=4/1024
-end note
-
-"10.0.2.4" -> "8.8.8.8": 1151, ICMP
-
-note right
-**10.0.2.4 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=4/1024
-end note
-
-"8.8.8.8" -> "10.0.2.4": 1152, ICMP
-
-note right
-**8.8.8.8 to 10.0.2.4**
-Type: 0 (Echo (ping) reply) seq=4/1024
-end note
-
-"8.8.8.8" -> "10.45.0.73": 1153, ICMP
-
-note right
-**8.8.8.8 to 10.45.0.73**
-Type: 0 (Echo (ping) reply) seq=4/1024
-end note
-
-"10.0.2.4" -> "10.0.2.15": 1154, GTP<ICMP>
-
-note right
-**10.0.2.4 to 10.0.2.15**
-Type: 0 (Echo (ping) reply) seq=4/1024
-end note
-
-"10.0.2.15" -> "10.0.2.4": 1164, GTP<ICMP>
-
-note right
-**10.0.2.15 to 10.0.2.4**
-Type: 8 (Echo (ping) request) seq=5/1280
-end note
-
-"10.45.0.73" -> "8.8.8.8": 1165, ICMP
-
-note right
-**10.45.0.73 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=5/1280
-end note
-
-"10.0.2.4" -> "8.8.8.8": 1166, ICMP
-
-note right
-**10.0.2.4 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=5/1280
-end note
-
-"8.8.8.8" -> "10.0.2.4": 1167, ICMP
-
-note right
-**8.8.8.8 to 10.0.2.4**
-Type: 0 (Echo (ping) reply) seq=5/1280
-end note
-
-"8.8.8.8" -> "10.45.0.73": 1168, ICMP
-
-note right
-**8.8.8.8 to 10.45.0.73**
-Type: 0 (Echo (ping) reply) seq=5/1280
-end note
-
-"10.0.2.4" -> "10.0.2.15": 1169, GTP<ICMP>
-
-note right
-**10.0.2.4 to 10.0.2.15**
-Type: 0 (Echo (ping) reply) seq=5/1280
-end note
-
-"10.0.2.15" -> "10.0.2.4": 1174, GTP<ICMP>
-
-note right
-**10.0.2.15 to 10.0.2.4**
-Type: 8 (Echo (ping) request) seq=1/256
-end note
-
-"10.45.0.74" -> "8.8.8.8": 1175, ICMP
-
-note right
-**10.45.0.74 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=1/256
-end note
-
-"10.0.2.4" -> "8.8.8.8": 1176, ICMP
-
-note right
-**10.0.2.4 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=1/256
-end note
-
-"8.8.8.8" -> "10.0.2.4": 1177, ICMP
-
-note right
-**8.8.8.8 to 10.0.2.4**
-Type: 0 (Echo (ping) reply) seq=1/256
-end note
-
-"8.8.8.8" -> "10.45.0.74": 1178, ICMP
-
-note right
-**8.8.8.8 to 10.45.0.74**
-Type: 0 (Echo (ping) reply) seq=1/256
-end note
-
-"10.0.2.4" -> "10.0.2.15": 1179, GTP<ICMP>
-
-note right
-**10.0.2.4 to 10.0.2.15**
-Type: 0 (Echo (ping) reply) seq=1/256
-end note
-
-"10.0.2.15" -> "10.0.2.4": 1184, GTP<ICMP>
-
-note right
-**10.0.2.15 to 10.0.2.4**
-Type: 8 (Echo (ping) request) seq=2/512
-end note
-
-"10.45.0.74" -> "8.8.8.8": 1185, ICMP
-
-note right
-**10.45.0.74 to 8.8.8.8**
-Type: 8 (Echo (ping) request) seq=2/512
 end note
 
 @enduml

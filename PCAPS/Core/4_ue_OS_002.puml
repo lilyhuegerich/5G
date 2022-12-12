@@ -1,0 +1,524 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "127.0.0.6"
+participant "127.0.0.3"
+participant "127.0.0.7"
+participant "127.0.0.4"
+participant "10.45.0.73"
+participant "10.45.0.75"
+participant "8.8.8.8"
+participant "N1\n(10.0.2.4)" as 10.0.2.4
+participant "127.0.0.8"
+participant "127.0.0.9"
+participant "10.45.0.76"
+participant "127.0.0.2"
+participant "N1\n(10.0.2.15)" as 10.0.2.15
+participant "10.45.0.74"
+
+"127.0.0.7" -> "127.0.0.4": 1318, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.7 to 127.0.0.4**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2735'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1319'
+
+end note
+
+"127.0.0.4" -> "127.0.0.7": 1319, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.4 to 127.0.0.7**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2735'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1318'
+pfcp.response_time: 'Response Time: 0.000391375 seconds'
+
+end note
+
+"127.0.0.6" -> "127.0.0.3": 1320, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2739'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1321'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 1321, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2739'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1320'
+pfcp.response_time: 'Response Time: 0.000141862 seconds'
+
+end note
+
+"127.0.0.3" -> "127.0.0.6": 1322, PFCP req.\nPFCP Heartbeat Request (1)
+
+note right #80b3ff
+**127.0.0.3 to 127.0.0.6**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Request (1)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2739'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_in: 'Response In: 1323'
+
+end note
+
+"127.0.0.6" -> "127.0.0.3": 1323, PFCP rsp.\nPFCP Heartbeat Response (2)
+
+note right #cce0ff
+**127.0.0.6 to 127.0.0.3**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...0 = SEID (S): False'
+pfcp.msg_type: 'Message Type: PFCP Heartbeat Response (2)'
+pfcp.length: 'Length: 12'
+pfcp.seqno: 'Sequence Number: 2739'
+pfcp.spare_oct: 'Spare: 0'
+'Recovery Time Stamp : Dec  8, 2022 14:26:24.000000000 UTC':
+-   pfcp.ie_type: 'IE Type: Recovery Time Stamp (96)'
+    pfcp.ie_len: 'IE Length: 4'
+    pfcp.recovery_time_stamp: 'Recovery Time Stamp: Dec  8, 2022 14:26:24.000000000 UTC'
+pfcp.response_to: 'Response To: 1322'
+pfcp.response_time: 'Response Time: 0.019469913 seconds'
+
+end note
+
+"10.0.2.15" -> "10.0.2.4": 1324, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.2.4**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.45.0.76" -> "8.8.8.8": 1325, ICMP
+
+note right
+**10.45.0.76 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.0.2.4" -> "8.8.8.8": 1326, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.0.2.4": 1327, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.45.0.76": 1328, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.76**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.2.4" -> "10.0.2.15": 1329, GTP<ICMP>
+
+note right
+**10.0.2.4 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.2.15" -> "10.0.2.4": 1334, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.2.4**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.45.0.76" -> "8.8.8.8": 1335, ICMP
+
+note right
+**10.45.0.76 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.0.2.4" -> "8.8.8.8": 1336, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.0.2.4": 1337, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.45.0.76": 1338, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.76**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.2.4" -> "10.0.2.15": 1339, GTP<ICMP>
+
+note right
+**10.0.2.4 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"127.0.0.8" -> "127.0.0.2": 1344, Diameter, 280 DWR Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.8 to 127.0.0.2**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 76'
+diameter.flags:
+-   diameter.flags.request: '1... .... = Request: Set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x7f7fcd98'
+diameter.endtoendid: 'End-to-End Identifier: 0x41707f73'
+diameter.answer_in: 'Answer In: 1345'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 23'
+    diameter.Origin-Host: 'Origin-Host: hss.localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670509591'
+
+end note
+
+"127.0.0.2" -> "127.0.0.8": 1345, Diameter, 280 DWA Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.2 to 127.0.0.8**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 88'
+diameter.flags:
+-   diameter.flags.request: '0... .... = Request: Not set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x7f7fcd98'
+diameter.endtoendid: 'End-to-End Identifier: 0x41707f73'
+diameter.answer_to: 'Request In: 1344'
+diameter.resp_time: 'Response Time: 0.000146683 seconds'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 268 Result-Code'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Result-Code: 'Result-Code: DIAMETER_SUCCESS (2001)'
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 23'
+    diameter.Origin-Host: 'Origin-Host: mme.localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670519910'
+
+end note
+
+"127.0.0.9" -> "127.0.0.4": 1410, Diameter, 280 DWR Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.9 to 127.0.0.4**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 76'
+diameter.flags:
+-   diameter.flags.request: '1... .... = Request: Set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x7f7fcda6'
+diameter.endtoendid: 'End-to-End Identifier: 0x41707f81'
+diameter.answer_in: 'Answer In: 1411'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 24'
+    diameter.Origin-Host: 'Origin-Host: pcrf.localdomain'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670509591'
+
+end note
+
+"127.0.0.4" -> "127.0.0.9": 1411, Diameter, 280 DWA Diameter Common Messages (0)
+
+note right #D6A4DE
+**127.0.0.4 to 127.0.0.9**
+diameter.version: 'Version: 0x01'
+diameter.length: 'Length: 88'
+diameter.flags:
+-   diameter.flags.request: '0... .... = Request: Not set'
+    diameter.flags.proxyable: '.0.. .... = Proxyable: Not set'
+    diameter.flags.error: '..0. .... = Error: Not set'
+    diameter.flags.T: '...0 .... = T(Potentially re-transmitted message): Not set'
+    diameter.flags.reserved4: '.... 0... = Reserved: Not set'
+    diameter.flags.reserved5: '.... .0.. = Reserved: Not set'
+    diameter.flags.reserved6: '.... ..0. = Reserved: Not set'
+    diameter.flags.reserved7: '.... ...0 = Reserved: Not set'
+diameter.cmd.code: 'Command Code: 280 Device-Watchdog'
+diameter.applicationId: 'ApplicationId: Diameter Common Messages (0)'
+diameter.hopbyhopid: 'Hop-by-Hop Identifier: 0x7f7fcda6'
+diameter.endtoendid: 'End-to-End Identifier: 0x41707f81'
+diameter.answer_to: 'Request In: 1410'
+diameter.resp_time: 'Response Time: 0.000339491 seconds'
+diameter.avp:
+-   diameter.avp.code: 'AVP Code: 268 Result-Code'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Result-Code: 'Result-Code: DIAMETER_SUCCESS (2001)'
+-   diameter.avp.code: 'AVP Code: 264 Origin-Host'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 23'
+    diameter.Origin-Host: 'Origin-Host: smf.localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 296 Origin-Realm'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 19'
+    diameter.Origin-Realm: 'Origin-Realm: localdomain'
+    diameter.avp.pad: 'Padding: 00'
+-   diameter.avp.code: 'AVP Code: 278 Origin-State-Id'
+    diameter.avp.flags:
+        diameter.flags.vendorspecific: '0... .... = Vendor-Specific: Not set'
+        diameter.flags.mandatory: '.1.. .... = Mandatory: Set'
+        diameter.avp.flags.protected: '..0. .... = Protected: Not set'
+        diameter.avp.flags.reserved3: '...0 .... = Reserved: Not set'
+        diameter.avp.flags.reserved4: '.... 0... = Reserved: Not set'
+        diameter.avp.flags.reserved5: '.... .0.. = Reserved: Not set'
+        diameter.avp.flags.reserved6: '.... ..0. = Reserved: Not set'
+        diameter.avp.flags.reserved7: '.... ...0 = Reserved: Not set'
+    diameter.avp.len: 'AVP Length: 12'
+    diameter.Origin-State-Id: 'Origin-State-Id: 1670509584'
+
+end note
+
+@enduml
