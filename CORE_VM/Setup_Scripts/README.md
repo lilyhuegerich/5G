@@ -5,5 +5,5 @@
 
 ```console
 
-user@core ./python_packages
+user@core:$ ./python_packages
 
