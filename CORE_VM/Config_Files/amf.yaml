@@ -259,10 +259,10 @@ logger:
 #
 amf:
     sbi:
-      - addr: 127.0.0.5
+      - addr: 10.0.3.1
         port: 7777
     ngap:
-      - addr: 10.0.2.4
+      - addr: 10.0.3.1
     guami:
       - plmn_id:
           mcc: 901
@@ -329,7 +329,7 @@ amf:
 nrf:
     sbi:
       - addr:
-          - 127.0.0.10
+          - 10.0.3.1
           - ::1
         port: 7777
 
@@ -403,5 +403,5 @@ time:
 #      port: 9090
 #
 metrics:
-    addr: 127.0.0.5
+    addr: 10.0.3.1
     port: 9090
