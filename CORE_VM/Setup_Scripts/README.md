@@ -1,9 +1,8 @@
-# Core VM Setup Scripts
+# Core VM Setup Script
 
-
-## Python Packages
+To install everything but vuln. settings.
 
 ```console
 
-user@core:$ ./python_packages
+user@core:~$ ./set_up_core.sh
 
