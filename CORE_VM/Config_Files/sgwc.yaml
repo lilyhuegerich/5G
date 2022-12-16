@@ -1,0 +1,15 @@
+logger:
+    file: /var/log/open5gs/sgwc.log
+sgwc:
+    gtpc:
+      - addr: 10.0.12.1
+    pfcp:
+      - addr: 10.0.12.1
+
+sgwu:
+    pfcp:
+      - addr: 10.0.13.1
+
+parameter:
+max:
+time:
