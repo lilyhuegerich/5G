@@ -5,8 +5,8 @@ echo "started gnb"
 sleep 6
 sudo  gnome-terminal --title="ue" -- ./start_all_ue.sh
 sleep 10
-if (($#>0))
+if [ -z "$1" ]
 then	
-	wireshark &
+	echo "wireshark &" TODO
 fi
 ../Test_Scripts/test_all.sh
