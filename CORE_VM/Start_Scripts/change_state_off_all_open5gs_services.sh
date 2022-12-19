@@ -27,7 +27,7 @@ sudo systemctl "$change" open5gs-pcrfd
 
 sudo systemctl "$change" open5gs-nrfd
 
-sudo systemctl "$change" open5gs-scpd
+sudo systemctl "$change" open5gs-smfd
 
 sudo systemctl "$change" open5gs-ausfd
 
