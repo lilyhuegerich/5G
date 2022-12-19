@@ -1,15 +1,12 @@
 logger:
-    file: /var/log/open5gs/ausf.log
+  file: /var/log/open5gs/ausf.log
 ausf:
-    sbi:
-      - addr: 10.0.4.1
-        port: 7777
+  sbi:
+  - addr: 10.0.4.1
+    port: 7777
 nrf:
-    sbi:
-      - addr:
-          - 10.0.8.1
-          - ::1
-        port: 7777
+  sbi:
+  - 10.0.8.1
 parameter:
 
 max:

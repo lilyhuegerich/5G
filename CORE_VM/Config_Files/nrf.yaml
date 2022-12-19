@@ -1,11 +1,8 @@
 logger:
-    file: /var/log/open5gs/nrf.log
+  file: /var/log/open5gs/nrf.log
 nrf:
-    sbi:
-      addr:
-        - 10.0.8.1
-        - ::1
-      port: 7777
+  sbi:
+  - 10.0.8.1
 parameter:
 max:
 time:

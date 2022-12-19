@@ -1,13 +1,13 @@
 logger:
-    file: /var/log/open5gs/upf.log
+  file: /var/log/open5gs/upf.log
 upf:
-    pfcp:
-      - addr: 127.0.0.7
-    gtpu:
-      - addr: 10.0.2.4
-    subnet:
-      - addr: 10.45.0.1/16
-      - addr: 2001:db8:cafe::1/48
+  pfcp:
+  - addr: 127.0.0.7
+  gtpu:
+  - addr: 10.0.2.4
+  subnet:
+  - addr: 10.45.0.1/16
+  - addr: 2001:db8:cafe::1/48
 
 smf:
 parameter:
