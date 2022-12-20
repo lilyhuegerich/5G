@@ -8,7 +8,8 @@ udr:
 
 nrf:
   sbi:
-  - 10.0.8.1
+  - addr: 10.0.8.1
+    port: 7777
 parameter:
 
 max:

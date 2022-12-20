@@ -1,3 +1,7 @@
+logger:
+  file: /var/log/open5gs/amf.log
+
+
 amf:
   sbi:
   - addr: 10.0.3.1
@@ -31,8 +35,11 @@ amf:
 
 nrf:
   sbi:
-  - 10.0.8.1
+  - addr: 10.0.8.1
+    port: 7777
 parameter:
+  no_ipv6: true
+  level: debug
 
 max:
 
@@ -40,5 +47,5 @@ usrsctp:
 
 time:
 metrics:
-  addr: 10.0.3.1
+  addr: 127.0.0.2
   port: 9090

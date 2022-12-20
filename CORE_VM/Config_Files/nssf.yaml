@@ -5,14 +5,17 @@ nssf:
   - addr: 10.0.9.1
     port: 7777
   nsi:
-  - addr: ::1
+  - addr: 10.0.8.1
     port: 7777
     s_nssai:
       sst: 1
 
 nrf:
   sbi:
-  - 10.0.8.1
+  - addr: 10.0.8.1
+    port: 7777
 parameter:
+  no_ipv6: true
+
 max:
 time:

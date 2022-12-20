@@ -6,8 +6,11 @@ ausf:
     port: 7777
 nrf:
   sbi:
-  - 10.0.8.1
+  - addr: 10.0.8.1
+    port: 7777
 parameter:
+  no_ipv6: true
+
 
 max:
 time:

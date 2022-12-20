@@ -3,13 +3,16 @@ logger:
   file: /var/log/open5gs/pcf.log
 pcf:
   sbi:
-  - addr: 127.0.0.13
+  - addr: 10.0.10.1
     port: 7777
 
 nrf:
   sbi:
-  - 10.0.8.1
+  - addr: 10.0.8.1
+    port: 7777
 parameter:
+  no_ipv6: true
+
 max:
 
 time:
