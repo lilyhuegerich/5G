@@ -40,6 +40,10 @@ ip_addr="10.0.$start.1/24"
 
 ip_short="10.0.$start.1"
 
+peer_ip_addr="10.0.$start.2/24"
+
+peer_ip_short="10.0.$start.2"
+
 sudo ip netns add "$net_name"
 
 sudo ip link add "$veth_name" type veth peer name "$veth_peer"
@@ -48,7 +52,7 @@ sudo ip link set "$veth_peer" netns "$net_name"
 
 sudo ip addr add "$ip_addr" dev "$veth_name"
 
-sudo ip netns exec "$net_name" ip addr add "$ip_addr" dev "$veth_peer"
+sudo ip netns exec "$net_name" ip addr add "$peer_ip_addr" dev "$veth_peer"
 
 sudo ip link set "$veth_name" up
 
@@ -58,7 +62,7 @@ sudo iptables -A FORWARD -o enp0s3 -i "$veth_name" -j ACCEPT
 
 sudo iptables -A FORWARD -i enp0s3 -o "$veth_name" -j ACCEPT
 
-sudo iptables -t nat -A POSTROUTING -s "$ip_addr" -o enp0s3 -j MASQUERADE
+sudo iptables -t nat -A POSTROUTING -s "$peer_ip_addr" -o enp0s3 -j MASQUERADE
 
 sudo ip netns exec "$net_name" ip route add default via "$ip_short"
 
