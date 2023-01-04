@@ -1,0 +1,628 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "UPF"
+participant "AMF"
+participant "SMF"
+participant "SGWU"
+participant "SGWC"
+participant "127.0.0.4"
+participant "10.0.2.4"
+participant "127.0.0.9"
+participant "127.0.0.8"
+participant "127.0.0.2"
+participant "10.45.0.5"
+participant "8.8.8.8"
+
+"8.8.8.8" -> "UE_2": 5315, ICMP\n+85.164s (14:8:34.318.636)
+
+note right
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 5316, GTP<ICMP>\n+85.165s (14:8:34.319.795)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5329, GTP<ICMP>\n+86.097s (14:8:35.251.73)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 5330, ICMP\n+86.097s (14:8:35.251.917)
+
+note right
+**UE_2 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5331, ICMP\n+86.097s (14:8:35.252.003)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5332, ICMP\n+86.132s (14:8:35.286.949)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_2": 5333, ICMP\n+86.132s (14:8:35.286.976)
+
+note right
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 5334, GTP<ICMP>\n+86.132s (14:8:35.287.058)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5335, GTP<ICMP>\n+86.139s (14:8:35.293.479)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5336, ICMP\n+86.139s (14:8:35.293.571)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5337, ICMP\n+86.139s (14:8:35.293.594)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5338, ICMP\n+86.158s (14:8:35.313.188)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5339, ICMP\n+86.158s (14:8:35.313.229)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5340, GTP<ICMP>\n+86.159s (14:8:35.313.334)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5341, GTP<ICMP>\n+87.154s (14:8:36.308.481)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5342, ICMP\n+87.154s (14:8:36.308.612)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5343, ICMP\n+87.154s (14:8:36.308.639)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5344, ICMP\n+87.179s (14:8:36.333.383)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5345, ICMP\n+87.179s (14:8:36.333.424)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5346, GTP<ICMP>\n+87.179s (14:8:36.333.516)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5349, GTP<ICMP>\n+88.152s (14:8:37.306.402)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5350, ICMP\n+88.152s (14:8:37.306.491)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5351, ICMP\n+88.152s (14:8:37.306.506)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5352, ICMP\n+88.191s (14:8:37.345.434)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5353, ICMP\n+88.191s (14:8:37.345.471)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5354, GTP<ICMP>\n+88.191s (14:8:37.345.575)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5356, GTP<ICMP>\n+89.153s (14:8:38.307.517)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5357, ICMP\n+89.153s (14:8:38.307.732)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5358, ICMP\n+89.153s (14:8:38.307.755)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5359, ICMP\n+89.182s (14:8:38.336.596)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5360, ICMP\n+89.182s (14:8:38.336.624)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5361, GTP<ICMP>\n+89.182s (14:8:38.336.705)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5362, GTP<ICMP>\n+90.154s (14:8:39.308.691)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5363, ICMP\n+90.154s (14:8:39.308.784)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5364, ICMP\n+90.154s (14:8:39.308.801)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5365, ICMP\n+90.178s (14:8:39.333.075)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5366, ICMP\n+90.178s (14:8:39.333.106)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5367, GTP<ICMP>\n+90.178s (14:8:39.333.206)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5368, GTP<ICMP>\n+90.187s (14:8:39.342.053)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5369, ICMP\n+90.187s (14:8:39.342.243)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5370, ICMP\n+90.187s (14:8:39.342.279)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5371, ICMP\n+90.267s (14:8:39.421.907)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5372, ICMP\n+90.267s (14:8:39.421.937)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5373, GTP<ICMP>\n+90.267s (14:8:39.422.196)
+
+note right
+**UPF to gNB**
+end note
+
+"SMF" -> "UPF": 5374, PFCP req.\nPFCP Heartbeat Request (1)\n+90.293s (14:8:39.447.483)
+
+note right #80b3ff
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 5375, PFCP rsp.\nPFCP Heartbeat Response (2)\n+90.293s (14:8:39.447.771)
+
+note right #cce0ff
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 5376, PFCP req.\nPFCP Heartbeat Request (1)\n+90.293s (14:8:39.447.888)
+
+note right #80b3ff
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 5377, PFCP rsp.\nPFCP Heartbeat Response (2)\n+90.293s (14:8:39.448.17)
+
+note right #cce0ff
+**SMF to UPF**
+end note
+
+"gNB" -> "UPF": 5389, GTP<ICMP>\n+91.188s (14:8:40.343.254)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5390, ICMP\n+91.189s (14:8:40.343.366)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5391, ICMP\n+91.189s (14:8:40.343.381)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5394, ICMP\n+91.265s (14:8:40.420.156)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5395, ICMP\n+91.265s (14:8:40.420.218)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5396, GTP<ICMP>\n+91.266s (14:8:40.420.404)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5398, GTP<ICMP>\n+92.190s (14:8:41.344.456)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5399, ICMP\n+92.190s (14:8:41.344.544)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5400, ICMP\n+92.190s (14:8:41.344.559)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5401, ICMP\n+92.287s (14:8:41.441.977)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5402, ICMP\n+92.287s (14:8:41.442.007)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5403, GTP<ICMP>\n+92.287s (14:8:41.442.095)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5404, GTP<ICMP>\n+93.190s (14:8:42.345.106)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5405, ICMP\n+93.190s (14:8:42.345.195)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5406, ICMP\n+93.190s (14:8:42.345.211)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5407, ICMP\n+93.216s (14:8:42.370.643)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5408, ICMP\n+93.216s (14:8:42.370.68)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5409, GTP<ICMP>\n+93.216s (14:8:42.370.792)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5412, GTP<ICMP>\n+94.192s (14:8:43.346.801)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5413, ICMP\n+94.192s (14:8:43.346.895)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5414, ICMP\n+94.192s (14:8:43.346.911)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5423, ICMP\n+94.304s (14:8:43.458.75)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5424, ICMP\n+94.304s (14:8:43.458.774)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5427, GTP<ICMP>\n+94.304s (14:8:43.459.015)
+
+note right
+**UPF to gNB**
+end note
+
+"SGWU" -> "SGWC": 5464, PFCP req.\nPFCP Heartbeat Request (1)\n+95.720s (14:8:44.874.331)
+
+note right #80b3ff
+**SGWU to SGWC**
+end note
+
+"SGWC" -> "SGWU": 5465, PFCP rsp.\nPFCP Heartbeat Response (2)\n+95.720s (14:8:44.874.411)
+
+note right #cce0ff
+**SGWC to SGWU**
+end note
+
+"SGWC" -> "SGWU": 5466, PFCP req.\nPFCP Heartbeat Request (1)\n+95.720s (14:8:44.874.434)
+
+note right #80b3ff
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 5467, PFCP rsp.\nPFCP Heartbeat Response (2)\n+95.720s (14:8:44.874.487)
+
+note right #cce0ff
+**SGWU to SGWC**
+end note
+
+"SMF" -> "UPF": 5507, PFCP req.\nPFCP Heartbeat Request (1)\n+101.299s (14:8:50.453.693)
+
+note right #80b3ff
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 5508, PFCP rsp.\nPFCP Heartbeat Response (2)\n+101.299s (14:8:50.454.014)
+
+note right #cce0ff
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 5509, PFCP req.\nPFCP Heartbeat Request (1)\n+101.299s (14:8:50.454.134)
+
+note right #80b3ff
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 5510, PFCP rsp.\nPFCP Heartbeat Response (2)\n+101.304s (14:8:50.458.544)
+
+note right #cce0ff
+**SMF to UPF**
+end note
+
+"SGWU" -> "SGWC": 5568, PFCP req.\nPFCP Heartbeat Request (1)\n+106.724s (14:8:55.878.419)
+
+note right #80b3ff
+**SGWU to SGWC**
+end note
+
+"SGWC" -> "SGWU": 5569, PFCP rsp.\nPFCP Heartbeat Response (2)\n+106.724s (14:8:55.878.497)
+
+note right #cce0ff
+**SGWC to SGWU**
+end note
+
+"SGWC" -> "SGWU": 5570, PFCP req.\nPFCP Heartbeat Request (1)\n+106.724s (14:8:55.878.531)
+
+note right #80b3ff
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 5571, PFCP rsp.\nPFCP Heartbeat Response (2)\n+106.724s (14:8:55.878.582)
+
+note right #cce0ff
+**SGWU to SGWC**
+end note
+
+"SMF" -> "UPF": 5597, PFCP req.\nPFCP Heartbeat Request (1)\n+112.307s (14:9:1.461.796)
+
+note right #80b3ff
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 5598, PFCP rsp.\nPFCP Heartbeat Response (2)\n+112.307s (14:9:1.461.908)
+
+note right #cce0ff
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 5599, PFCP req.\nPFCP Heartbeat Request (1)\n+112.307s (14:9:1.461.933)
+
+note right #80b3ff
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 5600, PFCP rsp.\nPFCP Heartbeat Response (2)\n+112.307s (14:9:1.462.007)
+
+note right #cce0ff
+**SMF to UPF**
+end note
+
+"127.0.0.2" -> "127.0.0.8": 5606, Diameter, 280 DWR Diameter Common Messages (0)\n+112.587s (14:9:1.742.075)
+
+note right #D6A4DE
+**127.0.0.2 to 127.0.0.8**
+end note
+
+"127.0.0.8" -> "127.0.0.2": 5607, Diameter, 280 DWA Diameter Common Messages (0)\n+112.587s (14:9:1.742.304)
+
+note right #D6A4DE
+**127.0.0.8 to 127.0.0.2**
+end note
+
+"127.0.0.4" -> "127.0.0.9": 5689, Diameter, 280 DWR Diameter Common Messages (0)\n+113.239s (14:9:2.393.665)
+
+note right #D6A4DE
+**127.0.0.4 to 127.0.0.9**
+end note
+
+"127.0.0.9" -> "127.0.0.4": 5690, Diameter, 280 DWA Diameter Common Messages (0)\n+113.239s (14:9:2.393.945)
+
+note right #D6A4DE
+**127.0.0.9 to 127.0.0.4**
+end note
+
+"SGWU" -> "SGWC": 5797, PFCP req.\nPFCP Heartbeat Request (1)\n+117.728s (14:9:6.882.626)
+
+note right #80b3ff
+**SGWU to SGWC**
+end note
+
+"SGWC" -> "SGWU": 5798, PFCP rsp.\nPFCP Heartbeat Response (2)\n+117.728s (14:9:6.882.758)
+
+note right #cce0ff
+**SGWC to SGWU**
+end note
+
+"SGWC" -> "SGWU": 5799, PFCP req.\nPFCP Heartbeat Request (1)\n+117.728s (14:9:6.882.786)
+
+note right #80b3ff
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 5800, PFCP rsp.\nPFCP Heartbeat Response (2)\n+117.728s (14:9:6.882.985)
+
+note right #cce0ff
+**SGWU to SGWC**
+end note
+
+"SMF" -> "UPF": 5819, PFCP req.\nPFCP Heartbeat Request (1)\n+123.307s (14:9:12.462.308)
+
+note right #80b3ff
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 5820, PFCP rsp.\nPFCP Heartbeat Response (2)\n+123.308s (14:9:12.462.399)
+
+note right #cce0ff
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 5821, PFCP req.\nPFCP Heartbeat Request (1)\n+123.308s (14:9:12.462.419)
+
+note right #80b3ff
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 5822, PFCP rsp.\nPFCP Heartbeat Response (2)\n+123.308s (14:9:12.462.483)
+
+note right #cce0ff
+**SMF to UPF**
+end note
+
+@enduml
