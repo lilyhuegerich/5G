@@ -3,6 +3,8 @@ servers:
         interfaces:
             n4:
                 fixed:  "10.0.17.1"
+            n5:
+                fixed:  "10.0.2.4"
     'UDR':
         interfaces:
             n4:
@@ -67,7 +69,7 @@ servers:
         interfaces:
             n4:
                 fixed:  "10.45.0.1"
-    'UE_1':
+    'UE':
         interfaces:
             n4:
                 fixed:  "10.45.0.2"
