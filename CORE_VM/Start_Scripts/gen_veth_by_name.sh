@@ -18,7 +18,7 @@ veth_peer="veth_$net_name"
 
 veths=( $(ifconfig | grep veth -A1))
 
-start=2
+start=${2:-2}
 
 for veth in "${veths[@]}": 
 do
