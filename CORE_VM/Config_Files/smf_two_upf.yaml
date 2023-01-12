@@ -1,0 +1,47 @@
+logger:
+  file: /var/log/open5gs/smf.log
+smf:
+  sbi:
+  - addr: 10.0.14.1
+    port: 7777
+  pfcp:
+  - addr: 10.0.14.1
+  gtpc:
+  - addr: 10.0.14.1
+  gtpu:
+  - addr: 10.0.14.1
+  subnet:
+  - addr: 10.45.0.1/16
+    dnn: [internet, edge, CustomSlice]
+  - addr: 10.47.0.1/16
+    dnn: iot
+  dns:
+  - 8.8.8.8
+  - 8.8.4.4
+  - 2001:4860:4860::8888
+  - 2001:4860:4860::8844
+  mtu: 1400
+  ctf:
+    enabled: auto
+  freeDiameter: /etc/freeDiameter/smf.conf
+
+nrf:
+  sbi:
+  - addr: 10.0.8.1
+    port: 7777
+upf:
+  pfcp:
+  - addr: 10.0.21.1
+    dnn: iot
+  - addr: 10.0.17.1
+    dnn: [internet, edge, CustomSlice]
+
+
+parameter:
+  no_ipv6: true
+
+max:
+time:
+metrics:
+  addr: 10.0.14.1
+  port: 9090
