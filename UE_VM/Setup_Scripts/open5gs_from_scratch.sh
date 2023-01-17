@@ -2,15 +2,17 @@
 
 cd /home/lily/5G/UE_VM/ #change me!
 
-sudo apt-get install -y libtalloc-dev
+sudo apt-get install -y libtalloc-dev libmongoc-dev
 
-sudo apt-get install libyaml-dev
+sudo apt-get install libyaml-de
 
 sudo apt-get install libmicrohttpd-dev
 
 sudo apt-get install libmongoc-dev
 
 sudo apt-get install flex
+
+sudo apt-get install libldap2-dev libidn11-dev
 
 sudo apt-get install bison libcurl4-gnutls-dev libtins-dev meson
 
