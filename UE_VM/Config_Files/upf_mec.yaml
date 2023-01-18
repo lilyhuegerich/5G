@@ -1,0 +1,16 @@
+logger:
+  file: /home/lily/5G/UE_VM/open5gs/install/var/log/open5gs/upf.log
+upf:
+  pfcp:
+    addr: 10.0.21.1
+  gtpu:
+  - addr: 10.0.21.1
+  subnet:
+  - addr: 10.47.0.1/16
+    dev: ogstun2
+smf:
+parameter:
+  no_ipv6: true
+
+max:
+time:
