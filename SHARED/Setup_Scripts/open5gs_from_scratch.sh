@@ -1,6 +1,6 @@
 
 
-cd /home/lily/5G/UE_VM/ #change me!
+cd /home/lily/5G/SHARED
 
 sudo apt-get install -y libtalloc-dev libmongoc-dev
 

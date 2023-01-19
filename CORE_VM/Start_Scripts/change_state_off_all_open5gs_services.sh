@@ -7,39 +7,16 @@ if [ "$change" == "start" ] || [ "$change" == "stop" ] ;
 then
 	echo Will $change all open5gs functions.
 else
-	echo Reverting to default, restart.
+	echo Will use default action: restart.
 	change=restart
 fi
 
-sudo systemctl "$change" open5gs-mmed
+standard_core_services=("mme" "sgwc" "amf" "sgwu" "upf" "hss" "pcrf" "nrf" "smf" "ausf" "udm" "pcf" "nssf" "bsf" "udr")
 
-sudo systemctl "$change" open5gs-sgwcd
-
-sudo systemctl "$change" open5gs-amfd
-
-sudo systemctl "$change" open5gs-sgwud
-
-sudo systemctl "$change" open5gs-upfd
-
-sudo systemctl "$change" open5gs-hssd
-
-sudo systemctl "$change" open5gs-pcrfd
-
-sudo systemctl "$change" open5gs-nrfd
-
-sudo systemctl "$change" open5gs-smfd
-
-sudo systemctl "$change" open5gs-ausfd
-
-sudo systemctl "$change" open5gs-udmd
-
-sudo systemctl "$change" open5gs-pcfd
-
-sudo systemctl "$change" open5gs-nssfd
-
-sudo systemctl "$change" open5gs-bsfd
-
-sudo systemctl "$change" open5gs-udrd
+for service in "${standard_core_services[@]}"
+do
+	sudo systemctl "$change" open5gs-"$service"d
+done
 
 
 
