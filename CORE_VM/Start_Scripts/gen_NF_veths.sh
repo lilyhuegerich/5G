@@ -1,6 +1,6 @@
 cd /home/lily/5G/SHARED/Tools
 
-interfaces=("amf" "ausf" "bsf" "hss" "mme" "nrf" "nssf" "pcf" "sgwc" "sgwu" "smf" "udm" "udr" "upf")
+interfaces=("amf" "ausf" "bsf" "hss" "mme" "nrf" "nssf" "pcf" "pcrf" "sgwc" "sgwu" "smf" "udm" "udr" "upf")
 
 for interface in "${interfaces[@]}"
 do
