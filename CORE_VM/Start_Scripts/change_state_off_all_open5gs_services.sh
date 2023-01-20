@@ -28,7 +28,7 @@ fi
 
 if [ "$change" == "restart" ] || [ "$change" == "start" ] ;
 then
-	#/home/lily/5G/CORE_VM/Start_Scripts/start_smf.sh
+	/home/lily/5G/CORE_VM/Start_Scripts/start_smf.sh
 fi
 
 #Till the upfs
@@ -48,7 +48,7 @@ fi
 
 if [ "$change" == "restart" ] || [ "$change" == "start" ] ;
 then
-	#/home/lily/5G/SHARED/Setup_Scripts/start_upf.sh
+	/home/lily/5G/SHARED/Setup_Scripts/start_upf.sh
 fi
 
 sleep 1
