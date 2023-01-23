@@ -20,6 +20,9 @@ sudo apt-get install libidn11-dev libgnutils28-dev libgcrypt-dev libssl-dev libm
 
 sudo apt-get install libnghttp2-dev python3-setuptools build-essential cmake libsctp-dev 
 
+
+sudo apt install libyaml-dev
+
 pip3 install meson
 
 pip3 install ninja
