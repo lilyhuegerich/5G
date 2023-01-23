@@ -1,6 +1,6 @@
 
 
-cd /home/lily/5G/SHARED
+cd /home/lily
 
 sudo apt-get install -y libtalloc-dev libmongoc-dev
 
