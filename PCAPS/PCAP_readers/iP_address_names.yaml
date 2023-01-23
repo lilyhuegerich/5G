@@ -1,0 +1,84 @@
+servers:
+    'UPF':
+        interfaces:
+            n4:
+                fixed:  "10.0.17.1"
+            n5:
+                fixed:  "10.0.2.4"
+    'UDR':
+        interfaces:
+            n4:
+                fixed:  "10.0.16.1"
+    'UDM':
+        interfaces:
+            n4:
+                fixed:  "10.0.15.1"
+    'SMF':
+        interfaces:
+            n4:
+                fixed:  "10.0.14.1"
+    'SGWU':
+        interfaces:
+            n4:
+                fixed:  "10.0.13.1"
+    'SGWC':
+        interfaces:
+            n4:
+                fixed:  "10.0.12.1"
+    'PCRF':
+        interfaces:
+            n4:
+                fixed:  "10.0.11.1"
+    'PCF':
+        interfaces:
+            n4:
+                fixed:  "10.0.10.1"
+    'NSSF':
+        interfaces:
+            n4:
+                fixed:  "10.0.9.1"
+    'NRF':
+        interfaces:
+            n4:
+                fixed:  "10.0.8.1"
+    'MME':
+        interfaces:
+            n4:
+                fixed:  "10.0.7.1"
+    'HSS':
+        interfaces:
+            n4:
+                fixed:  "10.0.6.1"
+    'BSF':
+        interfaces:
+            n4:
+                fixed:  "10.0.5.1"
+    'AUSF':
+        interfaces:
+            n4:
+                fixed:  "10.0.4.1"
+    'AMF':
+        interfaces:
+            n4:
+                fixed:  "10.0.3.1"
+    'gNB':
+        interfaces:
+            n4:
+                fixed:  "10.0.2.15"
+    'UE_0':
+        interfaces:
+            n4:
+                fixed:  "10.45.0.1"
+    'UE':
+        interfaces:
+            n4:
+                fixed:  "10.45.0.2"
+    'UE_2':
+        interfaces:
+            n4:
+                fixed:  "10.45.0.3"
+    'UE_3':
+        interfaces:
+            n4:
+                fixed:  "10.45.0.4"
+

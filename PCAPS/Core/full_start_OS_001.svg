@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="4078px" preserveAspectRatio="none" style="width:1175px;height:4078px;" version="1.1" viewBox="0 0 1175 4078" width="1175px" zoomAndPan="magnify"><defs/><g><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="32" x2="32" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="91" x2="91" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="150" x2="150" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="206" x2="206" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="410" x2="410" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="462" x2="462" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="515" x2="515" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="575" x2="575" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="642" x2="642" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="712" x2="712" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="916" x2="916" y1="34.2969" y2="4038.2031"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1001" x2="1001" y1="34.2969" y2="4038.2031"/><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="15" y="22.9951">UE_1</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="8" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="15" y="4057.1982">UE_1</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="67" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="74" y="22.9951">UE_2</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="67" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="74" y="4057.1982">UE_2</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="126" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="133" y="22.9951">UE_3</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="126" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="133" y="4057.1982">UE_3</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="185" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="192" y="22.9951">gNB</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="185" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="192" y="4057.1982">gNB</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="390" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="397" y="22.9951">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="390" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="397" y="4057.1982">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="441" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="448" y="22.9951">AMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="441" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="448" y="4057.1982">AMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="494" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="501" y="22.9951">SMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="494" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="501" y="4057.1982">SMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="57" x="547" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="554" y="22.9951">SGWU</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="57" x="547" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="554" y="4057.1982">SGWU</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="57" x="614" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="621" y="22.9951">SGWC</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="57" x="614" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="621" y="4057.1982">SGWC</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="62" x="681" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="688" y="22.9951">8.8.8.8</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="62" x="681" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="688" y="4057.1982">8.8.8.8</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="80" x="876" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="883" y="22.9951">10.45.0.5</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="80" x="876" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="883" y="4057.1982">10.45.0.5</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="71" x="966" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="973" y="22.9951">10.0.2.4</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="71" x="966" y="4037.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="973" y="4057.1982">10.0.2.4</text><polygon fill="#000000" points="398.5,76.5625,408.5,80.5625,398.5,84.5625,402.5,80.5625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="80.5625" y2="80.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="60.3638">5146, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="75.4966">+82.084s (14:8:31.239.314)</text><path d="M415,53.8633 L415,78.8633 L521,78.8633 L521,63.8633 L511,53.8633 L415,53.8633 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,53.8633 L511,63.8633 L521,63.8633 L511,53.8633 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="70.9302">gNB to UPF</text><polygon fill="#000000" points="700,120.8281,710,124.8281,700,128.8281,704,124.8281" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="706" y1="124.8281" y2="124.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="98.5" y="104.6294">5147, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="98.5" y="119.7622">+82.085s (14:8:31.239.43)</text><path d="M717,98.1289 L717,123.1289 L849,123.1289 L849,108.1289 L839,98.1289 L717,98.1289 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,98.1289 L839,108.1289 L849,108.1289 L839,98.1289 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="115.1958">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="723,165.0938,713,169.0938,723,173.0938,719,169.0938" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="169.0938" y2="169.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="148.895">5148, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="164.0278">+82.085s (14:8:31.239.454)</text><path d="M1006,142.3945 L1006,167.3945 L1163,167.3945 L1163,152.3945 L1153,142.3945 L1006,142.3945 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,142.3945 L1153,152.3945 L1163,152.3945 L1153,142.3945 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="159.4614">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,209.3594,999.5,213.3594,989.5,217.3594,993.5,213.3594" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="213.3594" y2="213.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="193.1606">5149, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="208.2935">+82.105s (14:8:31.259.526)</text><path d="M1006,186.6602 L1006,211.6602 L1163,211.6602 L1163,196.6602 L1153,186.6602 L1006,186.6602 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,186.6602 L1153,196.6602 L1163,196.6602 L1153,186.6602 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="203.7271">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="102.5,253.625,92.5,257.625,102.5,261.625,98.5,257.625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="711" y1="257.625" y2="257.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="108.5" y="237.4263">5150, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="108.5" y="252.5591">+82.105s (14:8:31.259.553)</text><path d="M717,230.9258 L717,255.9258 L849,255.9258 L849,240.9258 L839,230.9258 L717,230.9258 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,230.9258 L839,240.9258 L849,240.9258 L839,230.9258 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="247.9927">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,297.8906,207.5,301.8906,217.5,305.8906,213.5,301.8906" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="301.8906" y2="301.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="281.6919">5151, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="296.8247">+82.105s (14:8:31.259.634)</text><path d="M415,275.1914 L415,300.1914 L521,300.1914 L521,285.1914 L511,275.1914 L415,275.1914 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,275.1914 L511,285.1914 L521,285.1914 L511,275.1914 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="292.2583">UPF to gNB</text><polygon fill="#000000" points="398.5,342.1563,408.5,346.1563,398.5,350.1563,402.5,346.1563" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="346.1563" y2="346.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="325.9575">5240, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="213.5" y="341.0903">+83.085s (14:8:32.240.09)</text><path d="M415,319.457 L415,344.457 L521,344.457 L521,329.457 L511,319.457 L415,319.457 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,319.457 L511,329.457 L521,329.457 L511,319.457 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="336.5239">gNB to UPF</text><polygon fill="#000000" points="700,386.4219,710,390.4219,700,394.4219,704,390.4219" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="706" y1="390.4219" y2="390.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="98.5" y="370.2231">5241, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="98.5" y="385.356">+83.085s (14:8:32.240.23)</text><path d="M717,363.7227 L717,388.7227 L849,388.7227 L849,373.7227 L839,363.7227 L717,363.7227 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,363.7227 L839,373.7227 L849,373.7227 L839,363.7227 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="380.7896">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="723,430.6875,713,434.6875,723,438.6875,719,434.6875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="434.6875" y2="434.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="414.4888">5242, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="429.6216">+83.085s (14:8:32.240.284)</text><path d="M1006,407.9883 L1006,432.9883 L1163,432.9883 L1163,417.9883 L1153,407.9883 L1006,407.9883 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,407.9883 L1153,417.9883 L1163,417.9883 L1153,407.9883 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="425.0552">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,474.9531,999.5,478.9531,989.5,482.9531,993.5,478.9531" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="478.9531" y2="478.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="458.7544">5243, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="473.8872">+83.130s (14:8:32.284.627)</text><path d="M1006,452.2539 L1006,477.2539 L1163,477.2539 L1163,462.2539 L1153,452.2539 L1006,452.2539 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,452.2539 L1153,462.2539 L1163,462.2539 L1153,452.2539 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="469.3208">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="102.5,519.2188,92.5,523.2188,102.5,527.2188,98.5,523.2188" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="711" y1="523.2188" y2="523.2188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="108.5" y="503.02">5244, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="108.5" y="518.1528">+83.130s (14:8:32.284.72)</text><path d="M717,496.5195 L717,521.5195 L849,521.5195 L849,506.5195 L839,496.5195 L717,496.5195 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,496.5195 L839,506.5195 L849,506.5195 L839,496.5195 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="513.5864">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,563.4844,207.5,567.4844,217.5,571.4844,213.5,567.4844" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="567.4844" y2="567.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="547.2856">5245, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="223.5" y="562.4185">+83.130s (14:8:32.284.88)</text><path d="M415,540.7852 L415,565.7852 L521,565.7852 L521,550.7852 L511,540.7852 L415,540.7852 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,540.7852 L511,550.7852 L521,550.7852 L511,540.7852 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="557.8521">UPF to gNB</text><polygon fill="#000000" points="398.5,607.75,408.5,611.75,398.5,615.75,402.5,611.75" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="611.75" y2="611.75"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="591.5513">5251, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="606.6841">+84.189s (14:8:33.343.735)</text><path d="M415,585.0508 L415,610.0508 L521,610.0508 L521,595.0508 L511,585.0508 L415,585.0508 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,585.0508 L511,595.0508 L521,595.0508 L511,585.0508 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="602.1177">gNB to UPF</text><polygon fill="#000000" points="700,652.0156,710,656.0156,700,660.0156,704,656.0156" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="706" y1="656.0156" y2="656.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="98.5" y="635.8169">5252, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="98.5" y="650.9497">+84.189s (14:8:33.343.846)</text><path d="M717,629.3164 L717,654.3164 L849,654.3164 L849,639.3164 L839,629.3164 L717,629.3164 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,629.3164 L839,639.3164 L849,639.3164 L839,629.3164 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="646.3833">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="723,696.2813,713,700.2813,723,704.2813,719,700.2813" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="700.2813" y2="700.2813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="680.0825">5253, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="695.2153">+84.189s (14:8:33.343.861)</text><path d="M1006,673.582 L1006,698.582 L1163,698.582 L1163,683.582 L1153,673.582 L1006,673.582 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,673.582 L1153,683.582 L1163,683.582 L1153,673.582 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="690.6489">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,740.5469,999.5,744.5469,989.5,748.5469,993.5,744.5469" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="744.5469" y2="744.5469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="724.3481">5255, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="739.481">+84.230s (14:8:33.384.781)</text><path d="M1006,717.8477 L1006,742.8477 L1163,742.8477 L1163,727.8477 L1153,717.8477 L1006,717.8477 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,717.8477 L1153,727.8477 L1163,727.8477 L1153,717.8477 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="734.9146">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="102.5,784.8125,92.5,788.8125,102.5,792.8125,98.5,788.8125" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="711" y1="788.8125" y2="788.8125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="108.5" y="768.6138">5256, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="108.5" y="783.7466">+84.230s (14:8:33.384.813)</text><path d="M717,762.1133 L717,787.1133 L849,787.1133 L849,772.1133 L839,762.1133 L717,762.1133 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,762.1133 L839,772.1133 L849,772.1133 L839,762.1133 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="779.1802">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,829.0781,207.5,833.0781,217.5,837.0781,213.5,833.0781" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="833.0781" y2="833.0781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="812.8794">5257, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="828.0122">+84.230s (14:8:33.384.902)</text><path d="M415,806.3789 L415,831.3789 L521,831.3789 L521,816.3789 L511,806.3789 L415,806.3789 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,806.3789 L511,816.3789 L521,816.3789 L511,806.3789 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="823.4458">UPF to gNB</text><polygon fill="#000000" points="398.5,873.3438,408.5,877.3438,398.5,881.3438,402.5,877.3438" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="877.3438" y2="877.3438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="857.145">5311, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="872.2778">+85.121s (14:8:34.275.955)</text><path d="M415,850.6445 L415,875.6445 L521,875.6445 L521,860.6445 L511,850.6445 L415,850.6445 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,850.6445 L511,860.6445 L521,860.6445 L511,850.6445 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="867.7114">gNB to UPF</text><polygon fill="#000000" points="700,917.6094,710,921.6094,700,925.6094,704,921.6094" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="706" y1="921.6094" y2="921.6094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="98.5" y="901.4106">5312, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="98.5" y="916.5435">+85.121s (14:8:34.276.07)</text><path d="M717,894.9102 L717,919.9102 L849,919.9102 L849,904.9102 L839,894.9102 L717,894.9102 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,894.9102 L839,904.9102 L849,904.9102 L839,894.9102 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="911.9771">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="723,961.875,713,965.875,723,969.875,719,965.875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="965.875" y2="965.875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="945.6763">5313, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="960.8091">+85.121s (14:8:34.276.256)</text><path d="M1006,939.1758 L1006,964.1758 L1163,964.1758 L1163,949.1758 L1153,939.1758 L1006,939.1758 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,939.1758 L1153,949.1758 L1163,949.1758 L1153,939.1758 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="956.2427">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,1006.1406,999.5,1010.1406,989.5,1014.1406,993.5,1010.1406" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="1010.1406" y2="1010.1406"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="989.9419">5314, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="1005.0747">+85.164s (14:8:34.318.594)</text><path d="M1006,983.4414 L1006,1008.4414 L1163,1008.4414 L1163,993.4414 L1153,983.4414 L1006,983.4414 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,983.4414 L1153,993.4414 L1163,993.4414 L1153,983.4414 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="1000.5083">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="102.5,1050.4063,92.5,1054.4063,102.5,1058.4063,98.5,1054.4063" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="711" y1="1054.4063" y2="1054.4063"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="108.5" y="1034.2075">5315, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="108.5" y="1049.3403">+85.164s (14:8:34.318.636)</text><path d="M717,1027.707 L717,1052.707 L849,1052.707 L849,1037.707 L839,1027.707 L717,1027.707 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1027.707 L839,1037.707 L849,1037.707 L839,1027.707 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1044.7739">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,1094.6719,207.5,1098.6719,217.5,1102.6719,213.5,1098.6719" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="1098.6719" y2="1098.6719"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="1078.4731">5316, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="1093.606">+85.165s (14:8:34.319.795)</text><path d="M415,1071.9727 L415,1096.9727 L521,1096.9727 L521,1081.9727 L511,1071.9727 L415,1071.9727 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1071.9727 L511,1081.9727 L521,1081.9727 L511,1071.9727 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1089.0396">UPF to gNB</text><polygon fill="#000000" points="398.5,1138.9375,408.5,1142.9375,398.5,1146.9375,402.5,1142.9375" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="1142.9375" y2="1142.9375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="1122.7388">5329, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="213.5" y="1137.8716">+86.097s (14:8:35.251.73)</text><path d="M415,1116.2383 L415,1141.2383 L521,1141.2383 L521,1126.2383 L511,1116.2383 L415,1116.2383 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1116.2383 L511,1126.2383 L521,1126.2383 L511,1116.2383 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1133.3052">gNB to UPF</text><polygon fill="#000000" points="700,1183.2031,710,1187.2031,700,1191.2031,704,1187.2031" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="706" y1="1187.2031" y2="1187.2031"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="98.5" y="1167.0044">5330, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="98.5" y="1182.1372">+86.097s (14:8:35.251.917)</text><path d="M717,1160.5039 L717,1185.5039 L849,1185.5039 L849,1170.5039 L839,1160.5039 L717,1160.5039 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1160.5039 L839,1170.5039 L849,1170.5039 L839,1160.5039 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1177.5708">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="723,1227.4688,713,1231.4688,723,1235.4688,719,1231.4688" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="1231.4688" y2="1231.4688"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="1211.27">5331, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="1226.4028">+86.097s (14:8:35.252.003)</text><path d="M1006,1204.7695 L1006,1229.7695 L1163,1229.7695 L1163,1214.7695 L1153,1204.7695 L1006,1204.7695 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,1204.7695 L1153,1214.7695 L1163,1214.7695 L1153,1204.7695 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="1221.8364">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,1271.7344,999.5,1275.7344,989.5,1279.7344,993.5,1275.7344" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="1275.7344" y2="1275.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="1255.5356">5332, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="1270.6685">+86.132s (14:8:35.286.949)</text><path d="M1006,1249.0352 L1006,1274.0352 L1163,1274.0352 L1163,1259.0352 L1153,1249.0352 L1006,1249.0352 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,1249.0352 L1153,1259.0352 L1163,1259.0352 L1153,1249.0352 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="1266.1021">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="102.5,1316,92.5,1320,102.5,1324,98.5,1320" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="711" y1="1320" y2="1320"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="108.5" y="1299.8013">5333, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="108.5" y="1314.9341">+86.132s (14:8:35.286.976)</text><path d="M717,1293.3008 L717,1318.3008 L849,1318.3008 L849,1303.3008 L839,1293.3008 L717,1293.3008 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1293.3008 L839,1303.3008 L849,1303.3008 L839,1293.3008 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1310.3677">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,1360.2656,207.5,1364.2656,217.5,1368.2656,213.5,1364.2656" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="1364.2656" y2="1364.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="1344.0669">5334, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="1359.1997">+86.132s (14:8:35.287.058)</text><path d="M415,1337.5664 L415,1362.5664 L521,1362.5664 L521,1347.5664 L511,1337.5664 L415,1337.5664 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1337.5664 L511,1347.5664 L521,1347.5664 L511,1337.5664 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1354.6333">UPF to gNB</text><polygon fill="#000000" points="398.5,1404.5313,408.5,1408.5313,398.5,1412.5313,402.5,1408.5313" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="1408.5313" y2="1408.5313"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="1388.3325">5335, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="1403.4653">+86.139s (14:8:35.293.479)</text><path d="M415,1381.832 L415,1406.832 L521,1406.832 L521,1391.832 L511,1381.832 L415,1381.832 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1381.832 L511,1391.832 L521,1391.832 L511,1381.832 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1398.8989">gNB to UPF</text><polygon fill="#000000" points="700,1448.7969,710,1452.7969,700,1456.7969,704,1452.7969" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="706" y1="1452.7969" y2="1452.7969"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="157.5" y="1432.5981">5336, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="157.5" y="1447.731">+86.139s (14:8:35.293.571)</text><path d="M717,1426.0977 L717,1451.0977 L849,1451.0977 L849,1436.0977 L839,1426.0977 L717,1426.0977 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1426.0977 L839,1436.0977 L849,1436.0977 L839,1426.0977 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1443.1646">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="723,1493.0625,713,1497.0625,723,1501.0625,719,1497.0625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="1497.0625" y2="1497.0625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="1476.8638">5337, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="1491.9966">+86.139s (14:8:35.293.594)</text><path d="M1006,1470.3633 L1006,1495.3633 L1163,1495.3633 L1163,1480.3633 L1153,1470.3633 L1006,1470.3633 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,1470.3633 L1153,1480.3633 L1163,1480.3633 L1153,1470.3633 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="1487.4302">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,1537.3281,999.5,1541.3281,989.5,1545.3281,993.5,1541.3281" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="1541.3281" y2="1541.3281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="1521.1294">5338, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="1536.2622">+86.158s (14:8:35.313.188)</text><path d="M1006,1514.6289 L1006,1539.6289 L1163,1539.6289 L1163,1524.6289 L1153,1514.6289 L1006,1514.6289 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,1514.6289 L1153,1524.6289 L1163,1524.6289 L1153,1514.6289 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="1531.6958">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="161.5,1581.5938,151.5,1585.5938,161.5,1589.5938,157.5,1585.5938" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="711" y1="1585.5938" y2="1585.5938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="167.5" y="1565.395">5339, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="167.5" y="1580.5278">+86.158s (14:8:35.313.229)</text><path d="M717,1558.8945 L717,1583.8945 L849,1583.8945 L849,1568.8945 L839,1558.8945 L717,1558.8945 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1558.8945 L839,1568.8945 L849,1568.8945 L839,1558.8945 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1575.9614">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,1625.8594,207.5,1629.8594,217.5,1633.8594,213.5,1629.8594" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="1629.8594" y2="1629.8594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="1609.6606">5340, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="1624.7935">+86.159s (14:8:35.313.334)</text><path d="M415,1603.1602 L415,1628.1602 L521,1628.1602 L521,1613.1602 L511,1603.1602 L415,1603.1602 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1603.1602 L511,1613.1602 L521,1613.1602 L511,1603.1602 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1620.2271">UPF to gNB</text><polygon fill="#000000" points="398.5,1670.125,408.5,1674.125,398.5,1678.125,402.5,1674.125" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="1674.125" y2="1674.125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="1653.9263">5341, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="1669.0591">+87.154s (14:8:36.308.481)</text><path d="M415,1647.4258 L415,1672.4258 L521,1672.4258 L521,1657.4258 L511,1647.4258 L415,1647.4258 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1647.4258 L511,1657.4258 L521,1657.4258 L511,1647.4258 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1664.4927">gNB to UPF</text><polygon fill="#000000" points="700,1714.3906,710,1718.3906,700,1722.3906,704,1718.3906" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="706" y1="1718.3906" y2="1718.3906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="157.5" y="1698.1919">5342, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="157.5" y="1713.3247">+87.154s (14:8:36.308.612)</text><path d="M717,1691.6914 L717,1716.6914 L849,1716.6914 L849,1701.6914 L839,1691.6914 L717,1691.6914 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1691.6914 L839,1701.6914 L849,1701.6914 L839,1691.6914 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1708.7583">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="723,1758.6563,713,1762.6563,723,1766.6563,719,1762.6563" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="1762.6563" y2="1762.6563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="1742.4575">5343, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="1757.5903">+87.154s (14:8:36.308.639)</text><path d="M1006,1735.957 L1006,1760.957 L1163,1760.957 L1163,1745.957 L1153,1735.957 L1006,1735.957 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,1735.957 L1153,1745.957 L1163,1745.957 L1153,1735.957 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="1753.0239">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,1802.9219,999.5,1806.9219,989.5,1810.9219,993.5,1806.9219" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="1806.9219" y2="1806.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="1786.7231">5344, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="1801.856">+87.179s (14:8:36.333.383)</text><path d="M1006,1780.2227 L1006,1805.2227 L1163,1805.2227 L1163,1790.2227 L1153,1780.2227 L1006,1780.2227 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,1780.2227 L1153,1790.2227 L1163,1790.2227 L1153,1780.2227 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="1797.2896">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="161.5,1847.1875,151.5,1851.1875,161.5,1855.1875,157.5,1851.1875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="711" y1="1851.1875" y2="1851.1875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="167.5" y="1830.9888">5345, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="167.5" y="1846.1216">+87.179s (14:8:36.333.424)</text><path d="M717,1824.4883 L717,1849.4883 L849,1849.4883 L849,1834.4883 L839,1824.4883 L717,1824.4883 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1824.4883 L839,1834.4883 L849,1834.4883 L839,1824.4883 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1841.5552">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,1891.4531,207.5,1895.4531,217.5,1899.4531,213.5,1895.4531" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="1895.4531" y2="1895.4531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="1875.2544">5346, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="1890.3872">+87.179s (14:8:36.333.516)</text><path d="M415,1868.7539 L415,1893.7539 L521,1893.7539 L521,1878.7539 L511,1868.7539 L415,1868.7539 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1868.7539 L511,1878.7539 L521,1878.7539 L511,1868.7539 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1885.8208">UPF to gNB</text><polygon fill="#000000" points="398.5,1935.7188,408.5,1939.7188,398.5,1943.7188,402.5,1939.7188" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="1939.7188" y2="1939.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="1919.52">5349, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="1934.6528">+88.152s (14:8:37.306.402)</text><path d="M415,1913.0195 L415,1938.0195 L521,1938.0195 L521,1923.0195 L511,1913.0195 L415,1913.0195 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,1913.0195 L511,1923.0195 L521,1923.0195 L511,1913.0195 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="1930.0864">gNB to UPF</text><polygon fill="#000000" points="700,1979.9844,710,1983.9844,700,1987.9844,704,1983.9844" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="706" y1="1983.9844" y2="1983.9844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="157.5" y="1963.7856">5350, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="157.5" y="1978.9185">+88.152s (14:8:37.306.491)</text><path d="M717,1957.2852 L717,1982.2852 L849,1982.2852 L849,1967.2852 L839,1957.2852 L717,1957.2852 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,1957.2852 L839,1967.2852 L849,1967.2852 L839,1957.2852 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="1974.3521">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="723,2024.25,713,2028.25,723,2032.25,719,2028.25" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="2028.25" y2="2028.25"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="2008.0513">5351, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="2023.1841">+88.152s (14:8:37.306.506)</text><path d="M1006,2001.5508 L1006,2026.5508 L1163,2026.5508 L1163,2011.5508 L1153,2001.5508 L1006,2001.5508 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2001.5508 L1153,2011.5508 L1163,2011.5508 L1153,2001.5508 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2018.6177">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,2068.5156,999.5,2072.5156,989.5,2076.5156,993.5,2072.5156" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="2072.5156" y2="2072.5156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="2052.3169">5352, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="2067.4497">+88.191s (14:8:37.345.434)</text><path d="M1006,2045.8164 L1006,2070.8164 L1163,2070.8164 L1163,2055.8164 L1153,2045.8164 L1006,2045.8164 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2045.8164 L1153,2055.8164 L1163,2055.8164 L1153,2045.8164 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2062.8833">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="161.5,2112.7813,151.5,2116.7813,161.5,2120.7813,157.5,2116.7813" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="711" y1="2116.7813" y2="2116.7813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="167.5" y="2096.5825">5353, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="167.5" y="2111.7153">+88.191s (14:8:37.345.471)</text><path d="M717,2090.082 L717,2115.082 L849,2115.082 L849,2100.082 L839,2090.082 L717,2090.082 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,2090.082 L839,2100.082 L849,2100.082 L839,2090.082 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="2107.1489">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,2157.0469,207.5,2161.0469,217.5,2165.0469,213.5,2161.0469" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="2161.0469" y2="2161.0469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="2140.8481">5354, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="2155.981">+88.191s (14:8:37.345.575)</text><path d="M415,2134.3477 L415,2159.3477 L521,2159.3477 L521,2144.3477 L511,2134.3477 L415,2134.3477 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2134.3477 L511,2144.3477 L521,2144.3477 L511,2134.3477 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2151.4146">UPF to gNB</text><polygon fill="#000000" points="398.5,2201.3125,408.5,2205.3125,398.5,2209.3125,402.5,2205.3125" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="2205.3125" y2="2205.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="2185.1138">5356, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="2200.2466">+89.153s (14:8:38.307.517)</text><path d="M415,2178.6133 L415,2203.6133 L521,2203.6133 L521,2188.6133 L511,2178.6133 L415,2178.6133 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2178.6133 L511,2188.6133 L521,2188.6133 L511,2178.6133 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2195.6802">gNB to UPF</text><polygon fill="#000000" points="700,2245.5781,710,2249.5781,700,2253.5781,704,2249.5781" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="706" y1="2249.5781" y2="2249.5781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="157.5" y="2229.3794">5357, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="157.5" y="2244.5122">+89.153s (14:8:38.307.732)</text><path d="M717,2222.8789 L717,2247.8789 L849,2247.8789 L849,2232.8789 L839,2222.8789 L717,2222.8789 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,2222.8789 L839,2232.8789 L849,2232.8789 L839,2222.8789 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="2239.9458">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="723,2289.8438,713,2293.8438,723,2297.8438,719,2293.8438" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="2293.8438" y2="2293.8438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="2273.645">5358, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="2288.7778">+89.153s (14:8:38.307.755)</text><path d="M1006,2267.1445 L1006,2292.1445 L1163,2292.1445 L1163,2277.1445 L1153,2267.1445 L1006,2267.1445 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2267.1445 L1153,2277.1445 L1163,2277.1445 L1153,2267.1445 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2284.2114">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,2334.1094,999.5,2338.1094,989.5,2342.1094,993.5,2338.1094" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="2338.1094" y2="2338.1094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="2317.9106">5359, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="2333.0435">+89.182s (14:8:38.336.596)</text><path d="M1006,2311.4102 L1006,2336.4102 L1163,2336.4102 L1163,2321.4102 L1153,2311.4102 L1006,2311.4102 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2311.4102 L1153,2321.4102 L1163,2321.4102 L1153,2311.4102 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2328.4771">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="161.5,2378.375,151.5,2382.375,161.5,2386.375,157.5,2382.375" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="711" y1="2382.375" y2="2382.375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="167.5" y="2362.1763">5360, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="167.5" y="2377.3091">+89.182s (14:8:38.336.624)</text><path d="M717,2355.6758 L717,2380.6758 L849,2380.6758 L849,2365.6758 L839,2355.6758 L717,2355.6758 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,2355.6758 L839,2365.6758 L849,2365.6758 L839,2355.6758 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="2372.7427">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,2422.6406,207.5,2426.6406,217.5,2430.6406,213.5,2426.6406" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="2426.6406" y2="2426.6406"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="2406.4419">5361, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="2421.5747">+89.182s (14:8:38.336.705)</text><path d="M415,2399.9414 L415,2424.9414 L521,2424.9414 L521,2409.9414 L511,2399.9414 L415,2399.9414 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2399.9414 L511,2409.9414 L521,2409.9414 L511,2399.9414 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2417.0083">UPF to gNB</text><polygon fill="#000000" points="398.5,2466.9063,408.5,2470.9063,398.5,2474.9063,402.5,2470.9063" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="2470.9063" y2="2470.9063"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="2450.7075">5362, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="2465.8403">+90.154s (14:8:39.308.691)</text><path d="M415,2444.207 L415,2469.207 L521,2469.207 L521,2454.207 L511,2444.207 L415,2444.207 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2444.207 L511,2454.207 L521,2454.207 L511,2444.207 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2461.2739">gNB to UPF</text><polygon fill="#000000" points="700,2511.1719,710,2515.1719,700,2519.1719,704,2515.1719" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="706" y1="2515.1719" y2="2515.1719"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="157.5" y="2494.9731">5363, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="157.5" y="2510.106">+90.154s (14:8:39.308.784)</text><path d="M717,2488.4727 L717,2513.4727 L849,2513.4727 L849,2498.4727 L839,2488.4727 L717,2488.4727 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,2488.4727 L839,2498.4727 L849,2498.4727 L839,2488.4727 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="2505.5396">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="723,2555.4375,713,2559.4375,723,2563.4375,719,2559.4375" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="2559.4375" y2="2559.4375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="2539.2388">5364, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="2554.3716">+90.154s (14:8:39.308.801)</text><path d="M1006,2532.7383 L1006,2557.7383 L1163,2557.7383 L1163,2542.7383 L1153,2532.7383 L1006,2532.7383 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2532.7383 L1153,2542.7383 L1163,2542.7383 L1153,2532.7383 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2549.8052">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,2599.7031,999.5,2603.7031,989.5,2607.7031,993.5,2603.7031" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="2603.7031" y2="2603.7031"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="2583.5044">5365, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="2598.6372">+90.178s (14:8:39.333.075)</text><path d="M1006,2577.0039 L1006,2602.0039 L1163,2602.0039 L1163,2587.0039 L1153,2577.0039 L1006,2577.0039 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2577.0039 L1153,2587.0039 L1163,2587.0039 L1153,2577.0039 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2594.0708">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="161.5,2643.9688,151.5,2647.9688,161.5,2651.9688,157.5,2647.9688" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="711" y1="2647.9688" y2="2647.9688"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="167.5" y="2627.77">5366, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="167.5" y="2642.9028">+90.178s (14:8:39.333.106)</text><path d="M717,2621.2695 L717,2646.2695 L849,2646.2695 L849,2631.2695 L839,2621.2695 L717,2621.2695 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M839,2621.2695 L839,2631.2695 L849,2631.2695 L839,2621.2695 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="723" y="2638.3364">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,2688.2344,207.5,2692.2344,217.5,2696.2344,213.5,2692.2344" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="2692.2344" y2="2692.2344"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="2672.0356">5367, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="2687.1685">+90.178s (14:8:39.333.206)</text><path d="M415,2665.5352 L415,2690.5352 L521,2690.5352 L521,2675.5352 L511,2665.5352 L415,2665.5352 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2665.5352 L511,2675.5352 L521,2675.5352 L511,2665.5352 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2682.6021">UPF to gNB</text><polygon fill="#000000" points="398.5,2732.5,408.5,2736.5,398.5,2740.5,402.5,2736.5" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="2736.5" y2="2736.5"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="2716.3013">5368, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="2731.4341">+90.187s (14:8:39.342.053)</text><path d="M415,2709.8008 L415,2734.8008 L521,2734.8008 L521,2719.8008 L511,2709.8008 L415,2709.8008 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2709.8008 L511,2719.8008 L521,2719.8008 L511,2709.8008 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2726.8677">gNB to UPF</text><polygon fill="#000000" points="723,2776.7656,713,2780.7656,723,2784.7656,719,2780.7656" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="915" y1="2780.7656" y2="2780.7656"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="2760.5669">5369, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="2775.6997">+90.187s (14:8:39.342.243)</text><path d="M921,2754.0664 L921,2779.0664 L1087,2779.0664 L1087,2764.0664 L1077,2754.0664 L921,2754.0664 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,2754.0664 L1077,2764.0664 L1087,2764.0664 L1077,2754.0664 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="2771.1333">10.45.0.5 to 8.8.8.8</text><polygon fill="#000000" points="723,2821.0313,713,2825.0313,723,2829.0313,719,2825.0313" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="2825.0313" y2="2825.0313"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="2804.8325">5370, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="2819.9653">+90.187s (14:8:39.342.279)</text><path d="M1006,2798.332 L1006,2823.332 L1163,2823.332 L1163,2808.332 L1153,2798.332 L1006,2798.332 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2798.332 L1153,2808.332 L1163,2808.332 L1153,2798.332 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2815.3989">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,2865.2969,999.5,2869.2969,989.5,2873.2969,993.5,2869.2969" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="2869.2969" y2="2869.2969"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="2849.0981">5371, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="2864.231">+90.267s (14:8:39.421.907)</text><path d="M1006,2842.5977 L1006,2867.5977 L1163,2867.5977 L1163,2852.5977 L1153,2842.5977 L1006,2842.5977 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,2842.5977 L1153,2852.5977 L1163,2852.5977 L1153,2842.5977 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="2859.6646">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="904,2909.5625,914,2913.5625,904,2917.5625,908,2913.5625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="910" y1="2913.5625" y2="2913.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="2893.3638">5372, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="2908.4966">+90.267s (14:8:39.421.937)</text><path d="M921,2886.8633 L921,2911.8633 L1087,2911.8633 L1087,2896.8633 L1077,2886.8633 L921,2886.8633 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,2886.8633 L1077,2896.8633 L1087,2896.8633 L1077,2886.8633 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="2903.9302">8.8.8.8 to 10.45.0.5</text><polygon fill="#000000" points="217.5,2953.8281,207.5,2957.8281,217.5,2961.8281,213.5,2957.8281" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="2957.8281" y2="2957.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="2937.6294">5373, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="2952.7622">+90.267s (14:8:39.422.196)</text><path d="M415,2931.1289 L415,2956.1289 L521,2956.1289 L521,2941.1289 L511,2931.1289 L415,2931.1289 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2931.1289 L511,2941.1289 L521,2941.1289 L511,2931.1289 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2948.1958">UPF to gNB</text><polygon fill="#000000" points="398.5,2998.0938,408.5,3002.0938,398.5,3006.0938,402.5,3002.0938" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="3002.0938" y2="3002.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="2981.895">5389, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="2997.0278">+91.188s (14:8:40.343.254)</text><path d="M415,2975.3945 L415,3000.3945 L521,3000.3945 L521,2985.3945 L511,2975.3945 L415,2975.3945 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,2975.3945 L511,2985.3945 L521,2985.3945 L511,2975.3945 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="2992.4614">gNB to UPF</text><polygon fill="#000000" points="723,3042.3594,713,3046.3594,723,3050.3594,719,3046.3594" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="915" y1="3046.3594" y2="3046.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3026.1606">5390, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3041.2935">+91.189s (14:8:40.343.366)</text><path d="M921,3019.6602 L921,3044.6602 L1087,3044.6602 L1087,3029.6602 L1077,3019.6602 L921,3019.6602 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3019.6602 L1077,3029.6602 L1087,3029.6602 L1077,3019.6602 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3036.7271">10.45.0.5 to 8.8.8.8</text><polygon fill="#000000" points="723,3086.625,713,3090.625,723,3094.625,719,3090.625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="3090.625" y2="3090.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3070.4263">5391, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3085.5591">+91.189s (14:8:40.343.381)</text><path d="M1006,3063.9258 L1006,3088.9258 L1163,3088.9258 L1163,3073.9258 L1153,3063.9258 L1006,3063.9258 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3063.9258 L1153,3073.9258 L1163,3073.9258 L1153,3063.9258 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3080.9927">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,3130.8906,999.5,3134.8906,989.5,3138.8906,993.5,3134.8906" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="3134.8906" y2="3134.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3114.6919">5394, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="3129.8247">+91.265s (14:8:40.420.156)</text><path d="M1006,3108.1914 L1006,3133.1914 L1163,3133.1914 L1163,3118.1914 L1153,3108.1914 L1006,3108.1914 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3108.1914 L1153,3118.1914 L1163,3118.1914 L1153,3108.1914 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3125.2583">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="904,3175.1563,914,3179.1563,904,3183.1563,908,3179.1563" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="910" y1="3179.1563" y2="3179.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3158.9575">5395, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="3174.0903">+91.265s (14:8:40.420.218)</text><path d="M921,3152.457 L921,3177.457 L1087,3177.457 L1087,3162.457 L1077,3152.457 L921,3152.457 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3152.457 L1077,3162.457 L1087,3162.457 L1077,3152.457 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3169.5239">8.8.8.8 to 10.45.0.5</text><polygon fill="#000000" points="217.5,3219.4219,207.5,3223.4219,217.5,3227.4219,213.5,3223.4219" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="3223.4219" y2="3223.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="3203.2231">5396, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="3218.356">+91.266s (14:8:40.420.404)</text><path d="M415,3196.7227 L415,3221.7227 L521,3221.7227 L521,3206.7227 L511,3196.7227 L415,3196.7227 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,3196.7227 L511,3206.7227 L521,3206.7227 L511,3196.7227 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="3213.7896">UPF to gNB</text><polygon fill="#000000" points="398.5,3263.6875,408.5,3267.6875,398.5,3271.6875,402.5,3267.6875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="3267.6875" y2="3267.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="3247.4888">5398, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="3262.6216">+92.190s (14:8:41.344.456)</text><path d="M415,3240.9883 L415,3265.9883 L521,3265.9883 L521,3250.9883 L511,3240.9883 L415,3240.9883 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,3240.9883 L511,3250.9883 L521,3250.9883 L511,3240.9883 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="3258.0552">gNB to UPF</text><polygon fill="#000000" points="723,3307.9531,713,3311.9531,723,3315.9531,719,3311.9531" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="915" y1="3311.9531" y2="3311.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3291.7544">5399, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3306.8872">+92.190s (14:8:41.344.544)</text><path d="M921,3285.2539 L921,3310.2539 L1087,3310.2539 L1087,3295.2539 L1077,3285.2539 L921,3285.2539 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3285.2539 L1077,3295.2539 L1087,3295.2539 L1077,3285.2539 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3302.3208">10.45.0.5 to 8.8.8.8</text><polygon fill="#000000" points="723,3352.2188,713,3356.2188,723,3360.2188,719,3356.2188" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="3356.2188" y2="3356.2188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3336.02">5400, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3351.1528">+92.190s (14:8:41.344.559)</text><path d="M1006,3329.5195 L1006,3354.5195 L1163,3354.5195 L1163,3339.5195 L1153,3329.5195 L1006,3329.5195 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3329.5195 L1153,3339.5195 L1163,3339.5195 L1153,3329.5195 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3346.5864">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,3396.4844,999.5,3400.4844,989.5,3404.4844,993.5,3400.4844" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="3400.4844" y2="3400.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3380.2856">5401, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="3395.4185">+92.287s (14:8:41.441.977)</text><path d="M1006,3373.7852 L1006,3398.7852 L1163,3398.7852 L1163,3383.7852 L1153,3373.7852 L1006,3373.7852 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3373.7852 L1153,3383.7852 L1163,3383.7852 L1153,3373.7852 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3390.8521">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="904,3440.75,914,3444.75,904,3448.75,908,3444.75" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="910" y1="3444.75" y2="3444.75"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3424.5513">5402, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="3439.6841">+92.287s (14:8:41.442.007)</text><path d="M921,3418.0508 L921,3443.0508 L1087,3443.0508 L1087,3428.0508 L1077,3418.0508 L921,3418.0508 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3418.0508 L1077,3428.0508 L1087,3428.0508 L1077,3418.0508 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3435.1177">8.8.8.8 to 10.45.0.5</text><polygon fill="#000000" points="217.5,3485.0156,207.5,3489.0156,217.5,3493.0156,213.5,3489.0156" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="3489.0156" y2="3489.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="3468.8169">5403, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="3483.9497">+92.287s (14:8:41.442.095)</text><path d="M415,3462.3164 L415,3487.3164 L521,3487.3164 L521,3472.3164 L511,3462.3164 L415,3462.3164 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,3462.3164 L511,3472.3164 L521,3472.3164 L511,3462.3164 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="3479.3833">UPF to gNB</text><polygon fill="#000000" points="398.5,3529.2813,408.5,3533.2813,398.5,3537.2813,402.5,3533.2813" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="3533.2813" y2="3533.2813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="3513.0825">5404, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="3528.2153">+93.190s (14:8:42.345.106)</text><path d="M415,3506.582 L415,3531.582 L521,3531.582 L521,3516.582 L511,3506.582 L415,3506.582 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,3506.582 L511,3516.582 L521,3516.582 L511,3506.582 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="3523.6489">gNB to UPF</text><polygon fill="#000000" points="723,3573.5469,713,3577.5469,723,3581.5469,719,3577.5469" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="915" y1="3577.5469" y2="3577.5469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3557.3481">5405, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3572.481">+93.190s (14:8:42.345.195)</text><path d="M921,3550.8477 L921,3575.8477 L1087,3575.8477 L1087,3560.8477 L1077,3550.8477 L921,3550.8477 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3550.8477 L1077,3560.8477 L1087,3560.8477 L1077,3550.8477 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3567.9146">10.45.0.5 to 8.8.8.8</text><polygon fill="#000000" points="723,3617.8125,713,3621.8125,723,3625.8125,719,3621.8125" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="3621.8125" y2="3621.8125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3601.6138">5406, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3616.7466">+93.190s (14:8:42.345.211)</text><path d="M1006,3595.1133 L1006,3620.1133 L1163,3620.1133 L1163,3605.1133 L1153,3595.1133 L1006,3595.1133 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3595.1133 L1153,3605.1133 L1163,3605.1133 L1153,3595.1133 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3612.1802">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,3662.0781,999.5,3666.0781,989.5,3670.0781,993.5,3666.0781" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="3666.0781" y2="3666.0781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3645.8794">5407, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="3661.0122">+93.216s (14:8:42.370.643)</text><path d="M1006,3639.3789 L1006,3664.3789 L1163,3664.3789 L1163,3649.3789 L1153,3639.3789 L1006,3639.3789 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3639.3789 L1153,3649.3789 L1163,3649.3789 L1153,3639.3789 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3656.4458">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="904,3706.3438,914,3710.3438,904,3714.3438,908,3710.3438" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="910" y1="3710.3438" y2="3710.3438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3690.145">5408, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="719" y="3705.2778">+93.216s (14:8:42.370.68)</text><path d="M921,3683.6445 L921,3708.6445 L1087,3708.6445 L1087,3693.6445 L1077,3683.6445 L921,3683.6445 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3683.6445 L1077,3693.6445 L1087,3693.6445 L1077,3683.6445 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3700.7114">8.8.8.8 to 10.45.0.5</text><polygon fill="#000000" points="217.5,3750.6094,207.5,3754.6094,217.5,3758.6094,213.5,3754.6094" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="3754.6094" y2="3754.6094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="3734.4106">5409, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="3749.5435">+93.216s (14:8:42.370.792)</text><path d="M415,3727.9102 L415,3752.9102 L521,3752.9102 L521,3737.9102 L511,3727.9102 L415,3727.9102 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,3727.9102 L511,3737.9102 L521,3737.9102 L511,3727.9102 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="3744.9771">UPF to gNB</text><polygon fill="#000000" points="398.5,3794.875,408.5,3798.875,398.5,3802.875,402.5,3798.875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="404.5" y1="3798.875" y2="3798.875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="213.5" y="3778.6763">5412, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="213.5" y="3793.8091">+94.192s (14:8:43.346.801)</text><path d="M415,3772.1758 L415,3797.1758 L521,3797.1758 L521,3782.1758 L511,3772.1758 L415,3772.1758 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,3772.1758 L511,3782.1758 L521,3782.1758 L511,3772.1758 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="3789.2427">gNB to UPF</text><polygon fill="#000000" points="723,3839.1406,713,3843.1406,723,3847.1406,719,3843.1406" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="915" y1="3843.1406" y2="3843.1406"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3822.9419">5413, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3838.0747">+94.192s (14:8:43.346.895)</text><path d="M921,3816.4414 L921,3841.4414 L1087,3841.4414 L1087,3826.4414 L1077,3816.4414 L921,3816.4414 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3816.4414 L1077,3826.4414 L1087,3826.4414 L1077,3816.4414 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3833.5083">10.45.0.5 to 8.8.8.8</text><polygon fill="#000000" points="723,3883.4063,713,3887.4063,723,3891.4063,719,3887.4063" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="717" x2="1000.5" y1="3887.4063" y2="3887.4063"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="729" y="3867.2075">5414, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="729" y="3882.3403">+94.192s (14:8:43.346.911)</text><path d="M1006,3860.707 L1006,3885.707 L1163,3885.707 L1163,3870.707 L1153,3860.707 L1006,3860.707 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3860.707 L1153,3870.707 L1163,3870.707 L1153,3860.707 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3877.7739">10.0.2.4 to 8.8.8.8</text><polygon fill="#000000" points="989.5,3927.6719,999.5,3931.6719,989.5,3935.6719,993.5,3931.6719" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="995.5" y1="3931.6719" y2="3931.6719"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3911.4731">5423, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="719" y="3926.606">+94.304s (14:8:43.458.75)</text><path d="M1006,3904.9727 L1006,3929.9727 L1163,3929.9727 L1163,3914.9727 L1153,3904.9727 L1006,3904.9727 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1153,3904.9727 L1153,3914.9727 L1163,3914.9727 L1153,3904.9727 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="1012" y="3922.0396">8.8.8.8 to 10.0.2.4</text><polygon fill="#000000" points="904,3971.9375,914,3975.9375,904,3979.9375,908,3975.9375" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="712" x2="910" y1="3975.9375" y2="3975.9375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71" x="719" y="3955.7388">5424, ICMP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="719" y="3970.8716">+94.304s (14:8:43.458.774)</text><path d="M921,3949.2383 L921,3974.2383 L1087,3974.2383 L1087,3959.2383 L1077,3949.2383 L921,3949.2383 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1077,3949.2383 L1077,3959.2383 L1087,3959.2383 L1077,3949.2383 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="927" y="3966.3052">8.8.8.8 to 10.45.0.5</text><polygon fill="#000000" points="217.5,4016.2031,207.5,4020.2031,217.5,4024.2031,213.5,4020.2031" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="409.5" y1="4020.2031" y2="4020.2031"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="118" x="223.5" y="4000.0044">5427, GTP&lt;ICMP&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="223.5" y="4015.1372">+94.304s (14:8:43.459.015)</text><path d="M415,3993.5039 L415,4018.5039 L521,4018.5039 L521,4003.5039 L511,3993.5039 L415,3993.5039 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M511,3993.5039 L511,4003.5039 L521,4003.5039 L511,3993.5039 " fill="#FBFB77" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="421" y="4010.5708">UPF to gNB</text><!--MD5=[cf0cefa1b221547268616fd89f338c35]
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "UPF"
+participant "AMF"
+participant "SMF"
+participant "SGWU"
+participant "SGWC"
+participant "8.8.8.8"
+participant "10.45.0.5"
+participant "10.0.2.4"
+
+"gNB" -> "UPF": 5146, GTP<ICMP>\n+82.084s (14:8:31.239.314)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 5147, ICMP\n+82.085s (14:8:31.239.43)
+
+note right
+**UE_2 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5148, ICMP\n+82.085s (14:8:31.239.454)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5149, ICMP\n+82.105s (14:8:31.259.526)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_2": 5150, ICMP\n+82.105s (14:8:31.259.553)
+
+note right
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 5151, GTP<ICMP>\n+82.105s (14:8:31.259.634)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5240, GTP<ICMP>\n+83.085s (14:8:32.240.09)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 5241, ICMP\n+83.085s (14:8:32.240.23)
+
+note right
+**UE_2 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5242, ICMP\n+83.085s (14:8:32.240.284)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5243, ICMP\n+83.130s (14:8:32.284.627)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_2": 5244, ICMP\n+83.130s (14:8:32.284.72)
+
+note right
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 5245, GTP<ICMP>\n+83.130s (14:8:32.284.88)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5251, GTP<ICMP>\n+84.189s (14:8:33.343.735)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 5252, ICMP\n+84.189s (14:8:33.343.846)
+
+note right
+**UE_2 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5253, ICMP\n+84.189s (14:8:33.343.861)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5255, ICMP\n+84.230s (14:8:33.384.781)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_2": 5256, ICMP\n+84.230s (14:8:33.384.813)
+
+note right
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 5257, GTP<ICMP>\n+84.230s (14:8:33.384.902)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5311, GTP<ICMP>\n+85.121s (14:8:34.275.955)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 5312, ICMP\n+85.121s (14:8:34.276.07)
+
+note right
+**UE_2 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5313, ICMP\n+85.121s (14:8:34.276.256)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5314, ICMP\n+85.164s (14:8:34.318.594)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_2": 5315, ICMP\n+85.164s (14:8:34.318.636)
+
+note right
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 5316, GTP<ICMP>\n+85.165s (14:8:34.319.795)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5329, GTP<ICMP>\n+86.097s (14:8:35.251.73)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 5330, ICMP\n+86.097s (14:8:35.251.917)
+
+note right
+**UE_2 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5331, ICMP\n+86.097s (14:8:35.252.003)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5332, ICMP\n+86.132s (14:8:35.286.949)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_2": 5333, ICMP\n+86.132s (14:8:35.286.976)
+
+note right
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 5334, GTP<ICMP>\n+86.132s (14:8:35.287.058)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5335, GTP<ICMP>\n+86.139s (14:8:35.293.479)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5336, ICMP\n+86.139s (14:8:35.293.571)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5337, ICMP\n+86.139s (14:8:35.293.594)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5338, ICMP\n+86.158s (14:8:35.313.188)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5339, ICMP\n+86.158s (14:8:35.313.229)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5340, GTP<ICMP>\n+86.159s (14:8:35.313.334)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5341, GTP<ICMP>\n+87.154s (14:8:36.308.481)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5342, ICMP\n+87.154s (14:8:36.308.612)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5343, ICMP\n+87.154s (14:8:36.308.639)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5344, ICMP\n+87.179s (14:8:36.333.383)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5345, ICMP\n+87.179s (14:8:36.333.424)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5346, GTP<ICMP>\n+87.179s (14:8:36.333.516)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5349, GTP<ICMP>\n+88.152s (14:8:37.306.402)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5350, ICMP\n+88.152s (14:8:37.306.491)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5351, ICMP\n+88.152s (14:8:37.306.506)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5352, ICMP\n+88.191s (14:8:37.345.434)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5353, ICMP\n+88.191s (14:8:37.345.471)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5354, GTP<ICMP>\n+88.191s (14:8:37.345.575)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5356, GTP<ICMP>\n+89.153s (14:8:38.307.517)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5357, ICMP\n+89.153s (14:8:38.307.732)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5358, ICMP\n+89.153s (14:8:38.307.755)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5359, ICMP\n+89.182s (14:8:38.336.596)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5360, ICMP\n+89.182s (14:8:38.336.624)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5361, GTP<ICMP>\n+89.182s (14:8:38.336.705)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5362, GTP<ICMP>\n+90.154s (14:8:39.308.691)
+
+note right
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 5363, ICMP\n+90.154s (14:8:39.308.784)
+
+note right
+**UE_3 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5364, ICMP\n+90.154s (14:8:39.308.801)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5365, ICMP\n+90.178s (14:8:39.333.075)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "UE_3": 5366, ICMP\n+90.178s (14:8:39.333.106)
+
+note right
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 5367, GTP<ICMP>\n+90.178s (14:8:39.333.206)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5368, GTP<ICMP>\n+90.187s (14:8:39.342.053)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5369, ICMP\n+90.187s (14:8:39.342.243)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5370, ICMP\n+90.187s (14:8:39.342.279)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5371, ICMP\n+90.267s (14:8:39.421.907)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5372, ICMP\n+90.267s (14:8:39.421.937)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5373, GTP<ICMP>\n+90.267s (14:8:39.422.196)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5389, GTP<ICMP>\n+91.188s (14:8:40.343.254)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5390, ICMP\n+91.189s (14:8:40.343.366)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5391, ICMP\n+91.189s (14:8:40.343.381)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5394, ICMP\n+91.265s (14:8:40.420.156)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5395, ICMP\n+91.265s (14:8:40.420.218)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5396, GTP<ICMP>\n+91.266s (14:8:40.420.404)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5398, GTP<ICMP>\n+92.190s (14:8:41.344.456)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5399, ICMP\n+92.190s (14:8:41.344.544)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5400, ICMP\n+92.190s (14:8:41.344.559)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5401, ICMP\n+92.287s (14:8:41.441.977)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5402, ICMP\n+92.287s (14:8:41.442.007)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5403, GTP<ICMP>\n+92.287s (14:8:41.442.095)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5404, GTP<ICMP>\n+93.190s (14:8:42.345.106)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5405, ICMP\n+93.190s (14:8:42.345.195)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5406, ICMP\n+93.190s (14:8:42.345.211)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5407, ICMP\n+93.216s (14:8:42.370.643)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5408, ICMP\n+93.216s (14:8:42.370.68)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5409, GTP<ICMP>\n+93.216s (14:8:42.370.792)
+
+note right
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 5412, GTP<ICMP>\n+94.192s (14:8:43.346.801)
+
+note right
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 5413, ICMP\n+94.192s (14:8:43.346.895)
+
+note right
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"10.0.2.4" -> "8.8.8.8": 5414, ICMP\n+94.192s (14:8:43.346.911)
+
+note right
+**10.0.2.4 to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "10.0.2.4": 5423, ICMP\n+94.304s (14:8:43.458.75)
+
+note right
+**8.8.8.8 to 10.0.2.4**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 5424, ICMP\n+94.304s (14:8:43.458.774)
+
+note right
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 5427, GTP<ICMP>\n+94.304s (14:8:43.459.015)
+
+note right
+**UPF to gNB**
+end note
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 11:24:54 CET 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.17+8-post-Ubuntu-1ubuntu220.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

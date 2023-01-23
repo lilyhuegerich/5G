@@ -1,0 +1,280 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "127.0.0.2"
+participant "8.8.8.8"
+participant "10.45.0.11"
+participant "127.0.0.8"
+participant "N1\n(10.0.2.15)" as 10.0.2.15
+participant "10.45.0.12"
+participant "10.0.12.1"
+participant "N1\n(10.0.3.1)" as 10.0.3.1
+participant "10.0.17.1"
+participant "127.0.0.9"
+participant "10.45.0.10"
+participant "127.0.0.4"
+participant "10.0.13.1"
+participant "10.0.2.4"
+participant "10.0.14.1"
+participant "10.45.0.13"
+
+"10.0.2.15" -> "10.0.17.1": 3301, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.45.0.12" -> "8.8.8.8": 3302, ICMP
+
+note right
+**10.45.0.12 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3303, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3304, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.45.0.12": 3305, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.12**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3306, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3307, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.45.0.13" -> "8.8.8.8": 3308, ICMP
+
+note right
+**10.45.0.13 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3309, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3310, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"8.8.8.8" -> "10.45.0.13": 3311, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.13**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3312, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3317, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.45.0.13" -> "8.8.8.8": 3318, ICMP
+
+note right
+**10.45.0.13 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3319, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3324, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"8.8.8.8" -> "10.45.0.13": 3325, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.13**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3326, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3333, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.45.0.13" -> "8.8.8.8": 3334, ICMP
+
+note right
+**10.45.0.13 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3335, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3336, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"8.8.8.8" -> "10.45.0.13": 3337, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.13**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3338, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3343, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.45.0.13" -> "8.8.8.8": 3344, ICMP
+
+note right
+**10.45.0.13 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3345, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3346, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.45.0.13": 3347, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.13**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3348, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3361, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.45.0.13" -> "8.8.8.8": 3362, ICMP
+
+note right
+**10.45.0.13 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3363, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3364, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.45.0.13": 3365, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.13**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3366, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+@enduml

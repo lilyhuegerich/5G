@@ -1,0 +1,100 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "UPF"
+participant "AMF"
+participant "SMF"
+participant "SGWU"
+participant "SGWC"
+participant "127.0.0.4"
+participant "10.0.2.4"
+participant "127.0.0.9"
+participant "127.0.0.8"
+participant "127.0.0.2"
+participant "10.45.0.5"
+participant "8.8.8.8"
+
+"SGWU" -> "SGWC": 5890, PFCP req.\nPFCP Heartbeat Request (1)\n+128.734s (14:9:17.889.116)
+
+note right #80b3ff
+**SGWU to SGWC**
+end note
+
+"SGWC" -> "SGWU": 5891, PFCP rsp.\nPFCP Heartbeat Response (2)\n+128.735s (14:9:17.889.323)
+
+note right #cce0ff
+**SGWC to SGWU**
+end note
+
+"SGWC" -> "SGWU": 5892, PFCP req.\nPFCP Heartbeat Request (1)\n+128.735s (14:9:17.889.368)
+
+note right #80b3ff
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 5893, PFCP rsp.\nPFCP Heartbeat Response (2)\n+128.735s (14:9:17.889.501)
+
+note right #cce0ff
+**SGWU to SGWC**
+end note
+
+"SMF" -> "UPF": 5918, PFCP req.\nPFCP Heartbeat Request (1)\n+134.316s (14:9:23.471.026)
+
+note right #80b3ff
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 5919, PFCP rsp.\nPFCP Heartbeat Response (2)\n+134.316s (14:9:23.471.234)
+
+note right #cce0ff
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 5920, PFCP req.\nPFCP Heartbeat Request (1)\n+134.317s (14:9:23.471.374)
+
+note right #80b3ff
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 5924, PFCP rsp.\nPFCP Heartbeat Response (2)\n+134.321s (14:9:23.475.509)
+
+note right #cce0ff
+**SMF to UPF**
+end note
+
+"SGWU" -> "SGWC": 6084, PFCP req.\nPFCP Heartbeat Request (1)\n+139.736s (14:9:28.890.377)
+
+note right #80b3ff
+**SGWU to SGWC**
+end note
+
+"SGWC" -> "SGWU": 6085, PFCP rsp.\nPFCP Heartbeat Response (2)\n+139.736s (14:9:28.890.532)
+
+note right #cce0ff
+**SGWC to SGWU**
+end note
+
+"SGWC" -> "SGWU": 6086, PFCP req.\nPFCP Heartbeat Request (1)\n+139.736s (14:9:28.890.586)
+
+note right #80b3ff
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 6087, PFCP rsp.\nPFCP Heartbeat Response (2)\n+139.736s (14:9:28.890.782)
+
+note right #cce0ff
+**SGWU to SGWC**
+end note
+
+@enduml

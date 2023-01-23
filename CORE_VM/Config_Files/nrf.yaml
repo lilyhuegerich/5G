@@ -2,7 +2,15 @@ logger:
   file: /var/log/open5gs/nrf.log
 nrf:
   sbi:
-  - 10.0.8.1
+  - addr: 10.0.8.1
+    port: 7777
+scp:
+  sbi:
+  - addr: 10.0.8.1
+    port: 7777
+
 parameter:
+  no_ipv6: true
+  level: debug
 max:
 time:

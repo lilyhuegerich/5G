@@ -6,16 +6,12 @@ smf:
     port: 7777
   pfcp:
   - addr: 10.0.14.1
-  - addr: ::1
   gtpc:
   - addr: 10.0.14.1
-  - addr: ::1
   gtpu:
   - addr: 10.0.14.1
-  - addr: ::1
   subnet:
   - addr: 10.45.0.1/16
-  - addr: 2001:db8:cafe::1/48
   dns:
   - 8.8.8.8
   - 8.8.4.4
@@ -28,12 +24,13 @@ smf:
 
 nrf:
   sbi:
-  - 10.0.8.1
+  - addr: 10.0.8.1
+    port: 7777
 upf:
   pfcp:
-  - addr: 127.0.0.7
-
+    addr: 10.0.17.1
 parameter:
+  no_ipv6: true
 
 max:
 time:

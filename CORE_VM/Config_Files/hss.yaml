@@ -6,4 +6,5 @@ hss:
   freeDiameter: /etc/freeDiameter/hss.conf
 
 parameter:
+  no_ipv6: true
 max:

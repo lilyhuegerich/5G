@@ -1,0 +1,2533 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "N1\n(10.0.2.15)" as 10.0.2.15
+participant "10.0.14.1"
+participant "10.0.17.1"
+participant "127.0.0.2"
+participant "8.8.8.8"
+participant "10.45.0.11"
+participant "127.0.0.8"
+participant "10.45.0.12"
+participant "10.0.12.1"
+participant "N1\n(10.0.3.1)" as 10.0.3.1
+participant "127.0.0.9"
+participant "10.45.0.10"
+participant "127.0.0.4"
+participant "10.0.13.1"
+participant "10.0.2.4"
+participant "10.45.0.13"
+
+"10.0.14.1" -> "10.0.17.1": 2606, PFCP req.\nPFCP Session Deletion Request (54)
+
+note right #80b3ff
+**10.0.14.1 to 10.0.17.1**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Deletion Request (54)'
+pfcp.length: 'Length: 12'
+pfcp.seid: 'SEID: 0x0000000000000008'
+pfcp.seqno: 'Sequence Number: 233'
+pfcp.spare_oct: 'Spare: 0'
+pfcp.response_in: 'Response In: 2607'
+
+end note
+
+"10.0.17.1" -> "10.0.14.1": 2607, PFCP rsp.\nPFCP Session Deletion Response (55)
+
+note right #cce0ff
+**10.0.17.1 to 10.0.14.1**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Deletion Response (55)'
+pfcp.length: 'Length: 129'
+pfcp.seid: 'SEID: 0x0000000000000008'
+pfcp.seqno: 'Sequence Number: 233'
+pfcp.spare_oct: 'Spare: 0'
+'Cause : Request accepted(success)':
+-   pfcp.ie_type: 'IE Type: Cause (19)'
+    pfcp.ie_len: 'IE Length: 1'
+    pfcp.cause: 'Cause: Request accepted(success) (1)'
+'Usage Report (Session Deletion Response) : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Usage Report (Session Deletion Response) (79)'
+    pfcp.ie_len: 'IE Length: 108'
+    'URR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: URR ID (81)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.urr_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.urr_id: '.000 0000 0000 0000 0000 0000 0000 0001 = URR ID: 1'
+    'UR-SEQN : 0':
+        pfcp.ie_type: 'IE Type: UR-SEQN (104)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.ur_seqn: 'UR-SEQN: 0'
+    'Usage Report Trigger : ':
+        pfcp.ie_type: 'IE Type: Usage Report Trigger (63)'
+        pfcp.ie_len: 'IE Length: 3'
+        pfcp.usage_report_trigger.immer: '0... .... = IMMER (Immediate Report): False'
+        pfcp.usage_report_trigger_flags.droth: '.0.. .... = DROTH (Dropped DL Traffic Threshold): False'
+        pfcp.usage_report_trigger_flags.stopt: '..0. .... = STOPT (Stop of Traffic): False'
+        pfcp.usage_report_trigger_flags.start: '...0 .... = START (Start of Traffic): False'
+        pfcp.usage_report_trigger_flags.quhti: '.... 0... = QUHTI (Quota Holding Time): False'
+        pfcp.usage_report_trigger_flags.timth: '.... .0.. = TIMTH (Time Threshold): False'
+        pfcp.usage_report_trigger_flags.volth: '.... ..0. = VOLTH (Volume Threshold): False'
+        pfcp.usage_report_trigger_flags.perio: '.... ...0 = PERIO (Periodic Reporting): False'
+        pfcp.usage_report_trigger_flags.eveth: '0... .... = EVETH (Event Threshold): False'
+        pfcp.usage_report_trigger_flags.macar: '.0.. .... = MACAR (MAC Addresses Reporting): False'
+        pfcp.usage_report_trigger_flags.envcl: '..0. .... = ENVCL (Envelope Closure): False'
+        pfcp.usage_report_trigger.monit: '...0 .... = MONIT (Monitoring Time): False'
+        pfcp.usage_report_trigger.term: '.... 1... = TERMR (Termination Report): True'
+        pfcp.usage_report_trigger_flags.liusa: '.... .0.. = LIUSA (Linked Usage Reporting): False'
+        pfcp.usage_report_trigger_flags.timqu: '.... ..0. = TIMQU (Time Quota): False'
+        pfcp.usage_report_trigger_flags.volqu: '.... ...0 = VOLQU (Volume Quota): False'
+        pfcp.spare_b7_b2: '0000 00.. = Spare: 0'
+        pfcp.usage_report_trigger_flags.tebur: '.... ..0. = TEMUR (Termination By UP function Report): False'
+        pfcp.usage_report_trigger_flags.evequ: '.... ...0 = EVEQU (Event Quota): False'
+    'End Time : Dec 29, 2022 16:07:13.000000000 UTC':
+        pfcp.ie_type: 'IE Type: End Time (76)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.start_time: 'End Time: Dec 29, 2022 16:07:13.000000000 UTC'
+    'Volume Measurement : ':
+        pfcp.ie_type: 'IE Type: Volume Measurement (66)'
+        pfcp.ie_len: 'IE Length: 49'
+        pfcp.volume_measurement:
+            pfcp.spare_b7_b3: '0011 1... = Spare: 7'
+            pfcp.volume_measurement_flags.dlvol: '.... .1.. = DLVOL: True'
+            pfcp.volume_measurement_flags.ulvol: '.... ..1. = ULVOL: True'
+            pfcp.volume_measurement_flags.tovol: '.... ...1 = TOVOL: True'
+        pfcp.volume_measurement.tovol: 'Total Volume: 0'
+        pfcp.volume_measurement.ulvol: 'Uplink Volume: 0'
+        pfcp.volume_measurement.dlvol: 'Downlink Volume: 0'
+        IE data not decoded by WS yet:
+            _ws.expert:
+                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
+                _ws.expert.message: 'Message: IE data not decoded by WS yet'
+                _ws.expert.severity: 'Severity level: Note'
+                _ws.expert.group: 'Group: Undecoded'
+    'Duration Measurement : 1672330033 s':
+        pfcp.ie_type: 'IE Type: Duration Measurement (67)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.duration_measurement: 'Duration: 1672330033'
+    'Time of First Packet : NULL':
+        pfcp.ie_type: 'IE Type: Time of First Packet (69)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.time_of_first_packet: 'Time of First Packet: NULL'
+    'Time of Last Packet : NULL':
+        pfcp.ie_type: 'IE Type: Time of Last Packet (70)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.time_of_last_packet: 'Time of Last Packet: NULL'
+pfcp.response_to: 'Response To: 2606'
+pfcp.response_time: 'Response Time: 0.000268240 seconds'
+
+end note
+
+"10.0.3.1" -> "10.0.2.15": 2629, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)
+
+note right #8cd98c
+**10.0.3.1 to 10.0.2.15**
+NGAP-PDU: 0004403e000003000a000200140055000200040026002b2a7e0056020200002106b2b7ee1c79dd55f7f66640faf1df982010e81300df7a2380001878204549d09dd6
+ngap.procedureCode: 'procedureCode: id-DownlinkNASTransport (4)'
+per.enum_index: 'Enumerated Index: 1'
+ngap.criticality: 'criticality: ignore (1)'
+per.open_type_length: 'Open Type Length: 62'
+ngap.value_element:
+-   ngap.DownlinkNASTransport_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 3'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 43'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 42'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: Authentication request (0x56)'
+                                NAS key set identifier - ngKSI:
+                                    nas_5gs.mm.tsc: '.... 0... = Type of security context flag (TSC): Native security context (for KSIAMF)'
+                                    nas_5gs.mm.nas_key_set_id: '.... .010 = NAS key set identifier: 2'
+                                ABBA:
+                                    gsm_a.len: 'Length: 2'
+                                    nas_5gs.mm.abba_contents: 'ABBA Contents: 0x0000'
+                                Authentication Parameter RAND - 5G authentication challenge:
+                                    gsm_a.dtap.elem_id: 'Element ID: 0x21'
+                                    gsm_a.dtap.rand: 'RAND value: 06b2b7ee1c79dd55f7f66640faf1df98'
+                                Authentication Parameter AUTN (UMTS and EPS authentication challenge) - 5G authentication challenge:
+                                    gsm_a.dtap.elem_id: 'Element ID: 0x20'
+                                    gsm_a.len: 'Length: 16'
+                                    gsm_a.dtap.autn:
+                                        gsm_a.dtap.autn.sqn_xor_ak: 'SQN xor AK: e81300df7a23'
+                                        gsm_a.dtap.autn.amf: 'AMF: 8000'
+                                        gsm_a.dtap.autn.mac: 'MAC: 1878204549d09dd6'
+
+end note
+
+"10.0.2.15" -> "10.0.3.1": 2630, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)
+
+note right #c6ebc6
+**10.0.2.15 to 10.0.3.1**
+NGAP-PDU: 002e4040000004000a0002001400550002000400260016157e00572d106eb000e0e5c9e5fa49e4d9b75efae787007940135009f107000000010009f107000001e74c1dd3
+ngap.procedureCode: 'procedureCode: id-UplinkNASTransport (46)'
+per.enum_index: 'Enumerated Index: 1'
+ngap.criticality: 'criticality: ignore (1)'
+per.open_type_length: 'Open Type Length: 64'
+ngap.value_element:
+-   ngap.UplinkNASTransport_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 4'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 22'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 21'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: Authentication response (0x57)'
+                                Authentication response parameter:
+                                    nas_eps.emm.elem_id: 'Element ID: 0x2d'
+                                    gsm_a.len: 'Length: 16'
+                                    nas_eps.emm.res: 'RES: 6eb000e0e5c9e5fa49e4d9b75efae787'
+            'Item 3: id-UserLocationInformation':
+                ngap.id: 'id: id-UserLocationInformation (121)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 19'
+                ngap.value_element:
+                    per.choice_index: 'Choice Index: 1'
+                    ngap.UserLocationInformation:
+                        ngap.userLocationInformationNR_element:
+                            per.extension_bit: '..0. .... Extension Bit: False'
+                            per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
+                            ngap.nR_CGI_element:
+                                per.extension_bit: '.... .0.. Extension Bit: False'
+                                per.optional_field_bit: '.... ..0. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.NRCellIdentity: 'nRCellIdentity: 0x0000000010'
+                            ngap.tAI_element:
+                                per.extension_bit: '.... 0... Extension Bit: False'
+                                per.optional_field_bit: '.... .0.. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.tAC: 'tAC: 1 (0x000001)'
+                            ngap.timeStamp: 'timeStamp: e74c1dd3 (Dec 20, 2022 11:41:07 UTC)'
+
+end note
+
+"10.0.3.1" -> "10.0.2.15": 2653, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)
+
+note right #c6ebc6
+**10.0.3.1 to 10.0.2.15**
+NGAP-PDU: 00044029000003000a0002001400550002000400260016157e0307b1cf00007e005d020204f0f0f0f0e1360102
+ngap.procedureCode: 'procedureCode: id-DownlinkNASTransport (4)'
+per.enum_index: 'Enumerated Index: 1'
+ngap.criticality: 'criticality: ignore (1)'
+per.open_type_length: 'Open Type Length: 41'
+ngap.value_element:
+-   ngap.DownlinkNASTransport_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 3'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 22'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 21'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Security protected NAS 5GS message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0011 = Security header type: Integrity protected with new 5GS security context (3)'
+                                nas_5gs.msg_auth_code: 'Message authentication code: 0x07b1cf00'
+                                nas_5gs.seq_no: 'Sequence number: 0'
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: Security mode command (0x5d)'
+                                NAS security algorithms:
+                                    nas_5gs.mm.nas_sec_algo_enc: '0000 .... = Type of ciphering algorithm: 5G-EA0 (null ciphering algorithm) (0)'
+                                    nas_5gs.mm.nas_sec_algo_ip: '.... 0010 = Type of integrity protection algorithm: 128-5G-IA2 (2)'
+                                NAS key set identifier - ngKSI:
+                                    nas_5gs.mm.tsc: '.... 0... = Type of security context flag (TSC): Native security context (for KSIAMF)'
+                                    nas_5gs.mm.nas_key_set_id: '.... .010 = NAS key set identifier: 2'
+                                UE security capability - Replayed UE security capabilities:
+                                    gsm_a.len: 'Length: 4'
+                                    nas_5gs.mm.5g_ea0: '1... .... = 5G-EA0: Supported'
+                                    nas_5gs.mm.128_5g_ea1: '.1.. .... = 128-5G-EA1: Supported'
+                                    nas_5gs.mm.128_5g_ea2: '..1. .... = 128-5G-EA2: Supported'
+                                    nas_5gs.mm.128_5g_ea3: '...1 .... = 128-5G-EA3: Supported'
+                                    nas_5gs.mm.5g_ea4: '.... 0... = 5G-EA4: Not supported'
+                                    nas_5gs.mm.5g_ea5: '.... .0.. = 5G-EA5: Not supported'
+                                    nas_5gs.mm.5g_ea6: '.... ..0. = 5G-EA6: Not supported'
+                                    nas_5gs.mm.5g_ea7: '.... ...0 = 5G-EA7: Not supported'
+                                    nas_5gs.mm.ia0: '1... .... = 5G-IA0: Supported'
+                                    nas_5gs.mm.5g_128_ia1: '.1.. .... = 128-5G-IA1: Supported'
+                                    nas_5gs.mm.5g_128_ia2: '..1. .... = 128-5G-IA2: Supported'
+                                    nas_5gs.mm.5g_128_ia4: '.... 0... = 5G-IA4: Not supported'
+                                    nas_5gs.mm.5g_ia5: '.... .0.. = 5G-IA5: Not supported'
+                                    nas_5gs.mm.5g_ia6: '.... ..0. = 5G-IA6: Not supported'
+                                    nas_5gs.mm.5g_ia7: '.... ...0 = 5G-IA7: Not supported'
+                                    nas_5gs.mm.eea0: '1... .... = EEA0: Supported'
+                                    nas_5gs.mm.128eea1: '.1.. .... = 128-EEA1: Supported'
+                                    nas_5gs.mm.128eea2: '..1. .... = 128-EEA2: Supported'
+                                    nas_5gs.mm.eea3: '...1 .... = 128-EEA3: Supported'
+                                    nas_5gs.mm.eea4: '.... 0... = EEA4: Not supported'
+                                    nas_5gs.mm.eea5: '.... .0.. = EEA5: Not supported'
+                                    nas_5gs.mm.eea6: '.... ..0. = EEA6: Not supported'
+                                    nas_5gs.mm.eea7: '.... ...0 = EEA7: Not supported'
+                                    nas_5gs.mm.eia0: '1... .... = EIA0: Supported'
+                                    nas_5gs.mm.128eia1: '.1.. .... = 128-EIA1: Supported'
+                                    nas_5gs.mm.128eia2: '..1. .... = 128-EIA2: Supported'
+                                    nas_5gs.mm.eia3: '...1 .... = 128-EIA3: Supported'
+                                    nas_5gs.mm.eia4: '.... 0... = EIA4: Not supported'
+                                    nas_5gs.mm.eia5: '.... .0.. = EIA5: Not supported'
+                                    nas_5gs.mm.eia6: '.... ..0. = EIA6: Not supported'
+                                    nas_5gs.mm.eia7: '.... ...0 = EIA7: Not supported'
+                                IMEISV request:
+                                    gsm_a.common.elem_id: '1110 .... = Element ID: 0xe-'
+                                    nas_eps.spare_bits: '.... 0... = Spare bit(s): 0x00'
+                                    nas_eps.emm.imeisv_req: '.... .001 = IMEISV request: IMEISV requested (1)'
+                                Additional 5G security information:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x36'
+                                    gsm_a.len: 'Length: 1'
+                                    nas_5gs.spare_b3: '.... 0... = Spare: 0'
+                                    nas_5gs.spare_b2: '.... .0.. = Spare: 0'
+                                    nas_5gs.mm.rinmr: '.... ..1. = Retransmission of initial NAS message request(RINMR): Requested'
+                                    nas_5gs.mm.hdp: '.... ...0 = Horizontal derivation parameter (HDP): Not required'
+
+end note
+
+"10.0.2.15" -> "10.0.3.1": 2654, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)
+
+note right #8cd98c
+**10.0.2.15 to 10.0.3.1**
+NGAP-PDU: 002e4067000004000a000200140055000200040026003d3c7e04e660e19f007e005e7700094573806121856151f17100237e004179000d0109f1070000000000000000401001002e04f0f0f0f02f020101530100007940135009f107000000010009f107000001e74c1dd3
+ngap.procedureCode: 'procedureCode: id-UplinkNASTransport (46)'
+per.enum_index: 'Enumerated Index: 1'
+ngap.criticality: 'criticality: ignore (1)'
+per.open_type_length: 'Open Type Length: 103'
+ngap.value_element:
+-   ngap.UplinkNASTransport_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 4'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 61'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 60'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Security protected NAS 5GS message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0100 = Security header type: Integrity protected and ciphered with new 5GS security context (4)'
+                                nas_5gs.msg_auth_code: 'Message authentication code: 0xe660e19f'
+                                nas_5gs.seq_no: 'Sequence number: 0'
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: Security mode complete (0x5e)'
+                                5GS mobile identity:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x77'
+                                    gsm_a.len: 'Length: 9'
+                                    nas_5gs.mm.odd_even: '.... 0... = Odd/even indication: Even number of identity digits'
+                                    nas_5gs.mm.type_id: '.... .101 = Type of identity: IMEISV (5)'
+                                    nas_5gs.mm.imeisv: 'IMEISV: 4370816125816151'
+                                NAS message container:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x71'
+                                    gsm_a.len: 'Length: 35'
+                                    nas-5gs:
+                                        Plain NAS 5GS Message:
+                                            nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                            nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                            nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                            nas_5gs.mm.message_type: 'Message type: Registration request (0x41)'
+                                            5GS registration type:
+                                                nas_5gs.mm.for: '.... 1... = Follow-On Request bit (FOR): Follow-on request pending'
+                                                nas_5gs.mm.5gs_reg_type: '.... .001 = 5GS registration type: initial registration (1)'
+                                            NAS key set identifier:
+                                                nas_5gs.mm.tsc.h1: '0... .... = Type of security context flag (TSC): Native security context (for KSIAMF)'
+                                                nas_5gs.mm.nas_key_set_id.h1: '.111 .... = NAS key set identifier: 7'
+                                            5GS mobile identity:
+                                                gsm_a.len: 'Length: 13'
+                                                nas_5gs.spare_b7: '0... .... = Spare: 0'
+                                                nas_5gs.mm.suci.supi_fmt: '.000 .... = SUPI format: IMSI (0)'
+                                                nas_5gs.spare_b3: '.... 0... = Spare: 0'
+                                                nas_5gs.mm.type_id: '.... .001 = Type of identity: SUCI (1)'
+                                                e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                                e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                                nas_5gs.mm.suci.routing_indicator: 'Routing indicator: 0000'
+                                                nas_5gs.mm.suci.scheme_id: '.... 0000 = Protection scheme Id: NULL scheme (0)'
+                                                nas_5gs.mm.suci.pki: 'Home network public key identifier: 0'
+                                                nas_5gs.mm.suci.supi_null_scheme: 'Scheme output: 0000000004'
+                                            5GMM capability:
+                                                nas_5gs.mm.elem_id: 'Element ID: 0x10'
+                                                gsm_a.len: 'Length: 1'
+                                                nas_5gs.spare_b7: '0... .... = Spare: 0'
+                                                nas_5gs.spare_b6: '.0.. .... = Spare: 0'
+                                                nas_5gs.spare_b5: '..0. .... = Spare: 0'
+                                                nas_5gs.spare_b4: '...0 .... = Spare: 0'
+                                                nas_5gs.spare_b3: '.... 0... = Spare: 0'
+                                                nas_5gs.mm.lpp_cap_b2: '.... .0.. = LTE Positioning Protocol (LPP) capability: Not Requested'
+                                                nas_5gs.mm.ho_attach_b1: '.... ..0. = HO attach: Not supported'
+                                                nas_5gs.mm.s1_mode_b0: '.... ...0 = S1 mode: Not Requested'
+                                            UE security capability:
+                                                nas_5gs.mm.elem_id: 'Element ID: 0x2e'
+                                                gsm_a.len: 'Length: 4'
+                                                nas_5gs.mm.5g_ea0: '1... .... = 5G-EA0: Supported'
+                                                nas_5gs.mm.128_5g_ea1: '.1.. .... = 128-5G-EA1: Supported'
+                                                nas_5gs.mm.128_5g_ea2: '..1. .... = 128-5G-EA2: Supported'
+                                                nas_5gs.mm.128_5g_ea3: '...1 .... = 128-5G-EA3: Supported'
+                                                nas_5gs.mm.5g_ea4: '.... 0... = 5G-EA4: Not supported'
+                                                nas_5gs.mm.5g_ea5: '.... .0.. = 5G-EA5: Not supported'
+                                                nas_5gs.mm.5g_ea6: '.... ..0. = 5G-EA6: Not supported'
+                                                nas_5gs.mm.5g_ea7: '.... ...0 = 5G-EA7: Not supported'
+                                                nas_5gs.mm.ia0: '1... .... = 5G-IA0: Supported'
+                                                nas_5gs.mm.5g_128_ia1: '.1.. .... = 128-5G-IA1: Supported'
+                                                nas_5gs.mm.5g_128_ia2: '..1. .... = 128-5G-IA2: Supported'
+                                                nas_5gs.mm.5g_128_ia4: '.... 0... = 5G-IA4: Not supported'
+                                                nas_5gs.mm.5g_ia5: '.... .0.. = 5G-IA5: Not supported'
+                                                nas_5gs.mm.5g_ia6: '.... ..0. = 5G-IA6: Not supported'
+                                                nas_5gs.mm.5g_ia7: '.... ...0 = 5G-IA7: Not supported'
+                                                nas_5gs.mm.eea0: '1... .... = EEA0: Supported'
+                                                nas_5gs.mm.128eea1: '.1.. .... = 128-EEA1: Supported'
+                                                nas_5gs.mm.128eea2: '..1. .... = 128-EEA2: Supported'
+                                                nas_5gs.mm.eea3: '...1 .... = 128-EEA3: Supported'
+                                                nas_5gs.mm.eea4: '.... 0... = EEA4: Not supported'
+                                                nas_5gs.mm.eea5: '.... .0.. = EEA5: Not supported'
+                                                nas_5gs.mm.eea6: '.... ..0. = EEA6: Not supported'
+                                                nas_5gs.mm.eea7: '.... ...0 = EEA7: Not supported'
+                                                nas_5gs.mm.eia0: '1... .... = EIA0: Supported'
+                                                nas_5gs.mm.128eia1: '.1.. .... = 128-EIA1: Supported'
+                                                nas_5gs.mm.128eia2: '..1. .... = 128-EIA2: Supported'
+                                                nas_5gs.mm.eia3: '...1 .... = 128-EIA3: Supported'
+                                                nas_5gs.mm.eia4: '.... 0... = EIA4: Not supported'
+                                                nas_5gs.mm.eia5: '.... .0.. = EIA5: Not supported'
+                                                nas_5gs.mm.eia6: '.... ..0. = EIA6: Not supported'
+                                                nas_5gs.mm.eia7: '.... ...0 = EIA7: Not supported'
+                                            NSSAI - Requested NSSAI:
+                                                nas_5gs.mm.elem_id: 'Element ID: 0x2f'
+                                                gsm_a.len: 'Length: 2'
+                                                S-NSSAI 1:
+                                                    nas_5gs.mm.length: 'Length: 1'
+                                                    nas_5gs.mm.sst: 'Slice/service type (SST): 1'
+                                            5GS update type:
+                                                nas_5gs.mm.elem_id: 'Element ID: 0x53'
+                                                gsm_a.len: 'Length: 1'
+                                                nas_5gs.spare_b3: '.... 0... = Spare: 0'
+                                                nas_5gs.spare_b2: '.... .0.. = Spare: 0'
+                                                nas_5gs.mm.ng_ran_rcu: '.... ..0. = NG-RAN Radio Capability Update (NG-RAN-RCU): Not Needed'
+                                                nas_5gs.mm.sms_requested: '.... ...0 = SMS requested: SMS over NAS not supported'
+            'Item 3: id-UserLocationInformation':
+                ngap.id: 'id: id-UserLocationInformation (121)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 19'
+                ngap.value_element:
+                    per.choice_index: 'Choice Index: 1'
+                    ngap.UserLocationInformation:
+                        ngap.userLocationInformationNR_element:
+                            per.extension_bit: '..0. .... Extension Bit: False'
+                            per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
+                            ngap.nR_CGI_element:
+                                per.extension_bit: '.... .0.. Extension Bit: False'
+                                per.optional_field_bit: '.... ..0. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.NRCellIdentity: 'nRCellIdentity: 0x0000000010'
+                            ngap.tAI_element:
+                                per.extension_bit: '.... 0... Extension Bit: False'
+                                per.optional_field_bit: '.... .0.. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.tAC: 'tAC: 1 (0x000001)'
+                            ngap.timeStamp: 'timeStamp: e74c1dd3 (Dec 20, 2022 11:41:07 UTC)'
+
+end note
+
+"10.0.3.1" -> "10.0.2.15": 2707, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)
+
+note right #c6ebc6
+**10.0.3.1 to 10.0.2.15**
+NGAP-PDU: 000e008090000008000a00020014005500020004001c00070009f107020040000000020001007700091c000e000700038000005e0020085fc9f358e57368c6195f66af600710551237545242b41739894c5e47c55621002240084370816125ffff510026402f2e7e026a842b4a017e0042010177000bf209f107020040f900e74954072009f10700000115020101210201005e0129
+ngap.procedureCode: 'procedureCode: id-InitialContextSetup (14)'
+per.enum_index: 'Enumerated Index: 0'
+ngap.criticality: 'criticality: reject (0)'
+per.open_type_length: 'Open Type Length: 144'
+ngap.value_element:
+-   ngap.InitialContextSetupRequest_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 8'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-GUAMI':
+                ngap.id: 'id: id-GUAMI (28)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 7'
+                ngap.value_element:
+                    ngap.GUAMI_element:
+                        per.extension_bit: '0... .... Extension Bit: False'
+                        per.optional_field_bit: '.0.. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                        ngap.pLMNIdentity:
+                            e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                            e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                        ngap.aMFRegionID: 'aMFRegionID: 02 [bit length 8, 0000 0010 decimal value 2]'
+                        ngap.aMFSetID: 'aMFSetID: 0040 [bit length 10, 6 LSB pad bits, 0000 0000  01.. .... decimal value 1]'
+                        ngap.aMFPointer: 'aMFPointer: 00 [bit length 6, 2 LSB pad bits, 0000 00.. decimal value 0]'
+            'Item 3: id-AllowedNSSAI':
+                ngap.id: 'id: id-AllowedNSSAI (0)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    per.sequence_of_length: 'Sequence-Of Length: 1'
+                    ngap.AllowedNSSAI:
+                        Item 0:
+                            ngap.AllowedNSSAI_Item_element:
+                                per.extension_bit: '...0 .... Extension Bit: False'
+                                per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.s_NSSAI_element:
+                                    per.extension_bit: '.... .0.. Extension Bit: False'
+                                    per.optional_field_bit: '.... ...0 Optional Field Bit: False (iE-Extensions is NOT present)'
+                                    ngap.sST: 'sST: 01'
+            'Item 4: id-UESecurityCapabilities':
+                ngap.id: 'id: id-UESecurityCapabilities (119)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 9'
+                ngap.value_element:
+                    ngap.UESecurityCapabilities_element:
+                        per.extension_bit: '0... .... Extension Bit: False'
+                        per.optional_field_bit: '.0.. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                        per.extension_present_bit: '.... .0.. Extension Present Bit: False'
+                        ngap.nRencryptionAlgorithms:
+                            ngap.NrencyptionAlgorithms.nea1: '1... .... .... .... = 128-NEA1: Supported'
+                            ngap.NrencyptionAlgorithms.nea2: '.1.. .... .... .... = 128-NEA2: Supported'
+                            ngap.NrencyptionAlgorithms.nea3: '..1. .... .... .... = 128-NEA3: Supported'
+                            ngap.NrencyptionAlgorithms.reserved: '...0 0000 0000 0000 = Reserved: 0x0000'
+                        ngap.nRintegrityProtectionAlgorithms:
+                            ngap.NrintegrityProtectionAlgorithms.nia1: '1... .... .... .... = 128-NIA1: Supported'
+                            ngap.NrintegrityProtectionAlgorithms.nia2: '.1.. .... .... .... = 128-NIA2: Supported'
+                            ngap.NrintegrityProtectionAlgorithms.nia3: '..1. .... .... .... = 128-NIA3: Supported'
+                            ngap.NrintegrityProtectionAlgorithms.reserved: '...0 0000 0000 0000 = Reserved: 0x0000'
+                        ngap.eUTRAencryptionAlgorithms:
+                            ngap.EUTRAencryptionAlgorithms.eea1: '1... .... .... .... = 128-EEA1: Supported'
+                            ngap.EUTRAencryptionAlgorithms.eea2: '.1.. .... .... .... = 128-EEA2: Supported'
+                            ngap.EUTRAencryptionAlgorithms.eea3: '..1. .... .... .... = 128-EEA3: Supported'
+                            ngap.EUTRAencryptionAlgorithms.reserved: '...0 0000 0000 0000 = Reserved: 0x0000'
+                        ngap.eUTRAintegrityProtectionAlgorithms:
+                            ngap.EUTRAintegrityProtectionAlgorithms.eia1: '1... .... .... .... = 128-EIA1: Supported'
+                            ngap.EUTRAintegrityProtectionAlgorithms.eia2: '.1.. .... .... .... = 128-EIA2: Supported'
+                            ngap.EUTRAintegrityProtectionAlgorithms.eia3: '..1. .... .... .... = 128-EIA3: Supported'
+                            ngap.EUTRAintegrityProtectionAlgorithms.reserved: '...0 0000 0000 0000 = Reserved: 0x0000'
+            'Item 5: id-SecurityKey':
+                ngap.id: 'id: id-SecurityKey (94)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 32'
+                ngap.value_element:
+                    ngap.SecurityKey: 'SecurityKey: 085fc9f358e57368c6195f66af600710551237545242b417\xe2\x80\xa6 [bit length 256]'
+            'Item 6: id-MaskedIMEISV':
+                ngap.id: 'id: id-MaskedIMEISV (34)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 8'
+                ngap.value_element:
+                    ngap.MaskedIMEISV: 'MaskedIMEISV: 4370816125ffff51 [bit length 64, 0100 0011  0111 0000  1000 0001  0110 0001  0010 0101  1111 1111  1111 1111  0101 0001 decimal value 4859526252182110033]'
+            'Item 7: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 47'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 46'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Security protected NAS 5GS message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0010 = Security header type: Integrity protected and ciphered (2)'
+                                nas_5gs.msg_auth_code: 'Message authentication code: 0x6a842b4a'
+                                nas_5gs.seq_no: 'Sequence number: 1'
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: Registration accept (0x42)'
+                                5GS registration result:
+                                    gsm_a.len: 'Length: 1'
+                                    nas_5gs.mm.reg_res.nssaa_perf: '...0 .... = NSSAA Performed: False'
+                                    nas_5gs.mm.reg_res.sms_all: '.... 0... = SMS over NAS: Not Allowed'
+                                    nas_5gs.mm.reg_res.res: '.... .001 = 5GS registration result: 3GPP access (1)'
+                                5GS mobile identity - 5G-GUTI:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x77'
+                                    gsm_a.len: 'Length: 11'
+                                    nas_5gs.mm.odd_even: '.... 0... = Odd/even indication: Even number of identity digits'
+                                    nas_5gs.mm.type_id: '.... .010 = Type of identity: 5G-GUTI (2)'
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                    nas_5gs.amf_region_id: 'AMF Region ID: 2'
+                                    nas_5gs.amf_set_id: '0000 0000 01.. .... = AMF Set ID: 1'
+                                    nas_5gs.amf_pointer: '..00 0000 = AMF Pointer: 0'
+                                    nas_5gs.5g_tmsi: '5G-TMSI: 0xf900e749'
+                                5GS tracking area identity list:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x54'
+                                    gsm_a.len: 'Length: 7'
+                                    Partial tracking area list  1:
+                                        nas_5gs.mm.tal_t_li: '.01. .... = Type of list: list of TACs belonging to one PLMN, with consecutive TAC values (1)'
+                                        nas_5gs.mm.tal_num_e: '...0 0000 = Number of elements: 1 element (0)'
+                                        e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                        e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                        nas_5gs.tac: 'TAC: 1'
+                                NSSAI - Allowed NSSAI:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x15'
+                                    gsm_a.len: 'Length: 2'
+                                    S-NSSAI 1:
+                                        nas_5gs.mm.length: 'Length: 1'
+                                        nas_5gs.mm.sst: 'Slice/service type (SST): 1'
+                                5GS network feature support:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x21'
+                                    gsm_a.len: 'Length: 2'
+                                    nas_5gs.nw_feat_sup.mpsi: '0... .... = MPS indicator (MPSI): Access identity 1 not valid in RPLMN or equivalent PLMN'
+                                    nas_5gs.nw_feat_sup.iwk_n26: '.0.. .... = Interworking without N26: Not supported'
+                                    nas_5gs.nw_feat_sup.emf: '..00 .... = Emergency service fallback indicator (EMF): Emergency services fallback not supported (0)'
+                                    nas_5gs.nw_feat_sup.emc: '.... 00.. = Emergency service support indicator (EMC): Emergency services not supported (0)'
+                                    nas_5gs.nw_feat_sup.vops_n3gpp: '.... ..0. = IMS voice over PS session over non-3GPP access indicator (IMS-VoPS-N3GPP): Not supported'
+                                    nas_5gs.nw_feat_sup.vops_3gpp: '.... ...1 = IMS voice over PS session indicator (IMS VoPS): Supported'
+                                    nas_5gs.spare_b7: '0... .... = Spare: 0'
+                                    nas_5gs.spare_b6: '.0.. .... = Spare: 0'
+                                    nas_5gs.spare_b5: '..0. .... = Spare: 0'
+                                    nas_5gs.spare_b4: '...0 .... = Spare: 0'
+                                    nas_5gs.spare_b3: '.... 0... = Spare: 0'
+                                    nas_5gs.spare_b2: '.... .0.. = Spare: 0'
+                                    nas_5gs.nw_feat_sup.mcsi: '.... ..0. = MCS indicator (MCSI): Not supported'
+                                    nas_5gs.nw_feat_sup.emcn3: '.... ...0 = Emergency services over non-3GPP access (EMCN3): Not supported'
+                                GPRS Timer 3 - T3512 value:
+                                    gsm_a.gm.elem_id: 'Element ID: 0x5e'
+                                    gsm_a.len: 'Length: 1'
+                                    gsm_a.gm.gmm.gprs_timer3:
+                                        gsm_a.gm.gmm.gprs_timer3_unit: '001. .... = Unit: value is incremented in multiples of 1 hour (1)'
+                                        gsm_a.gm.gmm.gprs_timer3_value: '...0 1001 = Timer value: 9'
+
+end note
+
+"10.0.2.15" -> "10.0.3.1": 2708, NGAP InitialContextSetup (14)
+
+note right #c6ebc6
+**10.0.2.15 to 10.0.3.1**
+NGAP-PDU: 200e000f000002000a40020014005540020004
+ngap.procedureCode: 'procedureCode: id-InitialContextSetup (14)'
+per.enum_index: 'Enumerated Index: 0'
+ngap.criticality: 'criticality: reject (0)'
+per.open_type_length: 'Open Type Length: 15'
+ngap.value_element:
+-   ngap.InitialContextSetupResponse_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 2'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+
+end note
+
+"10.0.2.15" -> "10.0.3.1": 2712, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)
+
+note right #8cd98c
+**10.0.2.15 to 10.0.3.1**
+NGAP-PDU: 002e4035000004000a000200140055000200040026000b0a7e02aab30c20017e0043007940135009f107000000010009f107000001e74c1dd3
+ngap.procedureCode: 'procedureCode: id-UplinkNASTransport (46)'
+per.enum_index: 'Enumerated Index: 1'
+ngap.criticality: 'criticality: ignore (1)'
+per.open_type_length: 'Open Type Length: 53'
+ngap.value_element:
+-   ngap.UplinkNASTransport_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 4'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 11'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 10'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Security protected NAS 5GS message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0010 = Security header type: Integrity protected and ciphered (2)'
+                                nas_5gs.msg_auth_code: 'Message authentication code: 0xaab30c20'
+                                nas_5gs.seq_no: 'Sequence number: 1'
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: Registration complete (0x43)'
+            'Item 3: id-UserLocationInformation':
+                ngap.id: 'id: id-UserLocationInformation (121)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 19'
+                ngap.value_element:
+                    per.choice_index: 'Choice Index: 1'
+                    ngap.UserLocationInformation:
+                        ngap.userLocationInformationNR_element:
+                            per.extension_bit: '..0. .... Extension Bit: False'
+                            per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
+                            ngap.nR_CGI_element:
+                                per.extension_bit: '.... .0.. Extension Bit: False'
+                                per.optional_field_bit: '.... ..0. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.NRCellIdentity: 'nRCellIdentity: 0x0000000010'
+                            ngap.tAI_element:
+                                per.extension_bit: '.... 0... Extension Bit: False'
+                                per.optional_field_bit: '.... .0.. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.tAC: 'tAC: 1 (0x000001)'
+                            ngap.timeStamp: 'timeStamp: e74c1dd3 (Dec 20, 2022 11:41:07 UTC)'
+
+NGAP-PDU: 002e4061000004000a0002001400550002000400260037367e02c01f669b027e00670100152e0101c1ffff91a12801007b000780000a00000d00120181220101250c0b437573746f6d536c696365007940135009f107000000010009f107000001e74c1dd3
+ngap.procedureCode: 'procedureCode: id-UplinkNASTransport (46)'
+per.enum_index: 'Enumerated Index: 1'
+ngap.criticality: 'criticality: ignore (1)'
+per.open_type_length: 'Open Type Length: 97'
+ngap.value_element:
+-   ngap.UplinkNASTransport_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 4'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 55'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 54'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Security protected NAS 5GS message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0010 = Security header type: Integrity protected and ciphered (2)'
+                                nas_5gs.msg_auth_code: 'Message authentication code: 0xc01f669b'
+                                nas_5gs.seq_no: 'Sequence number: 2'
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: UL NAS transport (0x67)'
+                                Payload container type:
+                                    nas_5gs.mm.pld_cont_type: '.... 0001 = Payload container type: N1 SM information (1)'
+                                Payload container:
+                                    gsm_a.len: 'Length: 21'
+                                    Plain NAS 5GS Message:
+                                        nas_5gs.epd: 'Extended protocol discriminator: 5G session management messages (46)'
+                                        nas_5gs.pdu_session_id: 'PDU session identity: PDU session identity value 1 (1)'
+                                        nas_5gs.proc_trans_id: 'Procedure transaction identity: 1'
+                                        nas_5gs.sm.message_type: 'Message type: PDU session establishment request (0xc1)'
+                                        Integrity protection maximum data rate:
+                                            nas_5gs.sm.int_prot_max_data_rate_ul: 'Integrity protection maximum data rate for uplink: Full data rate (255)'
+                                            nas_5gs.sm.int_prot_max_data_rate_dl: 'Integrity protection maximum data rate for downlink: Full data rate (255)'
+                                        PDU session type:
+                                            gsm_a.common.elem_id: '1001 .... = Element ID: 0x9-'
+                                            nas_5gs.sm.pdu_session_type: '.... 0001 = PDU session type: IPv4 (1)'
+                                        SSC mode:
+                                            gsm_a.common.elem_id: '1010 .... = Element ID: 0xa-'
+                                            nas_5gs.sm.sc_mode: '.... 0001 = SSC mode: SSC mode 1 (1)'
+                                        5GSM capability:
+                                            nas_5gs.sm.elem_id: 'Element ID: 0x28'
+                                            gsm_a.len: 'Length: 1'
+                                            nas_5gs.spare_b7: '0... .... = Spare: 0'
+                                            nas_5gs.spare_b6: '.0.. .... = Spare: 0'
+                                            nas_5gs.spare_b5: '..0. .... = Spare: 0'
+                                            nas_5gs.spare_b4: '...0 .... = Spare: 0'
+                                            nas_5gs.spare_b3: '.... 0... = Spare: 0'
+                                            nas_5gs.spare_b2: '.... .0.. = Spare: 0'
+                                            nas_5gs.sm.mh6_pdu: '.... ..0. = Multi-homed IPv6 PDU session (MH6-PDU): Not supported'
+                                            nas_5gs.sm.rqos: '.... ...0 = Reflective QoS (RqoS): Not supported'
+                                        Extended protocol configuration options:
+                                            nas_eps.esm.elem_id: 'Element ID: 0x7b'
+                                            gsm_a.len: 'Length: 7'
+                                            gsm_a.gm.sm.link_dir: 'Link direction: MS to network (0)'
+                                            gsm_a.gm.sm.ext: '1... .... = Extension: True'
+                                            gsm_a.gm.configuration_protocol: '.... .000 = Configuration Protocol: PPP for use with IP PDP type or IP PDN type (0)'
+                                            gsm_a.gm.sm.pco_pid:
+                                            -   gsm_a.gm.sm.pco.length: 'Length: 0x00 (0)'
+                                            -   gsm_a.gm.sm.pco.length: 'Length: 0x00 (0)'
+                                PDU session identity 2 - PDU session ID:
+                                    nas_5gs.mm.elem_id: 'Element ID: 0x12'
+                                    nas_5gs.pdu_session_id: 'PDU session identity: PDU session identity value 1 (1)'
+                                Request type:
+                                    gsm_a.common.elem_id: '1000 .... = Element ID: 0x8-'
+                                    nas_5gs.mm.req_typ: '.... 0001 = Request type: Initial request (1)'
+                                S-NSSAI:
+                                    nas_5gs.common.elem_id: 'Element ID: 0x22'
+                                    gsm_a.len: 'Length: 1'
+                                    nas_5gs.mm.sst: 'Slice/service type (SST): 1'
+                                DNN:
+                                    nas_5gs.common.elem_id: 'Element ID: 0x25'
+                                    gsm_a.len: 'Length: 12'
+                                    nas_5gs.cmn.dnn: 'DNN: CustomSlice'
+            'Item 3: id-UserLocationInformation':
+                ngap.id: 'id: id-UserLocationInformation (121)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 19'
+                ngap.value_element:
+                    per.choice_index: 'Choice Index: 1'
+                    ngap.UserLocationInformation:
+                        ngap.userLocationInformationNR_element:
+                            per.extension_bit: '..0. .... Extension Bit: False'
+                            per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
+                            ngap.nR_CGI_element:
+                                per.extension_bit: '.... .0.. Extension Bit: False'
+                                per.optional_field_bit: '.... ..0. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.NRCellIdentity: 'nRCellIdentity: 0x0000000010'
+                            ngap.tAI_element:
+                                per.extension_bit: '.... 0... Extension Bit: False'
+                                per.optional_field_bit: '.... .0.. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pLMNIdentity:
+                                    e212.mcc: 'Mobile Country Code (MCC): International Mobile, shared code (901)'
+                                    e212.mnc: 'Mobile Network Code (MNC): Unknown (70)'
+                                ngap.tAC: 'tAC: 1 (0x000001)'
+                            ngap.timeStamp: 'timeStamp: e74c1dd3 (Dec 20, 2022 11:41:07 UTC)'
+
+end note
+
+"10.0.3.1" -> "10.0.2.15": 2713, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)
+
+note right #c6ebc6
+**10.0.3.1 to 10.0.2.15**
+NGAP-PDU: 0004403c000003000a0002001400550002000400260029287e02fe07bebe027e0054430f90004f00700065006e00350047005346404722219261703140490100
+ngap.procedureCode: 'procedureCode: id-DownlinkNASTransport (4)'
+per.enum_index: 'Enumerated Index: 1'
+ngap.criticality: 'criticality: ignore (1)'
+per.open_type_length: 'Open Type Length: 60'
+ngap.value_element:
+-   ngap.DownlinkNASTransport_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 3'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-NAS-PDU':
+                ngap.id: 'id: id-NAS-PDU (38)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 41'
+                ngap.value_element:
+                    per.octet_string_length: 'Octet String Length: 40'
+                    ngap.NAS_PDU:
+                        nas-5gs:
+                            Security protected NAS 5GS message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0010 = Security header type: Integrity protected and ciphered (2)'
+                                nas_5gs.msg_auth_code: 'Message authentication code: 0xfe07bebe'
+                                nas_5gs.seq_no: 'Sequence number: 2'
+                            Plain NAS 5GS Message:
+                                nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                nas_5gs.mm.message_type: 'Message type: Configuration update command (0x54)'
+                                Network Name - Full name for network:
+                                    gsm_a.dtap.elem_id: 'Element ID: 0x43'
+                                    gsm_a.len: 'Length: 15'
+                                    gsm_a.extension: '1... .... = Extension: No Extension'
+                                    gsm_a.dtap.coding_scheme: '.001 .... = Coding Scheme: UCS2 (16 bit) (1)'
+                                    gsm_a.dtap.add_ci: '.... 0... = Add CI: The MS should not add the letters for the Country''s Initials to the text string'
+                                    gsm_a.dtap.number_of_spare_bits: '.... .000 = Number of spare bits in last octet: this field carries no information about the number of spare bits in octet n (0)'
+                                    gsm_a.dtap.text_string: 'Text String: Open5GS'
+                                Time Zone - Local:
+                                    gsm_a.dtap.elem_id: 'Element ID: 0x46'
+                                    gsm_a.dtap.timezone: 'Timezone: GMT + 1 hours 0 minutes'
+                                Time Zone and Time - Universal Time and Local Time Zone:
+                                    gsm_a.dtap.elem_id: 'Element ID: 0x47'
+                                    gsm_a.dtap.time_zone_time: 'Time: Dec 29, 2022 16:07:13.000000000'
+                                    gsm_a.dtap.timezone: 'Timezone: GMT + 1 hours 0 minutes'
+                                Daylight Saving Time:
+                                    gsm_a.dtap.elem_id: 'Element ID: 0x49'
+                                    gsm_a.len: 'Length: 1'
+                                    gsm_a.spare_bits: '0000 00.. = Spare bit(s): 0'
+                                    gsm_a.dtap.dst_adjustment: '.... ..00 = DST Adjustment: No adjustment for Daylight Saving Time (0)'
+
+end note
+
+"10.0.14.1" -> "10.0.17.1": 2755, PFCP req.\nPFCP Session Establishment Request (50)
+
+note right #80b3ff
+**10.0.14.1 to 10.0.17.1**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Establishment Request (50)'
+pfcp.length: 'Length: 595'
+pfcp.seid: 'SEID: 0x0000000000000000'
+pfcp.seqno: 'Sequence Number: 234'
+pfcp.spare_oct: 'Spare: 0'
+'Node ID : IPv4 address: 10.0.14.1':
+-   pfcp.ie_type: 'IE Type: Node ID (60)'
+    pfcp.ie_len: 'IE Length: 5'
+    pfcp.spare_h1: '0000 .... = Spare: 0'
+    pfcp.node_id_type: '.... 0000 = Node ID Type: IPv4 address (0)'
+    pfcp.node_id_ipv4: 'Node ID IPv4: 10.0.14.1'
+'F-SEID : SEID: 0x000000000000000c, IPv4 10.0.14.1':
+-   pfcp.ie_type: 'IE Type: F-SEID (57)'
+    pfcp.ie_len: 'IE Length: 13'
+    pfcp.f_seid_flags:
+        pfcp.spare_b7: '0... .... = Spare: 0'
+        pfcp.spare_b6: '.0.. .... = Spare: 0'
+        pfcp.spare_b5: '..0. .... = Spare: 0'
+        pfcp.spare_b4: '...0 .... = Spare: 0'
+        pfcp.spare_b3: '.... 0... = Spare: 0'
+        pfcp.spare_b2: '.... .0.. = Spare: 0'
+        pfcp.f_seid_flags.v4: '.... ..1. = V4 (IPv4): Present'
+        pfcp.f_seid_flags.v6: '.... ...0 = V6 (IPv6): Not Present'
+    pfcp.seid: 'SEID: 0x000000000000000c'
+    pfcp.f_seid.ipv4: 'IPv4 address: 10.0.14.1'
+'Create PDR : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Create PDR (1)'
+    pfcp.ie_len: 'IE Length: 72'
+    'PDR ID : 1':
+        pfcp.ie_type: 'IE Type: PDR ID (56)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.pdr_id: 'Rule ID: 1'
+    'Precedence : 255':
+        pfcp.ie_type: 'IE Type: Precedence (29)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.precedence: 'Precedence: 255'
+    'PDI : [Grouped IE]':
+        pfcp.ie_type: 'IE Type: PDI (2)'
+        pfcp.ie_len: 'IE Length: 30'
+        'Source Interface : Core':
+            pfcp.ie_type: 'IE Type: Source Interface (20)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_h1: '0000 .... = Spare: 0'
+            pfcp.source_interface: '.... 0001 = Source Interface: Core (1)'
+        'Network Instance : CustomSlice':
+            pfcp.ie_type: 'IE Type: Network Instance (22)'
+            pfcp.ie_len: 'IE Length: 12'
+            pfcp.network_instance: 'Network Instance: CustomSlice'
+        'UE IP Address : ':
+            pfcp.ie_type: 'IE Type: UE IP Address (93)'
+            pfcp.ie_len: 'IE Length: 5'
+            pfcp.ue_ip_address_flags:
+                pfcp.spare_b7_b4: '0000 .... = Spare: 0'
+                pfcp.ue_ip_address_flag.v6d: '.... 0... = IPv6D: Source IP address'
+                pfcp.ue_ip_address_flag.sd: '.... .1.. = S/D: Destination IP address'
+                pfcp.ue_ip_address_flag.v4: '.... ..1. = V4 (IPv4): Present'
+                pfcp.ue_ip_address_flag.v6: '.... ...0 = V6 (IPv6): Not Present'
+            pfcp.ue_ip_addr_ipv4: 'IPv4 address: 10.45.0.13'
+    'FAR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1'
+    'URR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: URR ID (81)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.urr_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.urr_id: '.000 0000 0000 0000 0000 0000 0000 0001 = URR ID: 1'
+    'QER ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: QER ID (109)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.qer_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.qer_id: '.000 0000 0000 0000 0000 0000 0000 0001 = QER ID: 1'
+-   pfcp.ie_type: 'IE Type: Create PDR (1)'
+    pfcp.ie_len: 'IE Length: 81'
+    'PDR ID : 2':
+        pfcp.ie_type: 'IE Type: PDR ID (56)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.pdr_id: 'Rule ID: 2'
+    'Precedence : 255':
+        pfcp.ie_type: 'IE Type: Precedence (29)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.precedence: 'Precedence: 255'
+    'PDI : [Grouped IE]':
+        pfcp.ie_type: 'IE Type: PDI (2)'
+        pfcp.ie_len: 'IE Length: 41'
+        'Source Interface : Access':
+            pfcp.ie_type: 'IE Type: Source Interface (20)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_h1: '0000 .... = Spare: 0'
+            pfcp.source_interface: '.... 0000 = Source Interface: Access (0)'
+        'F-TEID : ':
+            pfcp.ie_type: 'IE Type: F-TEID (21)'
+            pfcp.ie_len: 'IE Length: 2'
+            pfcp.f_teid_flags:
+                pfcp.fteid_flg.spare: '0000 .... = Spare: 0'
+                pfcp.f_teid_flags.ch_id: '.... 1... = CHID (CHOOSE_ID): True'
+                pfcp.f_teid_flags.ch: '.... .1.. = CH (CHOOSE): True'
+                pfcp.f_teid_flags.v6: '.... ..1. = V6 (IPv6): Present'
+                pfcp.f_teid_flags.v4: '.... ...1 = V4 (IPv4): Present'
+            pfcp.f_teid.choose_id: 'Choose Id: 05'
+        'Network Instance : CustomSlice':
+            pfcp.ie_type: 'IE Type: Network Instance (22)'
+            pfcp.ie_len: 'IE Length: 12'
+            pfcp.network_instance: 'Network Instance: CustomSlice'
+        'UE IP Address : ':
+            pfcp.ie_type: 'IE Type: UE IP Address (93)'
+            pfcp.ie_len: 'IE Length: 5'
+            pfcp.ue_ip_address_flags:
+                pfcp.spare_b7_b4: '0000 .... = Spare: 0'
+                pfcp.ue_ip_address_flag.v6d: '.... 0... = IPv6D: Source IP address'
+                pfcp.ue_ip_address_flag.sd: '.... .0.. = S/D: Source IP address'
+                pfcp.ue_ip_address_flag.v4: '.... ..1. = V4 (IPv4): Present'
+                pfcp.ue_ip_address_flag.v6: '.... ...0 = V6 (IPv6): Not Present'
+            pfcp.ue_ip_addr_ipv4: 'IPv4 address: 10.45.0.13'
+        'QFI : ':
+            pfcp.ie_type: 'IE Type: QFI (124)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_b7_b6: '00.. .... = Spare: 0'
+            pfcp.qfi_value: '.000 0001 = QFI: 0x01'
+    'Outer Header Removal : GTP-U/UDP/IPv4':
+        pfcp.ie_type: 'IE Type: Outer Header Removal (95)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.out_hdr_desc: 'Outer Header Removal Description: GTP-U/UDP/IPv4 (0)'
+        pfcp.gtpu_ext_hdr_del.pdu_sess_cont: '.... ...1 = PDU Session Container to be deleted: True'
+    'FAR ID : Dynamic by CP 2':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0010 = FAR ID: 2'
+    'QER ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: QER ID (109)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.qer_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.qer_id: '.000 0000 0000 0000 0000 0000 0000 0001 = QER ID: 1'
+-   pfcp.ie_type: 'IE Type: Create PDR (1)'
+    pfcp.ie_len: 'IE Length: 65'
+    'PDR ID : 3':
+        pfcp.ie_type: 'IE Type: PDR ID (56)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.pdr_id: 'Rule ID: 3'
+    'Precedence : 1000':
+        pfcp.ie_type: 'IE Type: Precedence (29)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.precedence: 'Precedence: 1000'
+    'PDI : [Grouped IE]':
+        pfcp.ie_type: 'IE Type: PDI (2)'
+        pfcp.ie_len: 'IE Length: 26'
+        'Source Interface : CP-function':
+            pfcp.ie_type: 'IE Type: Source Interface (20)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_h1: '0000 .... = Spare: 0'
+            pfcp.source_interface: '.... 0011 = Source Interface: CP-function (3)'
+        'F-TEID : ':
+            pfcp.ie_type: 'IE Type: F-TEID (21)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.f_teid_flags:
+                pfcp.fteid_flg.spare: '0000 .... = Spare: 0'
+                pfcp.f_teid_flags.ch_id: '.... 0... = CHID (CHOOSE_ID): False'
+                pfcp.f_teid_flags.ch: '.... .1.. = CH (CHOOSE): True'
+                pfcp.f_teid_flags.v6: '.... ..1. = V6 (IPv6): Present'
+                pfcp.f_teid_flags.v4: '.... ...1 = V4 (IPv4): Present'
+        'Network Instance : CustomSlice':
+            pfcp.ie_type: 'IE Type: Network Instance (22)'
+            pfcp.ie_len: 'IE Length: 12'
+            pfcp.network_instance: 'Network Instance: CustomSlice'
+    'Outer Header Removal : GTP-U/UDP/IPv4':
+        pfcp.ie_type: 'IE Type: Outer Header Removal (95)'
+        pfcp.ie_len: 'IE Length: 1'
+        pfcp.out_hdr_desc: 'Outer Header Removal Description: GTP-U/UDP/IPv4 (0)'
+    'FAR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1'
+    'QER ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: QER ID (109)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.qer_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.qer_id: '.000 0000 0000 0000 0000 0000 0000 0001 = QER ID: 1'
+-   pfcp.ie_type: 'IE Type: Create PDR (1)'
+    pfcp.ie_len: 'IE Length: 113'
+    'PDR ID : 4':
+        pfcp.ie_type: 'IE Type: PDR ID (56)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.pdr_id: 'Rule ID: 4'
+    'Precedence : 1':
+        pfcp.ie_type: 'IE Type: Precedence (29)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.precedence: 'Precedence: 1'
+    'PDI : [Grouped IE]':
+        pfcp.ie_type: 'IE Type: PDI (2)'
+        pfcp.ie_len: 'IE Length: 82'
+        'Source Interface : Access':
+            pfcp.ie_type: 'IE Type: Source Interface (20)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_h1: '0000 .... = Spare: 0'
+            pfcp.source_interface: '.... 0000 = Source Interface: Access (0)'
+        'F-TEID : ':
+            pfcp.ie_type: 'IE Type: F-TEID (21)'
+            pfcp.ie_len: 'IE Length: 2'
+            pfcp.f_teid_flags:
+                pfcp.fteid_flg.spare: '0000 .... = Spare: 0'
+                pfcp.f_teid_flags.ch_id: '.... 1... = CHID (CHOOSE_ID): True'
+                pfcp.f_teid_flags.ch: '.... .1.. = CH (CHOOSE): True'
+                pfcp.f_teid_flags.v6: '.... ..1. = V6 (IPv6): Present'
+                pfcp.f_teid_flags.v4: '.... ...1 = V4 (IPv4): Present'
+            pfcp.f_teid.choose_id: 'Choose Id: 05'
+        'Network Instance : CustomSlice':
+            pfcp.ie_type: 'IE Type: Network Instance (22)'
+            pfcp.ie_len: 'IE Length: 12'
+            pfcp.network_instance: 'Network Instance: CustomSlice'
+        'SDF Filter : ':
+            pfcp.ie_type: 'IE Type: SDF Filter (23)'
+            pfcp.ie_len: 'IE Length: 46'
+            pfcp.sdf_filter_flags:
+                pfcp.spare_h1: '0000 .... = Spare: 0'
+                pfcp.sdf_filter.bid: '...0 .... = BID (Bidirectional SDF Filter): False'
+                pfcp.sdf_filter.fl: '.... 0... = FL (Flow Label): False'
+                pfcp.sdf_filter.spi: '.... .0.. = SPI (Security Parameter Index): False'
+                pfcp.sdf_filter.ttc: '.... ..0. = TTC (ToS Traffic Class): False'
+                pfcp.sdf_filter.fd: '.... ...1 = FD (Flow Description): True'
+            pfcp.spare: 'Spare: 0'
+            pfcp.flow_desc_len: 'Length of Flow Description: 42'
+            pfcp.flow_desc: 'Flow Description: permit out 58 from ff02::2/128 to assigned'
+        'QFI : ':
+            pfcp.ie_type: 'IE Type: QFI (124)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_b7_b6: '00.. .... = Spare: 0'
+            pfcp.qfi_value: '.000 0001 = QFI: 0x01'
+    'Outer Header Removal : GTP-U/UDP/IPv4':
+        pfcp.ie_type: 'IE Type: Outer Header Removal (95)'
+        pfcp.ie_len: 'IE Length: 1'
+        pfcp.out_hdr_desc: 'Outer Header Removal Description: GTP-U/UDP/IPv4 (0)'
+    'FAR ID : Dynamic by CP 3':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0011 = FAR ID: 3'
+'Create FAR : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Create FAR (3)'
+    pfcp.ie_len: 'IE Length: 19'
+    'FAR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1'
+    'Apply Action : ':
+        pfcp.ie_type: 'IE Type: Apply Action (44)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.apply_action_flags:
+            pfcp.spare_b7_b5: '000. .... = Spare: 0'
+            pfcp.apply_action.dupl: '...0 .... = DUPL (Duplicate): False'
+            pfcp.apply_action.nocp: '.... 1... = NOCP (Notify the CP function): True'
+            pfcp.apply_action.buff: '.... .1.. = BUFF (Buffer): True'
+            pfcp.apply_action.forw: '.... ..0. = FORW (Forward): False'
+            pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'
+        IE data not decoded by WS yet:
+            _ws.expert:
+                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
+                _ws.expert.message: 'Message: IE data not decoded by WS yet'
+                _ws.expert.severity: 'Severity level: Note'
+                _ws.expert.group: 'Group: Undecoded'
+    'BAR ID : 1':
+        pfcp.ie_type: 'IE Type: BAR ID (88)'
+        pfcp.ie_len: 'IE Length: 1'
+        pfcp.bar_id: 'BAR ID: 1'
+-   pfcp.ie_type: 'IE Type: Create FAR (3)'
+    pfcp.ie_len: 'IE Length: 39'
+    'FAR ID : Dynamic by CP 2':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0010 = FAR ID: 2'
+    'Apply Action : ':
+        pfcp.ie_type: 'IE Type: Apply Action (44)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.apply_action_flags:
+            pfcp.spare_b7_b5: '000. .... = Spare: 0'
+            pfcp.apply_action.dupl: '...0 .... = DUPL (Duplicate): False'
+            pfcp.apply_action.nocp: '.... 0... = NOCP (Notify the CP function): False'
+            pfcp.apply_action.buff: '.... .0.. = BUFF (Buffer): False'
+            pfcp.apply_action.forw: '.... ..1. = FORW (Forward): True'
+            pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'
+        IE data not decoded by WS yet:
+            _ws.expert:
+                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
+                _ws.expert.message: 'Message: IE data not decoded by WS yet'
+                _ws.expert.severity: 'Severity level: Note'
+                _ws.expert.group: 'Group: Undecoded'
+    'Forwarding Parameters : [Grouped IE]':
+        pfcp.ie_type: 'IE Type: Forwarding Parameters (4)'
+        pfcp.ie_len: 'IE Length: 21'
+        'Destination Interface : Core':
+            pfcp.ie_type: 'IE Type: Destination Interface (42)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_h1: '0000 .... = Spare: 0'
+            pfcp.dst_interface: '.... 0001 = Interface: Core (1)'
+        'Network Instance : CustomSlice':
+            pfcp.ie_type: 'IE Type: Network Instance (22)'
+            pfcp.ie_len: 'IE Length: 12'
+            pfcp.network_instance: 'Network Instance: CustomSlice'
+-   pfcp.ie_type: 'IE Type: Create FAR (3)'
+    pfcp.ie_len: 'IE Length: 53'
+    'FAR ID : Dynamic by CP 3':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0011 = FAR ID: 3'
+    'Apply Action : ':
+        pfcp.ie_type: 'IE Type: Apply Action (44)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.apply_action_flags:
+            pfcp.spare_b7_b5: '000. .... = Spare: 0'
+            pfcp.apply_action.dupl: '...0 .... = DUPL (Duplicate): False'
+            pfcp.apply_action.nocp: '.... 0... = NOCP (Notify the CP function): False'
+            pfcp.apply_action.buff: '.... .0.. = BUFF (Buffer): False'
+            pfcp.apply_action.forw: '.... ..1. = FORW (Forward): True'
+            pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'
+        IE data not decoded by WS yet:
+            _ws.expert:
+                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
+                _ws.expert.message: 'Message: IE data not decoded by WS yet'
+                _ws.expert.severity: 'Severity level: Note'
+                _ws.expert.group: 'Group: Undecoded'
+    'Forwarding Parameters : [Grouped IE]':
+        pfcp.ie_type: 'IE Type: Forwarding Parameters (4)'
+        pfcp.ie_len: 'IE Length: 35'
+        'Destination Interface : CP- Function':
+            pfcp.ie_type: 'IE Type: Destination Interface (42)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_h1: '0000 .... = Spare: 0'
+            pfcp.dst_interface: '.... 0011 = Interface: CP- Function (3)'
+        'Network Instance : CustomSlice':
+            pfcp.ie_type: 'IE Type: Network Instance (22)'
+            pfcp.ie_len: 'IE Length: 12'
+            pfcp.network_instance: 'Network Instance: CustomSlice'
+        'Outer Header Creation : ':
+            pfcp.ie_type: 'IE Type: Outer Header Creation (84)'
+            pfcp.ie_len: 'IE Length: 10'
+            pfcp.outer_hdr_desc: 'Outer Header Creation Description: GTP-U/UDP/IPv4  (256)'
+            pfcp.outer_hdr_creation.teid: 'TEID: 0x0000000c'
+            pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: 10.0.14.1'
+'Create URR : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Create URR (6)'
+    pfcp.ie_len: 'IE Length: 33'
+    'URR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: URR ID (81)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.urr_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.urr_id: '.000 0000 0000 0000 0000 0000 0000 0001 = URR ID: 1'
+    'Measurement Method : ':
+        pfcp.ie_type: 'IE Type: Measurement Method (62)'
+        pfcp.ie_len: 'IE Length: 1'
+        pfcp.measurement_method_flags:
+            pfcp.spare_b7_b3: '0000 0... = Spare: 0'
+            pfcp.measurement_method_flags.event: '.... .0.. = EVENT (Event): False'
+            pfcp.measurement_method_flags.volume: '.... ..1. = VOLUM (Volume): True'
+            pfcp.measurement_method_flags.durat: '.... ...0 = DURAT (Duration): False'
+    'Reporting Triggers : ':
+        pfcp.ie_type: 'IE Type: Reporting Triggers (37)'
+        pfcp.ie_len: 'IE Length: 3'
+        pfcp.reporting_triggers_flags.liusa: '0... .... = LIUSA (Linked Usage Reporting): False'
+        pfcp.reporting_triggers_flags.droth: '.0.. .... = DROTH (Dropped DL Traffic Threshold): False'
+        pfcp.reporting_triggers_flags.stopt: '..0. .... = STOPT (Stop of Traffic): False'
+        pfcp.reporting_triggers_flags.start: '...0 .... = START (Start of Traffic): False'
+        pfcp.reporting_triggers_flags.quhti: '.... 0... = QUHTI (Quota Holding Time): False'
+        pfcp.reporting_triggers_flags.timth: '.... .0.. = TIMTH (Time Threshold): False'
+        pfcp.reporting_triggers_flags.volth: '.... ..1. = VOLTH (Volume Threshold): True'
+        pfcp.reporting_triggers_flags.perio: '.... ...0 = PERIO (Periodic Reporting): False'
+        pfcp.spare_b7_b5: '000. .... = Spare: 0'
+        pfcp.reporting_triggers_flags.evequ: '..0. .... = EVEQU (Event Quota): False'
+        pfcp.reporting_triggers_flags.eveth: '...0 .... = EVETH (Event Threshold): False'
+        pfcp.reporting_triggers_flags.macar: '.... 0... = MACAR (MAC Addresses Reporting): False'
+        pfcp.reporting_triggers_flags.envcl: '.... .0.. = ENVCL (Envelope Closure): False'
+        pfcp.reporting_triggers_flags.timqu: '.... ..0. = TIMQU (Time Quota): False'
+        pfcp.reporting_triggers_flags.volqu: '.... ...0 = VOLQU (Volume Quota): False'
+        IE data not decoded by WS yet:
+            _ws.expert:
+                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
+                _ws.expert.message: 'Message: IE data not decoded by WS yet'
+                _ws.expert.severity: 'Severity level: Note'
+                _ws.expert.group: 'Group: Undecoded'
+    'Volume Threshold : ':
+        pfcp.ie_type: 'IE Type: Volume Threshold (31)'
+        pfcp.ie_len: 'IE Length: 9'
+        pfcp.volume_threshold:
+            pfcp.spare_b7_b3: '0000 0... = Spare: 0'
+            pfcp.volume_threshold_flags.dlvol: '.... .0.. = DLVOL: False'
+            pfcp.volume_threshold_flags.ulvol: '.... ..0. = ULVOL: False'
+            pfcp.volume_threshold_flags.tovol: '.... ...1 = TOVOL: True'
+        pfcp.volume_threshold.tovol: 'Total Volume: 104857600'
+'Create QER : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Create QER (7)'
+    pfcp.ie_len: 'IE Length: 32'
+    'QER ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: QER ID (109)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.qer_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.qer_id: '.000 0000 0000 0000 0000 0000 0000 0001 = QER ID: 1'
+    'Gate Status : ':
+        pfcp.ie_type: 'IE Type: Gate Status (25)'
+        pfcp.ie_len: 'IE Length: 1'
+        pfcp.gate_status:
+            pfcp.gate_status.ulgate: '.... ..00 = DL Gate: OPEN (0)'
+    'MBR : ':
+        pfcp.ie_type: 'IE Type: MBR (26)'
+        pfcp.ie_len: 'IE Length: 10'
+        pfcp.ul_mbr: 'UL MBR: 1073741'
+        pfcp.dl_mbr: 'DL MBR: 1073741'
+    'QFI : ':
+        pfcp.ie_type: 'IE Type: QFI (124)'
+        pfcp.ie_len: 'IE Length: 1'
+        pfcp.spare_b7_b6: '00.. .... = Spare: 0'
+        pfcp.qfi_value: '.000 0001 = QFI: 0x01'
+'Create BAR : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Create BAR (85)'
+    pfcp.ie_len: 'IE Length: 5'
+    'BAR ID : 1':
+        pfcp.ie_type: 'IE Type: BAR ID (88)'
+        pfcp.ie_len: 'IE Length: 1'
+        pfcp.bar_id: 'BAR ID: 1'
+'PDN Type : IPv4':
+-   pfcp.ie_type: 'IE Type: PDN Type (113)'
+    pfcp.ie_len: 'IE Length: 1'
+    pfcp.pdn_type: '.... .001 = PDN Type: IPv4 (1)'
+pfcp.response_in: 'Response In: 2756'
+
+end note
+
+"10.0.17.1" -> "10.0.14.1": 2756, PFCP rsp.\nPFCP Session Establishment Response (51)
+
+note right #cce0ff
+**10.0.17.1 to 10.0.14.1**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Establishment Response (51)'
+pfcp.length: 'Length: 112'
+pfcp.seid: 'SEID: 0x000000000000000c'
+pfcp.seqno: 'Sequence Number: 234'
+pfcp.spare_oct: 'Spare: 0'
+'Node ID : IPv4 address: 10.0.17.1':
+-   pfcp.ie_type: 'IE Type: Node ID (60)'
+    pfcp.ie_len: 'IE Length: 5'
+    pfcp.spare_h1: '0000 .... = Spare: 0'
+    pfcp.node_id_type: '.... 0000 = Node ID Type: IPv4 address (0)'
+    pfcp.node_id_ipv4: 'Node ID IPv4: 10.0.17.1'
+'Cause : Request accepted(success)':
+-   pfcp.ie_type: 'IE Type: Cause (19)'
+    pfcp.ie_len: 'IE Length: 1'
+    pfcp.cause: 'Cause: Request accepted(success) (1)'
+'F-SEID : SEID: 0x000000000000000c, IPv4 10.0.17.1':
+-   pfcp.ie_type: 'IE Type: F-SEID (57)'
+    pfcp.ie_len: 'IE Length: 13'
+    pfcp.f_seid_flags:
+        pfcp.spare_b7: '0... .... = Spare: 0'
+        pfcp.spare_b6: '.0.. .... = Spare: 0'
+        pfcp.spare_b5: '..0. .... = Spare: 0'
+        pfcp.spare_b4: '...0 .... = Spare: 0'
+        pfcp.spare_b3: '.... 0... = Spare: 0'
+        pfcp.spare_b2: '.... .0.. = Spare: 0'
+        pfcp.f_seid_flags.v4: '.... ..1. = V4 (IPv4): Present'
+        pfcp.f_seid_flags.v6: '.... ...0 = V6 (IPv6): Not Present'
+    pfcp.seid: 'SEID: 0x000000000000000c'
+    pfcp.f_seid.ipv4: 'IPv4 address: 10.0.17.1'
+'Created PDR : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Created PDR (8)'
+    pfcp.ie_len: 'IE Length: 19'
+    'PDR ID : 2':
+        pfcp.ie_type: 'IE Type: PDR ID (56)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.pdr_id: 'Rule ID: 2'
+    'F-TEID : TEID: 0x0000002e, IPv4 10.0.17.1':
+        pfcp.ie_type: 'IE Type: F-TEID (21)'
+        pfcp.ie_len: 'IE Length: 9'
+        pfcp.f_teid_flags:
+            pfcp.fteid_flg.spare: '0000 .... = Spare: 0'
+            pfcp.f_teid_flags.ch_id: '.... 0... = CHID (CHOOSE_ID): False'
+            pfcp.f_teid_flags.ch: '.... .0.. = CH (CHOOSE): False'
+            pfcp.f_teid_flags.v6: '.... ..0. = V6 (IPv6): Not Present'
+            pfcp.f_teid_flags.v4: '.... ...1 = V4 (IPv4): Present'
+        pfcp.f_teid.teid: 'TEID: 0x0000002e'
+        pfcp.f_teid.ipv4_addr: 'IPv4 address: 10.0.17.1'
+-   pfcp.ie_type: 'IE Type: Created PDR (8)'
+    pfcp.ie_len: 'IE Length: 19'
+    'PDR ID : 3':
+        pfcp.ie_type: 'IE Type: PDR ID (56)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.pdr_id: 'Rule ID: 3'
+    'F-TEID : TEID: 0x0000002f, IPv4 10.0.17.1':
+        pfcp.ie_type: 'IE Type: F-TEID (21)'
+        pfcp.ie_len: 'IE Length: 9'
+        pfcp.f_teid_flags:
+            pfcp.fteid_flg.spare: '0000 .... = Spare: 0'
+            pfcp.f_teid_flags.ch_id: '.... 0... = CHID (CHOOSE_ID): False'
+            pfcp.f_teid_flags.ch: '.... .0.. = CH (CHOOSE): False'
+            pfcp.f_teid_flags.v6: '.... ..0. = V6 (IPv6): Not Present'
+            pfcp.f_teid_flags.v4: '.... ...1 = V4 (IPv4): Present'
+        pfcp.f_teid.teid: 'TEID: 0x0000002f'
+        pfcp.f_teid.ipv4_addr: 'IPv4 address: 10.0.17.1'
+-   pfcp.ie_type: 'IE Type: Created PDR (8)'
+    pfcp.ie_len: 'IE Length: 19'
+    'PDR ID : 4':
+        pfcp.ie_type: 'IE Type: PDR ID (56)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.pdr_id: 'Rule ID: 4'
+    'F-TEID : TEID: 0x0000002e, IPv4 10.0.17.1':
+        pfcp.ie_type: 'IE Type: F-TEID (21)'
+        pfcp.ie_len: 'IE Length: 9'
+        pfcp.f_teid_flags:
+            pfcp.fteid_flg.spare: '0000 .... = Spare: 0'
+            pfcp.f_teid_flags.ch_id: '.... 0... = CHID (CHOOSE_ID): False'
+            pfcp.f_teid_flags.ch: '.... .0.. = CH (CHOOSE): False'
+            pfcp.f_teid_flags.v6: '.... ..0. = V6 (IPv6): Not Present'
+            pfcp.f_teid_flags.v4: '.... ...1 = V4 (IPv4): Present'
+        pfcp.f_teid.teid: 'TEID: 0x0000002e'
+        pfcp.f_teid.ipv4_addr: 'IPv4 address: 10.0.17.1'
+pfcp.response_to: 'Response To: 2755'
+pfcp.response_time: 'Response Time: 0.000602770 seconds'
+
+end note
+
+"10.0.3.1" -> "10.0.2.15": 2761, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)
+
+note right #c6ebc6
+**10.0.3.1 to 10.0.2.15**
+NGAP-PDU: 001d0080b1000004000a00020014005500020004004a00808f004001597e0213bb0eaf037e006801004a2e0101c211000901000631310101ff01060b00010b00012905010a2d000d2201017900060120410101097b000f80000d0408080808000d0408080404250c0b437573746f6d536c696365120100202f0000040082000a0c400000003040000000008b000a01f00a0011010000002e00860001000088000700010000091c00006e400a0c400000003040000000
+ngap.procedureCode: 'procedureCode: id-PDUSessionResourceSetup (29)'
+per.enum_index: 'Enumerated Index: 0'
+ngap.criticality: 'criticality: reject (0)'
+per.open_type_length: 'Open Type Length: 177'
+ngap.value_element:
+-   ngap.PDUSessionResourceSetupRequest_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 4'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-PDUSessionResourceSetupListSUReq':
+                ngap.id: 'id: id-PDUSessionResourceSetupListSUReq (74)'
+                per.enum_index: 'Enumerated Index: 0'
+                ngap.criticality: 'criticality: reject (0)'
+                per.open_type_length: 'Open Type Length: 143'
+                ngap.value_element:
+                    per.sequence_of_length: 'Sequence-Of Length: 1'
+                    ngap.PDUSessionResourceSetupListSUReq:
+                        Item 0:
+                            ngap.PDUSessionResourceSetupItemSUReq_element:
+                                per.extension_bit: '0... .... Extension Bit: False'
+                                per.optional_field_bit: '..0. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pDUSessionID: 'pDUSessionID: 1'
+                                per.octet_string_length: 'Octet String Length: 47'
+                                ngap.pDUSessionNAS_PDU:
+                                    nas-5gs:
+                                        Security protected NAS 5GS message:
+                                            nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                            nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                            nas_5gs.security_header_type: '.... 0010 = Security header type: Integrity protected and ciphered (2)'
+                                            nas_5gs.msg_auth_code: 'Message authentication code: 0x13bb0eaf'
+                                            nas_5gs.seq_no: 'Sequence number: 3'
+                                        Plain NAS 5GS Message:
+                                            nas_5gs.epd: 'Extended protocol discriminator: 5G mobility management messages (126)'
+                                            nas_5gs.spare_half_octet: '0000 .... = Spare Half Octet: 0'
+                                            nas_5gs.security_header_type: '.... 0000 = Security header type: Plain NAS message, not security protected (0)'
+                                            nas_5gs.mm.message_type: 'Message type: DL NAS transport (0x68)'
+                                            Payload container type:
+                                                nas_5gs.mm.pld_cont_type: '.... 0001 = Payload container type: N1 SM information (1)'
+                                            Payload container:
+                                                gsm_a.len: 'Length: 74'
+                                                Plain NAS 5GS Message:
+                                                    nas_5gs.epd: 'Extended protocol discriminator: 5G session management messages (46)'
+                                                    nas_5gs.pdu_session_id: 'PDU session identity: PDU session identity value 1 (1)'
+                                                    nas_5gs.proc_trans_id: 'Procedure transaction identity: 1'
+                                                    nas_5gs.sm.message_type: 'Message type: PDU session establishment accept (0xc2)'
+                                                    nas_5gs.sm.sel_sc_mode: '0001 .... = Selected SSC mode: SSC mode 1 (1)'
+                                                    PDU session type - Selected PDU session type:
+                                                        nas_5gs.sm.pdu_session_type: '.... 0001 = PDU session type: IPv4 (1)'
+                                                    QoS rules - Authorized QoS rules:
+                                                        gsm_a.len: 'Length: 9'
+                                                        QoS rule 1:
+                                                            nas_5gs.sm.qos_rule_id: 'QoS rule identifier: 1'
+                                                            nas_5gs.sm.length: 'Length: 6'
+                                                            nas_5gs.sm.rop: '001. .... = Rule operation code: Create new QoS rule (1)'
+                                                            nas_5gs.sm.dqr: '...1 .... = DQR: The QoS rule is the default QoS rule'
+                                                            nas_5gs.sm.nof_pkt_filters: '.... 0001 = Number of packet filters: 1'
+                                                            Packet filter 1:
+                                                                nas_5gs.sm.pkt_flt_dir: '..11 .... = Packet filter direction: Bidirectional (3)'
+                                                                nas_5gs.sm.pkt_flt_id: '.... 0001 = Packet filter identifier: 1'
+                                                                nas_5gs.sm.pf_len: 'Length: 1'
+                                                                Packet filter component 1:
+                                                                    nas_5gs.sm.pf_type: 'Packet filter component type: Match-all type (1)'
+                                                            nas_5gs.sm.qos_rule_precedence: 'QoS rule precedence: 255'
+                                                            nas_5gs.spare_b7: '0... .... = Spare: 0'
+                                                            nas_5gs.spare_b6: '.0.. .... = Spare: 0'
+                                                            nas_5gs.sm.qfi: '..00 0001 = Qos flow identifier: 1'
+                                                    Session-AMBR:
+                                                        gsm_a.len: 'Length: 6'
+                                                        nas_5gs.sm.unit_for_session_ambr_dl: 'Unit for Session-AMBR for downlink: value is incremented in multiples of 1 Gbps (11)'
+                                                        nas_5gs.sm.session_ambr_dl: 'Session-AMBR for downlink: 1 Gbps (1)'
+                                                        nas_5gs.sm.unit_for_session_ambr_ul: 'Unit for Session-AMBR for uplink: value is incremented in multiples of 1 Gbps (11)'
+                                                        nas_5gs.sm.session_ambr_ul: 'Session-AMBR for uplink: 1 Gbps (1)'
+                                                    PDU address:
+                                                        nas_5gs.sm.elem_id: 'Element ID: 0x29'
+                                                        gsm_a.len: 'Length: 5'
+                                                        nas_5gs.sm.pdu_ses_type: '.... 0001 = PDU session type: IPv4 (1)'
+                                                        nas_5gs.sm.pdu_addr_inf_ipv4: 'PDU address information: 10.45.0.13'
+                                                    S-NSSAI:
+                                                        nas_5gs.common.elem_id: 'Element ID: 0x22'
+                                                        gsm_a.len: 'Length: 1'
+                                                        nas_5gs.mm.sst: 'Slice/service type (SST): 1'
+                                                    QoS flow descriptions - Authorized:
+                                                        nas_5gs.sm.elem_id: 'Element ID: 0x79'
+                                                        gsm_a.len: 'Length: 6'
+                                                        QoS flow description 1:
+                                                            nas_5gs.sm.qfi: '..00 0001 = Qos flow identifier: 1'
+                                                            nas_5gs.sm.hf_nas_5gs_sm_qos_des_flow_opt_code: '001. .... = Operation code: Create new QoS flow description (1)'
+                                                            nas_5gs.sm.e: '.1.. .... = E bit: 1'
+                                                            nas_5gs.sm.nof_params: '..00 0001 = Number of parameters: 1'
+                                                            Parameter 1 - 5QI:
+                                                                nas_5gs.sm.param_id: 'Parameter identifier: 5QI (1)'
+                                                                nas_5gs.sm.param_len: 'Length: 1'
+                                                                nas_5gs.sm.5qi: '5QI: 9'
+                                                    Extended protocol configuration options:
+                                                        nas_eps.esm.elem_id: 'Element ID: 0x7b'
+                                                        gsm_a.len: 'Length: 15'
+                                                        gsm_a.gm.sm.link_dir: 'Link direction: Network to MS (1)'
+                                                        gsm_a.gm.sm.ext: '1... .... = Extension: True'
+                                                        gsm_a.gm.configuration_protocol: '.... .000 = Configuration Protocol: PPP for use with IP PDP type or IP PDN type (0)'
+                                                        gsm_a.gm.sm.pco_pid:
+                                                        -   gsm_a.gm.sm.pco.length: 'Length: 0x04 (4)'
+                                                            gsm_a.gm.sm.pco.dns.ipv4: 'IPv4: 8.8.8.8'
+                                                        -   gsm_a.gm.sm.pco.length: 'Length: 0x04 (4)'
+                                                            gsm_a.gm.sm.pco.dns.ipv4: 'IPv4: 8.8.4.4'
+                                                    DNN:
+                                                        nas_5gs.common.elem_id: 'Element ID: 0x25'
+                                                        gsm_a.len: 'Length: 12'
+                                                        nas_5gs.cmn.dnn: 'DNN: CustomSlice'
+                                            PDU session identity 2 - PDU session ID:
+                                                nas_5gs.mm.elem_id: 'Element ID: 0x12'
+                                                nas_5gs.pdu_session_id: 'PDU session identity: PDU session identity value 1 (1)'
+                                ngap.s_NSSAI_element:
+                                    per.extension_bit: '0... .... Extension Bit: False'
+                                    per.optional_field_bit: '..0. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                    ngap.sST: 'sST: 01'
+                                ngap.pDUSessionResourceSetupRequestTransfer:
+                                    ngap.PDUSessionResourceSetupRequestTransfer_element:
+                                        per.extension_bit: '0... .... Extension Bit: False'
+                                        per.sequence_of_length: 'Sequence-Of Length: 4'
+                                        ngap.protocolIEs:
+                                            'Item 0: id-PDUSessionAggregateMaximumBitRate':
+                                                ngap.id: 'id: id-PDUSessionAggregateMaximumBitRate (130)'
+                                                per.enum_index: 'Enumerated Index: 0'
+                                                ngap.criticality: 'criticality: reject (0)'
+                                                per.open_type_length: 'Open Type Length: 10'
+                                                ngap.value_element:
+                                                    ngap.PDUSessionAggregateMaximumBitRate_element:
+                                                        per.extension_bit: '0... .... Extension Bit: False'
+                                                        per.optional_field_bit: '.0.. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                        per.extension_present_bit: '0... .... Extension Present Bit: False'
+                                                        ngap.pDUSessionAggregateMaximumBitRateDL: 'pDUSessionAggregateMaximumBitRateDL: 1073741824bits/s'
+                                                        ngap.pDUSessionAggregateMaximumBitRateUL: 'pDUSessionAggregateMaximumBitRateUL: 1073741824bits/s'
+                                            'Item 1: id-UL-NGU-UP-TNLInformation':
+                                                ngap.id: 'id: id-UL-NGU-UP-TNLInformation (139)'
+                                                per.enum_index: 'Enumerated Index: 0'
+                                                ngap.criticality: 'criticality: reject (0)'
+                                                per.open_type_length: 'Open Type Length: 10'
+                                                ngap.value_element:
+                                                    per.choice_index: 'Choice Index: 0'
+                                                    ngap.UPTransportLayerInformation:
+                                                        ngap.gTPTunnel_element:
+                                                            per.extension_bit: '.0.. .... Extension Bit: False'
+                                                            per.optional_field_bit: '..0. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                            per.extension_present_bit: '...0 .... Extension Present Bit: False'
+                                                            per.bit_string_length: 'Bit String Length: 32'
+                                                            ngap.transportLayerAddress:
+                                                                ngap.TransportLayerAddressIPv4: 'TransportLayerAddress (IPv4): 10.0.17.1'
+                                                            ngap.gTP_TEID: 'gTP-TEID: 0000002e'
+                                            'Item 2: id-PDUSessionType':
+                                                ngap.id: 'id: id-PDUSessionType (134)'
+                                                per.enum_index: 'Enumerated Index: 0'
+                                                ngap.criticality: 'criticality: reject (0)'
+                                                per.open_type_length: 'Open Type Length: 1'
+                                                ngap.value_element:
+                                                    per.extension_present_bit: '0... .... Extension Present Bit: False'
+                                                    per.enum_index: 'Enumerated Index: 0'
+                                                    ngap.PDUSessionType: 'PDUSessionType: ipv4 (0)'
+                                            'Item 3: id-QosFlowSetupRequestList':
+                                                ngap.id: 'id: id-QosFlowSetupRequestList (136)'
+                                                per.enum_index: 'Enumerated Index: 0'
+                                                ngap.criticality: 'criticality: reject (0)'
+                                                per.open_type_length: 'Open Type Length: 7'
+                                                ngap.value_element:
+                                                    per.sequence_of_length: 'Sequence-Of Length: 1'
+                                                    ngap.QosFlowSetupRequestList:
+                                                        Item 0:
+                                                            ngap.QosFlowSetupRequestItem_element:
+                                                                per.extension_bit: '.... ..0. Extension Bit: False'
+                                                                per.optional_field_bit: '0... .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                                per.extension_present_bit: '.0.. .... Extension Present Bit: False'
+                                                                ngap.qosFlowIdentifier: 'qosFlowIdentifier: 1'
+                                                                ngap.qosFlowLevelQosParameters_element:
+                                                                    per.extension_bit: '0... .... Extension Bit: False'
+                                                                    per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                                    per.choice_index: 'Choice Index: 0'
+                                                                    ngap.qosCharacteristics:
+                                                                        ngap.nonDynamic5QI_element:
+                                                                            per.extension_bit: '.... ...0 Extension Bit: False'
+                                                                            per.optional_field_bit: '...0 .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                                            per.extension_present_bit: '.... 0... Extension Present Bit: False'
+                                                                            ngap.fiveQI: 'fiveQI: 9'
+                                                                    ngap.allocationAndRetentionPriority_element:
+                                                                        per.extension_bit: '0... .... Extension Bit: False'
+                                                                        per.optional_field_bit: '.0.. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                                        ngap.priorityLevelARP: 'priorityLevelARP: 8'
+                                                                        per.extension_present_bit: '0... .... Extension Present Bit: False'
+                                                                        per.enum_index: 'Enumerated Index: 0'
+                                                                        ngap.pre_emptionCapability: 'pre-emptionCapability: shall-not-trigger-pre-emption (0)'
+                                                                        ngap.pre_emptionVulnerability: 'pre-emptionVulnerability: not-pre-emptable (0)'
+            'Item 3: id-UEAggregateMaximumBitRate':
+                ngap.id: 'id: id-UEAggregateMaximumBitRate (110)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 10'
+                ngap.value_element:
+                    ngap.UEAggregateMaximumBitRate_element:
+                        per.extension_bit: '0... .... Extension Bit: False'
+                        per.optional_field_bit: '.0.. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                        per.extension_present_bit: '0... .... Extension Present Bit: False'
+                        ngap.uEAggregateMaximumBitRateDL: 'uEAggregateMaximumBitRateDL: 1073741824bits/s'
+                        ngap.uEAggregateMaximumBitRateUL: 'uEAggregateMaximumBitRateUL: 1073741824bits/s'
+
+end note
+
+"10.0.2.15" -> "10.0.3.1": 2766, NGAP PDUSessionResourceSetup (29)
+
+note right #c6ebc6
+**10.0.2.15 to 10.0.3.1**
+NGAP-PDU: 201d0024000003000a40020014005540020004004b40110000010d0003e00a00020f000000040001
+ngap.procedureCode: 'procedureCode: id-PDUSessionResourceSetup (29)'
+per.enum_index: 'Enumerated Index: 0'
+ngap.criticality: 'criticality: reject (0)'
+per.open_type_length: 'Open Type Length: 36'
+ngap.value_element:
+-   ngap.PDUSessionResourceSetupResponse_element:
+        per.extension_bit: '0... .... Extension Bit: False'
+        per.sequence_of_length: 'Sequence-Of Length: 3'
+        ngap.protocolIEs:
+            'Item 0: id-AMF-UE-NGAP-ID':
+                ngap.id: 'id: id-AMF-UE-NGAP-ID (10)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.AMF_UE_NGAP_ID: 'AMF-UE-NGAP-ID: 20'
+            'Item 1: id-RAN-UE-NGAP-ID':
+                ngap.id: 'id: id-RAN-UE-NGAP-ID (85)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 2'
+                ngap.value_element:
+                    ngap.RAN_UE_NGAP_ID: 'RAN-UE-NGAP-ID: 4'
+            'Item 2: id-PDUSessionResourceSetupListSURes':
+                ngap.id: 'id: id-PDUSessionResourceSetupListSURes (75)'
+                per.enum_index: 'Enumerated Index: 1'
+                ngap.criticality: 'criticality: ignore (1)'
+                per.open_type_length: 'Open Type Length: 17'
+                ngap.value_element:
+                    per.sequence_of_length: 'Sequence-Of Length: 1'
+                    ngap.PDUSessionResourceSetupListSURes:
+                        Item 0:
+                            ngap.PDUSessionResourceSetupItemSURes_element:
+                                per.extension_bit: '0... .... Extension Bit: False'
+                                per.optional_field_bit: '.0.. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                ngap.pDUSessionID: 'pDUSessionID: 1'
+                                per.octet_string_length: 'Octet String Length: 13'
+                                ngap.pDUSessionResourceSetupResponseTransfer:
+                                    ngap.PDUSessionResourceSetupResponseTransfer_element:
+                                        per.extension_bit: '0... .... Extension Bit: False'
+                                        per.optional_field_bit: '.... 0... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                        ngap.dLQosFlowPerTNLInformation_element:
+                                            per.extension_bit: '.... .0.. Extension Bit: False'
+                                            per.optional_field_bit: '.... ..0. Optional Field Bit: False (iE-Extensions is NOT present)'
+                                            per.choice_index: 'Choice Index: 0'
+                                            ngap.uPTransportLayerInformation:
+                                                ngap.gTPTunnel_element:
+                                                    per.extension_bit: '0... .... Extension Bit: False'
+                                                    per.optional_field_bit: '.0.. .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                    per.extension_present_bit: '..0. .... Extension Present Bit: False'
+                                                    per.bit_string_length: 'Bit String Length: 32'
+                                                    ngap.transportLayerAddress:
+                                                        ngap.TransportLayerAddressIPv4: 'TransportLayerAddress (IPv4): 10.0.2.15'
+                                                    ngap.gTP_TEID: 'gTP-TEID: 00000004'
+                                            per.sequence_of_length: 'Sequence-Of Length: 1'
+                                            ngap.associatedQosFlowList:
+                                                Item 0:
+                                                    ngap.AssociatedQosFlowItem_element:
+                                                        per.extension_bit: '.... ..0. Extension Bit: False'
+                                                        per.optional_field_bit: '0... .... Optional Field Bit: False (iE-Extensions is NOT present)'
+                                                        per.extension_present_bit: '.0.. .... Extension Present Bit: False'
+                                                        ngap.qosFlowIdentifier: 'qosFlowIdentifier: 1'
+
+end note
+
+"10.0.14.1" -> "10.0.17.1": 2770, PFCP req.\nPFCP Session Modification Request (52)
+
+note right #80b3ff
+**10.0.14.1 to 10.0.17.1**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Modification Request (52)'
+pfcp.length: 'Length: 69'
+pfcp.seid: 'SEID: 0x000000000000000c'
+pfcp.seqno: 'Sequence Number: 235'
+pfcp.spare_oct: 'Spare: 0'
+'Update FAR : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Update FAR (10)'
+    pfcp.ie_len: 'IE Length: 53'
+    'FAR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: FAR ID (108)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1'
+    'Apply Action : ':
+        pfcp.ie_type: 'IE Type: Apply Action (44)'
+        pfcp.ie_len: 'IE Length: 2'
+        pfcp.apply_action_flags:
+            pfcp.spare_b7_b5: '000. .... = Spare: 0'
+            pfcp.apply_action.dupl: '...0 .... = DUPL (Duplicate): False'
+            pfcp.apply_action.nocp: '.... 0... = NOCP (Notify the CP function): False'
+            pfcp.apply_action.buff: '.... .0.. = BUFF (Buffer): False'
+            pfcp.apply_action.forw: '.... ..1. = FORW (Forward): True'
+            pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'
+        IE data not decoded by WS yet:
+            _ws.expert:
+                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
+                _ws.expert.message: 'Message: IE data not decoded by WS yet'
+                _ws.expert.severity: 'Severity level: Note'
+                _ws.expert.group: 'Group: Undecoded'
+    'Update Forwarding Parameters : [Grouped IE]':
+        pfcp.ie_type: 'IE Type: Update Forwarding Parameters (11)'
+        pfcp.ie_len: 'IE Length: 35'
+        'Destination Interface : Access':
+            pfcp.ie_type: 'IE Type: Destination Interface (42)'
+            pfcp.ie_len: 'IE Length: 1'
+            pfcp.spare_h1: '0000 .... = Spare: 0'
+            pfcp.dst_interface: '.... 0000 = Interface: Access (0)'
+        'Network Instance : CustomSlice':
+            pfcp.ie_type: 'IE Type: Network Instance (22)'
+            pfcp.ie_len: 'IE Length: 12'
+            pfcp.network_instance: 'Network Instance: CustomSlice'
+        'Outer Header Creation : ':
+            pfcp.ie_type: 'IE Type: Outer Header Creation (84)'
+            pfcp.ie_len: 'IE Length: 10'
+            pfcp.outer_hdr_desc: 'Outer Header Creation Description: GTP-U/UDP/IPv4  (256)'
+            pfcp.outer_hdr_creation.teid: 'TEID: 0x00000004'
+            pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: 10.0.2.15'
+pfcp.response_in: 'Response In: 2771'
+
+end note
+
+"10.0.17.1" -> "10.0.14.1": 2771, PFCP rsp.\nPFCP Session Modification Response (53)
+
+note right #cce0ff
+**10.0.17.1 to 10.0.14.1**
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Modification Response (53)'
+pfcp.length: 'Length: 17'
+pfcp.seid: 'SEID: 0x000000000000000c'
+pfcp.seqno: 'Sequence Number: 235'
+pfcp.spare_oct: 'Spare: 0'
+'Cause : Request accepted(success)':
+-   pfcp.ie_type: 'IE Type: Cause (19)'
+    pfcp.ie_len: 'IE Length: 1'
+    pfcp.cause: 'Cause: Request accepted(success) (1)'
+pfcp.response_to: 'Response To: 2770'
+pfcp.response_time: 'Response Time: 0.000103190 seconds'
+
+end note
+
+"10.0.2.15" -> "10.0.17.1": 2813, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.45.0.10" -> "8.8.8.8": 2814, ICMP
+
+note right
+**10.45.0.10 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.0.2.4" -> "8.8.8.8": 2815, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"8.8.8.8" -> "10.0.2.4": 2821, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"8.8.8.8" -> "10.45.0.10": 2822, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.10**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.17.1" -> "10.0.2.15": 2823, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.2.15" -> "10.0.17.1": 2834, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.45.0.10" -> "8.8.8.8": 2835, ICMP
+
+note right
+**10.45.0.10 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.0.2.4" -> "8.8.8.8": 2836, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"8.8.8.8" -> "10.0.2.4": 2837, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"8.8.8.8" -> "10.45.0.10": 2838, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.10**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.17.1" -> "10.0.2.15": 2839, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.2.15" -> "10.0.17.1": 2851, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.45.0.10" -> "8.8.8.8": 2852, ICMP
+
+note right
+**10.45.0.10 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.0.2.4" -> "8.8.8.8": 2853, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"8.8.8.8" -> "10.0.2.4": 2854, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"8.8.8.8" -> "10.45.0.10": 2855, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.10**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.17.1" -> "10.0.2.15": 2856, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.2.15" -> "10.0.17.1": 2920, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.45.0.10" -> "8.8.8.8": 2921, ICMP
+
+note right
+**10.45.0.10 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.0.2.4" -> "8.8.8.8": 2922, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.0.2.4": 2926, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.45.0.10": 2927, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.10**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.17.1" -> "10.0.2.15": 2928, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3021, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.45.0.10" -> "8.8.8.8": 3022, ICMP
+
+note right
+**10.45.0.10 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3023, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3045, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.45.0.10": 3046, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.10**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3047, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3048, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.45.0.11" -> "8.8.8.8": 3049, ICMP
+
+note right
+**10.45.0.11 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3050, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3091, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"8.8.8.8" -> "10.45.0.11": 3092, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.11**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3093, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3172, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.45.0.11" -> "8.8.8.8": 3173, ICMP
+
+note right
+**10.45.0.11 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3174, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3177, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"8.8.8.8" -> "10.45.0.11": 3178, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.11**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3179, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3184, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.45.0.11" -> "8.8.8.8": 3185, ICMP
+
+note right
+**10.45.0.11 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3186, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3187, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"8.8.8.8" -> "10.45.0.11": 3188, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.11**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3189, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3199, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.45.0.11" -> "8.8.8.8": 3200, ICMP
+
+note right
+**10.45.0.11 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3201, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3202, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.45.0.11": 3203, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.11**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3204, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3210, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.45.0.11" -> "8.8.8.8": 3211, ICMP
+
+note right
+**10.45.0.11 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3212, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3213, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"8.8.8.8" -> "10.45.0.11": 3214, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.11**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3215, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=5/1280
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3216, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.45.0.12" -> "8.8.8.8": 3217, ICMP
+
+note right
+**10.45.0.12 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3218, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=1/256
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3219, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"8.8.8.8" -> "10.45.0.12": 3220, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.12**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3221, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=1/256
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3238, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.45.0.12" -> "8.8.8.8": 3239, ICMP
+
+note right
+**10.45.0.12 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3240, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=2/512
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3241, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"8.8.8.8" -> "10.45.0.12": 3242, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.12**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3243, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=2/512
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3279, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.45.0.12" -> "8.8.8.8": 3280, ICMP
+
+note right
+**10.45.0.12 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3281, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=3/768
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3287, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"8.8.8.8" -> "10.45.0.12": 3288, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.12**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3289, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=3/768
+end note
+
+"10.0.2.15" -> "10.0.17.1": 3290, GTP<ICMP>
+
+note right
+**10.0.2.15 to 10.0.17.1**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.45.0.12" -> "8.8.8.8": 3291, ICMP
+
+note right
+**10.45.0.12 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"10.0.2.4" -> "8.8.8.8": 3292, ICMP
+
+note right
+**10.0.2.4 to 8.8.8.8**
+Type: 8 (Echo (ping) request) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.0.2.4": 3293, ICMP
+
+note right
+**8.8.8.8 to 10.0.2.4**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"8.8.8.8" -> "10.45.0.12": 3294, ICMP
+
+note right
+**8.8.8.8 to 10.45.0.12**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+"10.0.17.1" -> "10.0.2.15": 3295, GTP<ICMP>
+
+note right
+**10.0.17.1 to 10.0.2.15**
+Type: 0 (Echo (ping) reply) seq=4/1024
+end note
+
+@enduml

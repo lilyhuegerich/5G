@@ -6,4 +6,6 @@ pcrf:
   freeDiameter: /etc/freeDiameter/pcrf.conf
 
 parameter:
+  no_ipv6: true
+
 max:
