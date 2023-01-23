@@ -1,0 +1,9 @@
+cd /home/lily/5G/SHARED/Tools
+
+./gen_veth_by_name.sh upf2 20
+
+cd /home/lily/5G/SHARED/open5gs/install/bin
+
+./open5gs-upfd &
+
+echo $! > upf2.pid

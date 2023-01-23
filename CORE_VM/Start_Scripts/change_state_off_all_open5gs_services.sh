@@ -7,39 +7,55 @@ if [ "$change" == "start" ] || [ "$change" == "stop" ] ;
 then
 	echo Will $change all open5gs functions.
 else
-	echo Reverting to default, restart.
+	echo Will use default action: restart.
 	change=restart
 fi
 
-sudo systemctl "$change" open5gs-mmed
 
-sudo systemctl "$change" open5gs-sgwcd
+#Apparently the order of starting the NFs matters.
+standard_core_services=("mme" "sgwc")
 
-sudo systemctl "$change" open5gs-amfd
+for service in "${standard_core_services[@]}"
+do
+	sudo systemctl "$change" open5gs-"$service"d
+done
 
-sudo systemctl "$change" open5gs-sgwud
+#Then the second smf
+if [ "$change" == "restart" ] || [ "$change" == "stop" ] ;
+then
+	/home/lily/5G/SHARED/PIDs/kill_me.sh /home/lily/5G/SHARED/PIDs/smf2.pid
+fi
 
-sudo systemctl "$change" open5gs-upfd
+if [ "$change" == "restart" ] || [ "$change" == "start" ] ;
+then
+	/home/lily/5G/CORE_VM/Start_Scripts/start_smf.sh
+fi
 
-sudo systemctl "$change" open5gs-hssd
+#Till the upfs
+standard_core_services=("smf" "amf" "sgwu" "upf")
 
-sudo systemctl "$change" open5gs-pcrfd
+for service in "${standard_core_services[@]}"
+do
+	sudo systemctl "$change" open5gs-"$service"d
+done 
 
-sudo systemctl "$change" open5gs-nrfd
-
-sudo systemctl "$change" open5gs-smfd
-
-sudo systemctl "$change" open5gs-ausfd
-
-sudo systemctl "$change" open5gs-udmd
-
-sudo systemctl "$change" open5gs-pcfd
-
-sudo systemctl "$change" open5gs-nssfd
-
-sudo systemctl "$change" open5gs-bsfd
-
-sudo systemctl "$change" open5gs-udrd
+#And the second upf
+if [ "$change" == "restart" ] || [ "$change" == "stop" ] ;
+then
+	/home/lily/5G/SHARED/PIDs/kill_me.sh /home/lily/5G/SHARED/PIDs/upf2.pid
+fi
 
 
+if [ "$change" == "restart" ] || [ "$change" == "start" ] ;
+then
+	/home/lily/5G/SHARED/Setup_Scripts/start_upf.sh
+fi
 
+sleep 1
+#Finally the rest.
+standard_core_services=("hss" "pcrf" "nrf" "scp" "ausf" "udm" "pcf" "nssf" "bsf" "udr")
+
+for service in "${standard_core_services[@]}"
+do
+	sudo systemctl "$change" open5gs-"$service"d
+done 
