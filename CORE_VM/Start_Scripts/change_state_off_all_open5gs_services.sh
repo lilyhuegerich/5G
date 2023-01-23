@@ -15,10 +15,10 @@ fi
 #Apparently the order of starting the NFs matters.
 standard_core_services=("mme" "sgwc")
 
-#for service in "${standard_core_services[@]}"
-#do
-#	sudo systemctl "$change" open5gs-"$service"d
-#done
+for service in "${standard_core_services[@]}"
+do
+	sudo systemctl "$change" open5gs-"$service"d
+done
 
 #Then the second smf
 #if [ "$change" == "restart" ] || [ "$change" == "stop" ] ;
