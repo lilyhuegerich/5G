@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"open5gs.subscribers"},{"v":2,"unique":true,"key":{"imsi":1},"name":"imsi_1","ns":"open5gs.subscribers","background":true}],"uuid":"fe84e43f686a4f4a80c700f21700dfe1"}
