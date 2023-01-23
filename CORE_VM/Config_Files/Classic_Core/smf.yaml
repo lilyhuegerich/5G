@@ -12,7 +12,6 @@ smf:
   - addr: 10.0.14.1
   subnet:
   - addr: 10.45.0.1/16
-    dnn: internet
   dns:
   - 8.8.8.8
   - 8.8.4.4
@@ -22,30 +21,14 @@ smf:
   ctf:
     enabled: auto
   freeDiameter: /etc/freeDiameter/smf.conf
-  info:
-   - s_nssai:
-       - sst : 1
-         sd : 000001
-         dnn:
-          - internet
-     tai:
-       - plmn_id:
-           mcc: 901
-           mnc: 70
-         tac: 1
-
 
 nrf:
   sbi:
   - addr: 10.0.8.1
     port: 7777
-
-
 upf:
   pfcp:
-  - addr: 10.0.17.1
-    dnn: internet
-
+    addr: 10.0.17.1
 parameter:
   no_ipv6: true
 
