@@ -1,0 +1,16 @@
+logger:
+  file: /var/log/open5gs/upf.log
+upf:
+  pfcp:
+    addr: 10.0.21.1
+  gtpu:
+  - addr: 10.0.21.1
+  subnet:
+  - addr: 10.47.0.1/16
+
+smf:
+parameter:
+  no_ipv6: true
+
+max:
+time:

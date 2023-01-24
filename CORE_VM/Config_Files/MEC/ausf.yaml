@@ -1,0 +1,16 @@
+logger:
+  file: /var/log/open5gs/ausf.log
+ausf:
+  sbi:
+  - addr: 10.0.4.1
+    port: 7777
+nrf:
+  sbi:
+  - addr: 10.0.8.1
+    port: 7777
+parameter:
+  no_ipv6: true
+
+
+max:
+time:
