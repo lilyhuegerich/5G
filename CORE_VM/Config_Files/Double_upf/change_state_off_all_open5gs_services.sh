@@ -49,7 +49,6 @@ fi
 
 if [ "$change" == "restart" ] || [ "$change" == "start" ] ;
 then
-	cp upf2.yaml /home/lily/open5gs/install/etc/open5gs/upf.yaml
 	/home/lily/5G/SHARED/Setup_Scripts/start_upf.sh
 fi
 

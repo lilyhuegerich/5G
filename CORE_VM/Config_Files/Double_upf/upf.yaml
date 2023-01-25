@@ -2,9 +2,9 @@ logger:
   file: /var/log/open5gs/upf.log
 upf:
   pfcp:
-    addr: 10.0.21.1
+    addr: 10.0.17.1
   gtpu:
-  - addr: 10.0.21.1
+  - addr: 10.0.17.1
   subnet:
   - addr: 10.45.0.1/16
 

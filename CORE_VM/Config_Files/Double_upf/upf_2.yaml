@@ -1,5 +1,5 @@
 logger:
-  file: /var/log/open5gs/upf.log
+  file: /home/lily/open5gs/install/var/log/open5gs/upf.log
 upf:
   pfcp:
     addr: 10.0.21.1
