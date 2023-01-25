@@ -23,7 +23,7 @@ else
 fi
 sleep 2
 cd /home/lily/5G/CORE_VM/Config_Files #change me
-../Start_Scripts/health_check.sh
+../Start_Scripts/health_check.sh $name
 
 #src_dir="/home/lily/5G/CORE_VM/Config_Files" #change me
 #dst_dir="/etc/open5gs"
