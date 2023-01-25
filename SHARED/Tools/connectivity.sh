@@ -11,7 +11,7 @@ else
 	echo $val "not a valid input, needs to be either empty or an int."
 	exit 1
 fi
-addr="10.$tmp_addr.0.0/16"
+addr="10.$tmp_addr.0.1/16"
 
 echo "Will configure device " $name " with ip addresses " $addr "."
 
