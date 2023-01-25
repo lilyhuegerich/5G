@@ -1,7 +1,12 @@
 dir=${1:-"./"}
 cd $dir
 cwd=$(pwd)
-name=$(basename $cwd)
+mode=$(basename $cwd)
+name=$(/home/lily/5G/SHARED/Tools/check_if_config_mode_valid.sh $mode CORE_VM)
+
+status=$?
+[ $status -eq 0 ] && echo "Mode: " $name || exit 1
+
 echo "Setting Configs for " $name
 
 if [ -f put_configs.sh ]; then
@@ -16,8 +21,9 @@ else
 	cd /home/lily/5G/CORE_VM/Config_Files #change me
 	../Start_Scripts/change_state_off_all_open5gs_services.sh #restart all services
 fi
-
-
+sleep 2
+cd /home/lily/5G/CORE_VM/Config_Files #change me
+../Start_Scripts/health_check.sh
 
 #src_dir="/home/lily/5G/CORE_VM/Config_Files" #change me
 #dst_dir="/etc/open5gs"
