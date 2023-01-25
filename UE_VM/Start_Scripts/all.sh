@@ -4,25 +4,24 @@ non_config_files=("GNB_files")
 default="Classic_Core"
 
 if [ -d "$config_files/$1" ] && [ -n "$1" ]; then
-	echo "Starting Setup:" $1
-	name=$1
+    echo "Starting Setup:" $1
+    name=$1
 else
-	echo $1 "Not a valid setup. Options are:"
-	for dir in "$config_files"/*/; do
-		config=false
-		for i in "${non_config_files[@]}"; do
-			if [[ "$i" == "$string_to_check" ]]; then
-				config=true
-			fi
-		done
-		if [ "$config" = false ]; then
-			echo "				"$(basename "$dir")
-		fi
-	done
-	echo "Will use the default" $default
-	name=$default
+    echo $1 "Not a valid setup. Options are:"
+    for dir in "$config_files"/*/; do
+        config=true
+        for i in "${non_config_files[@]}"; do
+            if [[ "$i" == "$(basename $dir)" ]]; then
+                config=false
+            fi
+        done
+        if [ "$config" = true ]; then
+            echo "                           "$(basename "$dir")
+        fi
+    done
+    echo "Will use the default" $default
+    name=$default
 fi
-
 
 sudo ip route add 10.0.3.0/24 dev enp0s3 #route to amf
 sudo ip route add 10.0.17.0/24 dev enp0s3 # route to upf

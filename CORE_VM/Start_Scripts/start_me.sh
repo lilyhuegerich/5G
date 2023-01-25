@@ -9,19 +9,21 @@ if [ -d "$config_files/$1" ] && [ -n "$1" ]; then
 else
     echo $1 "Not a valid setup. Options are:"
     for dir in "$config_files"/*/; do
-        config=false
+        config=true
         for i in "${non_config_files[@]}"; do
-            if [[ "$i" == "$string_to_check" ]]; then
-                config=true
+            if [[ "$i" == "$(basename $dir)" ]]; then
+                config=false
             fi
         done
-        if [ "$config" = false ]; then
-            echo "              "$(basename "$dir")
+        if [ "$config" = true ]; then
+            echo "             				 "$(basename "$dir")
         fi
     done
     echo "Will use the default" $default
     name=$default
 fi
+
+exit 1 
 
 cd "$config_files"
 cd $name 
