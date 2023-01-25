@@ -4,7 +4,6 @@ name=$(/home/lily/5G/SHARED/Tools/check_if_config_mode_valid.sh $mode UE_VM)
 
 status=$?
 [ $status -eq 0 ] && echo "Mode: " $name || exit 1
-exit 0
 sudo ip route add 10.0.3.0/24 dev enp0s3 #route to amf
 sudo ip route add 10.0.17.0/24 dev enp0s3 # route to upf
 
