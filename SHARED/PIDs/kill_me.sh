@@ -1,1 +1,1 @@
-kill | cat $1
+kill $(cat $1)
