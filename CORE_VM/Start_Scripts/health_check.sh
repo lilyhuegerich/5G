@@ -7,9 +7,9 @@ standard_core_services=("mme" "sgwc" "smf" "amf" "sgwu" "upf" "hss" "pcrf" "nrf"
 
 for service in "${standard_core_services[@]}"; do
 	if pgrep open5gs-$service > /dev/null ; then	
-		echo -e "$UGreen" $service is running.
-	else 
-		echo -e "$URed" $service is off.
+		echo -e "$UGreen" ""$service" is running."
+	else
+		echo -e "$URed" ""$service" is off."
 	fi
 done
  
