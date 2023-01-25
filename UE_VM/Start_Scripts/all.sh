@@ -8,6 +8,7 @@ status=$?
 if [[ $mode == "Double_upf" ]]; then
 	sudo ip route del 10.0.21.0/24 dev veth_upf2
 	sudo ip route add 10.0.21.0/24 dev enp0s3 #route to second upf
+fi
 sudo ip route add 10.0.3.0/24 dev enp0s3 #route to amf
 sudo ip route add 10.0.17.0/24 dev enp0s3 # route to upf
 
