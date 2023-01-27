@@ -3,7 +3,12 @@ mode=${1:-"Classic_Core"}
 name=$(/home/lily/5G/SHARED/Tools/check_if_config_mode_valid.sh $mode UE_VM)
 
 status=$?
-[ $status -eq 0 ] && echo "Mode: " $name || exit 1
+[ $status -eq 0 ] && echo "Mode: " $name || echo "Error unknown mode: $mode" && exit 1
+
+#Needed for bridged adapter mode
+#sudo ip addr add 10.0.2.15 dev enp0s3 #Config address of UE_VM
+#sudo ip route add 10.0.2.4 dev enp0s3 #Route to Core_vm manual address add
+
 
 if [[ $mode == "Double_upf" ]]; then
 	sudo ip route del 10.0.21.0/24 dev veth_upf2
