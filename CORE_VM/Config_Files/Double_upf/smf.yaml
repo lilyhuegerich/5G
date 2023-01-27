@@ -14,6 +14,7 @@ smf:
   - addr: 10.45.0.1/16
     dnn: internet
   - addr: 10.47.0.1/16
+    dnn: internet2
   dns:
   - 8.8.8.8
   - 8.8.4.4
@@ -30,9 +31,10 @@ nrf:
     port: 7777
 upf:
   pfcp:
-  - addr: 10.0.17.1
-    dnn: internet 
   - addr: 10.0.21.1
+    dnn: internet 
+  - addr: 10.0.17.1
+    dnn: internet2
 parameter:
   no_ipv6: true
 

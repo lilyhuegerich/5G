@@ -1,9 +1,7 @@
 # Open5gs config files
 
-Files should be in /etc/open5gs/\<SERVICE\>.yaml this is just for a backup.
-
-Remember to restart servives accordingly after:
+To put all config files, restart service and update subscriber data if necesary run the following:
 
 ```console
-user@core:$ sudo systemctl restart open5gs-<SERVICE>
+user@core:$ put_open5gs_configs.sh <MEC/Double_upf/Classic_Core> 
 ```

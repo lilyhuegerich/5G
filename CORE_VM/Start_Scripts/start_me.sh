@@ -1,7 +1,7 @@
 #!/bin/bash
-
-sudo ip addr add 10.0.2.4 dev enp0s3 #IP address used in configs for Core vm
-sudo ip route add 10.0.2.15 dev enp0s3 #Route to UE_vm (its manual configured ip address)
+#Below are needed in bridge adapter mode for the VM
+#sudo ip addr add 10.0.2.4 dev enp0s3 #IP address used in configs for Core vm
+#sudo ip route add 10.0.2.15 dev enp0s3 #Route to UE_vm (its manual configured ip address)
 
 mode=${1:-"Classic_Core"}
 name=$(/home/lily/5G/SHARED/Tools/check_if_config_mode_valid.sh $mode CORE_VM)
