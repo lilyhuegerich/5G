@@ -1,13 +1,14 @@
 #!/bin/bash
+
+sudo ip addr add 10.0.2.4 dev enp0s3 #IP address used in configs for Core vm
+sudo ip route add 10.0.2.15 dev enp0s3 #Route to UE_vm (its manual configured ip address)
+
 mode=${1:-"Classic_Core"}
 name=$(/home/lily/5G/SHARED/Tools/check_if_config_mode_valid.sh $mode CORE_VM)
-
 status=$?
 [ $status -eq 0 ] && echo "Mode: " $name || exit 1
 
-exit 1 
-
-cd "$config_files"
+cd /home/lily/5G/CORE_VM/Config_Files
 cd $name 
 
 #mongorestore Open5gs_"$name" #restore subscribers
@@ -17,7 +18,7 @@ cd /home/lily/5G/CORE_VM/Start_Scripts
 
 cd "$config_files"
 ./put_open5gs_configs.sh $name
-
+sleep 2
 cd ../Start_Scripts
 ./health_check.sh $name
 
