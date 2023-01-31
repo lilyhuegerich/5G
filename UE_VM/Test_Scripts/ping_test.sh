@@ -1,13 +1,38 @@
+ues=() 
+
+while getopts "u:d:" opt; do
+        case $opt in
+                u)
+                        OPTIND=$((2))
+                        #echo "1:" $OPTIND "${!OPTIND}"
+                        while [[ $OPTIND -le $# ]] && [[ "${!OPTIND}" != -* ]]; do
+                                ues+=("${!OPTIND}")
+                                OPTIND=$((OPTIND +1))                           
+                        done
+                        ;;
+                d)
+                        ip_address="$OPTARG"
+                        ;;
+                \?)
+                        echo "Invalid option: -$OPTARG" >&2
+                        exit 1
+                        ;;
+        esac
+done
+
+echo "UEs: ${ues[@]}, will ping Destination: $ip_address"
+
+
 UGreen='\033[0;32m'
 UYellow='\033[0;33m'
 URed='\033[0;31m'
 
-for var in "$@"
+for var in "${ues[@]}"
 do
 	
 	echo -e "$URed"
 	packet_loss=100
-	packet_loss=$( ping -c 5 -I "$var" 8.8.8.8 | grep -oP '\d+(?=% packet loss)' )
+	packet_loss=$( ping -c 5 -I "$var" "$ip_address" | grep -oP '\d+(?=% packet loss)' )
 	#packet_loss=  $packet_loss | awk NF
 	if [ -z "$packet_loss" ];then
 		echo -e "$URed" "			   	 		ERROR!"
