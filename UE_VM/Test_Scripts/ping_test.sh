@@ -1,6 +1,7 @@
 ues=() 
-
-while getopts "u:d:" opt; do
+timer=5
+attempts=5
+while getopts "u:d:t:a:" opt; do
         case $opt in
                 u)
                         OPTIND=$((2))
@@ -13,6 +14,13 @@ while getopts "u:d:" opt; do
                 d)
                         ip_address="$OPTARG"
                         ;;
+		t)
+			timer="$OPTARG"
+			echo "Timer not yet implemented"
+			;;
+		a)
+			attempts="$OPTARG"
+			;;
                 \?)
                         echo "Invalid option: -$OPTARG" >&2
                         exit 1
@@ -32,7 +40,7 @@ do
 	
 	echo -e "$URed"
 	packet_loss=100
-	packet_loss=$( ping -c 5 -I "$var" "$ip_address" | grep -oP '\d+(?=% packet loss)' )
+	packet_loss=$( ping -c "$attempts" -I "$var" "$ip_address" | grep -oP '\d+(?=% packet loss)' )
 	#packet_loss=  $packet_loss | awk NF
 	if [ -z "$packet_loss" ];then
 		echo -e "$URed" "			   	 		ERROR!"
