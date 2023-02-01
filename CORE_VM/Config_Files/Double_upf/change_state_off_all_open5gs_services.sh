@@ -21,18 +21,18 @@ do
 done
 
 #Then the second smf
-#if [ "$change" == "restart" ] || [ "$change" == "stop" ] ;
-#then
-#	/home/lily/5G/SHARED/PIDs/kill_me.sh /home/lily/5G/SHARED/PIDs/smf2.pid
-#fi
+if [ "$change" == "restart" ] || [ "$change" == "stop" ] ;
+then
+	/home/lily/5G/SHARED/PIDs/kill_me.sh /home/lily/5G/SHARED/PIDs/smf.pid
+fi
 
-#if [ "$change" == "restart" ] || [ "$change" == "start" ] ;
-#then
-#	/home/lily/5G/CORE_VM/Start_Scripts/start_smf.sh
-#fi
+if [ "$change" == "restart" ] || [ "$change" == "start" ] ;
+then
+	/home/lily/5G/CORE_VM/Start_Scripts/start_smf.sh
+fi
 
 #Till the upfs
-standard_core_services=("smf" "amf" "sgwu" "upf")
+standard_core_services=("amf" "sgwu" "upf")
 
 for service in "${standard_core_services[@]}"
 do

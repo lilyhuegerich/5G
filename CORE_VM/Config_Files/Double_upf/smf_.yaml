@@ -1,5 +1,5 @@
 logger:
-  file: /var/log/open5gs/smf.log
+  file: /home/lily/open5gs/install/var/log/open5gs/smf.log
 smf:
   sbi:
   - addr: 10.0.14.1
