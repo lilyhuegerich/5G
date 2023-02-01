@@ -7,6 +7,8 @@ name=$(/home/lily/5G/SHARED/Tools/check_if_config_mode_valid.sh $mode CORE_VM)
 status=$?
 [ $status -eq 0 ] && echo "Mode: " $name || exit 1
 
+#./update_db_mode.sh $name
+
 echo "Setting Configs for " $name
 
 if [ -f put_configs.sh ]; then

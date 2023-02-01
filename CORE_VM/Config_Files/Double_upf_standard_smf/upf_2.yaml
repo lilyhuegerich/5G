@@ -1,0 +1,17 @@
+logger:
+  file: /home/lily/open5gs/install/var/log/open5gs/upf.log
+upf:
+  pfcp:
+    addr: 10.0.17.1
+  gtpu:
+  - addr: 10.0.17.1
+  subnet:
+  - addr: 10.47.0.1/16
+    dev: ogstun2
+    dnn: internet2
+smf:
+parameter:
+  no_ipv6: true
+
+max:
+time:

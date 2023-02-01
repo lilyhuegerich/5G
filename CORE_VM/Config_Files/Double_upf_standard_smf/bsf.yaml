@@ -1,0 +1,16 @@
+db_uri: mongodb://localhost/open5gs
+logger:
+  file: /var/log/open5gs/bsf.log
+bsf:
+  sbi:
+  - addr: 10.0.5.1
+    port: 7777
+
+nrf:
+  sbi:
+  - addr: 10.0.8.1
+    port: 7777
+parameter:
+  no_ipv6: true
+max:
+time:
