@@ -13,5 +13,5 @@ link to start scripts.)
 
 
 
-## $$\color{blue}{\textbf{UE\_VM}}$$
+## $$\color{blue}{\mathbf{UE\_VM}}$$
 
