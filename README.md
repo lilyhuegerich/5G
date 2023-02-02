@@ -13,5 +13,5 @@ link to start scripts.)
 
 
 
-## <span style="color: Blue;">UE VM</span>
+## $$\color{blue}{UE VM}$$
 
