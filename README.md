@@ -9,7 +9,7 @@ A simulation of a 5G core network using [Open5gs](https://open5gs.org/open5gs/ab
 link to start scripts.)
 ```
 
-## <span style="color: Purple;">Core VM</span>
+## $$\color{teal}{\mathbf{Core\text{ }VM}}$$
 
 
 
