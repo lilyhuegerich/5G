@@ -8,7 +8,7 @@ status=$?
 [ $status -eq 0 ] && echo "Mode: " $name || exit 1
 
 #./update_db_mode.sh $name
-../Start_Scripts/change_state_off_all_open5gs_services.sh stop #stop all services so that there are not any left over from previous runs
+../../Start_Scripts/change_state_off_all_open5gs_services.sh stop #stop all services so that there are not any left over from previous runs
 echo "Setting Configs for " $name
 
 if [ -f put_configs.sh ]; then
