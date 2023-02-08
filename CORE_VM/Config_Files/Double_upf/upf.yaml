@@ -1,5 +1,6 @@
 logger:
   file: /var/log/open5gs/upf.log
+  level: debug
 upf:
   pfcp:
     addr: 10.0.21.1
