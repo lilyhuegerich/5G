@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="866px" preserveAspectRatio="none" style="width:451px;height:866px;" version="1.1" viewBox="0 0 451 866" width="451px" zoomAndPan="magnify"><defs/><g><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="28" x2="28" y1="34.2969" y2="826.4766"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="281" x2="281" y1="34.2969" y2="826.4766"/><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="15" y="22.9951">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="8" y="825.4766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="15" y="845.4717">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="89" x="237" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="75" x="244" y="22.9951">10.0.14.10</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="89" x="237" y="825.4766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="75" x="244" y="845.4717">10.0.14.10</text><polygon fill="#000000" points="39.5,91.6953,29.5,95.6953,39.5,99.6953,35.5,95.6953" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="95.6953" y2="95.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="60.3638">139, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="75.4966">PFCP Association Setup Request (5)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="90.6294">+5.950s (17:52:49.126.434)</text><path d="M286,61.4297 L286,86.4297 L439,86.4297 L439,71.4297 L429,61.4297 L286,61.4297 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,61.4297 L429,71.4297 L439,71.4297 L429,61.4297 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="78.4966">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,151.0938,29.5,155.0938,39.5,159.0938,35.5,155.0938" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="155.0938" y2="155.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="119.7622">141, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="134.895">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="150.0278">+5.957s (17:52:49.132.927)</text><path d="M286,120.8281 L286,145.8281 L439,145.8281 L439,130.8281 L429,120.8281 L286,120.8281 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,120.8281 L429,130.8281 L439,130.8281 L429,120.8281 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="137.895">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,210.4922,29.5,214.4922,39.5,218.4922,35.5,214.4922" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="214.4922" y2="214.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="179.1606">142, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="194.2935">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="209.4263">+5.983s (17:52:49.159.293)</text><path d="M286,180.2266 L286,205.2266 L439,205.2266 L439,190.2266 L429,180.2266 L286,180.2266 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,180.2266 L429,190.2266 L439,190.2266 L429,180.2266 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="197.2935">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,269.8906,29.5,273.8906,39.5,277.8906,35.5,273.8906" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="273.8906" y2="273.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="238.5591">143, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="253.6919">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="268.8247">+5.989s (17:52:49.165.813)</text><path d="M286,239.625 L286,264.625 L439,264.625 L439,249.625 L429,239.625 L286,239.625 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,239.625 L429,249.625 L439,249.625 L429,239.625 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="256.6919">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,329.2891,29.5,333.2891,39.5,337.2891,35.5,333.2891" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="333.2891" y2="333.2891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="297.9575">144, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="313.0903">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="328.2231">+6.008s (17:52:49.183.965)</text><path d="M286,299.0234 L286,324.0234 L439,324.0234 L439,309.0234 L429,299.0234 L286,299.0234 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,299.0234 L429,309.0234 L439,309.0234 L429,299.0234 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="316.0903">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,388.6875,29.5,392.6875,39.5,396.6875,35.5,392.6875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="392.6875" y2="392.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="357.356">145, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="372.4888">PFCP Association Setup Request (5)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="387.6216">+6.051s (17:52:49.227.817)</text><path d="M286,358.4219 L286,383.4219 L439,383.4219 L439,368.4219 L429,358.4219 L286,358.4219 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,358.4219 L429,368.4219 L439,368.4219 L429,358.4219 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="375.4888">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,448.0859,29.5,452.0859,39.5,456.0859,35.5,452.0859" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="452.0859" y2="452.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="416.7544">146, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="431.8872">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="447.02">+6.077s (17:52:49.253.683)</text><path d="M286,417.8203 L286,442.8203 L439,442.8203 L439,427.8203 L429,417.8203 L286,417.8203 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,417.8203 L429,427.8203 L439,427.8203 L429,417.8203 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="434.8872">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,507.4844,29.5,511.4844,39.5,515.4844,35.5,511.4844" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="511.4844" y2="511.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="476.1528">147, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="491.2856">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="506.4185">+6.084s (17:52:49.260.773)</text><path d="M286,477.2188 L286,502.2188 L439,502.2188 L439,487.2188 L429,477.2188 L286,477.2188 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,477.2188 L429,487.2188 L439,487.2188 L429,477.2188 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="494.2856">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,566.8828,29.5,570.8828,39.5,574.8828,35.5,570.8828" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="570.8828" y2="570.8828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="535.5513">148, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="550.6841">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="565.8169">+6.091s (17:52:49.266.976)</text><path d="M286,536.6172 L286,561.6172 L439,561.6172 L439,546.6172 L429,536.6172 L286,536.6172 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,536.6172 L429,546.6172 L439,546.6172 L429,536.6172 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="553.6841">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,626.2813,29.5,630.2813,39.5,634.2813,35.5,630.2813" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="630.2813" y2="630.2813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="594.9497">151, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="610.0825">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="625.2153">+6.108s (17:52:49.284.711)</text><path d="M286,596.0156 L286,621.0156 L439,621.0156 L439,606.0156 L429,596.0156 L286,596.0156 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,596.0156 L429,606.0156 L439,606.0156 L429,596.0156 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="613.0825">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,685.6797,29.5,689.6797,39.5,693.6797,35.5,689.6797" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="689.6797" y2="689.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="654.3481">152, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="669.481">PFCP Association Setup Request (5)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="684.6138">+6.121s (17:52:49.297.292)</text><path d="M286,655.4141 L286,680.4141 L439,680.4141 L439,665.4141 L429,655.4141 L286,655.4141 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,655.4141 L429,665.4141 L439,665.4141 L429,655.4141 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="672.481">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,745.0781,29.5,749.0781,39.5,753.0781,35.5,749.0781" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="749.0781" y2="749.0781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="713.7466">153, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="728.8794">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="744.0122">+6.158s (17:52:49.334.438)</text><path d="M286,714.8125 L286,739.8125 L439,739.8125 L439,724.8125 L429,714.8125 L286,714.8125 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,714.8125 L429,724.8125 L439,724.8125 L429,714.8125 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="731.8794">10.0.14.10 to UPF</text><polygon fill="#000000" points="39.5,804.4766,29.5,808.4766,39.5,812.4766,35.5,808.4766" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="33.5" x2="280.5" y1="808.4766" y2="808.4766"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="45.5" y="773.145">154, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="229" x="45.5" y="788.2778">PFCP Session Deletion Request (54)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="180" x="45.5" y="803.4106">+6.209s (17:52:49.385.202)</text><path d="M286,774.2109 L286,799.2109 L439,799.2109 L439,784.2109 L429,774.2109 L286,774.2109 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M429,774.2109 L429,784.2109 L439,784.2109 L429,774.2109 " fill="#AB0041" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="292" y="791.2778">10.0.14.10 to UPF</text><!--MD5=[30e51bfbab9cf4d6c56c4b103c18b633]
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UPF"
+participant "10.0.14.10"
+
+"10.0.14.10" -> "UPF": 139, PFCP req.\nPFCP Association Setup Request (5)\n+5.950s (17:52:49.126.434)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 141, PFCP req.\nPFCP Session Deletion Request (54)\n+5.957s (17:52:49.132.927)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 142, PFCP req.\nPFCP Session Deletion Request (54)\n+5.983s (17:52:49.159.293)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 143, PFCP req.\nPFCP Session Deletion Request (54)\n+5.989s (17:52:49.165.813)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 144, PFCP req.\nPFCP Session Deletion Request (54)\n+6.008s (17:52:49.183.965)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 145, PFCP req.\nPFCP Association Setup Request (5)\n+6.051s (17:52:49.227.817)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 146, PFCP req.\nPFCP Session Deletion Request (54)\n+6.077s (17:52:49.253.683)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 147, PFCP req.\nPFCP Session Deletion Request (54)\n+6.084s (17:52:49.260.773)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 148, PFCP req.\nPFCP Session Deletion Request (54)\n+6.091s (17:52:49.266.976)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 151, PFCP req.\nPFCP Session Deletion Request (54)\n+6.108s (17:52:49.284.711)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 152, PFCP req.\nPFCP Association Setup Request (5)\n+6.121s (17:52:49.297.292)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 153, PFCP req.\nPFCP Session Deletion Request (54)\n+6.158s (17:52:49.334.438)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 154, PFCP req.\nPFCP Session Deletion Request (54)\n+6.209s (17:52:49.385.202)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 11:24:54 CET 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.17+8-post-Ubuntu-1ubuntu220.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

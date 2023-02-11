@@ -1,0 +1,92 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UPF"
+participant "10.0.14.10"
+
+"10.0.14.10" -> "UPF": 139, PFCP req.\nPFCP Association Setup Request (5)\n+5.950s (17:52:49.126.434)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 141, PFCP req.\nPFCP Session Deletion Request (54)\n+5.957s (17:52:49.132.927)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 142, PFCP req.\nPFCP Session Deletion Request (54)\n+5.983s (17:52:49.159.293)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 143, PFCP req.\nPFCP Session Deletion Request (54)\n+5.989s (17:52:49.165.813)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 144, PFCP req.\nPFCP Session Deletion Request (54)\n+6.008s (17:52:49.183.965)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 145, PFCP req.\nPFCP Association Setup Request (5)\n+6.051s (17:52:49.227.817)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 146, PFCP req.\nPFCP Session Deletion Request (54)\n+6.077s (17:52:49.253.683)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 147, PFCP req.\nPFCP Session Deletion Request (54)\n+6.084s (17:52:49.260.773)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 148, PFCP req.\nPFCP Session Deletion Request (54)\n+6.091s (17:52:49.266.976)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 151, PFCP req.\nPFCP Session Deletion Request (54)\n+6.108s (17:52:49.284.711)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 152, PFCP req.\nPFCP Association Setup Request (5)\n+6.121s (17:52:49.297.292)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 153, PFCP req.\nPFCP Session Deletion Request (54)\n+6.158s (17:52:49.334.438)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+"10.0.14.10" -> "UPF": 154, PFCP req.\nPFCP Session Deletion Request (54)\n+6.209s (17:52:49.385.202)
+
+note right #AB0041
+**10.0.14.10 to UPF**
+end note
+
+@enduml

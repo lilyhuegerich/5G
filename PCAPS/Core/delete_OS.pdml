@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in /usr/share/wireshark or at https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob_plain;f=pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/3.2.3" time="Sat Feb 11 17:59:54 2023" capture_file="../5G/PCAPS/Core/delete.pcapng">
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="39" showname="Number" value="27" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:43.176383528 CET" showname="Captured Time" value="1676134363.176383528" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 39: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.14.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="45" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 50" size="3" pos="48" show="50" value="000032"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:54.000000000 UTC" size="8" pos="52" value="00600004e792444a">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:54.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:54.000000000 CET" value="e792444a"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 40" size="0" pos="44" show="40"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="40" showname="Number" value="28" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:43.176661232 CET" showname="Captured Time" value="1676134363.176661232" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 40: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.1, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="45" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 50" size="3" pos="48" show="50" value="000032"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:53.000000000 UTC" size="8" pos="52" value="00600004e7924449">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:53.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:53.000000000 CET" value="e7924449"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 39" size="0" pos="44" show="39"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.000277704 seconds" size="0" pos="44" show="0.000277704"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="41" showname="Number" value="29" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:43.176684783 CET" showname="Captured Time" value="1676134363.176684783" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 41: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.1, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="45" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 69" size="3" pos="48" show="69" value="000045"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:53.000000000 UTC" size="8" pos="52" value="00600004e7924449">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:53.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:53.000000000 CET" value="e7924449"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 42" size="0" pos="44" show="42"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="42" showname="Number" value="2a" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:43.176764784 CET" showname="Captured Time" value="1676134363.176764784" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 42: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.14.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="45" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 69" size="3" pos="48" show="69" value="000045"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:54.000000000 UTC" size="8" pos="52" value="00600004e792444a">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:54.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:54.000000000 CET" value="e792444a"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 41" size="0" pos="44" show="41"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.000080001 seconds" size="0" pos="44" show="0.000080001"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="78" showname="Number" value="4e" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:44.548637663 CET" showname="Captured Time" value="1676134364.548637663" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 78: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.12.1, Dst: 10.0.13.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="45" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 49" size="3" pos="48" show="49" value="000031"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:53.000000000 UTC" size="8" pos="52" value="00600004e7924449">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:53.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:53.000000000 CET" value="e7924449"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 79" size="0" pos="44" show="79"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="79" showname="Number" value="4f" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:44.548739698 CET" showname="Captured Time" value="1676134364.548739698" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 79: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.13.1, Dst: 10.0.12.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="45" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 49" size="3" pos="48" show="49" value="000031"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:54.000000000 UTC" size="8" pos="52" value="00600004e792444a">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:54.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:54.000000000 CET" value="e792444a"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 78" size="0" pos="44" show="78"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.000102035 seconds" size="0" pos="44" show="0.000102035"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="80" showname="Number" value="50" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:44.548770262 CET" showname="Captured Time" value="1676134364.548770262" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 80: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.13.1, Dst: 10.0.12.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="45" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 48" size="3" pos="48" show="48" value="000030"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:54.000000000 UTC" size="8" pos="52" value="00600004e792444a">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:54.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:54.000000000 CET" value="e792444a"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 81" size="0" pos="44" show="81"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="60">
+    <field name="num" pos="0" show="81" showname="Number" value="51" size="60"/>
+    <field name="len" pos="0" show="60" showname="Frame Length" value="3c" size="60"/>
+    <field name="caplen" pos="0" show="60" showname="Captured Length" value="3c" size="60"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:44.548832958 CET" showname="Captured Time" value="1676134364.548832958" size="60"/>
+  </proto>
+  <proto name="frame" showname="Frame 81: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface any, id 0" size="60" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.12.1, Dst: 10.0.13.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="44" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="44" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="45" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 48" size="3" pos="48" show="48" value="000030"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="51" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : Feb 11, 2023 16:43:53.000000000 UTC" size="8" pos="52" value="00600004e7924449">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="52" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="54" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: Feb 11, 2023 16:43:53.000000000 UTC" size="4" pos="56" show="Feb 11, 2023 17:43:53.000000000 CET" value="e7924449"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 80" size="0" pos="44" show="80"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.000062696 seconds" size="0" pos="44" show="0.000062696"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="140">
+    <field name="num" pos="0" show="84" showname="Number" value="54" size="140"/>
+    <field name="len" pos="0" show="140" showname="Frame Length" value="8c" size="140"/>
+    <field name="caplen" pos="0" show="140" showname="Captured Length" value="8c" size="140"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:45.134479263 CET" showname="Captured Time" value="1676134365.134479263" size="140"/>
+  </proto>
+  <proto name="frame" showname="Frame 84: 140 bytes on wire (1120 bits), 140 bytes captured (1120 bits) on interface any, id 0" size="140" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 127.0.0.2, Dst: 127.0.0.8" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="sctp" showname="Stream Control Transmission Protocol, Src Port: 3868 (3868), Dst Port: 59194 (59194)" size="28" pos="36">
+    <field name="filtered" value="sctp" />
+  </proto>
+  <proto name="diameter" showname="Diameter Protocol" size="76" pos="64">
+    <field name="diameter.version" showname="Version: 0x01" size="1" pos="64" show="0x00000001" value="01"/>
+    <field name="diameter.length" showname="Length: 76" size="3" pos="65" show="76" value="00004c"/>
+    <field name="diameter.flags" showname="Flags: 0x80, Request" size="1" pos="68" show="0x00000080" value="80">
+      <field name="diameter.flags.request" showname="1... .... = Request: Set" size="1" pos="68" show="1" value="1" unmaskedvalue="80"/>
+      <field name="diameter.flags.proxyable" showname=".0.. .... = Proxyable: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.error" showname="..0. .... = Error: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.T" showname="...0 .... = T(Potentially re-transmitted message): Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+    </field>
+    <field name="diameter.cmd.code" showname="Command Code: 280 Device-Watchdog" size="3" pos="69" show="280" value="000118"/>
+    <field name="diameter.applicationId" showname="ApplicationId: Diameter Common Messages (0)" size="4" pos="72" show="0" value="00000000"/>
+    <field name="diameter.hopbyhopid" showname="Hop-by-Hop Identifier: 0x2391c682" size="4" pos="76" show="0x2391c682" value="2391c682"/>
+    <field name="diameter.endtoendid" showname="End-to-End Identifier: 0x5c9497c1" size="4" pos="80" show="0x5c9497c1" value="5c9497c1"/>
+    <field name="diameter.answer_in" showname="Answer In: 85" size="0" pos="64" show="85"/>
+    <field name="diameter.avp" showname="AVP: Origin-Host(264) l=23 f=-M- val=mme.localdomain" size="24" pos="84" show="00:00:01:08:40:00:00:17:6d:6d:65:2e:6c:6f:63:61:6c:64:6f:6d:61:69:6e:00" value="00000108400000176d6d652e6c6f63616c646f6d61696e00">
+      <field name="diameter.avp.code" showname="AVP Code: 264 Origin-Host" size="4" pos="84" show="264" value="00000108"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="88" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="88" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 23" size="3" pos="89" show="23" value="000017"/>
+      <field name="diameter.Origin-Host" showname="Origin-Host: mme.localdomain" size="15" pos="92" show="mme.localdomain" value="6d6d652e6c6f63616c646f6d61696e"/>
+      <field name="diameter.avp.pad" showname="Padding: 00" size="1" pos="107" show="00" value="00"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-Realm(296) l=19 f=-M- val=localdomain" size="20" pos="108" show="00:00:01:28:40:00:00:13:6c:6f:63:61:6c:64:6f:6d:61:69:6e:00" value="00000128400000136c6f63616c646f6d61696e00">
+      <field name="diameter.avp.code" showname="AVP Code: 296 Origin-Realm" size="4" pos="108" show="296" value="00000128"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="112" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="112" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 19" size="3" pos="113" show="19" value="000013"/>
+      <field name="diameter.Origin-Realm" showname="Origin-Realm: localdomain" size="11" pos="116" show="localdomain" value="6c6f63616c646f6d61696e"/>
+      <field name="diameter.avp.pad" showname="Padding: 00" size="1" pos="127" show="00" value="00"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-State-Id(278) l=12 f=-M- val=1676133833" size="12" pos="128" show="00:00:01:16:40:00:00:0c:63:e7:c5:c9" value="000001164000000c63e7c5c9">
+      <field name="diameter.avp.code" showname="AVP Code: 278 Origin-State-Id" size="4" pos="128" show="278" value="00000116"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="132" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="132" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 12" size="3" pos="133" show="12" value="00000c"/>
+      <field name="diameter.Origin-State-Id" showname="Origin-State-Id: 1676133833" size="4" pos="136" show="1676133833" value="63e7c5c9"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="168">
+    <field name="num" pos="0" show="85" showname="Number" value="55" size="168"/>
+    <field name="len" pos="0" show="168" showname="Frame Length" value="a8" size="168"/>
+    <field name="caplen" pos="0" show="168" showname="Captured Length" value="a8" size="168"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:45.134803875 CET" showname="Captured Time" value="1676134365.134803875" size="168"/>
+  </proto>
+  <proto name="frame" showname="Frame 85: 168 bytes on wire (1344 bits), 168 bytes captured (1344 bits) on interface any, id 0" size="168" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 127.0.0.8, Dst: 127.0.0.2" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="sctp" showname="Stream Control Transmission Protocol, Src Port: 59194 (59194), Dst Port: 3868 (3868)" size="44" pos="36">
+    <field name="filtered" value="sctp" />
+  </proto>
+  <proto name="diameter" showname="Diameter Protocol" size="88" pos="80">
+    <field name="diameter.version" showname="Version: 0x01" size="1" pos="80" show="0x00000001" value="01"/>
+    <field name="diameter.length" showname="Length: 88" size="3" pos="81" show="88" value="000058"/>
+    <field name="diameter.flags" showname="Flags: 0x00" size="1" pos="84" show="0x00000000" value="00">
+      <field name="diameter.flags.request" showname="0... .... = Request: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.proxyable" showname=".0.. .... = Proxyable: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.error" showname="..0. .... = Error: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.T" showname="...0 .... = T(Potentially re-transmitted message): Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="diameter.cmd.code" showname="Command Code: 280 Device-Watchdog" size="3" pos="85" show="280" value="000118"/>
+    <field name="diameter.applicationId" showname="ApplicationId: Diameter Common Messages (0)" size="4" pos="88" show="0" value="00000000"/>
+    <field name="diameter.hopbyhopid" showname="Hop-by-Hop Identifier: 0x2391c682" size="4" pos="92" show="0x2391c682" value="2391c682"/>
+    <field name="diameter.endtoendid" showname="End-to-End Identifier: 0x5c9497c1" size="4" pos="96" show="0x5c9497c1" value="5c9497c1"/>
+    <field name="diameter.answer_to" showname="Request In: 84" size="0" pos="80" show="84"/>
+    <field name="diameter.resp_time" showname="Response Time: 0.000324612 seconds" size="0" pos="80" show="0.000324612"/>
+    <field name="diameter.avp" showname="AVP: Result-Code(268) l=12 f=-M- val=DIAMETER_SUCCESS (2001)" size="12" pos="100" show="00:00:01:0c:40:00:00:0c:00:00:07:d1" value="0000010c4000000c000007d1">
+      <field name="diameter.avp.code" showname="AVP Code: 268 Result-Code" size="4" pos="100" show="268" value="0000010c"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="104" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="104" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 12" size="3" pos="105" show="12" value="00000c"/>
+      <field name="diameter.Result-Code" showname="Result-Code: DIAMETER_SUCCESS (2001)" size="4" pos="108" show="2001" value="000007d1"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-Host(264) l=23 f=-M- val=hss.localdomain" size="24" pos="112" show="00:00:01:08:40:00:00:17:68:73:73:2e:6c:6f:63:61:6c:64:6f:6d:61:69:6e:00" value="00000108400000176873732e6c6f63616c646f6d61696e00">
+      <field name="diameter.avp.code" showname="AVP Code: 264 Origin-Host" size="4" pos="112" show="264" value="00000108"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="116" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="116" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 23" size="3" pos="117" show="23" value="000017"/>
+      <field name="diameter.Origin-Host" showname="Origin-Host: hss.localdomain" size="15" pos="120" show="hss.localdomain" value="6873732e6c6f63616c646f6d61696e"/>
+      <field name="diameter.avp.pad" showname="Padding: 00" size="1" pos="135" show="00" value="00"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-Realm(296) l=19 f=-M- val=localdomain" size="20" pos="136" show="00:00:01:28:40:00:00:13:6c:6f:63:61:6c:64:6f:6d:61:69:6e:00" value="00000128400000136c6f63616c646f6d61696e00">
+      <field name="diameter.avp.code" showname="AVP Code: 296 Origin-Realm" size="4" pos="136" show="296" value="00000128"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="140" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="140" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 19" size="3" pos="141" show="19" value="000013"/>
+      <field name="diameter.Origin-Realm" showname="Origin-Realm: localdomain" size="11" pos="144" show="localdomain" value="6c6f63616c646f6d61696e"/>
+      <field name="diameter.avp.pad" showname="Padding: 00" size="1" pos="155" show="00" value="00"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-State-Id(278) l=12 f=-M- val=1676133834" size="12" pos="156" show="00:00:01:16:40:00:00:0c:63:e7:c5:ca" value="000001164000000c63e7c5ca">
+      <field name="diameter.avp.code" showname="AVP Code: 278 Origin-State-Id" size="4" pos="156" show="278" value="00000116"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="160" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="160" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 12" size="3" pos="161" show="12" value="00000c"/>
+      <field name="diameter.Origin-State-Id" showname="Origin-State-Id: 1676133834" size="4" pos="164" show="1676133834" value="63e7c5ca"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="140">
+    <field name="num" pos="0" show="86" showname="Number" value="56" size="140"/>
+    <field name="len" pos="0" show="140" showname="Frame Length" value="8c" size="140"/>
+    <field name="caplen" pos="0" show="140" showname="Captured Length" value="8c" size="140"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:45.285584134 CET" showname="Captured Time" value="1676134365.285584134" size="140"/>
+  </proto>
+  <proto name="frame" showname="Frame 86: 140 bytes on wire (1120 bits), 140 bytes captured (1120 bits) on interface any, id 0" size="140" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 127.0.0.4, Dst: 127.0.0.9" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="sctp" showname="Stream Control Transmission Protocol, Src Port: 3868 (3868), Dst Port: 59590 (59590)" size="28" pos="36">
+    <field name="filtered" value="sctp" />
+  </proto>
+  <proto name="diameter" showname="Diameter Protocol" size="76" pos="64">
+    <field name="diameter.version" showname="Version: 0x01" size="1" pos="64" show="0x00000001" value="01"/>
+    <field name="diameter.length" showname="Length: 76" size="3" pos="65" show="76" value="00004c"/>
+    <field name="diameter.flags" showname="Flags: 0x80, Request" size="1" pos="68" show="0x00000080" value="80">
+      <field name="diameter.flags.request" showname="1... .... = Request: Set" size="1" pos="68" show="1" value="1" unmaskedvalue="80"/>
+      <field name="diameter.flags.proxyable" showname=".0.. .... = Proxyable: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.error" showname="..0. .... = Error: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.T" showname="...0 .... = T(Potentially re-transmitted message): Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+      <field name="diameter.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="68" show="0" value="0" unmaskedvalue="80"/>
+    </field>
+    <field name="diameter.cmd.code" showname="Command Code: 280 Device-Watchdog" size="3" pos="69" show="280" value="000118"/>
+    <field name="diameter.applicationId" showname="ApplicationId: Diameter Common Messages (0)" size="4" pos="72" show="0" value="00000000"/>
+    <field name="diameter.hopbyhopid" showname="Hop-by-Hop Identifier: 0x7dc1cbb6" size="4" pos="76" show="0x7dc1cbb6" value="7dc1cbb6"/>
+    <field name="diameter.endtoendid" showname="End-to-End Identifier: 0x5cab0af8" size="4" pos="80" show="0x5cab0af8" value="5cab0af8"/>
+    <field name="diameter.answer_in" showname="Answer In: 87" size="0" pos="64" show="87"/>
+    <field name="diameter.avp" showname="AVP: Origin-Host(264) l=23 f=-M- val=smf.localdomain" size="24" pos="84" show="00:00:01:08:40:00:00:17:73:6d:66:2e:6c:6f:63:61:6c:64:6f:6d:61:69:6e:00" value="0000010840000017736d662e6c6f63616c646f6d61696e00">
+      <field name="diameter.avp.code" showname="AVP Code: 264 Origin-Host" size="4" pos="84" show="264" value="00000108"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="88" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="88" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="88" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 23" size="3" pos="89" show="23" value="000017"/>
+      <field name="diameter.Origin-Host" showname="Origin-Host: smf.localdomain" size="15" pos="92" show="smf.localdomain" value="736d662e6c6f63616c646f6d61696e"/>
+      <field name="diameter.avp.pad" showname="Padding: 00" size="1" pos="107" show="00" value="00"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-Realm(296) l=19 f=-M- val=localdomain" size="20" pos="108" show="00:00:01:28:40:00:00:13:6c:6f:63:61:6c:64:6f:6d:61:69:6e:00" value="00000128400000136c6f63616c646f6d61696e00">
+      <field name="diameter.avp.code" showname="AVP Code: 296 Origin-Realm" size="4" pos="108" show="296" value="00000128"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="112" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="112" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="112" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 19" size="3" pos="113" show="19" value="000013"/>
+      <field name="diameter.Origin-Realm" showname="Origin-Realm: localdomain" size="11" pos="116" show="localdomain" value="6c6f63616c646f6d61696e"/>
+      <field name="diameter.avp.pad" showname="Padding: 00" size="1" pos="127" show="00" value="00"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-State-Id(278) l=12 f=-M- val=1676133834" size="12" pos="128" show="00:00:01:16:40:00:00:0c:63:e7:c5:ca" value="000001164000000c63e7c5ca">
+      <field name="diameter.avp.code" showname="AVP Code: 278 Origin-State-Id" size="4" pos="128" show="278" value="00000116"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="132" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="132" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="132" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 12" size="3" pos="133" show="12" value="00000c"/>
+      <field name="diameter.Origin-State-Id" showname="Origin-State-Id: 1676133834" size="4" pos="136" show="1676133834" value="63e7c5ca"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="168">
+    <field name="num" pos="0" show="87" showname="Number" value="57" size="168"/>
+    <field name="len" pos="0" show="168" showname="Frame Length" value="a8" size="168"/>
+    <field name="caplen" pos="0" show="168" showname="Captured Length" value="a8" size="168"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:45.285756621 CET" showname="Captured Time" value="1676134365.285756621" size="168"/>
+  </proto>
+  <proto name="frame" showname="Frame 87: 168 bytes on wire (1344 bits), 168 bytes captured (1344 bits) on interface any, id 0" size="168" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 127.0.0.9, Dst: 127.0.0.4" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="sctp" showname="Stream Control Transmission Protocol, Src Port: 59590 (59590), Dst Port: 3868 (3868)" size="44" pos="36">
+    <field name="filtered" value="sctp" />
+  </proto>
+  <proto name="diameter" showname="Diameter Protocol" size="88" pos="80">
+    <field name="diameter.version" showname="Version: 0x01" size="1" pos="80" show="0x00000001" value="01"/>
+    <field name="diameter.length" showname="Length: 88" size="3" pos="81" show="88" value="000058"/>
+    <field name="diameter.flags" showname="Flags: 0x00" size="1" pos="84" show="0x00000000" value="00">
+      <field name="diameter.flags.request" showname="0... .... = Request: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.proxyable" showname=".0.. .... = Proxyable: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.error" showname="..0. .... = Error: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.T" showname="...0 .... = T(Potentially re-transmitted message): Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+      <field name="diameter.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="84" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="diameter.cmd.code" showname="Command Code: 280 Device-Watchdog" size="3" pos="85" show="280" value="000118"/>
+    <field name="diameter.applicationId" showname="ApplicationId: Diameter Common Messages (0)" size="4" pos="88" show="0" value="00000000"/>
+    <field name="diameter.hopbyhopid" showname="Hop-by-Hop Identifier: 0x7dc1cbb6" size="4" pos="92" show="0x7dc1cbb6" value="7dc1cbb6"/>
+    <field name="diameter.endtoendid" showname="End-to-End Identifier: 0x5cab0af8" size="4" pos="96" show="0x5cab0af8" value="5cab0af8"/>
+    <field name="diameter.answer_to" showname="Request In: 86" size="0" pos="80" show="86"/>
+    <field name="diameter.resp_time" showname="Response Time: 0.000172487 seconds" size="0" pos="80" show="0.000172487"/>
+    <field name="diameter.avp" showname="AVP: Result-Code(268) l=12 f=-M- val=DIAMETER_SUCCESS (2001)" size="12" pos="100" show="00:00:01:0c:40:00:00:0c:00:00:07:d1" value="0000010c4000000c000007d1">
+      <field name="diameter.avp.code" showname="AVP Code: 268 Result-Code" size="4" pos="100" show="268" value="0000010c"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="104" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="104" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="104" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 12" size="3" pos="105" show="12" value="00000c"/>
+      <field name="diameter.Result-Code" showname="Result-Code: DIAMETER_SUCCESS (2001)" size="4" pos="108" show="2001" value="000007d1"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-Host(264) l=24 f=-M- val=pcrf.localdomain" size="24" pos="112" show="00:00:01:08:40:00:00:18:70:63:72:66:2e:6c:6f:63:61:6c:64:6f:6d:61:69:6e" value="0000010840000018706372662e6c6f63616c646f6d61696e">
+      <field name="diameter.avp.code" showname="AVP Code: 264 Origin-Host" size="4" pos="112" show="264" value="00000108"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="116" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="116" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="116" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 24" size="3" pos="117" show="24" value="000018"/>
+      <field name="diameter.Origin-Host" showname="Origin-Host: pcrf.localdomain" size="16" pos="120" show="pcrf.localdomain" value="706372662e6c6f63616c646f6d61696e"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-Realm(296) l=19 f=-M- val=localdomain" size="20" pos="136" show="00:00:01:28:40:00:00:13:6c:6f:63:61:6c:64:6f:6d:61:69:6e:00" value="00000128400000136c6f63616c646f6d61696e00">
+      <field name="diameter.avp.code" showname="AVP Code: 296 Origin-Realm" size="4" pos="136" show="296" value="00000128"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="140" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="140" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="140" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 19" size="3" pos="141" show="19" value="000013"/>
+      <field name="diameter.Origin-Realm" showname="Origin-Realm: localdomain" size="11" pos="144" show="localdomain" value="6c6f63616c646f6d61696e"/>
+      <field name="diameter.avp.pad" showname="Padding: 00" size="1" pos="155" show="00" value="00"/>
+    </field>
+    <field name="diameter.avp" showname="AVP: Origin-State-Id(278) l=12 f=-M- val=1676133834" size="12" pos="156" show="00:00:01:16:40:00:00:0c:63:e7:c5:ca" value="000001164000000c63e7c5ca">
+      <field name="diameter.avp.code" showname="AVP Code: 278 Origin-State-Id" size="4" pos="156" show="278" value="00000116"/>
+      <field name="diameter.avp.flags" showname="AVP Flags: 0x40, Mandatory: Set" size="1" pos="160" show="0x00000040" value="40">
+        <field name="diameter.flags.vendorspecific" showname="0... .... = Vendor-Specific: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.flags.mandatory" showname=".1.. .... = Mandatory: Set" size="1" pos="160" show="1" value="1" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.protected" showname="..0. .... = Protected: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved3" showname="...0 .... = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved4" showname=".... 0... = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved5" showname=".... .0.. = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved6" showname=".... ..0. = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+        <field name="diameter.avp.flags.reserved7" showname=".... ...0 = Reserved: Not set" size="1" pos="160" show="0" value="0" unmaskedvalue="40"/>
+      </field>
+      <field name="diameter.avp.len" showname="AVP Length: 12" size="3" pos="161" show="12" value="00000c"/>
+      <field name="diameter.Origin-State-Id" showname="Origin-State-Id: 1676133834" size="4" pos="164" show="1676133834" value="63e7c5ca"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="139" showname="Number" value="8b" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.126433952 CET" showname="Captured Time" value="1676134369.126433952" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 139: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Association Setup Request (5)" size="1" pos="45" show="5" value="05"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000001" size="8" pos="48" show="0x0000000000000001" value="0000000000000001"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 60" size="3" pos="56" show="60" value="00003c"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="141" showname="Number" value="8d" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.132927422 CET" showname="Captured Time" value="1676134369.132927422" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 141: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000000" size="8" pos="48" show="0x0000000000000000" value="0000000000000000"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 61" size="3" pos="56" show="61" value="00003d"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="142" showname="Number" value="8e" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.159293266 CET" showname="Captured Time" value="1676134369.159293266" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 142: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000001" size="8" pos="48" show="0x0000000000000001" value="0000000000000001"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 62" size="3" pos="56" show="62" value="00003e"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="143" showname="Number" value="8f" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.165813066 CET" showname="Captured Time" value="1676134369.165813066" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 143: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000002" size="8" pos="48" show="0x0000000000000002" value="0000000000000002"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 63" size="3" pos="56" show="63" value="00003f"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="144" showname="Number" value="90" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.183964991 CET" showname="Captured Time" value="1676134369.183964991" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 144: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000003" size="8" pos="48" show="0x0000000000000003" value="0000000000000003"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 64" size="3" pos="56" show="64" value="000040"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="145" showname="Number" value="91" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.227816770 CET" showname="Captured Time" value="1676134369.227816770" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 145: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Association Setup Request (5)" size="1" pos="45" show="5" value="05"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000001" size="8" pos="48" show="0x0000000000000001" value="0000000000000001"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 65" size="3" pos="56" show="65" value="000041"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="146" showname="Number" value="92" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.253683150 CET" showname="Captured Time" value="1676134369.253683150" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 146: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000004" size="8" pos="48" show="0x0000000000000004" value="0000000000000004"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 66" size="3" pos="56" show="66" value="000042"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="147" showname="Number" value="93" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.260772883 CET" showname="Captured Time" value="1676134369.260772883" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 147: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000005" size="8" pos="48" show="0x0000000000000005" value="0000000000000005"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 67" size="3" pos="56" show="67" value="000043"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="148" showname="Number" value="94" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.266975959 CET" showname="Captured Time" value="1676134369.266975959" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 148: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000006" size="8" pos="48" show="0x0000000000000006" value="0000000000000006"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 68" size="3" pos="56" show="68" value="000044"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="151" showname="Number" value="97" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.284710811 CET" showname="Captured Time" value="1676134369.284710811" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 151: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000007" size="8" pos="48" show="0x0000000000000007" value="0000000000000007"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 69" size="3" pos="56" show="69" value="000045"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="152" showname="Number" value="98" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.297292313 CET" showname="Captured Time" value="1676134369.297292313" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 152: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Association Setup Request (5)" size="1" pos="45" show="5" value="05"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000001" size="8" pos="48" show="0x0000000000000001" value="0000000000000001"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 70" size="3" pos="56" show="70" value="000046"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="153" showname="Number" value="99" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.334438238 CET" showname="Captured Time" value="1676134369.334438238" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 153: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000008" size="8" pos="48" show="0x0000000000000008" value="0000000000000008"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 71" size="3" pos="56" show="71" value="000047"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="62">
+    <field name="num" pos="0" show="154" showname="Number" value="9a" size="62"/>
+    <field name="len" pos="0" show="62" showname="Frame Length" value="3e" size="62"/>
+    <field name="caplen" pos="0" show="62" showname="Captured Length" value="3e" size="62"/>
+    <field name="timestamp" pos="0" show="Feb 11, 2023 17:52:49.385201617 CET" showname="Captured Time" value="1676134369.385201617" size="62"/>
+  </proto>
+  <proto name="frame" showname="Frame 154: 62 bytes on wire (496 bits), 62 bytes captured (496 bits) on interface any, id 0" size="62" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="sll" showname="Linux cooked capture" size="16" pos="0">
+    <field name="filtered" value="sll" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.10, Dst: 10.0.17.1" size="20" pos="16">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="36">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="44">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="44" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="44" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="44" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Deletion Request (54)" size="1" pos="45" show="54" value="36"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="46" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000009" size="8" pos="48" show="0x0000000000000009" value="0000000000000009"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 72" size="3" pos="56" show="72" value="000048"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="59" show="0" value="00"/>
+  </proto>
+  <proto name="vssmonitoring" showname="VSS Monitoring Ethernet trailer, Source Port: 0" size="2" pos="60">
+    <field name="filtered" value="vssmonitoring" />
+  </proto>
+</packet>
+
+
+</pdml>

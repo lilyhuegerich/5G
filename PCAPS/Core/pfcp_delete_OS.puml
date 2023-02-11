@@ -1,0 +1,160 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+
+"SGWC" -> "SGWU": 44, PFCP req.\nPFCP Association Setup Request (5)\n+0.000s (17:43:53.811.146)
+
+note right #03B5AA
+**SGWC to SGWU**
+end note
+
+"UPF" -> "SMF": 57, PFCP req.\nPFCP Association Setup Request (5)\n+0.551s (17:43:54.362.026)
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 92, PFCP req.\nPFCP Association Setup Request (5)\n+1.208s (17:43:55.18.967)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 93, PFCP rsp.\nPFCP Association Setup Response (6)\n+1.208s (17:43:55.19.129)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SGWC" -> "SGWU": 355, PFCP req.\nPFCP Association Setup Request (5)\n+2.502s (17:43:56.313.209)
+
+note right #03B5AA
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 356, PFCP rsp.\nPFCP Association Setup Response (6)\n+2.504s (17:43:56.315.444)
+
+note right #D7FEFC
+**SGWU to SGWC**
+end note
+
+"UPF" -> "SMF": 402, PFCP req.\nPFCP Association Setup Request (5)\n+3.053s (17:43:56.864.601)
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 403, PFCP rsp.\nPFCP Association Setup Response (6)\n+3.054s (17:43:56.864.815)
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 1280, PFCP req.\nPFCP Session Establishment Request (50)\n+32.751s (17:44:26.562.429)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1282, PFCP rsp.\nPFCP Session Establishment Response (51)\n+32.758s (17:44:26.569.117)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1316, PFCP req.\nPFCP Session Modification Request (52)\n+32.833s (17:44:26.644.014)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1317, PFCP rsp.\nPFCP Session Modification Response (53)\n+32.833s (17:44:26.644.339)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1490, PFCP req.\nPFCP Session Establishment Request (50)\n+35.420s (17:44:29.231.552)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1491, PFCP rsp.\nPFCP Session Establishment Response (51)\n+35.421s (17:44:29.231.758)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1501, PFCP req.\nPFCP Session Modification Request (52)\n+35.461s (17:44:29.271.821)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1502, PFCP rsp.\nPFCP Session Modification Response (53)\n+35.461s (17:44:29.272.176)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1643, PFCP req.\nPFCP Session Establishment Request (50)\n+36.935s (17:44:30.746.638)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1644, PFCP rsp.\nPFCP Session Establishment Response (51)\n+36.936s (17:44:30.747.101)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1655, PFCP req.\nPFCP Session Modification Request (52)\n+36.981s (17:44:30.792.157)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1656, PFCP rsp.\nPFCP Session Modification Response (53)\n+36.981s (17:44:30.792.305)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1807, PFCP req.\nPFCP Session Establishment Request (50)\n+38.811s (17:44:32.621.823)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1808, PFCP rsp.\nPFCP Session Establishment Response (51)\n+38.811s (17:44:32.622.06)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1821, PFCP req.\nPFCP Session Modification Request (52)\n+38.842s (17:44:32.653.445)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1822, PFCP rsp.\nPFCP Session Modification Response (53)\n+38.842s (17:44:32.653.55)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+@enduml
