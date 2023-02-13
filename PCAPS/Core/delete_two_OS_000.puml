@@ -1,0 +1,622 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "8.8.8.8"
+participant "10.0.14.10"
+participant "10.45.0.5"
+
+"gNB" -> "AMF": 5, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)\n+0.000s (18:19:15.746.037)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 87, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)\n+0.036s (18:19:15.782.125)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 88, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)\n+0.039s (18:19:15.785.099)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 111, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)\n+0.077s (18:19:15.823.468)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 112, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)\n+0.080s (18:19:15.825.886)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 230, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)\n+0.167s (18:19:15.913.197)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 231, NGAP InitialContextSetup (14)\n+0.169s (18:19:15.915.393)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"gNB" -> "AMF": 236, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)\n+0.372s (18:19:16.118.018)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 237, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)\n+0.372s (18:19:16.118.431)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"SMF" -> "UPF": 376, PFCP req.\nPFCP Session Establishment Request (50)\n+0.428s (18:19:16.173.562)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 377, PFCP rsp.\nPFCP Session Establishment Response (51)\n+0.428s (18:19:16.174.416)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"AMF" -> "gNB": 402, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)\n+0.454s (18:19:16.199.772)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 409, NGAP PDUSessionResourceSetup (29)\n+0.533s (18:19:16.278.816)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"SMF" -> "UPF": 413, PFCP req.\nPFCP Session Modification Request (52)\n+0.533s (18:19:16.279.354)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 414, PFCP rsp.\nPFCP Session Modification Response (53)\n+0.533s (18:19:16.279.528)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"gNB" -> "AMF": 418, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)\n+0.970s (18:19:16.716.234)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 438, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)\n+0.974s (18:19:16.720.154)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 439, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)\n+0.976s (18:19:16.721.779)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 462, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)\n+0.980s (18:19:16.726.336)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 463, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)\n+0.982s (18:19:16.728.344)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 516, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)\n+0.997s (18:19:16.743.533)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 517, NGAP InitialContextSetup (14)\n+0.998s (18:19:16.744.417)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"gNB" -> "AMF": 521, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)\n+1.202s (18:19:16.947.923)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 522, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)\n+1.203s (18:19:16.948.788)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"SMF" -> "UPF": 564, PFCP req.\nPFCP Session Establishment Request (50)\n+1.251s (18:19:16.997.479)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 565, PFCP rsp.\nPFCP Session Establishment Response (51)\n+1.252s (18:19:16.998.316)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"AMF" -> "gNB": 570, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)\n+1.256s (18:19:17.1.642)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 575, NGAP PDUSessionResourceSetup (29)\n+1.316s (18:19:17.61.571)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"SMF" -> "UPF": 579, PFCP req.\nPFCP Session Modification Request (52)\n+1.316s (18:19:17.62.478)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 580, PFCP rsp.\nPFCP Session Modification Response (53)\n+1.317s (18:19:17.62.622)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"gNB" -> "AMF": 595, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)\n+2.267s (18:19:18.13.151)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 615, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)\n+2.273s (18:19:18.19.081)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 616, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)\n+2.274s (18:19:18.20.514)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 639, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)\n+2.279s (18:19:18.25.11)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 640, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)\n+2.282s (18:19:18.27.877)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 694, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)\n+2.303s (18:19:18.49.033)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 695, NGAP InitialContextSetup (14)\n+2.304s (18:19:18.49.944)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"gNB" -> "AMF": 699, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)\n+2.510s (18:19:18.255.917)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 700, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)\n+2.510s (18:19:18.256.509)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"SMF" -> "UPF": 744, PFCP req.\nPFCP Session Establishment Request (50)\n+2.565s (18:19:18.310.563)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 745, PFCP rsp.\nPFCP Session Establishment Response (51)\n+2.566s (18:19:18.312.119)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"AMF" -> "gNB": 750, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)\n+2.571s (18:19:18.317.508)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 755, NGAP PDUSessionResourceSetup (29)\n+2.624s (18:19:18.370.197)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"SMF" -> "UPF": 759, PFCP req.\nPFCP Session Modification Request (52)\n+2.625s (18:19:18.370.668)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 760, PFCP rsp.\nPFCP Session Modification Response (53)\n+2.625s (18:19:18.370.754)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"gNB" -> "AMF": 804, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)\n+4.196s (18:19:19.942.325)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 824, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)\n+4.200s (18:19:19.946.466)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 825, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)\n+4.207s (18:19:19.952.754)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 848, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)\n+4.210s (18:19:19.956.435)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 849, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)\n+4.211s (18:19:19.957.519)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 903, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)\n+4.221s (18:19:19.966.962)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 904, NGAP InitialContextSetup (14)\n+4.225s (18:19:19.971.173)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"gNB" -> "AMF": 916, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)\n+4.427s (18:19:20.173.05)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 917, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)\n+4.428s (18:19:20.173.97)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"SMF" -> "UPF": 958, PFCP req.\nPFCP Session Establishment Request (50)\n+4.435s (18:19:20.181.434)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 959, PFCP rsp.\nPFCP Session Establishment Response (51)\n+4.436s (18:19:20.181.649)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"AMF" -> "gNB": 964, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)\n+4.437s (18:19:20.182.972)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 974, NGAP PDUSessionResourceSetup (29)\n+4.490s (18:19:20.235.715)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"SMF" -> "UPF": 978, PFCP req.\nPFCP Session Modification Request (52)\n+4.491s (18:19:20.237.163)
+
+note right #AB0041
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 979, PFCP rsp.\nPFCP Session Modification Response (53)\n+4.491s (18:19:20.237.339)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"gNB" -> "UPF": 1015, GTP<ICMP> ping req.\n+6.797s (18:19:22.542.668)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE" -> "8.8.8.8": 1016, ICMP ping req.\n+6.797s (18:19:22.542.773)
+
+note right #5C8001
+**UE to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 1017, ICMP ping req.\n+6.797s (18:19:22.542.795)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 1018, ICMP ping rsp.\n+6.825s (18:19:22.570.891)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE": 1019, ICMP ping rsp.\n+6.825s (18:19:22.570.935)
+
+note right #EDFEC2
+**8.8.8.8 to UE**
+end note
+
+"UPF" -> "gNB": 1020, GTP<ICMP> ping rsp.\n+6.825s (18:19:22.571.069)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 1050, GTP<ICMP> ping req.\n+7.798s (18:19:23.543.975)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE" -> "8.8.8.8": 1051, ICMP ping req.\n+7.799s (18:19:23.544.596)
+
+note right #5C8001
+**UE to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 1052, ICMP ping req.\n+7.799s (18:19:23.544.623)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 1053, ICMP ping rsp.\n+7.848s (18:19:23.594.029)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE": 1054, ICMP ping rsp.\n+7.848s (18:19:23.594.108)
+
+note right #EDFEC2
+**8.8.8.8 to UE**
+end note
+
+"UPF" -> "gNB": 1055, GTP<ICMP> ping rsp.\n+7.848s (18:19:23.594.489)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 1056, GTP<ICMP> ping req.\n+8.799s (18:19:24.545.096)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE" -> "8.8.8.8": 1057, ICMP ping req.\n+8.799s (18:19:24.545.189)
+
+note right #5C8001
+**UE to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 1058, ICMP ping req.\n+8.799s (18:19:24.545.204)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 1059, ICMP ping rsp.\n+8.822s (18:19:24.568.102)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE": 1060, ICMP ping rsp.\n+8.822s (18:19:24.568.131)
+
+note right #EDFEC2
+**8.8.8.8 to UE**
+end note
+
+"UPF" -> "gNB": 1061, GTP<ICMP> ping rsp.\n+8.822s (18:19:24.568.222)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 1064, GTP<ICMP> ping req.\n+9.800s (18:19:25.546.233)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE" -> "8.8.8.8": 1065, ICMP ping req.\n+9.800s (18:19:25.546.307)
+
+note right #5C8001
+**UE to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 1066, ICMP ping req.\n+9.800s (18:19:25.546.32)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 1067, ICMP ping rsp.\n+9.847s (18:19:25.593.032)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE": 1068, ICMP ping rsp.\n+9.847s (18:19:25.593.069)
+
+note right #EDFEC2
+**8.8.8.8 to UE**
+end note
+
+"UPF" -> "gNB": 1069, GTP<ICMP> ping rsp.\n+9.847s (18:19:25.593.18)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 1076, GTP<ICMP> ping req.\n+10.803s (18:19:26.549.356)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE" -> "8.8.8.8": 1077, ICMP ping req.\n+10.804s (18:19:26.549.777)
+
+note right #5C8001
+**UE to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 1078, ICMP ping req.\n+10.804s (18:19:26.549.856)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 1079, ICMP ping rsp.\n+10.841s (18:19:26.587.243)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE": 1080, ICMP ping rsp.\n+10.841s (18:19:26.587.27)
+
+note right #EDFEC2
+**8.8.8.8 to UE**
+end note
+
+"UPF" -> "gNB": 1081, GTP<ICMP> ping rsp.\n+10.841s (18:19:26.587.356)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 1082, GTP<ICMP> ping req.\n+10.873s (18:19:26.619.524)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 1083, ICMP ping req.\n+10.874s (18:19:26.619.684)
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 1084, ICMP ping req.\n+10.874s (18:19:26.619.716)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 1085, ICMP ping rsp.\n+10.898s (18:19:26.644.258)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 1086, ICMP ping rsp.\n+10.898s (18:19:26.644.286)
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 1087, GTP<ICMP> ping rsp.\n+10.898s (18:19:26.644.364)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 1103, GTP<ICMP> ping req.\n+11.874s (18:19:27.620.366)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 1104, ICMP ping req.\n+11.875s (18:19:27.620.636)
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 1105, ICMP ping req.\n+11.875s (18:19:27.620.66)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 1106, ICMP ping rsp.\n+11.895s (18:19:27.640.568)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+@enduml

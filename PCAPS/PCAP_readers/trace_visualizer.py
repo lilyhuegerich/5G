@@ -29,6 +29,9 @@ import yaml_parser
 application_logger = logging.getLogger()
 application_logger.setLevel(logging.DEBUG)
 
+
+malicious_ip=["10.0.14.10"]
+
 wireshark_folder = 'wireshark'
 
 ip_regex = re.compile(r'Src: ([\d\.:]*), Dst: ([\d\.:]*)')
@@ -41,6 +44,9 @@ PacketDescription = collections.namedtuple('PacketDescription',
                                            'ip_src ip_dst frame_number protocols_str msg_description timestamp timestamp_offsett')
 
 # https://www.w3schools.com/colors/colors_picker.asp
+color_malicious_req="#AB0041"
+
+
 color_actors = '#e6e6e6'
 color_nas_req = '#285AA4'
 color_nas_rsp = '#CDDCF3'
@@ -50,6 +56,8 @@ color_pfcp_req = '#03B5AA'
 color_pfcp_rsp = '#D7FEFC'
 color_gtpv2_req = '#5C8001'
 color_gtpv2_rsp = '#EDFEC2'
+
+
 
 color_diameter_radius_gtpprime = '#D6A4DE'
 
@@ -832,6 +840,8 @@ def packet_to_str(packet, simple_diagrams=False, force_show_frames='', show_time
         if pfcp_req_regex.search(packet.msg_description) is not None:
             note_color = ' {0}'.format(color_pfcp_req)
             protocol = protocol + ' req.'
+            if packet.ip_src in malicious_ip:
+                note_color = ' {0}'.format(color_malicious_req)
         else:
             note_color = ' {0}'.format(color_pfcp_rsp)
             protocol = protocol + ' rsp.'
