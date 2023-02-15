@@ -1,0 +1,87 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-15 18:08 CET
+Nmap scan report for 10.0.2.1
+Host is up (0.019s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for 10.0.3.1
+Host is up (0.019s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.4.1
+Host is up (0.024s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.5.1
+Host is up (0.023s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.6.1
+Host is up (0.018s latency).
+All 1000 scanned ports on 10.0.6.1 are closed
+
+Nmap scan report for 10.0.7.1
+Host is up (0.086s latency).
+All 1000 scanned ports on 10.0.7.1 are closed
+
+Nmap scan report for 10.0.8.1
+Host is up (0.032s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.9.1
+Host is up (0.025s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.10.1
+Host is up (0.040s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.11.1
+Host is up (0.021s latency).
+All 1000 scanned ports on 10.0.11.1 are closed
+
+Nmap scan report for 10.0.12.1
+Host is up (0.021s latency).
+All 1000 scanned ports on 10.0.12.1 are closed
+
+Nmap scan report for 10.0.13.1
+Host is up (0.024s latency).
+All 1000 scanned ports on 10.0.13.1 are closed
+
+Nmap scan report for 10.0.14.1
+Host is up (0.037s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.15.1
+Host is up (0.016s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.16.1
+Host is up (0.022s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.17.1
+Host is up (0.032s latency).
+All 1000 scanned ports on 10.0.17.1 are closed
+
+Nmap done: 256 IP addresses (16 hosts up) scanned in 47.11 seconds
+

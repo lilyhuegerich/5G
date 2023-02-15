@@ -1,0 +1,109 @@
+nmap -e uesimtun0 10.0.*.1
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-15 18:20 CET
+Nmap scan report for 10.0.2.1
+Host is up (0.046s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for 10.0.3.1
+Host is up (0.046s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.4.1
+Host is up (0.038s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.5.1
+Host is up (0.059s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.6.1
+Host is up (0.043s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for 10.0.7.1
+Host is up (0.049s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for 10.0.8.1
+Host is up (0.043s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.9.1
+Host is up (0.050s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.10.1
+Host is up (0.046s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.11.1
+Host is up (0.039s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for 10.0.12.1
+Host is up (0.072s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for 10.0.13.1
+Host is up (0.045s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap scan report for 10.0.14.1
+Host is up (0.0082s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.15.1
+Host is up (0.065s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.16.1
+Host is up (0.016s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7777/tcp open  cbt
+
+Nmap scan report for 10.0.17.1
+Host is up (0.054s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 256 IP addresses (16 hosts up) scanned in 40.90 seconds
+
