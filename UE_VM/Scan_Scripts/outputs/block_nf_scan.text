@@ -1,0 +1,9 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-15 19:16 CET
+Nmap scan report for 10.0.2.1
+Host is up (0.070s latency).
+Not shown: 999 closed ports
+PORT   STATE    SERVICE
+53/tcp filtered domain
+
+Nmap done: 256 IP addresses (1 host up) scanned in 17.52 seconds
+
