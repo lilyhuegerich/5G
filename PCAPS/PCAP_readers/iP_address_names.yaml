@@ -9,15 +9,15 @@ servers:
         interfaces:
             n4:
                 fixed:  "10.0.21.1"
-            n5:
-                fixed:  "10.0.2.4"
+#            n5:
+#                fixed:  "10.0.2.4"
     'UDR':
         interfaces:
             n4:
                 fixed:  "10.0.16.1"
     'UDM':
         interfaces:
-            n4:
+            n10:
                 fixed:  "10.0.15.1"
     'SMF':
         interfaces:
@@ -37,11 +37,11 @@ servers:
                 fixed:  "10.0.11.1"
     'PCF':
         interfaces:
-            n4:
+            n7:
                 fixed:  "10.0.10.1"
     'NSSF':
         interfaces:
-            n4:
+            n22:
                 fixed:  "10.0.9.1"
     'NRF':
         interfaces:
@@ -75,16 +75,25 @@ servers:
         interfaces:
             n4:
                 fixed:  "10.45.0.1"
-    'UE':
+
+            n5:
+                fixed:  "10.45.0.20"
+    'UE_1':
         interfaces:
             n4:
                 fixed:  "10.45.0.2"
+            n5:
+                fixed:  "10.45.0.21"
     'UE_2':
         interfaces:
             n4:
                 fixed:  "10.45.0.3"
+            n5:
+                fixed:  "10.45.0.22"
     'UE_3':
         interfaces:
             n4:
                 fixed:  "10.45.0.4"
+            n5:
+                fixed:  "10.45.0.23"
 

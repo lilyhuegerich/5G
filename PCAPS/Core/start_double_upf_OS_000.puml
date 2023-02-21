@@ -1,0 +1,618 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "SMF"
+participant "UPF"
+participant "UPF_2"
+participant "SGWU"
+participant "SGWC"
+participant "NRF"
+
+"SGWC" -> "SGWU": 14, PFCP req.\nPFCP Association Setup Request (5)\n+0.000s (15:15:52.19.527)
+
+note right #03B5AA
+**SGWC to SGWU**
+end note
+
+"UPF_2" -> "UPF_2": 24, PFCP req.\nPFCP Association Setup Request (5)\n+0.792s (15:15:52.812.002)
+
+note right #03B5AA
+**UPF_2 to UPF_2**
+end note
+
+"SMF" -> "UPF": 29, PFCP req.\nPFCP Association Setup Request (5)\n+0.807s (15:15:52.826.673)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"SGWC" -> "SGWU": 155, PFCP req.\nPFCP Association Setup Request (5)\n+2.506s (15:15:54.525.612)
+
+note right #03B5AA
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 156, PFCP rsp.\nPFCP Association Setup Response (6)\n+2.511s (15:15:54.530.106)
+
+note right #D7FEFC
+**SGWU to SGWC**
+end note
+
+"SMF" -> "UPF": 221, PFCP req.\nPFCP Association Setup Request (5)\n+3.316s (15:15:55.335.612)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"NRF" -> "NRF": 340, \n+4.739s (15:15:56.758.067)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 344, \n+4.739s (15:15:56.758.149)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 347, \n+4.743s (15:15:56.762.723)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 348, \n+4.743s (15:15:56.762.755)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 350, \n+4.745s (15:15:56.764.203)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 351, \n+4.745s (15:15:56.764.3)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 353, \n+4.748s (15:15:56.767.076)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 354, \n+4.748s (15:15:56.767.113)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 395, \n+4.865s (15:15:56.884.745)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 399, \n+4.866s (15:15:56.885.787)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 411, \n+4.868s (15:15:56.887.035)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 413, \n+4.868s (15:15:56.887.059)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 415, \n+4.868s (15:15:56.887.095)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 416, \n+4.868s (15:15:56.887.166)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 422, \n+4.868s (15:15:56.887.447)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 423, \n+4.868s (15:15:56.887.469)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 426, \n+4.870s (15:15:56.889.367)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 427, \n+4.872s (15:15:56.891.292)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 429, \n+4.873s (15:15:56.892.773)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 430, \n+4.873s (15:15:56.892.807)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 466, \n+5.046s (15:15:57.65.625)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 468, \n+5.046s (15:15:57.65.646)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 474, \n+5.047s (15:15:57.66.874)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 476, \n+5.047s (15:15:57.66.906)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 479, \n+5.048s (15:15:57.67.844)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 480, \n+5.048s (15:15:57.67.878)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 481, \n+5.048s (15:15:57.67.922)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 482, \n+5.048s (15:15:57.67.945)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 484, \n+5.049s (15:15:57.68.501)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 485, \n+5.049s (15:15:57.68.529)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 486, \n+5.049s (15:15:57.68.603)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 487, \n+5.049s (15:15:57.68.618)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 524, \n+5.159s (15:15:57.178.049)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 528, \n+5.159s (15:15:57.178.144)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 531, \n+5.159s (15:15:57.178.393)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 532, \n+5.159s (15:15:57.178.438)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 573, \n+5.331s (15:15:57.350.588)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 577, \n+5.331s (15:15:57.350.673)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 580, \n+5.332s (15:15:57.351.54)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 581, \n+5.332s (15:15:57.351.563)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 582, \n+5.332s (15:15:57.351.584)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 584, \n+5.332s (15:15:57.351.739)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 585, \n+5.332s (15:15:57.351.777)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 586, \n+5.332s (15:15:57.351.794)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 609, \n+5.377s (15:15:57.396.839)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 613, \n+5.377s (15:15:57.396.926)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 616, \n+5.378s (15:15:57.397.275)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 617, \n+5.378s (15:15:57.397.305)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 618, \n+5.378s (15:15:57.397.343)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 619, \n+5.378s (15:15:57.397.361)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 620, \n+5.378s (15:15:57.397.378)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 622, \n+5.378s (15:15:57.397.632)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 623, \n+5.378s (15:15:57.397.671)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 624, \n+5.378s (15:15:57.397.686)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 626, \n+5.378s (15:15:57.397.809)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 627, \n+5.378s (15:15:57.397.825)
+
+note right
+**NRF to NRF**
+end note
+
+"SMF" -> "UPF": 646, PFCP req.\nPFCP Association Setup Request (5)\n+5.819s (15:15:57.838.658)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 647, PFCP rsp.\nPFCP Association Setup Response (6)\n+5.820s (15:15:57.839.267)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"NRF" -> "NRF": 678, \n+11.266s (15:16:3.285.305)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 682, \n+11.266s (15:16:3.285.357)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 685, \n+11.266s (15:16:3.285.869)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 686, \n+11.266s (15:16:3.286.025)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 688, \n+11.268s (15:16:3.287.331)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 689, \n+11.268s (15:16:3.287.384)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 690, \n+11.268s (15:16:3.287.469)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 691, \n+11.268s (15:16:3.287.496)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 692, \n+11.268s (15:16:3.287.555)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 693, \n+11.268s (15:16:3.287.579)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 694, \n+11.268s (15:16:3.287.627)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 695, \n+11.268s (15:16:3.287.653)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 696, \n+11.268s (15:16:3.287.707)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 697, \n+11.268s (15:16:3.287.731)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 699, \n+11.270s (15:16:3.289.132)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 700, \n+11.270s (15:16:3.289.723)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 701, \n+11.270s (15:16:3.289.803)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 702, \n+11.270s (15:16:3.289.902)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 703, \n+11.270s (15:16:3.289.918)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 704, \n+11.270s (15:16:3.290.004)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 705, \n+11.271s (15:16:3.290.03)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 706, \n+11.271s (15:16:3.290.141)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 707, \n+11.271s (15:16:3.290.167)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 709, \n+11.275s (15:16:3.294.368)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 710, \n+11.275s (15:16:3.294.402)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 711, \n+11.275s (15:16:3.294.474)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 712, \n+11.275s (15:16:3.294.488)
+
+note right
+**NRF to NRF**
+end note
+
+"SMF" -> "UPF_2": 714, PFCP req.\nPFCP Association Setup Request (5)\n+11.795s (15:16:3.814.715)
+
+note right #03B5AA
+**SMF to UPF_2**
+end note
+
+"UPF_2" -> "SMF": 715, PFCP rsp.\nPFCP Association Setup Response (6)\n+11.797s (15:16:3.816.355)
+
+note right #D7FEFC
+**UPF_2 to SMF**
+end note
+
+"NRF" -> "NRF": 725, \n+11.812s (15:16:3.831.506)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 727, \n+11.812s (15:16:3.831.55)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 733, \n+11.814s (15:16:3.833.112)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 734, \n+11.814s (15:16:3.833.155)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 735, \n+11.814s (15:16:3.833.185)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 738, \n+11.814s (15:16:3.833.396)
+
+note right
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 740, \n+11.814s (15:16:3.833.44)
+
+note right
+**NRF to NRF**
+end note
+
+@enduml
