@@ -1,0 +1,73 @@
+Open5GS daemon v2.4.10
+
+02/20 19:36:22.949: [app] INFO: Configuration: '/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:126)
+02/20 19:36:22.950: [app] INFO: File Logging: '/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:129)
+02/20 19:36:22.971: [pfcp] INFO: pfcp_server() [10.0.17.1]:8805 (../lib/pfcp/path.c:30)
+02/20 19:36:22.971: [pfcp] INFO: ogs_pfcp_connect() [10.0.14.1]:8805 (../lib/pfcp/path.c:61)
+02/20 19:36:22.974: [gtp] INFO: gtp_server() [10.0.17.1]:2152 (../lib/gtp/path.c:30)
+02/20 19:36:23.006: [upf] INFO: PFCP associated (../src/upf/pfcp-sm.c:173)
+02/20 19:36:23.008: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+02/20 19:36:42.583: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:178)
+02/20 19:36:42.583: [gtp] INFO: gtp_connect() [10.0.14.1]:2152 (../lib/gtp/path.c:60)
+02/20 19:36:42.583: [upf] INFO: UE F-SEID[CP:0x1 UP:0xd] APN[internet] PDN-Type[1] IPv4[10.45.0.14] IPv6[] (../src/upf/context.c:397)
+02/20 19:36:42.583: [upf] INFO: UE F-SEID[CP:0x1 UP:0xd] APN[internet] PDN-Type[1] IPv4[10.45.0.14] IPv6[] (../src/upf/context.c:397)
+02/20 19:36:42.633: [gtp] INFO: gtp_connect() [10.0.2.15]:2152 (../lib/gtp/path.c:60)
+02/20 19:36:46.633: [upf] INFO: [Added] Number of UPF-Sessions is now 2 (../src/upf/context.c:178)
+02/20 19:36:46.633: [upf] INFO: UE F-SEID[CP:0x2 UP:0xe] APN[iot] PDN-Type[1] IPv4[10.45.0.15] IPv6[] (../src/upf/context.c:397)
+02/20 19:36:46.633: [upf] INFO: UE F-SEID[CP:0x2 UP:0xe] APN[iot] PDN-Type[1] IPv4[10.45.0.15] IPv6[] (../src/upf/context.c:397)
+02/20 19:36:47.157: [upf] INFO: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:178)
+02/20 19:36:47.158: [upf] INFO: UE F-SEID[CP:0x3 UP:0xf] APN[edge] PDN-Type[1] IPv4[10.45.0.16] IPv6[] (../src/upf/context.c:397)
+02/20 19:36:47.158: [upf] INFO: UE F-SEID[CP:0x3 UP:0xf] APN[edge] PDN-Type[1] IPv4[10.45.0.16] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:09.214: [upf] INFO: [Removed] Number of UPF-sessions is now 2 (../src/upf/context.c:212)
+02/20 19:37:09.483: [upf] INFO: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:178)
+02/20 19:37:09.483: [upf] INFO: UE F-SEID[CP:0x4 UP:0x10] APN[internet] PDN-Type[1] IPv4[10.45.0.17] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:09.483: [upf] INFO: UE F-SEID[CP:0x4 UP:0x10] APN[internet] PDN-Type[1] IPv4[10.45.0.17] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:12.871: [upf] INFO: [Removed] Number of UPF-sessions is now 2 (../src/upf/context.c:212)
+02/20 19:37:13.140: [upf] INFO: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:178)
+02/20 19:37:13.140: [upf] INFO: UE F-SEID[CP:0x5 UP:0x11] APN[iot] PDN-Type[1] IPv4[10.45.0.18] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:13.140: [upf] INFO: UE F-SEID[CP:0x5 UP:0x11] APN[iot] PDN-Type[1] IPv4[10.45.0.18] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:13.657: [upf] INFO: [Removed] Number of UPF-sessions is now 2 (../src/upf/context.c:212)
+02/20 19:37:13.947: [upf] INFO: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:178)
+02/20 19:37:13.947: [upf] INFO: UE F-SEID[CP:0x6 UP:0x12] APN[edge] PDN-Type[1] IPv4[10.45.0.19] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:13.947: [upf] INFO: UE F-SEID[CP:0x6 UP:0x12] APN[edge] PDN-Type[1] IPv4[10.45.0.19] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:53.452: [upf] INFO: [Removed] Number of UPF-sessions is now 2 (../src/upf/context.c:212)
+02/20 19:37:53.750: [upf] INFO: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:178)
+02/20 19:37:53.750: [upf] INFO: UE F-SEID[CP:0x7 UP:0x13] APN[internet] PDN-Type[1] IPv4[10.45.0.20] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:53.750: [upf] INFO: UE F-SEID[CP:0x7 UP:0x13] APN[internet] PDN-Type[1] IPv4[10.45.0.20] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:56.310: [upf] INFO: [Removed] Number of UPF-sessions is now 2 (../src/upf/context.c:212)
+02/20 19:37:56.590: [upf] INFO: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:178)
+02/20 19:37:56.590: [upf] INFO: UE F-SEID[CP:0x8 UP:0x14] APN[iot] PDN-Type[1] IPv4[10.45.0.21] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:56.590: [upf] INFO: UE F-SEID[CP:0x8 UP:0x14] APN[iot] PDN-Type[1] IPv4[10.45.0.21] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:57.933: [upf] INFO: [Removed] Number of UPF-sessions is now 2 (../src/upf/context.c:212)
+02/20 19:37:58.190: [upf] INFO: [Added] Number of UPF-Sessions is now 3 (../src/upf/context.c:178)
+02/20 19:37:58.190: [upf] INFO: UE F-SEID[CP:0x9 UP:0x15] APN[edge] PDN-Type[1] IPv4[10.45.0.22] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:58.190: [upf] INFO: UE F-SEID[CP:0x9 UP:0x15] APN[edge] PDN-Type[1] IPv4[10.45.0.22] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:59.683: [upf] INFO: [Added] Number of UPF-Sessions is now 4 (../src/upf/context.c:178)
+02/20 19:37:59.684: [upf] INFO: UE F-SEID[CP:0xa UP:0x16] APN[CustomSlice] PDN-Type[1] IPv4[10.45.0.23] IPv6[] (../src/upf/context.c:397)
+02/20 19:37:59.684: [upf] INFO: UE F-SEID[CP:0xa UP:0x16] APN[CustomSlice] PDN-Type[1] IPv4[10.45.0.23] IPv6[] (../src/upf/context.c:397)
+02/20 19:38:26.823: [pfcp] INFO: ogs_pfcp_connect() [10.0.14.10]:8805 (../lib/pfcp/path.c:61)
+02/20 19:38:26.824: [tlv] FATAL: ogs_tlv_parse_block: Assertion `length == (pos - blk)' failed. (../lib/core/ogs-tlv.c:464)
+02/20 19:38:26.831: [core] FATAL: backtrace() returned 11 addresses (../lib/core/ogs-abort.c:37)
+/usr/lib/x86_64-linux-gnu/libogscore.so.2(ogs_tlv_parse_block+0xf8) [0x7f2a123cd368]
+/usr/lib/x86_64-linux-gnu/libogscore.so.2(ogs_tlv_parse_embedded_block+0x18) [0x7f2a123cd428]
+/usr/lib/x86_64-linux-gnu/libogscore.so.2(+0x1661d) [0x7f2a123ce61d]
+/usr/lib/x86_64-linux-gnu/libogscore.so.2(ogs_tlv_parse_msg+0x71) [0x7f2a123ceee1]
+/usr/bin/open5gs-upfd(+0x9b9a) [0x561b38b90b9a]
+/usr/lib/x86_64-linux-gnu/libogscore.so.2(ogs_fsm_dispatch+0x25) [0x7f2a123cf825]
+/usr/bin/open5gs-upfd(+0x71fb) [0x561b38b8e1fb]
+/usr/lib/x86_64-linux-gnu/libogscore.so.2(+0xdc1c) [0x7f2a123c5c1c]
+/usr/lib/x86_64-linux-gnu/libpthread.so.0(+0x8609) [0x7f2a120a3609]
+/usr/lib/x86_64-linux-gnu/libc.so.6(clone+0x43) [0x7f2a11fc8133]
+Open5GS daemon v2.4.10
+
+02/20 19:38:29.976: [app] INFO: Configuration: '/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:126)
+02/20 19:38:29.977: [app] INFO: File Logging: '/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:129)
+02/20 19:38:30.007: [pfcp] INFO: pfcp_server() [10.0.17.1]:8805 (../lib/pfcp/path.c:30)
+02/20 19:38:30.008: [pfcp] INFO: ogs_pfcp_connect() [10.0.14.1]:8805 (../lib/pfcp/path.c:61)
+02/20 19:38:30.017: [gtp] INFO: gtp_server() [10.0.17.1]:2152 (../lib/gtp/path.c:30)
+02/20 19:38:30.042: [upf] INFO: PFCP associated (../src/upf/pfcp-sm.c:173)
+02/20 19:38:30.045: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+02/21 15:14:22.056: [app] INFO: SIGHUP received (../src/main.c:58)
+
+
+
