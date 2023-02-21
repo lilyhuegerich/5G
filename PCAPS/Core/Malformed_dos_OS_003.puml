@@ -1,0 +1,628 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_0"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "8.8.8.8"
+participant "AUSF"
+participant "UDR"
+participant "10.0.14.10"
+participant "UDM"
+participant "BSF"
+participant "NRF"
+participant "PCF"
+
+"AMF" -> "gNB": 574, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)\n+10.892s (19:37:57.965.345)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 575, NGAP InitialContextSetup (14)\n+10.894s (19:37:57.966.931)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"gNB" -> "AMF": 579, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)\n+11.102s (19:37:58.175.108)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 580, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)\n+11.103s (19:37:58.175.482)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"SMF" -> "SMF": 581, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.103s (19:37:58.176.378)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 582, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.106s (19:37:58.179.307)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"UDM" -> "UDM": 584, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.107s (19:37:58.179.787)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 585, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.109s (19:37:58.181.387)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 589, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.112s (19:37:58.184.419)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 590, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.112s (19:37:58.184.486)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 592, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.114s (19:37:58.186.959)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 593, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.115s (19:37:58.187.507)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"SMF" -> "SMF": 595, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.115s (19:37:58.187.754)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"PCF" -> "PCF": 597, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.115s (19:37:58.187.837)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 598, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.115s (19:37:58.187.917)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"UDR" -> "UDR": 600, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.115s (19:37:58.188.23)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"SMF" -> "SMF": 601, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.115s (19:37:58.188.323)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"UDR" -> "UDR": 605, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.116s (19:37:58.189.234)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 606, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.116s (19:37:58.189.327)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"BSF" -> "BSF": 608, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.117s (19:37:58.189.492)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 609, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.117s (19:37:58.189.539)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 611, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.117s (19:37:58.189.696)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 613, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.117s (19:37:58.189.732)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"PCF" -> "PCF": 618, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.117s (19:37:58.190.383)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 620, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.118s (19:37:58.190.452)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"SMF" -> "UPF": 622, PFCP req.\nPFCP Session Establishment Request (50)\n+11.118s (19:37:58.190.765)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 623, PFCP rsp.\nPFCP Session Establishment Response (51)\n+11.118s (19:37:58.190.962)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"AMF" -> "AMF": 624, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.119s (19:37:58.191.597)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 625, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.119s (19:37:58.191.644)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 627, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.119s (19:37:58.192.193)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "gNB": 628, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)\n+11.119s (19:37:58.192.246)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"AMF" -> "AMF": 629, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.119s (19:37:58.192.289)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"gNB" -> "AMF": 634, NGAP PDUSessionResourceSetup (29)\n+11.155s (19:37:58.228.331)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"SMF" -> "SMF": 635, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.156s (19:37:58.228.608)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 636, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.156s (19:37:58.228.644)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "UPF": 638, PFCP req.\nPFCP Session Modification Request (52)\n+11.156s (19:37:58.228.823)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 639, PFCP rsp.\nPFCP Session Modification Response (53)\n+11.156s (19:37:58.228.969)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "SMF": 640, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+11.156s (19:37:58.229.043)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"gNB" -> "AMF": 650, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)\n+12.369s (19:37:59.442.225)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AUSF" -> "AUSF": 651, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.370s (19:37:59.442.77)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 652, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.370s (19:37:59.442.835)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 654, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.371s (19:37:59.443.738)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 655, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.371s (19:37:59.443.781)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 657, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.372s (19:37:59.444.406)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 661, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.372s (19:37:59.445.241)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 662, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.372s (19:37:59.445.271)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 664, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.373s (19:37:59.445.505)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 665, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.373s (19:37:59.445.53)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 667, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.373s (19:37:59.445.734)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 668, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.373s (19:37:59.445.768)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AMF" -> "gNB": 670, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)\n+12.375s (19:37:59.447.456)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 671, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)\n+12.377s (19:37:59.449.48)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AUSF" -> "AUSF": 672, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.378s (19:37:59.450.548)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 673, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.378s (19:37:59.450.655)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 675, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.378s (19:37:59.450.801)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 676, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.378s (19:37:59.450.822)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 678, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.378s (19:37:59.451.339)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 679, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.379s (19:37:59.451.44)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 687, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.381s (19:37:59.453.638)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 688, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.381s (19:37:59.453.802)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 689, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.381s (19:37:59.453.836)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 691, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.381s (19:37:59.454.186)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 692, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.381s (19:37:59.454.208)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AMF" -> "gNB": 694, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)\n+12.382s (19:37:59.454.449)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 695, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)\n+12.384s (19:37:59.457.081)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"UDM" -> "UDM": 696, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.457.509)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 697, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.457.605)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 699, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.457.743)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 700, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.457.765)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 702, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.457.896)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 703, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.458.014)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 704, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.458.044)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 706, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.458.267)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 707, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.385s (19:37:59.458.359)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 710, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.386s (19:37:59.458.833)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 711, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.386s (19:37:59.458.861)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 713, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.386s (19:37:59.459.047)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 714, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.386s (19:37:59.459.064)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 716, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.386s (19:37:59.459.275)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 717, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.388s (19:37:59.460.437)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 720, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.388s (19:37:59.460.936)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 721, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.388s (19:37:59.460.955)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 723, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.388s (19:37:59.461.381)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 724, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.389s (19:37:59.461.426)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 726, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.389s (19:37:59.461.852)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 727, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.389s (19:37:59.462.059)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 728, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.389s (19:37:59.462.086)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"PCF" -> "PCF": 730, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.390s (19:37:59.462.537)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 731, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.390s (19:37:59.462.643)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"UDR" -> "UDR": 736, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.392s (19:37:59.465.267)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 739, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.394s (19:37:59.466.429)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 740, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.394s (19:37:59.466.5)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"PCF" -> "PCF": 744, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.395s (19:37:59.468.159)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 745, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.395s (19:37:59.468.197)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"AMF" -> "gNB": 747, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)\n+12.396s (19:37:59.469.204)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 748, NGAP InitialContextSetup (14)\n+12.397s (19:37:59.470.061)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"gNB" -> "AMF": 752, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)\n+12.601s (19:37:59.673.417)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 753, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)\n+12.602s (19:37:59.674.966)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"SMF" -> "SMF": 754, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.603s (19:37:59.675.879)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 755, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.603s (19:37:59.675.981)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+@enduml

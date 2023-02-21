@@ -1,0 +1,628 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_0"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "8.8.8.8"
+participant "AUSF"
+participant "UDR"
+participant "10.0.14.10"
+participant "UDM"
+participant "BSF"
+participant "NRF"
+participant "PCF"
+
+"UDM" -> "UDM": 757, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.604s (19:37:59.676.451)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 758, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.604s (19:37:59.676.827)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 762, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.678.469)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 763, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.678.497)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 765, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.678.828)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 766, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.678.857)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"SMF" -> "SMF": 768, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.679.174)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"PCF" -> "PCF": 770, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.679.243)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 771, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.679.264)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"SMF" -> "SMF": 772, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.606s (19:37:59.679.281)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"UDR" -> "UDR": 775, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.607s (19:37:59.679.532)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 778, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.608s (19:37:59.680.469)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 779, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.608s (19:37:59.680.495)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"BSF" -> "BSF": 781, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.608s (19:37:59.681.087)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 782, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.609s (19:37:59.681.754)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 784, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.609s (19:37:59.681.922)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 786, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.609s (19:37:59.681.955)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"PCF" -> "PCF": 791, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.610s (19:37:59.682.605)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 793, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.610s (19:37:59.682.714)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"SMF" -> "UPF": 795, PFCP req.\nPFCP Session Establishment Request (50)\n+12.610s (19:37:59.683.102)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 796, PFCP rsp.\nPFCP Session Establishment Response (51)\n+12.611s (19:37:59.684.268)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"AMF" -> "AMF": 797, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.614s (19:37:59.687.026)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 798, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.614s (19:37:59.687.07)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 800, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.617s (19:37:59.689.692)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "gNB": 801, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)\n+12.617s (19:37:59.689.812)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"AMF" -> "AMF": 802, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.617s (19:37:59.689.866)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"gNB" -> "AMF": 806, NGAP PDUSessionResourceSetup (29)\n+12.673s (19:37:59.745.77)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"SMF" -> "SMF": 807, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.673s (19:37:59.746.113)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 808, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.673s (19:37:59.746.263)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "UPF": 810, PFCP req.\nPFCP Session Modification Request (52)\n+12.674s (19:37:59.746.524)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 811, PFCP rsp.\nPFCP Session Modification Response (53)\n+12.674s (19:37:59.746.857)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "SMF": 812, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+12.674s (19:37:59.747.02)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"NRF" -> "NRF": 815, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.005s (19:38:0.78.119)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 816, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.005s (19:38:0.78.152)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 818, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.005s (19:38:0.78.292)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 820, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.066s (19:38:0.138.693)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 821, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.066s (19:38:0.138.743)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 823, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.066s (19:38:0.138.888)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 825, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.107s (19:38:0.179.708)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 826, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.107s (19:38:0.179.763)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 828, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.107s (19:38:0.180.098)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 830, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.157s (19:38:0.229.844)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 831, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.157s (19:38:0.229.879)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 833, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.157s (19:38:0.230.031)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 835, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.286s (19:38:0.358.811)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 836, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.286s (19:38:0.358.845)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 838, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.286s (19:38:0.359.0)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 840, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.361s (19:38:0.433.46)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 841, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.361s (19:38:0.433.589)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 843, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.361s (19:38:0.433.848)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 845, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.413s (19:38:0.485.978)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 846, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.413s (19:38:0.486.015)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 848, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.413s (19:38:0.486.321)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 850, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.763s (19:38:0.836.099)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 851, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.764s (19:38:0.837.325)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 853, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+13.765s (19:38:0.837.473)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"gNB" -> "UPF": 868, GTP<ICMP> ping req.\n+15.580s (19:38:2.652.864)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_0" -> "8.8.8.8": 869, ICMP ping req.\n+15.580s (19:38:2.653.048)
+
+note right #5C8001
+**UE_0 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 870, ICMP ping req.\n+15.580s (19:38:2.653.102)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 871, ICMP ping rsp.\n+15.605s (19:38:2.678.334)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_0": 872, ICMP ping rsp.\n+15.605s (19:38:2.678.379)
+
+note right #EDFEC2
+**8.8.8.8 to UE_0**
+end note
+
+"UPF" -> "gNB": 873, GTP<ICMP> ping rsp.\n+15.606s (19:38:2.678.502)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 876, GTP<ICMP> ping req.\n+16.579s (19:38:3.652.283)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_0" -> "8.8.8.8": 877, ICMP ping req.\n+16.580s (19:38:3.652.582)
+
+note right #5C8001
+**UE_0 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 878, ICMP ping req.\n+16.580s (19:38:3.652.603)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 879, ICMP ping rsp.\n+16.612s (19:38:3.685.221)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_0": 880, ICMP ping rsp.\n+16.612s (19:38:3.685.256)
+
+note right #EDFEC2
+**8.8.8.8 to UE_0**
+end note
+
+"UPF" -> "gNB": 881, GTP<ICMP> ping rsp.\n+16.612s (19:38:3.685.364)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 906, GTP<ICMP> ping req.\n+17.583s (19:38:4.656.338)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_0" -> "8.8.8.8": 907, ICMP ping req.\n+17.584s (19:38:4.656.853)
+
+note right #5C8001
+**UE_0 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 908, ICMP ping req.\n+17.584s (19:38:4.656.95)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 909, ICMP ping rsp.\n+17.609s (19:38:4.681.925)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_0": 910, ICMP ping rsp.\n+17.609s (19:38:4.681.95)
+
+note right #EDFEC2
+**8.8.8.8 to UE_0**
+end note
+
+"UPF" -> "gNB": 911, GTP<ICMP> ping rsp.\n+17.609s (19:38:4.682.115)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 920, GTP<ICMP> ping req.\n+18.584s (19:38:5.657.324)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_0" -> "8.8.8.8": 921, ICMP ping req.\n+18.586s (19:38:5.658.421)
+
+note right #5C8001
+**UE_0 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 922, ICMP ping req.\n+18.586s (19:38:5.658.45)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 924, ICMP ping rsp.\n+18.610s (19:38:5.683.311)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_0": 925, ICMP ping rsp.\n+18.610s (19:38:5.683.339)
+
+note right #EDFEC2
+**8.8.8.8 to UE_0**
+end note
+
+"UPF" -> "gNB": 926, GTP<ICMP> ping rsp.\n+18.611s (19:38:5.683.408)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 937, GTP<ICMP> ping req.\n+19.585s (19:38:6.657.393)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_0" -> "8.8.8.8": 938, ICMP ping req.\n+19.585s (19:38:6.658.183)
+
+note right #5C8001
+**UE_0 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 939, ICMP ping req.\n+19.586s (19:38:6.658.42)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 940, ICMP ping rsp.\n+19.601s (19:38:6.673.821)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_0": 941, ICMP ping rsp.\n+19.601s (19:38:6.673.869)
+
+note right #EDFEC2
+**8.8.8.8 to UE_0**
+end note
+
+"UPF" -> "gNB": 942, GTP<ICMP> ping rsp.\n+19.601s (19:38:6.674.064)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 943, GTP<ICMP> ping req.\n+19.648s (19:38:6.720.71)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 944, ICMP ping req.\n+19.649s (19:38:6.722.069)
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 945, ICMP ping req.\n+19.649s (19:38:6.722.12)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 946, ICMP ping rsp.\n+19.672s (19:38:6.745.281)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_1": 947, ICMP ping rsp.\n+19.672s (19:38:6.745.323)
+
+note right #EDFEC2
+**8.8.8.8 to UE_1**
+end note
+
+"UPF" -> "gNB": 948, GTP<ICMP> ping rsp.\n+19.673s (19:38:6.745.727)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 949, GTP<ICMP> ping req.\n+20.650s (19:38:7.722.522)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 950, ICMP ping req.\n+20.650s (19:38:7.722.672)
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 951, ICMP ping req.\n+20.650s (19:38:7.722.712)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 954, ICMP ping rsp.\n+20.691s (19:38:7.764.005)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_1": 955, ICMP ping rsp.\n+20.691s (19:38:7.764.035)
+
+note right #EDFEC2
+**8.8.8.8 to UE_1**
+end note
+
+"UPF" -> "gNB": 956, GTP<ICMP> ping rsp.\n+20.691s (19:38:7.764.128)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 957, GTP<ICMP> ping req.\n+21.665s (19:38:8.738.368)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 958, ICMP ping req.\n+21.666s (19:38:8.738.52)
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+@enduml

@@ -44,8 +44,8 @@ PacketDescription = collections.namedtuple('PacketDescription',
                                            'ip_src ip_dst frame_number protocols_str msg_description timestamp timestamp_offsett')
 
 # https://www.w3schools.com/colors/colors_picker.asp
-color_malicious_req="#AB0041"
-
+#color_malicious_req="#AB0041"
+color_malicious_req="#FFC2D9"
 
 color_actors = '#e6e6e6'
 color_nas_req = '#285AA4'

@@ -16,8 +16,8 @@ participant "gNB"
 participant "AMF"
 participant "SMF"
 participant "UPF"
-participant "8.8.8.8"
 participant "10.0.14.10"
+participant "8.8.8.8"
 
 "gNB" -> "AMF": 22, NGAP NGSetup (21)\n+0.000s (19:37:47.72.884)
 
