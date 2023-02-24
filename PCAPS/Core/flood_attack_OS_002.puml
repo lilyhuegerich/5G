@@ -1,0 +1,821 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_0"
+participant "gNB"
+participant "SMF"
+participant "UPF"
+participant "10.51.0.1"
+participant "10.106.0.1"
+participant "10.125.0.1"
+participant "10.81.0.1"
+participant "10.64.0.1"
+participant "10.74.0.1"
+participant "10.91.0.1"
+participant "10.107.0.1"
+participant "10.80.0.1"
+participant "10.95.0.1"
+participant "10.76.0.1"
+participant "10.128.0.1"
+participant "10.88.0.1"
+participant "10.124.0.1"
+participant "10.97.0.1"
+participant "10.63.0.1"
+participant "10.75.0.1"
+participant "10.85.0.1"
+participant "10.71.0.1"
+participant "10.116.0.1"
+participant "10.68.0.1"
+participant "10.61.0.1"
+participant "10.52.0.1"
+participant "10.60.0.1"
+participant "10.92.0.1"
+participant "10.96.0.1"
+participant "10.57.0.1"
+participant "10.122.0.1"
+participant "10.105.0.1"
+participant "10.50.0.1"
+participant "10.84.0.1"
+participant "10.110.0.1"
+participant "10.77.0.1"
+participant "10.83.0.1"
+participant "10.58.0.1"
+participant "10.89.0.1"
+participant "10.123.0.1"
+participant "10.86.0.1"
+participant "10.82.0.1"
+participant "10.53.0.1"
+participant "10.70.0.1"
+participant "10.104.0.1"
+participant "10.119.0.1"
+participant "10.55.0.1"
+participant "10.69.0.1"
+participant "10.66.0.1"
+participant "10.114.0.1"
+participant "10.54.0.1"
+participant "10.112.0.1"
+participant "10.102.0.1"
+participant "10.90.0.1"
+participant "10.117.0.1"
+participant "10.127.0.1"
+participant "10.62.0.1"
+participant "10.93.0.1"
+participant "10.129.0.1"
+participant "10.87.0.1"
+participant "10.73.0.1"
+participant "10.94.0.1"
+participant "10.131.0.1"
+participant "10.72.0.1"
+participant "10.67.0.1"
+participant "10.103.0.1"
+participant "10.130.0.1"
+participant "10.118.0.1"
+participant "10.101.0.1"
+participant "10.109.0.1"
+participant "10.100.0.1"
+participant "10.108.0.1"
+participant "10.78.0.1"
+participant "10.56.0.1"
+participant "10.79.0.1"
+participant "10.59.0.1"
+participant "10.111.0.1"
+participant "10.126.0.1"
+participant "10.99.0.1"
+participant "10.121.0.1"
+participant "10.98.0.1"
+participant "10.65.0.1"
+participant "10.115.0.1"
+participant "10.120.0.1"
+participant "10.113.0.1"
+participant "10.160.0.1"
+participant "10.195.0.1"
+participant "10.132.0.1"
+participant "10.161.0.1"
+participant "10.158.0.1"
+participant "10.182.0.1"
+participant "10.30.0.1"
+participant "10.11.0.1"
+participant "10.167.0.1"
+participant "10.191.0.1"
+participant "10.192.0.1"
+participant "10.32.0.1"
+participant "10.16.0.1"
+participant "10.38.0.1"
+participant "10.198.0.1"
+participant "10.13.0.1"
+participant "10.159.0.1"
+participant "10.181.0.1"
+participant "10.34.0.1"
+participant "10.29.0.1"
+participant "10.23.0.1"
+participant "10.7.0.1"
+participant "10.17.0.1"
+participant "10.144.0.1"
+participant "10.146.0.1"
+participant "10.35.0.1"
+participant "10.135.0.1"
+participant "10.153.0.1"
+participant "127.0.0.53"
+participant "10.133.0.1"
+participant "10.2.0.1"
+participant "10.25.0.1"
+participant "10.48.0.1"
+participant "10.136.0.1"
+participant "10.196.0.1"
+participant "10.31.0.1"
+participant "10.6.0.1"
+participant "10.170.0.1"
+participant "10.15.0.1"
+participant "10.199.0.1"
+participant "10.19.0.1"
+participant "10.142.0.1"
+participant "10.194.0.1"
+participant "10.163.0.1"
+participant "10.155.0.1"
+participant "10.139.0.1"
+participant "10.5.0.1"
+participant "10.140.0.1"
+participant "10.45.0.5"
+participant "10.39.0.1"
+participant "10.197.0.1"
+participant "10.152.0.1"
+participant "10.12.0.1"
+participant "10.186.0.1"
+participant "10.157.0.1"
+participant "10.168.0.1"
+participant "10.41.0.1"
+participant "10.189.0.1"
+participant "10.165.0.1"
+participant "10.201.0.1"
+participant "10.145.0.1"
+participant "10.173.0.1"
+participant "10.176.0.1"
+participant "10.166.0.1"
+participant "10.149.0.1"
+participant "10.43.0.1"
+participant "10.21.0.1"
+participant "10.184.0.1"
+participant "10.171.0.1"
+participant "10.42.0.1"
+participant "10.188.0.1"
+participant "10.177.0.1"
+participant "10.150.0.1"
+participant "10.183.0.1"
+participant "10.47.0.1"
+participant "10.27.0.1"
+participant "10.164.0.1"
+participant "10.22.0.1"
+participant "10.178.0.1"
+participant "10.37.0.1"
+participant "10.190.0.1"
+participant "10.0.0.1"
+participant "10.24.0.1"
+participant "10.40.0.1"
+participant "10.179.0.1"
+participant "10.138.0.1"
+participant "10.148.0.1"
+participant "10.137.0.1"
+participant "10.154.0.1"
+participant "10.172.0.1"
+participant "10.33.0.1"
+participant "10.143.0.1"
+participant "10.200.0.1"
+participant "10.8.0.1"
+participant "10.151.0.1"
+participant "10.174.0.1"
+participant "8.8.8.8"
+participant "10.4.0.1"
+participant "10.44.0.1"
+participant "10.156.0.1"
+participant "10.3.0.1"
+participant "10.185.0.1"
+participant "10.49.0.1"
+participant "10.46.0.1"
+participant "10.10.0.1"
+participant "10.14.0.1"
+participant "10.187.0.1"
+participant "10.1.0.1"
+participant "10.20.0.1"
+participant "10.36.0.1"
+participant "10.26.0.1"
+participant "10.175.0.1"
+participant "10.28.0.1"
+participant "127.0.0.1"
+participant "10.134.0.1"
+participant "10.180.0.1"
+participant "10.141.0.1"
+participant "10.193.0.1"
+participant "10.147.0.1"
+participant "10.162.0.1"
+participant "10.18.0.1"
+participant "10.169.0.1"
+participant "10.9.0.1"
+
+"10.50.0.1" -> "UPF": 872, PFCP req.\nPFCP Association Setup Request (5)\n+82.816s (16:2:24.967.469)
+
+note right #03B5AA
+**10.50.0.1 to UPF**
+end note
+
+"UPF" -> "10.50.0.1": 873, PFCP rsp.\nPFCP Association Setup Response (6)\n+82.816s (16:2:24.967.84)
+
+note right #D7FEFC
+**UPF to 10.50.0.1**
+end note
+
+"10.51.0.1" -> "UPF": 874, PFCP req.\nPFCP Association Setup Request (5)\n+82.867s (16:2:25.18.656)
+
+note right #03B5AA
+**10.51.0.1 to UPF**
+end note
+
+"UPF" -> "10.51.0.1": 875, PFCP rsp.\nPFCP Association Setup Response (6)\n+82.867s (16:2:25.18.995)
+
+note right #D7FEFC
+**UPF to 10.51.0.1**
+end note
+
+"10.52.0.1" -> "UPF": 876, PFCP req.\nPFCP Association Setup Request (5)\n+82.967s (16:2:25.118.607)
+
+note right #03B5AA
+**10.52.0.1 to UPF**
+end note
+
+"UPF" -> "10.52.0.1": 877, PFCP rsp.\nPFCP Association Setup Response (6)\n+82.967s (16:2:25.118.919)
+
+note right #D7FEFC
+**UPF to 10.52.0.1**
+end note
+
+"10.53.0.1" -> "UPF": 878, PFCP req.\nPFCP Association Setup Request (5)\n+83.031s (16:2:25.182.479)
+
+note right #03B5AA
+**10.53.0.1 to UPF**
+end note
+
+"UPF" -> "10.53.0.1": 879, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.031s (16:2:25.182.796)
+
+note right #D7FEFC
+**UPF to 10.53.0.1**
+end note
+
+"10.54.0.1" -> "UPF": 880, PFCP req.\nPFCP Association Setup Request (5)\n+83.068s (16:2:25.219.445)
+
+note right #03B5AA
+**10.54.0.1 to UPF**
+end note
+
+"UPF" -> "10.54.0.1": 881, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.069s (16:2:25.220.361)
+
+note right #D7FEFC
+**UPF to 10.54.0.1**
+end note
+
+"10.55.0.1" -> "UPF": 882, PFCP req.\nPFCP Association Setup Request (5)\n+83.128s (16:2:25.279.882)
+
+note right #03B5AA
+**10.55.0.1 to UPF**
+end note
+
+"UPF" -> "10.55.0.1": 883, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.129s (16:2:25.280.482)
+
+note right #D7FEFC
+**UPF to 10.55.0.1**
+end note
+
+"10.56.0.1" -> "UPF": 884, PFCP req.\nPFCP Association Setup Request (5)\n+83.168s (16:2:25.320.026)
+
+note right #03B5AA
+**10.56.0.1 to UPF**
+end note
+
+"UPF" -> "10.56.0.1": 885, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.169s (16:2:25.320.354)
+
+note right #D7FEFC
+**UPF to 10.56.0.1**
+end note
+
+"10.57.0.1" -> "UPF": 886, PFCP req.\nPFCP Association Setup Request (5)\n+83.218s (16:2:25.370.245)
+
+note right #03B5AA
+**10.57.0.1 to UPF**
+end note
+
+"UPF" -> "10.57.0.1": 887, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.219s (16:2:25.370.542)
+
+note right #D7FEFC
+**UPF to 10.57.0.1**
+end note
+
+"10.58.0.1" -> "UPF": 888, PFCP req.\nPFCP Association Setup Request (5)\n+83.278s (16:2:25.429.754)
+
+note right #03B5AA
+**10.58.0.1 to UPF**
+end note
+
+"UPF" -> "10.58.0.1": 889, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.279s (16:2:25.430.397)
+
+note right #D7FEFC
+**UPF to 10.58.0.1**
+end note
+
+"10.59.0.1" -> "UPF": 890, PFCP req.\nPFCP Association Setup Request (5)\n+83.373s (16:2:25.524.831)
+
+note right #03B5AA
+**10.59.0.1 to UPF**
+end note
+
+"UPF" -> "10.59.0.1": 891, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.373s (16:2:25.525.151)
+
+note right #D7FEFC
+**UPF to 10.59.0.1**
+end note
+
+"10.60.0.1" -> "UPF": 892, PFCP req.\nPFCP Association Setup Request (5)\n+83.450s (16:2:25.601.687)
+
+note right #03B5AA
+**10.60.0.1 to UPF**
+end note
+
+"UPF" -> "10.60.0.1": 893, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.450s (16:2:25.602.031)
+
+note right #D7FEFC
+**UPF to 10.60.0.1**
+end note
+
+"10.61.0.1" -> "UPF": 894, PFCP req.\nPFCP Association Setup Request (5)\n+83.481s (16:2:25.633.136)
+
+note right #03B5AA
+**10.61.0.1 to UPF**
+end note
+
+"UPF" -> "10.61.0.1": 895, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.482s (16:2:25.633.767)
+
+note right #D7FEFC
+**UPF to 10.61.0.1**
+end note
+
+"10.62.0.1" -> "UPF": 896, PFCP req.\nPFCP Association Setup Request (5)\n+83.541s (16:2:25.692.426)
+
+note right #03B5AA
+**10.62.0.1 to UPF**
+end note
+
+"UPF" -> "10.62.0.1": 897, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.541s (16:2:25.693.291)
+
+note right #D7FEFC
+**UPF to 10.62.0.1**
+end note
+
+"10.63.0.1" -> "UPF": 898, PFCP req.\nPFCP Association Setup Request (5)\n+83.633s (16:2:25.784.388)
+
+note right #03B5AA
+**10.63.0.1 to UPF**
+end note
+
+"UPF" -> "10.63.0.1": 899, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.633s (16:2:25.784.627)
+
+note right #D7FEFC
+**UPF to 10.63.0.1**
+end note
+
+"10.64.0.1" -> "UPF": 900, PFCP req.\nPFCP Association Setup Request (5)\n+83.671s (16:2:25.822.44)
+
+note right #03B5AA
+**10.64.0.1 to UPF**
+end note
+
+"UPF" -> "10.64.0.1": 901, PFCP rsp.\nPFCP Association Setup Response (6)\n+83.671s (16:2:25.822.74)
+
+note right #D7FEFC
+**UPF to 10.64.0.1**
+end note
+
+"10.65.0.1" -> "UPF": 902, PFCP req.\nPFCP Association Setup Request (5)\n+83.709s (16:2:25.860.539)
+
+note right #03B5AA
+**10.65.0.1 to UPF**
+end note
+
+"10.66.0.1" -> "UPF": 903, PFCP req.\nPFCP Association Setup Request (5)\n+83.786s (16:2:25.937.397)
+
+note right #03B5AA
+**10.66.0.1 to UPF**
+end note
+
+"10.67.0.1" -> "UPF": 904, PFCP req.\nPFCP Association Setup Request (5)\n+83.816s (16:2:25.968.286)
+
+note right #03B5AA
+**10.67.0.1 to UPF**
+end note
+
+"10.68.0.1" -> "UPF": 905, PFCP req.\nPFCP Association Setup Request (5)\n+83.892s (16:2:26.43.505)
+
+note right #03B5AA
+**10.68.0.1 to UPF**
+end note
+
+"10.69.0.1" -> "UPF": 906, PFCP req.\nPFCP Association Setup Request (5)\n+83.944s (16:2:26.95.407)
+
+note right #03B5AA
+**10.69.0.1 to UPF**
+end note
+
+"10.70.0.1" -> "UPF": 907, PFCP req.\nPFCP Association Setup Request (5)\n+84.002s (16:2:26.153.807)
+
+note right #03B5AA
+**10.70.0.1 to UPF**
+end note
+
+"10.71.0.1" -> "UPF": 908, PFCP req.\nPFCP Association Setup Request (5)\n+84.081s (16:2:26.233.09)
+
+note right #03B5AA
+**10.71.0.1 to UPF**
+end note
+
+"10.72.0.1" -> "UPF": 909, PFCP req.\nPFCP Association Setup Request (5)\n+84.135s (16:2:26.286.636)
+
+note right #03B5AA
+**10.72.0.1 to UPF**
+end note
+
+"10.73.0.1" -> "UPF": 910, PFCP req.\nPFCP Association Setup Request (5)\n+84.307s (16:2:26.459.308)
+
+note right #03B5AA
+**10.73.0.1 to UPF**
+end note
+
+"10.74.0.1" -> "UPF": 911, PFCP req.\nPFCP Association Setup Request (5)\n+84.366s (16:2:26.517.447)
+
+note right #03B5AA
+**10.74.0.1 to UPF**
+end note
+
+"10.75.0.1" -> "UPF": 912, PFCP req.\nPFCP Association Setup Request (5)\n+84.415s (16:2:26.566.427)
+
+note right #03B5AA
+**10.75.0.1 to UPF**
+end note
+
+"10.76.0.1" -> "UPF": 913, PFCP req.\nPFCP Association Setup Request (5)\n+84.478s (16:2:26.630.269)
+
+note right #03B5AA
+**10.76.0.1 to UPF**
+end note
+
+"10.77.0.1" -> "UPF": 914, PFCP req.\nPFCP Association Setup Request (5)\n+84.567s (16:2:26.719.156)
+
+note right #03B5AA
+**10.77.0.1 to UPF**
+end note
+
+"10.78.0.1" -> "UPF": 915, PFCP req.\nPFCP Association Setup Request (5)\n+84.623s (16:2:26.774.899)
+
+note right #03B5AA
+**10.78.0.1 to UPF**
+end note
+
+"10.79.0.1" -> "UPF": 916, PFCP req.\nPFCP Association Setup Request (5)\n+84.657s (16:2:26.808.75)
+
+note right #03B5AA
+**10.79.0.1 to UPF**
+end note
+
+"10.80.0.1" -> "UPF": 917, PFCP req.\nPFCP Association Setup Request (5)\n+84.696s (16:2:26.848.224)
+
+note right #03B5AA
+**10.80.0.1 to UPF**
+end note
+
+"10.81.0.1" -> "UPF": 918, PFCP req.\nPFCP Association Setup Request (5)\n+84.755s (16:2:26.906.404)
+
+note right #03B5AA
+**10.81.0.1 to UPF**
+end note
+
+"10.82.0.1" -> "UPF": 919, PFCP req.\nPFCP Association Setup Request (5)\n+84.788s (16:2:26.939.589)
+
+note right #03B5AA
+**10.82.0.1 to UPF**
+end note
+
+"10.83.0.1" -> "UPF": 920, PFCP req.\nPFCP Association Setup Request (5)\n+84.816s (16:2:26.968.035)
+
+note right #03B5AA
+**10.83.0.1 to UPF**
+end note
+
+"10.84.0.1" -> "UPF": 921, PFCP req.\nPFCP Association Setup Request (5)\n+84.899s (16:2:27.50.551)
+
+note right #03B5AA
+**10.84.0.1 to UPF**
+end note
+
+"10.85.0.1" -> "UPF": 922, PFCP req.\nPFCP Association Setup Request (5)\n+84.934s (16:2:27.85.596)
+
+note right #03B5AA
+**10.85.0.1 to UPF**
+end note
+
+"10.86.0.1" -> "UPF": 923, PFCP req.\nPFCP Association Setup Request (5)\n+84.974s (16:2:27.126.246)
+
+note right #03B5AA
+**10.86.0.1 to UPF**
+end note
+
+"10.87.0.1" -> "UPF": 924, PFCP req.\nPFCP Association Setup Request (5)\n+85.014s (16:2:27.165.493)
+
+note right #03B5AA
+**10.87.0.1 to UPF**
+end note
+
+"10.88.0.1" -> "UPF": 925, PFCP req.\nPFCP Association Setup Request (5)\n+85.110s (16:2:27.261.572)
+
+note right #03B5AA
+**10.88.0.1 to UPF**
+end note
+
+"10.89.0.1" -> "UPF": 926, PFCP req.\nPFCP Association Setup Request (5)\n+85.223s (16:2:27.374.401)
+
+note right #03B5AA
+**10.89.0.1 to UPF**
+end note
+
+"10.90.0.1" -> "UPF": 927, PFCP req.\nPFCP Association Setup Request (5)\n+85.282s (16:2:27.433.858)
+
+note right #03B5AA
+**10.90.0.1 to UPF**
+end note
+
+"10.91.0.1" -> "UPF": 928, PFCP req.\nPFCP Association Setup Request (5)\n+85.400s (16:2:27.552.161)
+
+note right #03B5AA
+**10.91.0.1 to UPF**
+end note
+
+"gNB" -> "UPF": 929, GTP<ICMP> ping req.\n+85.418s (16:2:27.569.959)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.92.0.1" -> "UPF": 930, PFCP req.\nPFCP Association Setup Request (5)\n+85.499s (16:2:27.650.552)
+
+note right #03B5AA
+**10.92.0.1 to UPF**
+end note
+
+"10.93.0.1" -> "UPF": 931, PFCP req.\nPFCP Association Setup Request (5)\n+85.545s (16:2:27.696.362)
+
+note right #03B5AA
+**10.93.0.1 to UPF**
+end note
+
+"10.94.0.1" -> "UPF": 932, PFCP req.\nPFCP Association Setup Request (5)\n+85.597s (16:2:27.748.976)
+
+note right #03B5AA
+**10.94.0.1 to UPF**
+end note
+
+"10.95.0.1" -> "UPF": 933, PFCP req.\nPFCP Association Setup Request (5)\n+85.659s (16:2:27.810.369)
+
+note right #03B5AA
+**10.95.0.1 to UPF**
+end note
+
+"10.96.0.1" -> "UPF": 934, PFCP req.\nPFCP Association Setup Request (5)\n+85.709s (16:2:27.860.97)
+
+note right #03B5AA
+**10.96.0.1 to UPF**
+end note
+
+"10.97.0.1" -> "UPF": 935, PFCP req.\nPFCP Association Setup Request (5)\n+85.803s (16:2:27.954.434)
+
+note right #03B5AA
+**10.97.0.1 to UPF**
+end note
+
+"10.98.0.1" -> "UPF": 936, PFCP req.\nPFCP Association Setup Request (5)\n+85.849s (16:2:28.1.078)
+
+note right #03B5AA
+**10.98.0.1 to UPF**
+end note
+
+"10.99.0.1" -> "UPF": 941, PFCP req.\nPFCP Association Setup Request (5)\n+85.879s (16:2:28.31.167)
+
+note right #03B5AA
+**10.99.0.1 to UPF**
+end note
+
+"10.100.0.1" -> "UPF": 943, PFCP req.\nPFCP Association Setup Request (5)\n+85.899s (16:2:28.50.921)
+
+note right #03B5AA
+**10.100.0.1 to UPF**
+end note
+
+"10.101.0.1" -> "UPF": 945, PFCP req.\nPFCP Association Setup Request (5)\n+85.944s (16:2:28.96.014)
+
+note right #03B5AA
+**10.101.0.1 to UPF**
+end note
+
+"10.102.0.1" -> "UPF": 947, PFCP req.\nPFCP Association Setup Request (5)\n+85.981s (16:2:28.132.813)
+
+note right #03B5AA
+**10.102.0.1 to UPF**
+end note
+
+"10.103.0.1" -> "UPF": 949, PFCP req.\nPFCP Association Setup Request (5)\n+86.008s (16:2:28.159.655)
+
+note right #03B5AA
+**10.103.0.1 to UPF**
+end note
+
+"10.104.0.1" -> "UPF": 951, PFCP req.\nPFCP Association Setup Request (5)\n+86.035s (16:2:28.186.538)
+
+note right #03B5AA
+**10.104.0.1 to UPF**
+end note
+
+"10.105.0.1" -> "UPF": 955, PFCP req.\nPFCP Association Setup Request (5)\n+86.090s (16:2:28.242.018)
+
+note right #03B5AA
+**10.105.0.1 to UPF**
+end note
+
+"10.106.0.1" -> "UPF": 957, PFCP req.\nPFCP Association Setup Request (5)\n+86.127s (16:2:28.278.858)
+
+note right #03B5AA
+**10.106.0.1 to UPF**
+end note
+
+"10.107.0.1" -> "UPF": 959, PFCP req.\nPFCP Association Setup Request (5)\n+86.208s (16:2:28.359.535)
+
+note right #03B5AA
+**10.107.0.1 to UPF**
+end note
+
+"10.108.0.1" -> "UPF": 961, PFCP req.\nPFCP Association Setup Request (5)\n+86.229s (16:2:28.380.497)
+
+note right #03B5AA
+**10.108.0.1 to UPF**
+end note
+
+"10.109.0.1" -> "UPF": 963, PFCP req.\nPFCP Association Setup Request (5)\n+86.285s (16:2:28.437.268)
+
+note right #03B5AA
+**10.109.0.1 to UPF**
+end note
+
+"10.110.0.1" -> "UPF": 966, PFCP req.\nPFCP Association Setup Request (5)\n+86.336s (16:2:28.488.204)
+
+note right #03B5AA
+**10.110.0.1 to UPF**
+end note
+
+"10.111.0.1" -> "UPF": 968, PFCP req.\nPFCP Association Setup Request (5)\n+86.382s (16:2:28.534.151)
+
+note right #03B5AA
+**10.111.0.1 to UPF**
+end note
+
+"10.112.0.1" -> "UPF": 970, PFCP req.\nPFCP Association Setup Request (5)\n+86.398s (16:2:28.550.118)
+
+note right #03B5AA
+**10.112.0.1 to UPF**
+end note
+
+"gNB" -> "UPF": 972, GTP<ICMP> ping req.\n+86.427s (16:2:28.578.334)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UPF" -> "gNB": 973, ICMP req., rsp. or notification\n+86.427s (16:2:28.578.47)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"10.113.0.1" -> "UPF": 974, PFCP req.\nPFCP Association Setup Request (5)\n+86.431s (16:2:28.582.647)
+
+note right #03B5AA
+**10.113.0.1 to UPF**
+end note
+
+"10.114.0.1" -> "UPF": 977, PFCP req.\nPFCP Association Setup Request (5)\n+86.503s (16:2:28.654.63)
+
+note right #03B5AA
+**10.114.0.1 to UPF**
+end note
+
+"10.115.0.1" -> "UPF": 981, PFCP req.\nPFCP Association Setup Request (5)\n+86.635s (16:2:28.786.615)
+
+note right #03B5AA
+**10.115.0.1 to UPF**
+end note
+
+"10.116.0.1" -> "UPF": 983, PFCP req.\nPFCP Association Setup Request (5)\n+86.659s (16:2:28.810.358)
+
+note right #03B5AA
+**10.116.0.1 to UPF**
+end note
+
+"10.117.0.1" -> "UPF": 985, PFCP req.\nPFCP Association Setup Request (5)\n+86.687s (16:2:28.838.642)
+
+note right #03B5AA
+**10.117.0.1 to UPF**
+end note
+
+"10.118.0.1" -> "UPF": 987, PFCP req.\nPFCP Association Setup Request (5)\n+86.729s (16:2:28.880.437)
+
+note right #03B5AA
+**10.118.0.1 to UPF**
+end note
+
+"10.119.0.1" -> "UPF": 989, PFCP req.\nPFCP Association Setup Request (5)\n+86.769s (16:2:28.920.426)
+
+note right #03B5AA
+**10.119.0.1 to UPF**
+end note
+
+"10.120.0.1" -> "UPF": 991, PFCP req.\nPFCP Association Setup Request (5)\n+86.793s (16:2:28.944.61)
+
+note right #03B5AA
+**10.120.0.1 to UPF**
+end note
+
+"10.121.0.1" -> "UPF": 993, PFCP req.\nPFCP Association Setup Request (5)\n+86.838s (16:2:28.990.172)
+
+note right #03B5AA
+**10.121.0.1 to UPF**
+end note
+
+"10.122.0.1" -> "UPF": 1008, PFCP req.\nPFCP Association Setup Request (5)\n+86.868s (16:2:29.19.999)
+
+note right #03B5AA
+**10.122.0.1 to UPF**
+end note
+
+"10.123.0.1" -> "UPF": 1017, PFCP req.\nPFCP Association Setup Request (5)\n+86.889s (16:2:29.40.351)
+
+note right #03B5AA
+**10.123.0.1 to UPF**
+end note
+
+"10.124.0.1" -> "UPF": 1023, PFCP req.\nPFCP Association Setup Request (5)\n+86.917s (16:2:29.69.173)
+
+note right #03B5AA
+**10.124.0.1 to UPF**
+end note
+
+"10.125.0.1" -> "UPF": 1025, PFCP req.\nPFCP Association Setup Request (5)\n+86.953s (16:2:29.104.515)
+
+note right #03B5AA
+**10.125.0.1 to UPF**
+end note
+
+"10.126.0.1" -> "UPF": 1027, PFCP req.\nPFCP Association Setup Request (5)\n+86.970s (16:2:29.122.033)
+
+note right #03B5AA
+**10.126.0.1 to UPF**
+end note
+
+"10.127.0.1" -> "UPF": 1029, PFCP req.\nPFCP Association Setup Request (5)\n+87.012s (16:2:29.163.782)
+
+note right #03B5AA
+**10.127.0.1 to UPF**
+end note
+
+"10.128.0.1" -> "UPF": 1031, PFCP req.\nPFCP Association Setup Request (5)\n+87.045s (16:2:29.196.815)
+
+note right #03B5AA
+**10.128.0.1 to UPF**
+end note
+
+"10.129.0.1" -> "UPF": 1039, PFCP req.\nPFCP Association Setup Request (5)\n+87.075s (16:2:29.227.285)
+
+note right #03B5AA
+**10.129.0.1 to UPF**
+end note
+
+"10.130.0.1" -> "UPF": 1041, PFCP req.\nPFCP Association Setup Request (5)\n+87.145s (16:2:29.297.092)
+
+note right #03B5AA
+**10.130.0.1 to UPF**
+end note
+
+"10.131.0.1" -> "UPF": 1043, PFCP req.\nPFCP Association Setup Request (5)\n+87.181s (16:2:29.332.984)
+
+note right #03B5AA
+**10.131.0.1 to UPF**
+end note
+
+@enduml

@@ -8,11 +8,12 @@ skinparam sequence {
     ParticipantBorderColor white
     ParticipantBackgroundColor #e6e6e6
 }
+participant "Attacker"
 participant "UE"
 participant "gNB"
+participant "AMF"
 participant "SMF"
 participant "UPF"
-participant "10.0.14.10"
 participant "8.8.8.8"
 
 "gNB" -> "UPF": 1103, GTP<ICMP> ping req.\n+31.767s (19:38:18.839.636)
@@ -45,48 +46,16 @@ note right #EDFEC2
 **8.8.8.8 to UE**
 end note
 
-"10.0.14.10" -> "UPF": 1193, PFCP req.\nPFCP Session Modification Request (52)\n+39.750s (19:38:26.823.36)
+"UPF" -> "gNB": 1108, GTP<ICMP> ping rsp.\n+31.794s (19:38:18.866.543)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"Attacker" -> "UPF": 1193, PFCP req. Malformed \nPFCP Session Modification Request (52)\n+39.750s (19:38:26.823.36)
 
 note right #FFC2D9
-**10.0.14.10 to UPF**
-10.0.14.10 to 10.0.17.1 (IPs)
-pfcp.flags:
--   pfcp.version: '001. .... = Version: 1'
-    pfcp.spare_b4: '...0 .... = Spare: 0'
-    pfcp.spare_b3: '.... 0... = Spare: 0'
-    pfcp.spare_b2: '.... .0.. = Spare: 0'
-    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
-    pfcp.s: '.... ...1 = SEID (S): True'
-pfcp.msg_type: 'Message Type: PFCP Session Modification Request (52)'
-pfcp.length: 'Length: 52'
-pfcp.seid: 'SEID: 0x0000000000000001'
-pfcp.seqno: 'Sequence Number: 60'
-pfcp.spare_oct: 'Spare: 0'
-'Update FAR : [Grouped IE]':
--   pfcp.ie_type: 'IE Type: Update FAR (10)'
-    pfcp.ie_len: 'IE Length: 36'
-    'FAR ID : Dynamic by CP 1':
-        pfcp.ie_type: 'IE Type: FAR ID (108)'
-        pfcp.ie_len: 'IE Length: 4'
-        pfcp.far_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
-        pfcp.far_id: '.000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1'
-    'Apply Action : ':
-        pfcp.ie_type: 'IE Type: Apply Action (44)'
-        pfcp.ie_len: 'IE Length: 2'
-        pfcp.apply_action_flags:
-            pfcp.spare_b7_b5: '000. .... = Spare: 0'
-            pfcp.apply_action.dupl: '...0 .... = DUPL (Duplicate): False'
-            pfcp.apply_action.nocp: '.... 0... = NOCP (Notify the CP function): False'
-            pfcp.apply_action.buff: '.... .0.. = BUFF (Buffer): False'
-            pfcp.apply_action.forw: '.... ..0. = FORW (Forward): False'
-            pfcp.apply_action.drop: '.... ...1 = DROP (Drop): True'
-        IE data not decoded by WS yet:
-            _ws.expert:
-                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
-                _ws.expert.message: 'Message: IE data not decoded by WS yet'
-                _ws.expert.severity: 'Severity level: Note'
-                _ws.expert.group: 'Group: Undecoded'
-
+**Attacker to UPF**
 end note
 
 "UPF" -> "SMF": 1286, PFCP req.\nPFCP Association Setup Request (5)\n+42.940s (19:38:30.13.356)
@@ -106,26 +75,5 @@ end note
 note right #5C8001
 **gNB to UPF**
 end note
-
-"gNB" -> "UPF": 1434, GTP<ICMP> ping req.\n+46.059s (19:38:33.131.729)
-
-note right #5C8001
-**gNB to UPF**
-end note
-
-"gNB" -> "UPF": 1444, GTP<ICMP> ping req.\n+47.083s (19:38:34.155.629)
-
-note right #5C8001
-**gNB to UPF**
-end note
-
-"gNB" -> "UPF": 1451, GTP<ICMP> ping req.\n+48.107s (19:38:35.179.503)
-
-note right #5C8001
-**gNB to UPF**
-end note
-
-"gNB" -> "UPF": 1459, GTP<ICMP> ping req.\n+49.131s (19:38:36.203.814)
-
 
 @enduml
