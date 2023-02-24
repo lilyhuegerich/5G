@@ -80,36 +80,6 @@ note right #FFC2D9
 **Spoofed IPs 10.*.0.1 to UPF**
 end note
 
-"UPF" -> "Spoofed IPs 10.*.0.1": 728, PFCP rsp.\nPFCP Association Setup Response (6)\n+78.908s (16:2:21.60.08)
-
-note right #D7FEFC
-**UPF to Spoofed IPs 10.*.0.1**
-end note
-
-"Spoofed IPs 10.*.0.1" -> "UPF": 729, PFCP req.\nPFCP Association Setup Request (5)\n+78.972s (16:2:21.123.554)
-
-note right #FFC2D9
-**Spoofed IPs 10.*.0.1 to UPF**
-end note
-
-"UPF" -> "Spoofed IPs 10.*.0.1": 730, PFCP rsp.\nPFCP Association Setup Response (6)\n+78.972s (16:2:21.123.949)
-
-note right #D7FEFC
-**UPF to Spoofed IPs 10.*.0.1**
-end note
-
-"Spoofed IPs 10.*.0.1" -> "UPF": 731, PFCP req.\nPFCP Association Setup Request (5)\n+79.014s (16:2:21.165.474)
-
-note right #FFC2D9
-**Spoofed IPs 10.*.0.1 to UPF**
-end note
-
-"UPF" -> "Spoofed IPs 10.*.0.1": 732, PFCP rsp.\nPFCP Association Setup Response (6)\n+79.014s (16:2:21.165.802)
-
-note right #D7FEFC
-**UPF to Spoofed IPs 10.*.0.1**
-end note
-
 "gNB" -> "UPF": 1296, GTP<ICMP> ping req.\n+92.766s (16:2:34.918.138)
 
 note right #5C8001

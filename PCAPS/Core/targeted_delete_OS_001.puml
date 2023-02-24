@@ -1,0 +1,623 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+participant "10.45.0.5"
+participant "8.8.8.8"
+
+"UPF" -> "8.8.8.8": 2383, ICMP ping req.\n+107.056s (19:33:25.691.947)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2384, ICMP ping rsp.\n+107.080s (19:33:25.715.299)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 2385, ICMP ping rsp.\n+107.080s (19:33:25.715.331)
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 2386, GTP<ICMP> ping rsp.\n+107.080s (19:33:25.715.43)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2440, GTP<ICMP> ping req.\n+108.058s (19:33:26.693.36)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 2441, ICMP ping req.\n+108.058s (19:33:26.693.54)
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2442, ICMP ping req.\n+108.058s (19:33:26.693.572)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2443, ICMP ping rsp.\n+108.078s (19:33:26.713.176)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 2444, ICMP ping rsp.\n+108.078s (19:33:26.713.203)
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 2445, GTP<ICMP> ping rsp.\n+108.078s (19:33:26.713.286)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2457, GTP<ICMP> ping req.\n+109.058s (19:33:27.693.63)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 2458, ICMP ping req.\n+109.058s (19:33:27.693.72)
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2459, ICMP ping req.\n+109.058s (19:33:27.693.735)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2460, ICMP ping rsp.\n+109.098s (19:33:27.733.225)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 2461, ICMP ping rsp.\n+109.098s (19:33:27.733.251)
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 2462, GTP<ICMP> ping rsp.\n+109.098s (19:33:27.733.358)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2463, GTP<ICMP> ping req.\n+110.060s (19:33:28.695.451)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 2464, ICMP ping req.\n+110.060s (19:33:28.695.539)
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2465, ICMP ping req.\n+110.060s (19:33:28.695.556)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2466, ICMP ping rsp.\n+110.082s (19:33:28.717.315)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 2467, ICMP ping rsp.\n+110.082s (19:33:28.717.345)
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 2468, GTP<ICMP> ping rsp.\n+110.082s (19:33:28.717.475)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2471, GTP<ICMP> ping req.\n+111.062s (19:33:29.697.091)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 2472, ICMP ping req.\n+111.062s (19:33:29.697.189)
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2473, ICMP ping req.\n+111.062s (19:33:29.697.208)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2474, ICMP ping rsp.\n+111.086s (19:33:29.721.324)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 2475, ICMP ping rsp.\n+111.086s (19:33:29.721.351)
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 2476, GTP<ICMP> ping rsp.\n+111.086s (19:33:29.721.441)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2477, GTP<ICMP> ping req.\n+111.092s (19:33:29.727.08)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 2478, ICMP ping req.\n+111.092s (19:33:29.727.183)
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2479, ICMP ping req.\n+111.092s (19:33:29.727.206)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2480, ICMP ping rsp.\n+111.110s (19:33:29.745.796)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 2481, ICMP ping rsp.\n+111.110s (19:33:29.745.825)
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 2482, GTP<ICMP> ping rsp.\n+111.110s (19:33:29.745.921)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2483, GTP<ICMP> ping req.\n+112.119s (19:33:30.754.695)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 2484, ICMP ping req.\n+112.119s (19:33:30.754.81)
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2485, ICMP ping req.\n+112.119s (19:33:30.754.838)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2486, ICMP ping rsp.\n+112.148s (19:33:30.783.837)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 2487, ICMP ping rsp.\n+112.148s (19:33:30.783.891)
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 2488, GTP<ICMP> ping rsp.\n+112.148s (19:33:30.783.984)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2498, GTP<ICMP> ping req.\n+113.122s (19:33:31.757.064)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 2499, ICMP ping req.\n+113.122s (19:33:31.757.416)
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2500, ICMP ping req.\n+113.122s (19:33:31.757.456)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2501, ICMP ping rsp.\n+113.150s (19:33:31.785.62)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 2502, ICMP ping rsp.\n+113.150s (19:33:31.785.774)
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 2503, GTP<ICMP> ping rsp.\n+113.152s (19:33:31.787.83)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2504, GTP<ICMP> ping req.\n+114.122s (19:33:32.757.137)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 2505, ICMP ping req.\n+114.122s (19:33:32.757.314)
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2506, ICMP ping req.\n+114.122s (19:33:32.757.346)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2507, ICMP ping rsp.\n+114.144s (19:33:32.779.272)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 2508, ICMP ping rsp.\n+114.144s (19:33:32.779.298)
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 2509, GTP<ICMP> ping rsp.\n+114.144s (19:33:32.779.377)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2522, GTP<ICMP> ping req.\n+115.123s (19:33:33.758.599)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 2523, ICMP ping req.\n+115.123s (19:33:33.758.717)
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2524, ICMP ping req.\n+115.123s (19:33:33.758.737)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2525, ICMP ping rsp.\n+115.149s (19:33:33.784.886)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 2526, ICMP ping rsp.\n+115.149s (19:33:33.784.932)
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 2527, GTP<ICMP> ping rsp.\n+115.150s (19:33:33.785.075)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2528, GTP<ICMP> ping req.\n+115.160s (19:33:33.795.828)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 2529, ICMP ping req.\n+115.160s (19:33:33.795.94)
+
+note right #5C8001
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2530, ICMP ping req.\n+115.161s (19:33:33.796.228)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2531, ICMP ping rsp.\n+115.196s (19:33:33.831.578)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 2532, ICMP ping rsp.\n+115.196s (19:33:33.831.714)
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 2533, GTP<ICMP> ping rsp.\n+115.197s (19:33:33.832.253)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2539, GTP<ICMP> ping req.\n+116.165s (19:33:34.800.143)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 2540, ICMP ping req.\n+116.165s (19:33:34.800.786)
+
+note right #5C8001
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2541, ICMP ping req.\n+116.165s (19:33:34.800.883)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2542, ICMP ping rsp.\n+116.190s (19:33:34.825.868)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 2543, ICMP ping rsp.\n+116.190s (19:33:34.825.908)
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 2544, GTP<ICMP> ping rsp.\n+116.191s (19:33:34.826.039)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2545, GTP<ICMP> ping req.\n+117.163s (19:33:35.798.414)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 2546, ICMP ping req.\n+117.163s (19:33:35.798.502)
+
+note right #5C8001
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2547, ICMP ping req.\n+117.163s (19:33:35.798.517)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2548, ICMP ping rsp.\n+117.187s (19:33:35.822.997)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 2549, ICMP ping rsp.\n+117.188s (19:33:35.823.191)
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 2550, GTP<ICMP> ping rsp.\n+117.188s (19:33:35.823.376)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2588, GTP<ICMP> ping req.\n+118.164s (19:33:36.799.637)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 2589, ICMP ping req.\n+118.164s (19:33:36.799.745)
+
+note right #5C8001
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2590, ICMP ping req.\n+118.164s (19:33:36.799.767)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2591, ICMP ping rsp.\n+118.183s (19:33:36.818.81)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 2592, ICMP ping rsp.\n+118.183s (19:33:36.818.845)
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 2593, GTP<ICMP> ping rsp.\n+118.183s (19:33:36.819.016)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 2599, GTP<ICMP> ping req.\n+119.166s (19:33:37.801.485)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.5" -> "8.8.8.8": 2600, ICMP ping req.\n+119.166s (19:33:37.801.593)
+
+note right #5C8001
+**10.45.0.5 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2601, ICMP ping req.\n+119.166s (19:33:37.801.688)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2602, ICMP ping rsp.\n+119.185s (19:33:37.820.168)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "10.45.0.5": 2603, ICMP ping rsp.\n+119.185s (19:33:37.820.194)
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.5**
+end note
+
+"UPF" -> "gNB": 2604, GTP<ICMP> ping rsp.\n+119.185s (19:33:37.820.278)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4242, GTP<ICMP> ping req.\n+336.845s (19:37:15.480.448)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 4243, ICMP ping req.\n+336.845s (19:37:15.480.542)
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4244, ICMP ping req.\n+336.845s (19:37:15.480.562)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4245, ICMP ping rsp.\n+336.867s (19:37:15.502.766)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_1": 4246, ICMP ping rsp.\n+336.867s (19:37:15.502.944)
+
+note right #EDFEC2
+**8.8.8.8 to UE_1**
+end note
+
+"UPF" -> "gNB": 4247, GTP<ICMP> ping rsp.\n+336.868s (19:37:15.503.179)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4248, GTP<ICMP> ping req.\n+336.876s (19:37:15.511.346)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 4249, ICMP ping req.\n+336.876s (19:37:15.511.446)
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4250, ICMP ping req.\n+336.876s (19:37:15.511.472)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4251, ICMP ping rsp.\n+336.903s (19:37:15.538.321)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 4252, ICMP ping rsp.\n+336.903s (19:37:15.538.348)
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 4253, GTP<ICMP> ping rsp.\n+336.903s (19:37:15.538.465)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+@enduml
