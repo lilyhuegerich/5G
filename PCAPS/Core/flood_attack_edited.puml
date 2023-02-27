@@ -61,6 +61,18 @@ note right #FFEAC2
 **UPF to Spoofed IPs 10.*.0.1**
 end note
 
+"UPF" -> "SMF": 1110, PFCP req.\nPFCP Association Setup Request (5)\n+88.259s (16:2:30.410.702)
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1111, PFCP rsp.\nPFCP Association Setup Response (6)\n+88.267s (16:2:30.419.111)
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
 "gNB" -> "UPF": 1296, GTP<ICMP> ping req.\n+92.766s (16:2:34.918.138)
 
 note right #5C8001
