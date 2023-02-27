@@ -8,12 +8,11 @@ skinparam sequence {
     ParticipantBorderColor white
     ParticipantBackgroundColor #e6e6e6
 }
+participant "Spoofed IPs 10.*.0.1"
 participant "UE"
 participant "gNB"
 participant "SMF"
 participant "UPF"
-participant "Spoofed IPs 10.*.0.1"
-
 
 "gNB" -> "UPF": 164, GTP<ICMP> ping req.\n+21.451s (16:1:23.602.934)
 
@@ -58,7 +57,7 @@ end note
 
 "UPF" -> "Spoofed IPs 10.*.0.1": 718, PFCP rsp.\nPFCP Association Setup Response (6)\n+78.547s (16:2:20.698.402)
 
-note right #D7FEFC
+note right #FFEAC2
 **UPF to Spoofed IPs 10.*.0.1**
 end note
 
