@@ -50,6 +50,12 @@ note right #EDFEC2
 **8.8.8.8 to Targeted UE**
 end note
 
+"UPF" -> "gNB": 4253, GTP<ICMP> ping rsp.\n+336.903s (19:37:15.538.465)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
 "gNB" -> "UPF": 4335, PFCP req.\nPFCP Association Setup Request (5)\n+345.330s (19:37:23.965.739)
 
 note right #FFC2D9
