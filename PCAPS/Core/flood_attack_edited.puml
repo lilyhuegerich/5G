@@ -68,18 +68,6 @@ note right #5C8001
 **gNB to UPF**
 end note
 
-"gNB" -> "UPF": 1304, GTP<ICMP> ping req.\n+93.786s (16:2:35.937.532)
-
-note right #5C8001
-**gNB to UPF**
-end note
-
-"gNB" -> "UPF": 1307, GTP<ICMP> ping req.\n+94.810s (16:2:36.961.556)
-
-note right #5C8001
-**gNB to UPF**
-end note
-
 @enduml
 
 
