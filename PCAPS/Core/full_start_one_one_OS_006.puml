@@ -1,0 +1,331 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+participant "NRF"
+participant "AUSF"
+participant "127.0.0.2"
+participant "127.0.0.8"
+participant "UDM"
+participant "8.8.8.8"
+participant "127.0.0.9"
+participant "UDR"
+participant "NSSF"
+participant "PCF"
+participant "127.0.0.4"
+participant "BSF"
+
+"BSF" -> "BSF": 4468, HTTP/2 201 rsp.\n+78.478s (16:13:8.227.243)
+
+note right #e6e6e6
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 4469, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.478s (16:13:8.227.299)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"PCF" -> "PCF": 4475, HTTP/2 201 rsp.\n+78.481s (16:13:8.229.907)
+
+note right #e6e6e6
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 4476, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.481s (16:13:8.229.939)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"SMF" -> "UPF": 4479, PFCP req.\nPFCP Session Establishment Request (50)\n+78.513s (16:13:8.261.513)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 4482, PFCP rsp.\nPFCP Session Establishment Response (51)\n+78.571s (16:13:8.319.628)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"NRF" -> "NRF": 4483, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances\n+78.580s (16:13:8.329.293)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4484, HTTP/2 200 rsp.\n+78.581s (16:13:8.329.626)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4485, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.581s (16:13:8.329.652)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"AMF" -> "AMF": 4496, HTTP/2 req.\nPOST  /namf-comm/v1/ue-contexts/imsi-901700000000001/n1-n2-messages\n+78.581s (16:13:8.330.347)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 4498, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.581s (16:13:8.330.369)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"AMF" -> "gNB": 4504, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)\n+78.584s (16:13:8.333.052)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"AMF" -> "AMF": 4505, HTTP/2 200 rsp.\n+78.584s (16:13:8.333.088)
+
+note right #e6e6e6
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 4506, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.584s (16:13:8.333.135)
+
+note right #b3b3b3
+**AMF to AMF**
+end note
+
+"gNB" -> "AMF": 4508, NGAP PDUSessionResourceSetup (29)\n+78.624s (16:13:8.372.931)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"SMF" -> "SMF": 4509, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/1/modify\n+78.625s (16:13:8.374.367)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 4511, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.625s (16:13:8.374.431)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "UPF": 4513, PFCP req.\nPFCP Session Modification Request (52)\n+78.630s (16:13:8.378.739)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 4514, PFCP rsp.\nPFCP Session Modification Response (53)\n+78.633s (16:13:8.381.73)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "SMF": 4515, HTTP/2 204 rsp.\n+78.633s (16:13:8.382.056)
+
+note right #e6e6e6
+**SMF to SMF**
+end note
+
+"NRF" -> "NRF": 4543, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24944238-8c42-41ed-9898-098bb83ac6cd\n+83.120s (16:13:12.868.709)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4544, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.120s (16:13:12.868.742)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4546, HTTP/2 204 rsp.\n+83.120s (16:13:12.868.878)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4548, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24a8d18a-8c42-41ed-9d6b-0713a676495c\n+83.304s (16:13:13.52.449)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4549, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.304s (16:13:13.52.493)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4551, HTTP/2 204 rsp.\n+83.304s (16:13:13.52.686)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4553, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24ddd434-8c42-41ed-90dc-490cfe057891\n+83.628s (16:13:13.376.445)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4554, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.628s (16:13:13.376.487)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4556, HTTP/2 204 rsp.\n+83.628s (16:13:13.376.664)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4558, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/23a0d4cc-8c42-41ed-bf08-4305d2ff916b\n+83.632s (16:13:13.380.542)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4559, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.632s (16:13:13.380.593)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4561, HTTP/2 204 rsp.\n+83.632s (16:13:13.380.75)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4563, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24e9b6e6-8c42-41ed-99a9-194d71752aec\n+83.684s (16:13:13.432.516)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4564, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.684s (16:13:13.432.561)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4566, HTTP/2 204 rsp.\n+83.684s (16:13:13.432.768)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4568, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24eff830-8c42-41ed-8ebb-33a10a6f764e\n+83.705s (16:13:13.453.557)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4569, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.705s (16:13:13.453.61)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4571, HTTP/2 204 rsp.\n+83.705s (16:13:13.453.737)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4573, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24988348-8c42-41ed-8d27-598d027c90ee\n+83.724s (16:13:13.472.733)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4574, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.724s (16:13:13.472.768)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4576, HTTP/2 204 rsp.\n+83.724s (16:13:13.472.902)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4578, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/25047cba-8c42-41ed-af13-379882efa776\n+83.848s (16:13:13.596.637)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4579, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+83.848s (16:13:13.596.688)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4581, HTTP/2 204 rsp.\n+83.848s (16:13:13.596.819)
+
+note right #e6e6e6
+**NRF to NRF**
+end note
+
+"gNB" -> "UPF": 4600, GTP<ICMP> ping req.\n+87.194s (16:13:16.942.643)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 4601, ICMP ping req.\n+87.194s (16:13:16.943.323)
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4602, ICMP ping req.\n+87.194s (16:13:16.943.359)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4603, ICMP ping rsp.\n+87.220s (16:13:16.968.956)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_1": 4604, ICMP ping rsp.\n+87.220s (16:13:16.969.018)
+
+note right #EDFEC2
+**8.8.8.8 to UE_1**
+end note
+
+"UPF" -> "gNB": 4605, GTP<ICMP> ping rsp.\n+87.220s (16:13:16.969.324)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+@enduml

@@ -1,5 +1,6 @@
 logger:
   file: /var/log/open5gs/nrf.log
+  level: debug
 nrf:
   sbi:
   - addr: 10.0.8.1
