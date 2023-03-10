@@ -1,0 +1,18 @@
+db_uri: mongodb://localhost/open5gs
+logger:
+  file: /var/log/open5gs/pcf.log
+pcf:
+  sbi:
+  - addr: 10.0.10.1
+    port: 7777
+
+nrf:
+  sbi:
+  - addr: 10.0.8.1
+    port: 7777
+parameter:
+  no_ipv6: true
+
+max:
+
+time:
