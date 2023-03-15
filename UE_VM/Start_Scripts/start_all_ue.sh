@@ -1,13 +1,21 @@
-gnome-terminal --tab --title="ue_internet" -- ./ue_internet.sh "$1" 
-echo $! > ue.pid
-echo "started ue internet"
-sleep 2
-gnome-terminal --tab --title="ue_iot" -- ./ue_iot.sh "$1"
-echo "started ue iot"
-sleep .5
-gnome-terminal --tab --title="ue_edge" -- ./ue_edge.sh "$1"
-echo "started ue edge"
-sleep .5
-gnome-terminal --tab --title="ue_CustomSlice" -- ./ue_CustomSlice.sh "$1"
-echo "started ue CustomSlice"
+#!/bin/bash
 
+name="UEs"
+
+tmux new-session -d -s "$name"
+
+
+tmux split-window -v
+tmux split-window -h
+tmux select-pane -t 0
+tmux split-window -h
+
+
+tmux send-keys -t 0 "./ue_internet.sh "$1"" Enter
+tmux send-keys -t 1 "./ue_iot.sh "$1"" Enter
+tmux send-keys -t 2 "./ue_edge.sh "$1"" Enter
+tmux send-keys -t 3 "./ue_CustomSlice.sh "$1"" Enter
+
+
+
+tmux a -t "$name"

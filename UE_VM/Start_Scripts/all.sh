@@ -9,20 +9,34 @@ status=$?
 #sudo ip addr add 10.0.2.15 dev enp0s3 #Config address of UE_VM
 #sudo ip route add 10.0.2.4 dev enp0s3 #Route to Core_vm manual address add
 
+cd /home/lily/5G/UE_VM/Start_Scripts
+
+sudo ./end_me.sh #kill all proccesses from last run
 
 if [[ $mode == "Double_upf" ]]; then
 	sudo ip route del 10.0.21.0/24 dev veth_upf2
 	sudo ip route del local 10.0.21.1
 	sudo ip route add 10.0.21.0/24 dev enp0s3 #route to second upf
 fi
+
 sudo ip route add 10.0.3.0/24 dev enp0s3 #route to amf
 sudo ip route add 10.0.17.0/24 dev enp0s3 # route to upf
 
-cd /home/lily/5G/UE_VM/Start_Scripts
-sudo gnome-terminal --title="gnb" -- ./gnb.sh "$name" &
+if [[ $mode == "Double_ran" ]]; then
+	sudo ip addr add 10.0.2.14 dev enp0s3 # addr for gnb 2
+	sudo xterm -e ./double_gnb.sh "$name" &
+	echo $! > /home/lily/5G/UE_VM/Start_Scripts/pids/gnb_window.pid
+else
+	sudo xterm -e ./gnb.sh "$name" &
+	echo $! > /home/lily/5G/UE_VM/Start_Scripts/pids/gnb_window.pid
+fi
+
 echo "started gnb"
 sleep 6
-sudo  gnome-terminal --title="ue" -- ./start_all_ue.sh "$name"
+
+sudo  xterm -e ./start_all_ue.sh "$name" &
+echo $! > /home/lily/5G/UE_VM/Start_Scripts/pids/ue_window.pid
+
 sleep 10
 if [ "$2" = "w" ]; then
 	wireshark &
