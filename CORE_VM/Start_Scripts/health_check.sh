@@ -22,15 +22,15 @@ if [[ $mode == "Double_upf" ]];then #in double upf there is one upf called manua
 
 elif [[ $mode == "Slice" ]];then #in slice there are two smf and two upf
 	if pgrep -U lily open5gs-upf > /dev/null ; then	
-		echo -e "$UGreen" "second upf is running."
+		echo -e "$UGreen" "internet2 upf is running."
 	else
-		echo -e "$URed" "second upf is off."
+		echo -e "$URed" "internet2 upf is off."
 	fi
 
 	if pgrep -U lily open5gs-smf > /dev/null ; then	
-		echo -e "$UGreen" "second smf is running."
+		echo -e "$UGreen" "internet smf is running."
 	else
-		echo -e "$URed" "second smf is off."
+		echo -e "$URed" "internet smf is off."
 	fi
 
 elif [[ $mode == "MEC" ]];then

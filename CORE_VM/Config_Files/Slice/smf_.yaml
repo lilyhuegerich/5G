@@ -26,12 +26,11 @@ smf:
   info:
     - s_nssai:
         - sst: 1
-          sd: 000001
           dnn:
             - internet
       tai:
        - plmn_id:
-           mcc: 900
+           mcc: 901
            mnc: 70
          tac: [1,2]
 nrf:

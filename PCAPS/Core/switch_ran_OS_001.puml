@@ -1,0 +1,626 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "AUSF"
+participant "UDM"
+participant "UDR"
+participant "PCRF"
+participant "NRF"
+participant "BSF"
+participant "HSS"
+participant "MME"
+participant "10.0.2.14"
+participant "PCF"
+
+"NRF" -> "NRF": 330, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+38.322s (16:44:35.232.588)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 332, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+38.382s (16:44:35.292.437)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 333, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+38.382s (16:44:35.292.475)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 335, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+38.383s (16:44:35.292.858)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 374, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+47.795s (16:44:44.705.186)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 375, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+47.795s (16:44:44.705.219)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 377, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+47.795s (16:44:44.705.475)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 379, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+47.902s (16:44:44.812.505)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 380, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+47.902s (16:44:44.812.557)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 382, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+47.903s (16:44:44.813.323)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 384, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.086s (16:44:44.996.444)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 385, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.086s (16:44:44.996.495)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 387, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.087s (16:44:44.996.874)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 389, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.098s (16:44:45.8.369)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 390, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.098s (16:44:45.8.384)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 392, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.099s (16:44:45.8.654)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 401, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.138s (16:44:45.48.577)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 402, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.139s (16:44:45.48.602)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 404, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.139s (16:44:45.49.091)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 406, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.174s (16:44:45.84.307)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 407, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.174s (16:44:45.84.341)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 409, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.175s (16:44:45.84.593)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 411, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.330s (16:44:45.240.538)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 412, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.331s (16:44:45.240.591)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 414, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.331s (16:44:45.240.982)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 416, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.391s (16:44:45.301.325)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 417, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.391s (16:44:45.301.358)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 419, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+48.392s (16:44:45.301.604)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 448, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+57.815s (16:44:54.724.732)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 449, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+57.815s (16:44:54.724.769)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 451, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+57.815s (16:44:54.725.018)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 453, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+57.917s (16:44:54.827.185)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 454, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+57.926s (16:44:54.836.463)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 456, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+57.928s (16:44:54.837.657)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 458, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.097s (16:44:55.7.376)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 459, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.097s (16:44:55.7.408)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 461, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.098s (16:44:55.7.639)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 463, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.113s (16:44:55.22.724)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 464, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.113s (16:44:55.22.739)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 466, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.113s (16:44:55.23.029)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 468, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.150s (16:44:55.59.726)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 469, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.150s (16:44:55.59.762)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 473, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.150s (16:44:55.60.393)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 478, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.178s (16:44:55.88.421)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 479, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.178s (16:44:55.88.541)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 481, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.179s (16:44:55.89.079)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 483, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.338s (16:44:55.248.341)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 484, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.338s (16:44:55.248.392)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 486, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.339s (16:44:55.248.763)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 488, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.398s (16:44:55.308.305)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 489, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.398s (16:44:55.308.338)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 491, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+58.399s (16:44:55.308.597)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"gNB" -> "AMF": 493, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)\n+59.246s (16:44:56.155.689)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "10.0.2.14": 494, NGAP UEContextRelease (41)\n+59.254s (16:44:56.164.464)
+
+note right #CDDCF3
+**AMF to 10.0.2.14**
+end note
+
+"10.0.2.14" -> "AMF": 507, NGAP UEContextRelease (41)\n+59.255s (16:44:56.165.125)
+
+note right #CDDCF3
+**10.0.2.14 to AMF**
+end note
+
+"SMF" -> "SMF": 510, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/9/release\n+59.255s (16:44:56.165.228)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 514, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.255s (16:44:56.165.304)
+
+note right #b3b3b3
+**SMF to SMF**
+end note
+
+"PCF" -> "PCF": 530, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies/9/delete\n+59.266s (16:44:56.175.945)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 534, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.266s (16:44:56.176.034)
+
+note right #b3b3b3
+**PCF to PCF**
+end note
+
+"BSF" -> "BSF": 546, HTTP/2 req.\nDELETE  /nbsf-management/v1/pcfBindings/9\n+59.266s (16:44:56.176.506)
+
+note right #b3b3b3
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 554, HTTP/2 204 rsp.\n+59.267s (16:44:56.176.775)
+
+note right #e6e6e6
+**BSF to BSF**
+end note
+
+"PCF" -> "PCF": 558, HTTP/2 204 rsp.\n+59.268s (16:44:56.178.223)
+
+note right #e6e6e6
+**PCF to PCF**
+end note
+
+"SMF" -> "UPF": 560, PFCP req.\nPFCP Session Deletion Request (54)\n+59.268s (16:44:56.178.38)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 561, PFCP rsp.\nPFCP Session Deletion Response (55)\n+59.268s (16:44:56.178.45)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "SMF": 563, HTTP/2 204 rsp.\n+59.270s (16:44:56.179.599)
+
+note right #e6e6e6
+**SMF to SMF**
+end note
+
+"AUSF" -> "AUSF": 579, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications\n+59.272s (16:44:56.182.142)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 583, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.272s (16:44:56.182.213)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 595, HTTP/2 req.\nPOST  /nudm-ueau/v1/suci-0-901-70-0000-0-0-0000000001/security-information/generate-auth-data\n+59.273s (16:44:56.183.347)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 597, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.273s (16:44:56.183.386)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 613, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/authentication-data/authentication-subscription\n+59.274s (16:44:56.184.114)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 627, HTTP/2 200 rsp.\n+59.276s (16:44:56.186.36)
+
+note right #e6e6e6
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 628, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.276s (16:44:56.186.383)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 631, HTTP/2 200 rsp.\n+59.277s (16:44:56.186.819)
+
+note right #e6e6e6
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 632, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.277s (16:44:56.186.841)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 635, HTTP/2 201 rsp.\n+59.278s (16:44:56.188.034)
+
+note right #e6e6e6
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 636, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.278s (16:44:56.188.215)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AMF" -> "gNB": 638, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)\n+59.278s (16:44:56.188.496)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 639, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)\n+59.280s (16:44:56.189.967)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AUSF" -> "AUSF": 640, HTTP/2 req.\nPUT  /nausf-auth/v1/ue-authentications/1/5g-aka-confirmation\n+59.284s (16:44:56.193.845)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 641, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.284s (16:44:56.193.876)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 643, HTTP/2 req.\nPOST  /nudm-ueau/v1/imsi-901700000000001/auth-events\n+59.284s (16:44:56.194.048)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 644, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.284s (16:44:56.194.068)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 646, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000001/authentication-data/authentication-status\n+59.284s (16:44:56.194.223)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 647, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.284s (16:44:56.194.243)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 655, HTTP/2 204 rsp.\n+59.286s (16:44:56.196.409)
+
+note right #e6e6e6
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 656, HTTP/2 201 rsp.\n+59.286s (16:44:56.196.579)
+
+note right #e6e6e6
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 657, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.287s (16:44:56.196.614)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 659, HTTP/2 200 rsp.\n+59.287s (16:44:56.196.885)
+
+note right #e6e6e6
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 660, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.287s (16:44:56.196.908)
+
+note right #b3b3b3
+**AUSF to AUSF**
+end note
+
+"AMF" -> "gNB": 662, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)\n+59.287s (16:44:56.197.119)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 663, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)\n+59.288s (16:44:56.198.381)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"UDM" -> "UDM": 674, HTTP/2 req.\nPUT  /nudm-uecm/v1/imsi-901700000000001/registrations/amf-3gpp-access\n+59.289s (16:44:56.198.928)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 676, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.289s (16:44:56.198.943)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 682, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000001/context-data/amf-3gpp-access\n+59.289s (16:44:56.199.26)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 683, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.289s (16:44:56.199.281)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 685, HTTP/2 204 rsp.\n+59.289s (16:44:56.199.41)
+
+note right #e6e6e6
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 688, HTTP/2 201 rsp.\n+59.289s (16:44:56.199.547)
+
+note right #e6e6e6
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 690, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+59.289s (16:44:56.199.582)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 693, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000001/am-data\n+59.290s (16:44:56.199.807)
+
+note right #b3b3b3
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 695, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/90170/provisioned-data/am-data\n+59.290s (16:44:56.199.919)
+
+note right #b3b3b3
+**UDR to UDR**
+end note
+
+@enduml

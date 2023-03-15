@@ -32,6 +32,7 @@ smf:
   gtpc:
   - addr:
     - 10.0.14.1
+    - 10.0.23.1
 
 parameter:
   no_ipv6: true

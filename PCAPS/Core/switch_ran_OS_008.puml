@@ -1,0 +1,626 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "AUSF"
+participant "PCRF"
+participant "NRF"
+participant "BSF"
+participant "HSS"
+participant "MME"
+participant "10.0.2.14"
+participant "PCF"
+participant "UDR"
+participant "UDM"
+
+"NRF" -> "NRF": 2614, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.254s (16:48:35.164.476)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2615, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.254s (16:48:35.164.528)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2617, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.255s (16:48:35.164.99)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2619, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.282s (16:48:35.192.287)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2620, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.282s (16:48:35.192.319)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2622, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.282s (16:48:35.192.58)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2624, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.313s (16:48:35.222.658)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2625, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.313s (16:48:35.222.694)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2627, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.313s (16:48:35.223.435)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2629, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.338s (16:48:35.248.287)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2630, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.338s (16:48:35.248.324)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2632, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.339s (16:48:35.248.652)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2634, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.526s (16:48:35.436.345)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2635, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.526s (16:48:35.436.381)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2637, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.527s (16:48:35.436.631)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2645, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.575s (16:48:35.484.775)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2646, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.575s (16:48:35.484.805)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2648, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+278.575s (16:48:35.485.032)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2685, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.010s (16:48:44.920.561)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2686, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.011s (16:48:44.920.599)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2688, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.011s (16:48:44.921.091)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2690, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.114s (16:48:45.24.326)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2691, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.114s (16:48:45.24.394)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2693, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.115s (16:48:45.24.692)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2700, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.258s (16:48:45.168.31)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2701, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.258s (16:48:45.168.349)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2703, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.259s (16:48:45.168.859)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2705, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.293s (16:48:45.202.834)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2706, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.293s (16:48:45.202.884)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2708, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.293s (16:48:45.203.265)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2710, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.322s (16:48:45.232.371)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2711, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.322s (16:48:45.232.405)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2713, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.323s (16:48:45.232.683)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2715, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.346s (16:48:45.256.299)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2716, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.346s (16:48:45.256.331)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2718, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.346s (16:48:45.256.588)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2720, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.534s (16:48:45.444.541)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2721, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.535s (16:48:45.444.596)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2723, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.535s (16:48:45.444.991)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2725, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.582s (16:48:45.492.424)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2726, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.582s (16:48:45.492.476)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2728, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+288.583s (16:48:45.492.869)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"MME" -> "HSS": 2747, \n+293.815s (16:48:50.725.244)
+
+note right
+**MME to HSS**
+end note
+
+"HSS" -> "MME": 2748, \n+293.815s (16:48:50.725.392)
+
+note right
+**HSS to MME**
+end note
+
+"SMF" -> "PCRF": 2750, \n+294.112s (16:48:51.22.348)
+
+note right
+**SMF to PCRF**
+end note
+
+"PCRF" -> "SMF": 2751, \n+294.113s (16:48:51.22.669)
+
+note right
+**PCRF to SMF**
+end note
+
+"NRF" -> "NRF": 2765, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.026s (16:48:54.936.426)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2766, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.026s (16:48:54.936.459)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2768, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.027s (16:48:54.937.183)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2770, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.130s (16:48:55.40.158)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2771, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.130s (16:48:55.40.265)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2773, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.131s (16:48:55.40.769)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2780, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.262s (16:48:55.171.75)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2781, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.262s (16:48:55.171.784)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2783, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.262s (16:48:55.172.2)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2785, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.302s (16:48:55.212.303)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2786, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.302s (16:48:55.212.338)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2788, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.303s (16:48:55.212.591)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2790, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.331s (16:48:55.240.992)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2791, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.331s (16:48:55.241.035)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2793, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.331s (16:48:55.241.453)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2795, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.358s (16:48:55.268.191)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2796, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.359s (16:48:55.269.08)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2798, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.359s (16:48:55.269.385)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2800, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.544s (16:48:55.453.834)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2801, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.544s (16:48:55.453.899)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2803, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.544s (16:48:55.454.37)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2805, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.590s (16:48:55.500.543)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2806, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.590s (16:48:55.500.579)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2808, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+298.591s (16:48:55.500.846)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2874, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.034s (16:49:4.944.276)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2875, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.034s (16:49:4.944.322)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2877, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.035s (16:49:4.944.609)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2883, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.138s (16:49:5.48.308)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2884, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.138s (16:49:5.48.343)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2886, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.139s (16:49:5.48.616)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2893, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.265s (16:49:5.175.048)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2894, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.265s (16:49:5.175.098)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2896, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.265s (16:49:5.175.484)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2898, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.310s (16:49:5.220.578)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2899, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.311s (16:49:5.220.63)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2901, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.311s (16:49:5.221.024)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2903, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.338s (16:49:5.248.367)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2904, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.338s (16:49:5.248.417)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2906, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.339s (16:49:5.248.819)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2908, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.367s (16:49:5.276.728)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2909, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.367s (16:49:5.276.78)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2911, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.367s (16:49:5.277.296)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2913, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.550s (16:49:5.460.369)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2914, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.550s (16:49:5.460.405)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2916, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.551s (16:49:5.460.662)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2918, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.598s (16:49:5.508.293)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2919, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.598s (16:49:5.508.324)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2921, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+308.598s (16:49:5.508.555)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2948, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+318.042s (16:49:14.952.419)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2949, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+318.042s (16:49:14.952.455)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2951, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+318.043s (16:49:14.952.78)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2955, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+318.147s (16:49:15.56.683)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2956, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+318.147s (16:49:15.56.734)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 2958, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+318.147s (16:49:15.57.144)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+@enduml

@@ -1,6 +1,6 @@
 logger:
   file: /var/log/open5gs/smf.log
-  level: debug
+  #level: debug
 smf:
   sbi:
   - addr: 10.0.23.1
@@ -26,12 +26,11 @@ smf:
   info:
    - s_nssai:
      - sst: 2
-       sd: 000002
        dnn:
          - internet2
      tai:
       - plmn_id:
-          mcc: 900
+          mcc: 901
           mnc: 70
         tac: [1,2]
 nrf:

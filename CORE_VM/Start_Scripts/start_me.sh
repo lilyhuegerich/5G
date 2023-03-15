@@ -16,7 +16,6 @@ cd $name
 cd /home/lily/5G/CORE_VM/Start_Scripts
 ./gen_NF_veths.sh
 
-cd "$config_files"
 ./put_open5gs_configs.sh $name
 sleep 2
 cd ../Start_Scripts
