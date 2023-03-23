@@ -16,7 +16,7 @@ amf: '8000'
 
 # List of gNB IP addresses for Radio Link Simulation
 gnbSearchList:
-  - 10.0.2.15
+  - 10.0.2.14
 
 # UAC Access Identities Configuration
 uacAic:
