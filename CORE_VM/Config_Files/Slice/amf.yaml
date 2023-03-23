@@ -40,7 +40,7 @@ nrf:
     port: 7777
 parameter:
   no_ipv6: true
-  ignore_requested_nssai: true
+  #ignore_requested_nssai: true
 max:
 
 usrsctp:
