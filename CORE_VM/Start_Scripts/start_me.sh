@@ -15,7 +15,8 @@ cd $name
 
 cd /home/lily/5G/CORE_VM/Start_Scripts
 ./gen_NF_veths.sh
-cd ../Config_Scripts
+
+cd ../Config_Files
 ./put_open5gs_configs.sh $name
 sleep 2
 cd ../Start_Scripts
@@ -25,12 +26,13 @@ sudo sysctl -w net.ipv4.ip_forward=1
 sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
 
 cd /home/lily/open5gs/webui #RENAME ME
-npm run dev &
+sudo systemctl stop nghttpx.service
+sudo npm run dev &
 cd /home/lily/5G/CORE_VM/Start_Scripts #RENAME ME
 sudo gnome-terminal --title="logs" -- ./start_logs.sh
 sleep 8
 firefox -new-tab "http://localhost:3000"
 
-echo "If the port address combo is used it might be that the nghttpx service is running on that port so sudo systemctl stop nghttps.service and then try again should work."
+# echo "If the port address combo is used it might be that the nghttpx service is running on that port so sudo systemctl stop nghttps.service and then try again should work."
 
 
