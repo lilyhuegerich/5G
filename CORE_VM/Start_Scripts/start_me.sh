@@ -15,7 +15,7 @@ cd $name
 
 cd /home/lily/5G/CORE_VM/Start_Scripts
 ./gen_NF_veths.sh
-
+cd ../Config_Scripts
 ./put_open5gs_configs.sh $name
 sleep 2
 cd ../Start_Scripts
@@ -31,6 +31,6 @@ sudo gnome-terminal --title="logs" -- ./start_logs.sh
 sleep 8
 firefox -new-tab "http://localhost:3000"
 
-
+echo "If the port address combo is used it might be that the nghttpx service is running on that port so sudo systemctl stop nghttps.service and then try again should work."
 
 
