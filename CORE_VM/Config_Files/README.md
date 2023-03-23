@@ -16,6 +16,10 @@ There are multiple setups that you can use.
 
 ### Examples:
 
-Classic_Core (the simplist):
+#### Classic_Core (the simplist):
 
 ![ClassicCore](../../Media/Classic_core.svg)
+
+#### Double UPF:
+
+![doubleupf](../../Media/Double_upf.svg)
