@@ -18,4 +18,4 @@ There are multiple setups that you can use.
 
 Classic_Core (the simplist):
 
-![ClassicCore](../../Media/Copy of Classic_core.svg)
+![ClassicCore](../../Media/Classic_core.svg)
