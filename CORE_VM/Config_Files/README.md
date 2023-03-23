@@ -18,8 +18,4 @@ There are multiple setups that you can use.
 
 Classic_Core (the simplist):
 
-<object data="5G/Media/classic_core.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://yoursite.com/the.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![ClassicCore](5G/Media/Copy of Classic_core.drawio (1).svg)
