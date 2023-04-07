@@ -1,0 +1,787 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "SMF"
+participant "UPF"
+participant "HSS"
+participant "NRF"
+participant "MME"
+participant "BSF"
+participant "PCF"
+participant "PCRF"
+
+"NRF" -> "NRF": 49, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.000s (18:8:52.165.145)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 50, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.000s (18:8:52.165.176)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 13 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 52, HTTP/2 204 rsp.\n+0.000s (18:8:52.165.305)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 13
+:status: 204
+end note
+
+"NRF" -> "NRF": 56, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.269s (18:8:52.433.86)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 58, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.269s (18:8:52.433.996)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 19 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 60, HTTP/2 204 rsp.\n+0.270s (18:8:52.434.745)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 19
+:status: 204
+end note
+
+"NRF" -> "NRF": 62, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.273s (18:8:52.438.199)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 64, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.273s (18:8:52.438.5)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 13 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 66, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.274s (18:8:52.439.536)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 68, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.275s (18:8:52.439.697)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 13 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 70, HTTP/2 204 rsp.\n+0.276s (18:8:52.440.66)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 13
+:status: 204
+end note
+
+"NRF" -> "NRF": 72, HTTP/2 204 rsp.\n+0.276s (18:8:52.440.772)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 13
+:status: 204
+end note
+
+"NRF" -> "NRF": 74, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.277s (18:8:52.442.078)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 75, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.277s (18:8:52.442.217)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 25 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 77, HTTP/2 204 rsp.\n+0.278s (18:8:52.442.994)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 25
+:status: 204
+end note
+
+"NRF" -> "NRF": 79, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.283s (18:8:52.448.187)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 81, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.283s (18:8:52.448.284)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 15 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 83, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.283s (18:8:52.448.614)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 85, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.284s (18:8:52.448.676)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 15 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 87, HTTP/2 204 rsp.\n+0.284s (18:8:52.449.083)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 15
+:status: 204
+end note
+
+"NRF" -> "NRF": 89, HTTP/2 204 rsp.\n+0.284s (18:8:52.449.267)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 15
+:status: 204
+end note
+
+"NRF" -> "NRF": 91, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.690s (18:8:52.855.242)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 92, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+0.690s (18:8:52.855.356)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 17 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 94, HTTP/2 204 rsp.\n+0.692s (18:8:52.857.149)
+
+note right #e6e6e6
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 17
+:status: 204
+end note
+
+"HSS" -> "MME": 152, \n+6.862s (18:8:59.27.201)
+
+note right
+**HSS to MME**
+10.0.6.1 to 10.0.7.1 (IPs)
+
+end note
+
+"MME" -> "HSS": 153, \n+6.862s (18:8:59.27.429)
+
+note right
+**MME to HSS**
+10.0.7.1 to 10.0.6.1 (IPs)
+
+end note
+
+"PCRF" -> "SMF": 154, \n+6.883s (18:8:59.47.797)
+
+note right
+**PCRF to SMF**
+10.0.11.1 to 10.0.14.1 (IPs)
+
+end note
+
+"SMF" -> "PCRF": 155, \n+6.883s (18:8:59.48.634)
+
+note right
+**SMF to PCRF**
+10.0.14.1 to 10.0.11.1 (IPs)
+
+end note
+
+"SMF" -> "SMF": 167, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/10/release\n+8.919s (18:9:1.84.081)
+
+note right #b3b3b3
+**SMF to SMF**
+10.0.14.1 to 10.0.14.1 (IPs)
+HTTP/2 stream: 13
+:method: POST
+:path: /nsmf-pdusession/v1/sm-contexts/10/release
+:scheme: http
+:authority: 10.0.14.1:7777
+accept: */*
+accept-encoding: gzip, deflate
+user-agent: nghttp2/1.40.0
+content-length: 3
+content-type: application/json
+
+HTTP/2 stream 13 payload
+{}
+end note
+
+"PCF" -> "PCF": 179, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies/10/delete\n+8.948s (18:9:1.113.321)
+
+note right #b3b3b3
+**PCF to PCF**
+10.0.10.1 to 10.0.10.1 (IPs)
+HTTP/2 stream: 1
+:method: POST
+:path: /npcf-smpolicycontrol/v1/sm-policies/10/delete
+:scheme: http
+:authority: 10.0.10.1:7777
+content-type: application/json
+accept: application/json,application/problem+json
+content-length: 57
+
+end note
+
+"PCF" -> "PCF": 181, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+8.948s (18:9:1.113.338)
+
+note right #b3b3b3
+**PCF to PCF**
+10.0.10.1 to 10.0.10.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "servingNetwork": {
+    "mcc": "901",
+    "mnc": "70"
+  }
+}
+
+end note
+
+"BSF" -> "BSF": 198, HTTP/2 req.\nDELETE  /nbsf-management/v1/pcfBindings/10\n+8.999s (18:9:1.164.086)
+
+note right #b3b3b3
+**BSF to BSF**
+10.0.5.1 to 10.0.5.1 (IPs)
+HTTP/2 stream: 1
+:method: DELETE
+:path: /nbsf-management/v1/pcfBindings/10
+:scheme: http
+:authority: 10.0.5.1:7777
+accept: application/problem+json
+
+end note
+
+"BSF" -> "BSF": 207, HTTP/2 204 rsp.\n+9.032s (18:9:1.197.45)
+
+note right #e6e6e6
+**BSF to BSF**
+10.0.5.1 to 10.0.5.1 (IPs)
+HTTP/2 stream: 1
+:status: 204
+server: Open5GS v2.4.10
+date: Thu, 06 Apr 2023 16:09:01 GMT
+
+end note
+
+"PCF" -> "PCF": 210, HTTP/2 204 rsp.\n+9.041s (18:9:1.206.002)
+
+note right #e6e6e6
+**PCF to PCF**
+10.0.10.1 to 10.0.10.1 (IPs)
+HTTP/2 stream: 1
+:status: 204
+server: Open5GS v2.4.10
+date: Thu, 06 Apr 2023 16:09:01 GMT
+
+end note
+
+"SMF" -> "UPF": 212, PFCP req.\nPFCP Session Deletion Request (54)\n+9.044s (18:9:1.208.781)
+
+note right #03B5AA
+**SMF to UPF**
+10.0.14.1 to 10.0.17.1 (IPs)
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Deletion Request (54)'
+pfcp.length: 'Length: 12'
+pfcp.seid: 'SEID: 0x000000000000000a'
+pfcp.seqno: 'Sequence Number: 845'
+pfcp.spare_oct: 'Spare: 0'
+pfcp.response_in: 'Response In: 217'
+
+end note
+
+"UPF" -> "SMF": 217, PFCP rsp.\nPFCP Session Deletion Response (55)\n+9.085s (18:9:1.250.432)
+
+note right #D7FEFC
+**UPF to SMF**
+10.0.17.1 to 10.0.14.1 (IPs)
+pfcp.flags:
+-   pfcp.version: '001. .... = Version: 1'
+    pfcp.spare_b4: '...0 .... = Spare: 0'
+    pfcp.spare_b3: '.... 0... = Spare: 0'
+    pfcp.spare_b2: '.... .0.. = Spare: 0'
+    pfcp.mp_flag: '.... ..0. = Message Priority (MP): False'
+    pfcp.s: '.... ...1 = SEID (S): True'
+pfcp.msg_type: 'Message Type: PFCP Session Deletion Response (55)'
+pfcp.length: 'Length: 129'
+pfcp.seid: 'SEID: 0x000000000000000a'
+pfcp.seqno: 'Sequence Number: 845'
+pfcp.spare_oct: 'Spare: 0'
+'Cause : Request accepted(success)':
+-   pfcp.ie_type: 'IE Type: Cause (19)'
+    pfcp.ie_len: 'IE Length: 1'
+    pfcp.cause: 'Cause: Request accepted(success) (1)'
+'Usage Report (Session Deletion Response) : [Grouped IE]':
+-   pfcp.ie_type: 'IE Type: Usage Report (Session Deletion Response) (79)'
+    pfcp.ie_len: 'IE Length: 108'
+    'URR ID : Dynamic by CP 1':
+        pfcp.ie_type: 'IE Type: URR ID (81)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.urr_id_flg: '0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP'
+        pfcp.urr_id: '.000 0000 0000 0000 0000 0000 0000 0001 = URR ID: 1'
+    'UR-SEQN : 0':
+        pfcp.ie_type: 'IE Type: UR-SEQN (104)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.ur_seqn: 'UR-SEQN: 0'
+    'Usage Report Trigger : ':
+        pfcp.ie_type: 'IE Type: Usage Report Trigger (63)'
+        pfcp.ie_len: 'IE Length: 3'
+        pfcp.usage_report_trigger.immer: '0... .... = IMMER (Immediate Report): False'
+        pfcp.usage_report_trigger_flags.droth: '.0.. .... = DROTH (Dropped DL Traffic Threshold): False'
+        pfcp.usage_report_trigger_flags.stopt: '..0. .... = STOPT (Stop of Traffic): False'
+        pfcp.usage_report_trigger_flags.start: '...0 .... = START (Start of Traffic): False'
+        pfcp.usage_report_trigger_flags.quhti: '.... 0... = QUHTI (Quota Holding Time): False'
+        pfcp.usage_report_trigger_flags.timth: '.... .0.. = TIMTH (Time Threshold): False'
+        pfcp.usage_report_trigger_flags.volth: '.... ..0. = VOLTH (Volume Threshold): False'
+        pfcp.usage_report_trigger_flags.perio: '.... ...0 = PERIO (Periodic Reporting): False'
+        pfcp.usage_report_trigger_flags.eveth: '0... .... = EVETH (Event Threshold): False'
+        pfcp.usage_report_trigger_flags.macar: '.0.. .... = MACAR (MAC Addresses Reporting): False'
+        pfcp.usage_report_trigger_flags.envcl: '..0. .... = ENVCL (Envelope Closure): False'
+        pfcp.usage_report_trigger.monit: '...0 .... = MONIT (Monitoring Time): False'
+        pfcp.usage_report_trigger.term: '.... 1... = TERMR (Termination Report): True'
+        pfcp.usage_report_trigger_flags.liusa: '.... .0.. = LIUSA (Linked Usage Reporting): False'
+        pfcp.usage_report_trigger_flags.timqu: '.... ..0. = TIMQU (Time Quota): False'
+        pfcp.usage_report_trigger_flags.volqu: '.... ...0 = VOLQU (Volume Quota): False'
+        pfcp.spare_b7_b2: '0000 00.. = Spare: 0'
+        pfcp.usage_report_trigger_flags.tebur: '.... ..0. = TEMUR (Termination By UP function Report): False'
+        pfcp.usage_report_trigger_flags.evequ: '.... ...0 = EVEQU (Event Quota): False'
+    'End Time : Apr  6, 2023 16:09:01.000000000 UTC':
+        pfcp.ie_type: 'IE Type: End Time (76)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.start_time: 'End Time: Apr  6, 2023 16:09:01.000000000 UTC'
+    'Volume Measurement : ':
+        pfcp.ie_type: 'IE Type: Volume Measurement (66)'
+        pfcp.ie_len: 'IE Length: 49'
+        pfcp.volume_measurement:
+            pfcp.spare_b7_b3: '0011 1... = Spare: 7'
+            pfcp.volume_measurement_flags.dlvol: '.... .1.. = DLVOL: True'
+            pfcp.volume_measurement_flags.ulvol: '.... ..1. = ULVOL: True'
+            pfcp.volume_measurement_flags.tovol: '.... ...1 = TOVOL: True'
+        pfcp.volume_measurement.tovol: 'Total Volume: 17888'
+        pfcp.volume_measurement.ulvol: 'Uplink Volume: 17888'
+        pfcp.volume_measurement.dlvol: 'Downlink Volume: 0'
+        IE data not decoded by WS yet:
+            _ws.expert:
+                pfcp.ie_data_not_decoded: IE data not decoded by WS yet
+                _ws.expert.message: 'Message: IE data not decoded by WS yet'
+                _ws.expert.severity: 'Severity level: Note'
+                _ws.expert.group: 'Group: Undecoded'
+    'Duration Measurement : 1680797341 s':
+        pfcp.ie_type: 'IE Type: Duration Measurement (67)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.duration_measurement: 'Duration: 1680797341'
+    'Time of First Packet : Apr  6, 2023 13:52:52.000000000 UTC':
+        pfcp.ie_type: 'IE Type: Time of First Packet (69)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.time_of_first_packet: 'Time of First Packet: Apr  6, 2023 13:52:52.000000000 UTC'
+    'Time of Last Packet : Apr  6, 2023 13:54:45.000000000 UTC':
+        pfcp.ie_type: 'IE Type: Time of Last Packet (70)'
+        pfcp.ie_len: 'IE Length: 4'
+        pfcp.time_of_last_packet: 'Time of Last Packet: Apr  6, 2023 13:54:45.000000000 UTC'
+pfcp.response_to: 'Response To: 212'
+pfcp.response_time: 'Response Time: 0.041650519 seconds'
+
+end note
+
+"SMF" -> "SMF": 219, HTTP/2 204 rsp.\n+9.138s (18:9:1.303.297)
+
+note right #e6e6e6
+**SMF to SMF**
+10.0.14.1 to 10.0.14.1 (IPs)
+HTTP/2 stream: 13
+:status: 204
+server: Open5GS v2.4.10
+date: Thu, 06 Apr 2023 16:09:01 GMT
+
+end note
+
+"NRF" -> "NRF": 260, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.008s (18:9:2.173.15)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 261, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.008s (18:9:2.173.182)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 15 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 263, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.008s (18:9:2.173.306)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 265, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.279s (18:9:2.443.728)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 266, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.279s (18:9:2.443.773)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 21 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 267, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.279s (18:9:2.443.949)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 268, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.279s (18:9:2.443.971)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 15 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 271, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.279s (18:9:2.444.253)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 273, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.279s (18:9:2.444.3)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 275, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.287s (18:9:2.452.419)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 276, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.287s (18:9:2.452.461)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 15 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 277, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.287s (18:9:2.452.636)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 278, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.288s (18:9:2.452.659)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 27 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 281, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.288s (18:9:2.452.88)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 283, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.288s (18:9:2.452.921)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 285, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.296s (18:9:2.460.811)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 286, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.296s (18:9:2.460.858)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 17 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 287, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.296s (18:9:2.461.046)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 288, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.296s (18:9:2.461.07)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 17 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 291, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.296s (18:9:2.461.348)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 293, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.296s (18:9:2.461.393)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 295, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.695s (18:9:2.859.701)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NRF" -> "NRF": 296, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.695s (18:9:2.859.955)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 19 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NRF": 298, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+10.696s (18:9:2.860.962)
+
+note right #b3b3b3
+**NRF to NRF**
+10.0.8.1 to 10.0.8.1 (IPs)
+
+end note
+
+@enduml
