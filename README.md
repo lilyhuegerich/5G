@@ -2,7 +2,13 @@
 
 A simulation of a 5G core network using [Open5gs](https://open5gs.org/open5gs/about/) and [UERANSIM](https://github.com/aligungr/UERANSIM). The system runs on two seperate Ubuntu 20 VMs.
 
-## $$\color{blue}{\mathbf{UE\text{ }VM}}$$
+1. [UE VM](#uevm)
+2. [Core VM](#corevm)
+3. [PCAPS](#pcaps)
+4. [Shared](#shared)
+5. [Media](#media)
+
+## $$\color{blue}{\mathbf{UE\text{ }VM}}$$ <div id='uevm'/>
 
 ### [Exploits](5G/UE_VM/Exploit_Scripts/)
 
@@ -41,7 +47,10 @@ Scripts to start the setups defined in [Configurations](5G/UE_VM/Config_Files/).
 ### [Setup Scripts](5G/UE_VM/Setup_Scripts/)
 Scripts to install all necessary software to start 5G UEs and Gnbs.
 
-## $$\color{teal}{\mathbf{Core\text{ }VM}}$$
+### [Test Scripts](5G/UE_VM/Test_Scripts/)
+Tests UE functionality.
+
+## $$\color{teal}{\mathbf{Core\text{ }VM}}$$<div id='corevm'/>
 
 ### [Configurations](5G/CORE_VM/Config_Files/)
 Configurations for a variety of different Core setups. Aswell as the [vulnerability_configs](5G/CORE_VM/Config_Files/Vulnerability_Configs/) configs that enable certain vulnerabilities.
@@ -52,4 +61,23 @@ Scripts to start the setups defined in [Configurations](5G/CORE_VM/Config_Files/
 ### [Setup Scripts](5G/CORE_VM/Setup_Scripts/)
 Scripts to install all necessary software for the 5G core.
 
+## [PCAPS](5G/PCAPS/)
+PCAPS and Pcap related scripts for the project.
+
+### [Core PCAPS](5G/PCAPS/Core/)
+PCAPS and visulaizations of PCAPS taken from the CORE VM.
+
+### [GNB/UE PCAPS](5G/PCAPS/GNB/)
+PCAPS and visulaizations of PCAPS taken from the UE VM.
+
+### [PCAP Reader](5G/PCAPS/PCAP_readers)<div id='pcaps'/>
+Modified script from [5G trace visulaizer](https://github.com/telekom/5g-trace-visualizer) to generate PCAP visuals.
+
+## [Shared](5G/SHARED/)<div id='shared'/>
+
+[Tools](5G/SHARED/Tools/) and [Setup scripts](5G/SHARED/Setup_Scripts/) used in both VMs.
+
+## [Media](5G/Media)<div id='media'/>
+
+Gifs and images used to document proccesses.
 
