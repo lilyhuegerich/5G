@@ -31,6 +31,16 @@ Scripts for a variety of different exploits that can be performed on a Open5gs C
 2. **SSH Intrusion** [Finds an open ssh server and bruteforces entry to 5G core.](5G/UE_VM/Exploit_Scripts/SSH)
 3. **Spy** [forward all traffic on certain interface from victim machine to attackers.](5G/UE_VM/Exploit_Scripts/Spy)
 
+
+### [Configurations](5G/UE_VM/Config_Files/)
+UE and GNB configuration files for a variety of different setups.
+
+### [Start Scripts](5G/UE_VM/Start_Scripts/)
+Scripts to start the setups defined in [Configurations](5G/UE_VM/Config_Files/).
+
+### [Setup Scripts](5G/UE_VM/Setup_Scripts/)
+Scripts to install all necessary software to start 5G UEs and Gnbs.
+
 ## $$\color{teal}{\mathbf{Core\text{ }VM}}$$
 
 ### [Configurations](5G/CORE_VM/Config_Files/)
