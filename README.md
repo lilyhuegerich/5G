@@ -2,14 +2,6 @@
 
 A simulation of a 5G core network using [Open5gs](https://open5gs.org/open5gs/about/) and [UERANSIM](https://github.com/aligungr/UERANSIM). The system runs on two seperate Ubuntu 20 VMs.
 
-## Setup 
-```
-#TODO set up scripts 
-#(change path of absolout paths and set up 
-link to start scripts.)
-```
-
-
 ## $$\color{blue}{\mathbf{UE\text{ }VM}}$$
 
 ### [Exploits](5G/UE_VM/Exploit_Scripts/)
@@ -42,7 +34,7 @@ Scripts for a variety of different exploits that can be performed on a Open5gs C
 ## $$\color{teal}{\mathbf{Core\text{ }VM}}$$
 
 ### [Configurations](5G/CORE_VM/Config_Files/)
-Configurations for a variety of different Core setups. 
+Configurations for a variety of different Core setups. Aswell as the [vulnerability_configs](5G/CORE_VM/Config_Files/Vulnerability_Configs/) configs that enable certain vulnerabilities.
 
 ### [Start Scripts](5G/CORE_VM/Start_Scripts/)
 Scripts to start the setups defined in [Configurations](5G/CORE_VM/Config_Files/).
