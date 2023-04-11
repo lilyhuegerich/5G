@@ -14,6 +14,8 @@ link to start scripts.)
 
 ### [Exploits](5G/UE_VM/Exploit_Scripts/)
 
+Scripts for a variety of different exploits that can be performed on a Open5gs Core.
+
 1. **Network Scan** [- Find exposed IPs](5G/UE_VM/Exploit_Scripts/Scan_Network)
 1. **SBI** [- Check what you can find from by utilizing the service based interfaces](5G/UE_VM/Exploit_Scripts/SBI)
     1. Finding functions of IP addresses
@@ -38,3 +40,14 @@ link to start scripts.)
 3. **Spy** [forward all traffic on certain interface from victim machine to attackers.](5G/UE_VM/Exploit_Scripts/Spy)
 
 ## $$\color{teal}{\mathbf{Core\text{ }VM}}$$
+
+### [Configurations](5G/CORE_VM/Config_Files/)
+Configurations for a variety of different Core setups. 
+
+### [Start Scripts](5G/CORE_VM/Start_Scripts/)
+Scripts to start the setups defined in [Configurations](5G/CORE_VM/Config_Files/).
+
+### [Setup Scripts](5G/CORE_VM/Setup_Scripts/)
+Scripts to install all necessary software for the 5G core.
+
+
