@@ -1,0 +1,10 @@
+sudo nmap -e uesimtun0 -sU -p2152 10.0.2.15
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-05-01 20:00 CEST
+Nmap scan report for 10.0.2.15
+Host is up (0.0043s latency).
+
+PORT     STATE         SERVICE
+2152/udp open|filtered gtp-user
+
+Nmap done: 1 IP address (1 host up) scanned in 13.29 seconds
+
