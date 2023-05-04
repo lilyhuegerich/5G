@@ -9,7 +9,7 @@ nssf:
     port: 7777
     s_nssai:
       sst: 1
-
+      sd: 000001
 nrf:
   sbi:
   - addr: 10.0.8.1

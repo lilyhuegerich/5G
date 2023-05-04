@@ -21,7 +21,12 @@ smf:
   ctf:
     enabled: auto
   freeDiameter: /etc/freeDiameter/smf.conf
-
+  info:
+    - s_nssai:
+      - sst: 1
+        sd: 000001
+        dnn:
+         - internet
 nrf:
   sbi:
   - addr: 10.0.8.1
