@@ -1,0 +1,279 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_0"
+participant "gNB"
+participant "SMF"
+participant "UPF"
+participant "HSS"
+participant "MME"
+participant "PCRF"
+participant "NRF"
+
+"NRF" -> "NRF": 497, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+30.043s (20:13:11.85.099)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 498, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+30.043s (20:13:11.85.186)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 500, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+30.047s (20:13:11.88.51)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 506, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+30.474s (20:13:11.515.545)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 507, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+30.474s (20:13:11.515.714)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 509, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+30.474s (20:13:11.516.034)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 513, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+31.342s (20:13:12.383.459)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 514, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+31.342s (20:13:12.383.525)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 516, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+31.342s (20:13:12.383.923)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 522, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+31.646s (20:13:12.687.544)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 523, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+31.646s (20:13:12.687.595)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 525, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+31.647s (20:13:12.688.92)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"gNB" -> "UPF": 533, GTP<ICMP> req., rsp. or notification\n+31.715s (20:13:12.757.072)
+
+note right #EDFEC2
+**gNB to UPF**
+end note
+
+"UE_1" -> "UPF": 534, ICMP req., rsp. or notification\n+31.716s (20:13:12.757.973)
+
+note right #EDFEC2
+**UE_1 to UPF**
+end note
+
+"gNB" -> "UPF": 535, PFCP req.\nPFCP Association Setup Request (5)\n+31.743s (20:13:12.785.012)
+
+note right #03B5AA
+**gNB to UPF**
+end note
+
+"UPF" -> "UE_1": 537, PFCP rsp.\nPFCP Association Setup Response (6)\n+31.744s (20:13:12.785.687)
+
+note right #D7FEFC
+**UPF to UE_1**
+end note
+
+"UPF" -> "gNB": 538, PFCP rsp.\nPFCP Association Setup Response (6)\n+31.744s (20:13:12.785.763)
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 539, PFCP,GTP<ICMP> rsp.\nPFCP Association Setup Response (6)\n+31.759s (20:13:12.800.366)
+
+note right #D7FEFC
+**gNB to UPF**
+end note
+
+"gNB" -> "UPF": 541, PFCP req.\nPFCP Session Modification Request (52)\n+31.843s (20:13:12.884.61)
+
+note right #03B5AA
+**gNB to UPF**
+end note
+
+"UPF" -> "UE_1": 543, PFCP rsp.\nPFCP Session Modification Response (53)\n+31.843s (20:13:12.884.819)
+
+note right #D7FEFC
+**UPF to UE_1**
+end note
+
+"UPF" -> "gNB": 544, PFCP rsp.\nPFCP Session Modification Response (53)\n+31.843s (20:13:12.884.843)
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 545, PFCP,GTP<ICMP> rsp.\nPFCP Session Modification Response (53)\n+31.845s (20:13:12.886.536)
+
+note right #D7FEFC
+**gNB to UPF**
+end note
+
+"UE_0" -> "UE_1": 549, ICMP req., rsp. or notification\n+31.888s (20:13:12.930.043)
+
+note right #EDFEC2
+**UE_0 to UE_1**
+end note
+
+"UPF" -> "gNB": 551, GTP<ICMP> req., rsp. or notification\n+31.888s (20:13:12.930.123)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 558, PFCP req.\nPFCP Session Modification Request (52)\n+32.026s (20:13:13.67.706)
+
+note right #03B5AA
+**gNB to UPF**
+end note
+
+"UPF" -> "UE_1": 560, PFCP rsp.\nPFCP Session Modification Response (53)\n+32.026s (20:13:13.68.219)
+
+note right #D7FEFC
+**UPF to UE_1**
+end note
+
+"UPF" -> "gNB": 561, PFCP rsp.\nPFCP Session Modification Response (53)\n+32.027s (20:13:13.68.265)
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 564, PFCP,GTP<ICMP> rsp.\nPFCP Session Modification Response (53)\n+32.233s (20:13:13.274.498)
+
+note right #D7FEFC
+**gNB to UPF**
+end note
+
+"NRF" -> "NRF": 603, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+35.932s (20:13:16.973.97)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 604, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+35.932s (20:13:16.974.025)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 606, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+35.943s (20:13:16.984.275)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 610, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+36.439s (20:13:17.480.69)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 611, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+36.439s (20:13:17.480.764)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 613, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+36.440s (20:13:17.481.587)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 645, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+39.031s (20:13:20.72.397)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 646, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+39.032s (20:13:20.73.344)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 648, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+39.032s (20:13:20.73.605)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 665, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+39.367s (20:13:20.408.842)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 666, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+39.367s (20:13:20.408.894)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 668, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+39.368s (20:13:20.409.4)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 676, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+40.052s (20:13:21.93.947)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 677, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+40.052s (20:13:21.93.981)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 679, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+40.052s (20:13:21.94.208)
+
+note right #b3b3b3
+**NRF to NRF**
+end note
+
+@enduml

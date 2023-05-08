@@ -14,18 +14,6 @@ participant "UPF_2"
 participant "SGWU"
 participant "SGWC"
 
-"SGWC" -> "SGWU": 14, PFCP req.\nPFCP Association Setup Request (5)\n+0.000s (15:15:52.19.527)
-
-note right #03B5AA
-**SGWC to SGWU**
-end note
-
-"SMF" -> "UPF": 29, PFCP req.\nPFCP Association Setup Request (5)\n+0.807s (15:15:52.826.673)
-
-note right #03B5AA
-**SMF to UPF**
-end note
-
 "SGWC" -> "SGWU": 155, PFCP req.\nPFCP Association Setup Request (5)\n+2.506s (15:15:54.525.612)
 
 note right #03B5AA
@@ -36,12 +24,6 @@ end note
 
 note right #D7FEFC
 **SGWU to SGWC**
-end note
-
-"SMF" -> "UPF": 221, PFCP req.\nPFCP Association Setup Request (5)\n+3.316s (15:15:55.335.612)
-
-note right #03B5AA
-**SMF to UPF**
 end note
 
 "SMF" -> "UPF": 646, PFCP req.\nPFCP Association Setup Request (5)\n+5.819s (15:15:57.838.658)

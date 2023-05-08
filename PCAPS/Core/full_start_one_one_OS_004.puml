@@ -20,13 +20,13 @@ participant "UDM"
 participant "UDR"
 participant "NRF"
 participant "127.0.0.2"
-participant "127.0.0.8"
-participant "8.8.8.8"
-participant "127.0.0.9"
 participant "NSSF"
-participant "PCF"
+participant "127.0.0.8"
 participant "127.0.0.4"
 participant "BSF"
+participant "PCF"
+participant "8.8.8.8"
+participant "127.0.0.9"
 
 "NRF" -> "NRF": 3301, HTTP/2 204 rsp.\n+43.697s (16:12:33.446.234)
 

@@ -5,6 +5,8 @@ URed='\033[0;31m'
 standard_core_services=("mme" "sgwc" "smf" "amf" "sgwu" "upf" "hss" "pcrf" "nrf" "ausf" "udm" "pcf" "nssf" "bsf" "udr" )
 mode=${1:-"Classic_Core"}
 
+
+
 if [[ $mode == "Double_upf" ]];then #in double upf there is one upf called manual and the smf is also called manually
 	if pgrep -U lily open5gs-upf > /dev/null ; then	
 		echo -e "$UGreen" "second upf is running."
@@ -18,6 +20,14 @@ if [[ $mode == "Double_upf" ]];then #in double upf there is one upf called manua
 		echo -e "$URed" "smf is off."
 	fi
 	standard_core_services=($(printf '%s\n' "${standard_core_services[@]}" | grep -v "smf")) # since we only have one smf and its called manual we need to remove it from the core services list.
+
+elif [[ $mode == "Classic_Core" ]];then #in double upf there is one upf called manual and the smf is also called manually
+	if pgrep -U lily open5gs-upf > /dev/null ; then	
+		echo -e "$UGreen" "upf is running."
+	else
+		echo -e "$URed" "upf is off."
+	fi
+	standard_core_services=($(printf '%s\n' "${standard_core_services[@]}" | grep -v "upf")) # since we only have one smf and its called manual we need to remove it from the core services list.
 
 
 elif [[ $mode == "Slice" ]];then #in slice there are two smf and two upf

@@ -20,13 +20,13 @@ participant "UDM"
 participant "UDR"
 participant "NRF"
 participant "127.0.0.2"
-participant "127.0.0.8"
-participant "8.8.8.8"
-participant "127.0.0.9"
 participant "NSSF"
-participant "PCF"
+participant "127.0.0.8"
 participant "127.0.0.4"
 participant "BSF"
+participant "PCF"
+participant "8.8.8.8"
+participant "127.0.0.9"
 
 "UDR" -> "UDR": 4176, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.041s (16:13:7.790.363)
 
