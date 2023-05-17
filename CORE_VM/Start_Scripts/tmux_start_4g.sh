@@ -13,5 +13,4 @@ tmux select-pane -t 2
 tmux split-pane -v
 
 
-
 tmux a -t "$name"
