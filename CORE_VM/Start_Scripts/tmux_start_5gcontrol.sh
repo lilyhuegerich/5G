@@ -18,6 +18,7 @@ tmux split-pane -v
 tmux select-pane -t 6
 tmux split-pane -v
 
-echo "$name"
+tmux select-pane -t 6
+tmux split-pane -v
 
 tmux a -t "$name"

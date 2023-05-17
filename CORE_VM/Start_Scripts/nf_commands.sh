@@ -1,6 +1,18 @@
 nf=(
-Control_5G:amf:1
-Control_5G:smf:2
-Core_4G:mme:1
-User_5G:upf:1
+Core_4G:0:"mme /usr/bin/open5gs-mmed -c /etc/open5gs/mme.yaml"
+Core_4G:1:"sgwc /usr/bin/open5gs-sgwcd -c /etc/open5gs/sgwc.yaml"
+Control_5G:0:"smf /usr/bin/open5gs-smfd -c /etc/open5gs/smf.yaml"
+Control_5G:1:"amf /usr/bin/open5gs-amfd -c /etc/open5gs/amf.yaml"
+Core_4G:2:"sgwu /usr/bin/open5gs-sgwud -c /etc/open5gs/sgwu.yaml"
+User_5G:0:"upf /home/lily/5G/SHARED/Tools/connectivity.sh"
+User_5G:0:"upf /home/lily/open5gs/install/bin/open5gs-upfd"
+Core_4G:3:"hss /usr/bin/open5gs-hssd -c /etc/open5gs/hss.yaml"
+Core_4G:4:"pcrf /usr/bin/open5gs-pcrfd -c /etc/open5gs/pcrf.yaml"
+Control_5G:2:"nrf /usr/bin/open5gs-nrfd -c /etc/open5gs/nrf.yaml"
+Control_5G:3:"ausf /usr/bin/open5gs-ausfd -c /etc/open5gs/ausf.yaml"
+Control_5G:4:"udm /usr/bin/open5gs-udmd -c /etc/open5gs/udm.yaml"
+Control_5G:5:"pcf /usr/bin/open5gs-pcfd -c /etc/open5gs/pcf.yaml"
+Control_5G:6:"nssf /usr/bin/open5gs-nssfd -c /etc/open5gs/nssf.yaml"
+Control_5G:7:"bsf /usr/bin/open5gs-bsfd -c /etc/open5gs/bsf.yaml"
+Control_5G:8:"udr /usr/bin/open5gs-udrd -c /etc/open5gs/udr.yaml"
 )

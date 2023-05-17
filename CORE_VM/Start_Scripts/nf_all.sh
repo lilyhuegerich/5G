@@ -1,0 +1,17 @@
+nf=(
+Core_4G:0
+Core_4G:1
+Control_5G:0
+Control_5G:1
+Core_4G:2
+User_5G:0
+Core_4G:3
+Core_4G:4
+Control_5G:2
+Control_5G:3
+Control_5G:4
+Control_5G:5
+Control_5G:6
+Control_5G:7
+Control_5G:8
+)
