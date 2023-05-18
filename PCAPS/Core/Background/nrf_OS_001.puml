@@ -1,0 +1,75 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "AMF"
+participant "SMF"
+participant "NRF"
+participant "NSSF"
+participant "UDR"
+participant "UDM"
+participant "AUSF"
+participant "BSF"
+participant "PCF"
+
+"UDR" -> "NRF": 272, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/4b0128ae-f5bb-41ed-a8be-4384c90eec0c
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 273, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"NRF" -> "UDR": 275, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"AMF" -> "NRF": 277, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/47b17af0-f5bb-41ed-b123-97599415a66f
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 278, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 280, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
+"SMF" -> "NRF": 282, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/479bc02a-f5bb-41ed-b387-c91258944675
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"SMF" -> "NRF": 283, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"NRF" -> "SMF": 285, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to SMF**
+end note
+
+@enduml

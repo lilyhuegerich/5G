@@ -1,0 +1,110 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "NF"
+participant "NRF"
+
+
+
+"NF" -> "NRF": 18, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/<NF_Instance_ID>
+
+note right #03B5AA
+**NF to NRF**
+end note
+
+"NF" -> "NRF": 21, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NF to NRF**
+<NF_IP> to <NRF_IP> (IPs)
+HTTP/2 stream 1 payload
+{
+<NF_Registration_Json>
+}
+
+end note
+
+"NRF" -> "NF": 24, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NF**
+end note
+
+"NRF" -> "NF": 26, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NF**
+<NRF_IP> to <NF_IP> (IPs)
+HTTP/2 stream 1 payload
+{
+  "nfInstanceId": "<NF_Instance_ID>",
+  "nfType": "NF_type",
+  "nfStatus": "REGISTERED",
+  "heartBeatTimer": 10,
+  "nfProfileChangesInd": true
+}
+
+end note
+
+"NF" -> "NRF": 27, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NF to NRF**
+end note
+
+"NF" -> "NRF": 29, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NF to NRF**
+<NF_IP> to <NRF_IP> (IPs)
+HTTP/2 stream 3 payload
+{
+  "nfStatusNotificationUri": "http://<NF_IP>:7777/nnrf-nfm/v1/nf-status-notify",
+  "reqNfInstanceId": "<NF_Instance_ID>",
+  "subscrCond": {
+    <Subscriber_info>
+}
+
+end note
+
+"NRF" -> "NF": 31, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NF**
+end note
+"NF" -> "NRF": 246, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/<NF_Instance_ID>
+
+note right #03B5AA
+**NF to NRF**
+end note
+
+"NF" -> "NRF": 248, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NF to NRF**
+<NF_IP> to <NRF_IP> (IPs)
+HTTP/2 stream 5 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "NF": 250, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NF**
+end note
+
+@enduml

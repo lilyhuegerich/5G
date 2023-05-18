@@ -1,0 +1,174 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "AUSF"
+participant "NRF"
+
+
+
+"AUSF" -> "NRF": 18, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/491ee058-f5bb-41ed-bcef-5dbf2ad79138
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 21, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+10.0.4.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "nfInstanceId": "491ee058-f5bb-41ed-bcef-5dbf2ad79138",
+  "nfType": "AUSF",
+  "nfStatus": "REGISTERED",
+  "ipv4Addresses": [
+    "10.0.4.1"
+  ],
+  "allowedNfTypes": [
+    "AMF",
+    "SCP"
+  ],
+  "priority": 0,
+  "capacity": 100,
+  "load": 0,
+  "nfServiceList": {
+    "49217ffc-f5bb-41ed-bcef-5dbf2ad79138": {
+      "serviceInstanceId": "49217ffc-f5bb-41ed-bcef-5dbf2ad79138",
+      "serviceName": "nausf-auth",
+      "versions": [
+        {
+          "apiVersionInUri": "v1",
+          "apiFullVersion": "1.0.0"
+        }
+      ],
+      "scheme": "http",
+      "nfServiceStatus": "REGISTERED",
+      "ipEndPoints": [
+        {
+          "ipv4Address": "10.0.4.1",
+          "port": 7777
+        }
+      ],
+      "allowedNfTypes": [
+        "AMF"
+      ],
+      "priority": 0,
+      "capacity": 100,
+      "load": 0
+    }
+  },
+  "nfProfileChangesSupportInd": true
+}
+
+end note
+
+"NRF" -> "AUSF": 24, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to AUSF**
+end note
+
+"NRF" -> "AUSF": 26, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AUSF**
+10.0.8.1 to 10.0.4.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "nfInstanceId": "491ee058-f5bb-41ed-bcef-5dbf2ad79138",
+  "nfType": "AUSF",
+  "nfStatus": "REGISTERED",
+  "heartBeatTimer": 10,
+  "nfProfileChangesInd": true
+}
+
+end note
+
+"AUSF" -> "NRF": 27, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 29, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+10.0.4.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 3 payload
+{
+  "nfStatusNotificationUri": "http://10.0.4.1:7777/nnrf-nfm/v1/nf-status-notify",
+  "reqNfInstanceId": "491ee058-f5bb-41ed-bcef-5dbf2ad79138",
+  "subscrCond": {
+    "nfType": "UDM",
+    "serviceName": "nudm-ueau"
+  },
+  "reqNfType": "AUSF",
+  "requesterFeatures": "1"
+}
+
+end note
+
+"NRF" -> "AUSF": 31, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to AUSF**
+end note
+
+"NRF" -> "AUSF": 32, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AUSF**
+10.0.8.1 to 10.0.4.1 (IPs)
+HTTP/2 stream 3 payload
+{
+  "nfStatusNotificationUri": "http://10.0.4.1:7777/nnrf-nfm/v1/nf-status-notify",
+  "reqNfInstanceId": "491ee058-f5bb-41ed-bcef-5dbf2ad79138",
+  "subscrCond": {
+    "nfType": "UDM",
+    "serviceName": "nudm-ueau"
+  },
+  "subscriptionId": "4946bc4a-f5bb-41ed-8db4-ff1c5c78a14b",
+  "validityTime": "2023-05-19T22:33:45.565119+02:00",
+  "reqNfType": "AUSF",
+  "nrfSupportedFeatures": "1"
+}
+
+end note
+"AUSF" -> "NRF": 246, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/491ee058-f5bb-41ed-bcef-5dbf2ad79138
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 248, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+10.0.4.1 to 10.0.8.1 (IPs)
+HTTP/2 stream 5 payload
+[
+  {
+    "op": "replace",
+    "path": "/nfStatus",
+    "value": "REGISTERED"
+  }
+]
+
+end note
+
+"NRF" -> "AUSF": 250, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to AUSF**
+end note
+
+@enduml
