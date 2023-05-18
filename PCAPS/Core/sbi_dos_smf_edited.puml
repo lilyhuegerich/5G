@@ -62,13 +62,13 @@ end note
 
 "UPF" -> "gNB": 3836, HTTP/2 400 rsp.\n+241.512s (15:25:40.217.528)
 
-note right #e6e6e6
+note right #D7FEFC
 **UPF to gNB**
 end note
 
 "UPF" -> "gNB": 3838, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+241.513s (15:25:40.219.197)
 
-note right #b3b3b3
+note right #D7FEFC
 **UPF to gNB**
 end note
 
@@ -121,37 +121,37 @@ end note
 
 "PCF" -> "PCF": 4290, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies/4/delete\n+265.597s (15:26:4.302.78)
 
-note right #b3b3b3
+note right #03B5AA
 **PCF to PCF**
 end note
 
 "PCF" -> "PCF": 4292, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+265.597s (15:26:4.302.795)
 
-note right #b3b3b3
+note right #D7FEFC
 **PCF to PCF**
 end note
 
 "BSF" -> "BSF": 4308, HTTP/2 req.\nDELETE  /nbsf-management/v1/pcfBindings/4\n+265.598s (15:26:4.303.727)
 
-note right #b3b3b3
+note right #03B5AA
 **BSF to BSF**
 end note
 
 "BSF" -> "BSF": 4316, HTTP/2 204 rsp.\n+265.599s (15:26:4.304.384)
 
-note right #e6e6e6
+note right #D7FEFC
 **BSF to BSF**
 end note
 
 "PCF" -> "PCF": 4321, HTTP/2 204 rsp.\n+265.599s (15:26:4.304.663)
 
-note right #e6e6e6
+note right #D7FEFC
 **PCF to PCF**
 end note
 
 "SMF" -> "UPF": 4325, PFCP req.\nPFCP Session Deletion Request (54)\n+265.607s (15:26:4.313.02)
 
-note right #FFEAC2
+note right #03B5AA
 **SMF to UPF**
 end note
 
@@ -163,19 +163,19 @@ end note
 
 "SMF" -> "Malicious UE": 4328, HTTP/2 204 rsp.\n+265.610s (15:26:4.316.156)
 
-note right #e6e6e6
+note right #D7FEFC
 **SMF to Malicious UE**
 end note
 
 "SMF" -> "Malicious UE": 4330, HTTP/2 204 rsp.\n+265.628s (15:26:4.333.941)
 
-note right #e6e6e6
+note right #D7FEFC
 **SMF to Malicious UE**
 end note
 
 "UPF" -> "gNB": 4331, HTTP/2 204 rsp.\n+265.637s (15:26:4.343.089)
 
-note right #e6e6e6
+note right #D7FEFC
 **UPF to gNB**
 end note
 

@@ -1,0 +1,626 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+participant "NRF"
+participant "BSF"
+participant "UDM"
+participant "NSSF"
+participant "AUSF"
+participant "8.8.8.8"
+participant "PCF"
+participant "UDR"
+
+"PCF" -> "NRF": 2723, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 2724, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 2725, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 2726, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 2727, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"UDR" -> "NRF": 2731, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 2732, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"BSF" -> "NRF": 2733, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 2734, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"gNB" -> "UPF": 2741, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"gNB" -> "UPF": 2742, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"gNB" -> "UPF": 2744, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"gNB" -> "UPF": 2745, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UDR" -> "NRF": 2747, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 2748, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 2749, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 2750, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"BSF" -> "NRF": 2751, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 2752, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 2753, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 2754, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"NSSF" -> "NRF": 2757, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 2758, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 2759, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 2760, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 2761, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21\nPATCH  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 2762, HTTP/2 req.\nDELETE  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21\nPATCH  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21\nPATCH  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NRF" -> "BSF": 2789, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 2790, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "UDR": 2793, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 2794, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "PCF": 2797, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 2798, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "BSF": 2801, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 2802, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "UDR": 2805, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 2806, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "PCF": 2809, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 2810, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "NSSF": 2813, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 2814, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NRF" -> "BSF": 2817, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 2818, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NRF" -> "UDR": 2821, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 2822, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "PCF": 2825, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 2826, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "NSSF": 2829, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 2830, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "BSF": 2833, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 2834, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NRF" -> "UDR": 2837, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 2838, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "PCF": 2841, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 2842, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "NSSF": 2845, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 2846, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NRF" -> "BSF": 2849, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 2850, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NRF" -> "UDR": 2853, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 2854, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "PCF": 2857, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 2858, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "NSSF": 2861, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 2862, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "PCF": 2865, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 2866, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "NSSF": 2869, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 2870, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 2873, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 2874, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"UPF" -> "8.8.8.8": 2881, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2882, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2885, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 2886, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 2887, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 2888, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 2889, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 2890, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"UPF" -> "gNB": 2891, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"UPF" -> "gNB": 2892, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"UPF" -> "gNB": 2893, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"UPF" -> "gNB": 2894, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"BSF" -> "NRF": 2948, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 2949, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"UDR" -> "NRF": 2952, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 2953, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 2956, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 2957, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"BSF" -> "NRF": 2960, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 2961, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"PCF" -> "NRF": 2964, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 2965, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 2968, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 2969, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"NRF" -> "UDR": 2972, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 2973, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "BSF": 2976, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 2977, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "UDR": 2980, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+@enduml

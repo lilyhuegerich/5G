@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3775px" preserveAspectRatio="none" style="width:1161px;height:3775px;" version="1.1" viewBox="0 0 1161 3775" width="1161px" zoomAndPan="magnify"><defs/><g><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="32" x2="32" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="91" x2="91" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="150" x2="150" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="206" x2="206" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="259" x2="259" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="452" x2="452" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="504" x2="504" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="809.5" x2="809.5" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="880.5" x2="880.5" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="950.5" x2="950.5" y1="34.2969" y2="3735.5781"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1012.5" x2="1012.5" y1="34.2969" y2="3735.5781"/><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="15" y="22.9951">UE_1</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="8" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="15" y="3754.5732">UE_1</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="67" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="74" y="22.9951">UE_2</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="67" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="74" y="3754.5732">UE_2</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="126" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="133" y="22.9951">UE_3</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="49" x="126" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="133" y="3754.5732">UE_3</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="185" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="192" y="22.9951">gNB</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="185" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="192" y="3754.5732">gNB</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="238" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="245" y="22.9951">SMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="238" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="245" y="3754.5732">SMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="432" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="439" y="22.9951">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="432" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="439" y="3754.5732">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="42" x="483" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="490" y="22.9951">NRF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="42" x="483" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="490" y="3754.5732">NRF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="789.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="796.5" y="22.9951">BSF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="789.5" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="796.5" y="3754.5732">BSF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="80" x="840.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="847.5" y="22.9951">10.45.0.5</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="80" x="840.5" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="847.5" y="3754.5732">10.45.0.5</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="930.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="937.5" y="22.9951">PCF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="930.5" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="937.5" y="3754.5732">PCF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="62" x="981.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="988.5" y="22.9951">8.8.8.8</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="62" x="981.5" y="3734.5781"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="988.5" y="3754.5732">8.8.8.8</text><polygon fill="#000000" points="217.5,64.4297,207.5,68.4297,217.5,72.4297,213.5,68.4297" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="68.4297" y2="68.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="63.3638">4452, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,49.2969 L457,74.2969 L563,74.2969 L563,59.2969 L553,49.2969 L457,49.2969 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,49.2969 L553,59.2969 L563,59.2969 L553,49.2969 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="66.3638">UPF to gNB</text><polygon fill="#000000" points="440.5,99.5625,450.5,103.5625,440.5,107.5625,444.5,103.5625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="103.5625" y2="103.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="98.4966">4462, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,84.4297 L457,109.4297 L563,109.4297 L563,94.4297 L553,84.4297 L457,84.4297 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,84.4297 L553,94.4297 L563,94.4297 L553,84.4297 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="101.4966">gNB to UPF</text><polygon fill="#000000" points="1000.5,134.6953,1010.5,138.6953,1000.5,142.6953,1004.5,138.6953" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="32.5" x2="1006.5" y1="138.6953" y2="138.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="39.5" y="133.6294">4463, ICMP ping req.</text><path d="M1017,119.5625 L1017,144.5625 L1149,144.5625 L1149,129.5625 L1139,119.5625 L1017,119.5625 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,119.5625 L1139,129.5625 L1149,129.5625 L1139,119.5625 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="136.6294">UE_1 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,169.8281,1010.5,173.8281,1000.5,177.8281,1004.5,173.8281" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="173.8281" y2="173.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="168.7622">4464, ICMP ping req.</text><path d="M1017,154.6953 L1017,179.6953 L1143,179.6953 L1143,164.6953 L1133,154.6953 L1017,154.6953 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,154.6953 L1133,164.6953 L1143,164.6953 L1133,154.6953 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="171.7622">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,204.9609,453.5,208.9609,463.5,212.9609,459.5,208.9609" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="208.9609" y2="208.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="203.895">4465, ICMP ping rsp.</text><path d="M1017,189.8281 L1017,214.8281 L1143,214.8281 L1143,199.8281 L1133,189.8281 L1017,189.8281 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,189.8281 L1133,199.8281 L1143,199.8281 L1133,189.8281 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="206.895">8.8.8.8 to UPF</text><polygon fill="#000000" points="43.5,240.0938,33.5,244.0938,43.5,248.0938,39.5,244.0938" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="37.5" x2="1011.5" y1="244.0938" y2="244.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="49.5" y="239.0278">4466, ICMP ping rsp.</text><path d="M1017,224.9609 L1017,249.9609 L1149,249.9609 L1149,234.9609 L1139,224.9609 L1017,224.9609 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,224.9609 L1139,234.9609 L1149,234.9609 L1139,224.9609 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="242.0278">8.8.8.8 to UE_1</text><polygon fill="#000000" points="217.5,275.2266,207.5,279.2266,217.5,283.2266,213.5,279.2266" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="279.2266" y2="279.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="274.1606">4467, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,260.0938 L457,285.0938 L563,285.0938 L563,270.0938 L553,260.0938 L457,260.0938 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,260.0938 L553,270.0938 L563,270.0938 L553,260.0938 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="277.1606">UPF to gNB</text><polygon fill="#000000" points="440.5,310.3594,450.5,314.3594,440.5,318.3594,444.5,314.3594" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="314.3594" y2="314.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="309.2935">4468, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,295.2266 L457,320.2266 L563,320.2266 L563,305.2266 L553,295.2266 L457,295.2266 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,295.2266 L553,305.2266 L563,305.2266 L553,295.2266 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="312.2935">gNB to UPF</text><polygon fill="#000000" points="1000.5,345.4922,1010.5,349.4922,1000.5,353.4922,1004.5,349.4922" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="32.5" x2="1006.5" y1="349.4922" y2="349.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="39.5" y="344.4263">4469, ICMP ping req.</text><path d="M1017,330.3594 L1017,355.3594 L1149,355.3594 L1149,340.3594 L1139,330.3594 L1017,330.3594 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,330.3594 L1139,340.3594 L1149,340.3594 L1139,330.3594 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="347.4263">UE_1 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,380.625,1010.5,384.625,1000.5,388.625,1004.5,384.625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="384.625" y2="384.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="379.5591">4470, ICMP ping req.</text><path d="M1017,365.4922 L1017,390.4922 L1143,390.4922 L1143,375.4922 L1133,365.4922 L1017,365.4922 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,365.4922 L1133,375.4922 L1143,375.4922 L1133,365.4922 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="382.5591">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,415.7578,453.5,419.7578,463.5,423.7578,459.5,419.7578" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="419.7578" y2="419.7578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="414.6919">4471, ICMP ping rsp.</text><path d="M1017,400.625 L1017,425.625 L1143,425.625 L1143,410.625 L1133,400.625 L1017,400.625 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,400.625 L1133,410.625 L1143,410.625 L1133,400.625 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="417.6919">8.8.8.8 to UPF</text><polygon fill="#000000" points="43.5,450.8906,33.5,454.8906,43.5,458.8906,39.5,454.8906" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="37.5" x2="1011.5" y1="454.8906" y2="454.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="49.5" y="449.8247">4472, ICMP ping rsp.</text><path d="M1017,435.7578 L1017,460.7578 L1149,460.7578 L1149,445.7578 L1139,435.7578 L1017,435.7578 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,435.7578 L1139,445.7578 L1149,445.7578 L1139,435.7578 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="452.8247">8.8.8.8 to UE_1</text><polygon fill="#000000" points="217.5,486.0234,207.5,490.0234,217.5,494.0234,213.5,490.0234" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="490.0234" y2="490.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="484.9575">4473, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,470.8906 L457,495.8906 L563,495.8906 L563,480.8906 L553,470.8906 L457,470.8906 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,470.8906 L553,480.8906 L563,480.8906 L553,470.8906 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="487.9575">UPF to gNB</text><polygon fill="#000000" points="440.5,521.1563,450.5,525.1563,440.5,529.1563,444.5,525.1563" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="525.1563" y2="525.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="520.0903">4503, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,506.0234 L457,531.0234 L563,531.0234 L563,516.0234 L553,506.0234 L457,506.0234 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,506.0234 L553,516.0234 L563,516.0234 L553,506.0234 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="523.0903">gNB to UPF</text><polygon fill="#000000" points="1000.5,556.2891,1010.5,560.2891,1000.5,564.2891,1004.5,560.2891" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="32.5" x2="1006.5" y1="560.2891" y2="560.2891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="39.5" y="555.2231">4504, ICMP ping req.</text><path d="M1017,541.1563 L1017,566.1563 L1149,566.1563 L1149,551.1563 L1139,541.1563 L1017,541.1563 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,541.1563 L1139,551.1563 L1149,551.1563 L1139,541.1563 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="558.2231">UE_1 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,591.4219,1010.5,595.4219,1000.5,599.4219,1004.5,595.4219" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="595.4219" y2="595.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="590.356">4505, ICMP ping req.</text><path d="M1017,576.2891 L1017,601.2891 L1143,601.2891 L1143,586.2891 L1133,576.2891 L1017,576.2891 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,576.2891 L1133,586.2891 L1143,586.2891 L1133,576.2891 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="593.356">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,626.5547,453.5,630.5547,463.5,634.5547,459.5,630.5547" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="630.5547" y2="630.5547"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="625.4888">4506, ICMP ping rsp.</text><path d="M1017,611.4219 L1017,636.4219 L1143,636.4219 L1143,621.4219 L1133,611.4219 L1017,611.4219 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,611.4219 L1133,621.4219 L1143,621.4219 L1133,611.4219 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="628.4888">8.8.8.8 to UPF</text><polygon fill="#000000" points="43.5,661.6875,33.5,665.6875,43.5,669.6875,39.5,665.6875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="37.5" x2="1011.5" y1="665.6875" y2="665.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="49.5" y="660.6216">4507, ICMP ping rsp.</text><path d="M1017,646.5547 L1017,671.5547 L1149,671.5547 L1149,656.5547 L1139,646.5547 L1017,646.5547 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,646.5547 L1139,656.5547 L1149,656.5547 L1139,646.5547 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="663.6216">8.8.8.8 to UE_1</text><polygon fill="#000000" points="217.5,696.8203,207.5,700.8203,217.5,704.8203,213.5,700.8203" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="700.8203" y2="700.8203"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="695.7544">4508, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,681.6875 L457,706.6875 L563,706.6875 L563,691.6875 L553,681.6875 L457,681.6875 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,681.6875 L553,691.6875 L563,691.6875 L553,681.6875 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="698.7544">UPF to gNB</text><polygon fill="#000000" points="440.5,731.9531,450.5,735.9531,440.5,739.9531,444.5,735.9531" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="735.9531" y2="735.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="730.8872">4509, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,716.8203 L457,741.8203 L563,741.8203 L563,726.8203 L553,716.8203 L457,716.8203 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,716.8203 L553,726.8203 L563,726.8203 L553,716.8203 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="733.8872">gNB to UPF</text><polygon fill="#000000" points="1000.5,767.0859,1010.5,771.0859,1000.5,775.0859,1004.5,771.0859" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="1006.5" y1="771.0859" y2="771.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="98.5" y="766.02">4510, ICMP ping req.</text><path d="M1017,751.9531 L1017,776.9531 L1149,776.9531 L1149,761.9531 L1139,751.9531 L1017,751.9531 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,751.9531 L1139,761.9531 L1149,761.9531 L1139,751.9531 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="769.02">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,802.2188,1010.5,806.2188,1000.5,810.2188,1004.5,806.2188" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="806.2188" y2="806.2188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="801.1528">4511, ICMP ping req.</text><path d="M1017,787.0859 L1017,812.0859 L1143,812.0859 L1143,797.0859 L1133,787.0859 L1017,787.0859 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,787.0859 L1133,797.0859 L1143,797.0859 L1133,787.0859 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="804.1528">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,837.3516,453.5,841.3516,463.5,845.3516,459.5,841.3516" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="841.3516" y2="841.3516"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="836.2856">4514, ICMP ping rsp.</text><path d="M1017,822.2188 L1017,847.2188 L1143,847.2188 L1143,832.2188 L1133,822.2188 L1017,822.2188 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,822.2188 L1133,832.2188 L1143,832.2188 L1133,822.2188 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="839.2856">8.8.8.8 to UPF</text><polygon fill="#000000" points="102.5,872.4844,92.5,876.4844,102.5,880.4844,98.5,876.4844" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="1011.5" y1="876.4844" y2="876.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="108.5" y="871.4185">4515, ICMP ping rsp.</text><path d="M1017,857.3516 L1017,882.3516 L1149,882.3516 L1149,867.3516 L1139,857.3516 L1017,857.3516 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,857.3516 L1139,867.3516 L1149,867.3516 L1139,857.3516 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="874.4185">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,907.6172,207.5,911.6172,217.5,915.6172,213.5,911.6172" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="911.6172" y2="911.6172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="906.5513">4516, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,892.4844 L457,917.4844 L563,917.4844 L563,902.4844 L553,892.4844 L457,892.4844 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,892.4844 L553,902.4844 L563,902.4844 L553,892.4844 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="909.5513">UPF to gNB</text><polygon fill="#000000" points="440.5,942.75,450.5,946.75,440.5,950.75,444.5,946.75" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="946.75" y2="946.75"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="941.6841">4527, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,927.6172 L457,952.6172 L563,952.6172 L563,937.6172 L553,927.6172 L457,927.6172 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,927.6172 L553,937.6172 L563,937.6172 L553,927.6172 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="944.6841">gNB to UPF</text><polygon fill="#000000" points="1000.5,977.8828,1010.5,981.8828,1000.5,985.8828,1004.5,981.8828" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="1006.5" y1="981.8828" y2="981.8828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="98.5" y="976.8169">4528, ICMP ping req.</text><path d="M1017,962.75 L1017,987.75 L1149,987.75 L1149,972.75 L1139,962.75 L1017,962.75 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,962.75 L1139,972.75 L1149,972.75 L1139,962.75 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="979.8169">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,1013.0156,1010.5,1017.0156,1000.5,1021.0156,1004.5,1017.0156" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="1017.0156" y2="1017.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="1011.9497">4529, ICMP ping req.</text><path d="M1017,997.8828 L1017,1022.8828 L1143,1022.8828 L1143,1007.8828 L1133,997.8828 L1017,997.8828 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,997.8828 L1133,1007.8828 L1143,1007.8828 L1133,997.8828 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1014.9497">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,1048.1484,453.5,1052.1484,463.5,1056.1484,459.5,1052.1484" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="1052.1484" y2="1052.1484"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="1047.0825">4530, ICMP ping rsp.</text><path d="M1017,1033.0156 L1017,1058.0156 L1143,1058.0156 L1143,1043.0156 L1133,1033.0156 L1017,1033.0156 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1033.0156 L1133,1043.0156 L1143,1043.0156 L1133,1033.0156 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1050.0825">8.8.8.8 to UPF</text><polygon fill="#000000" points="102.5,1083.2813,92.5,1087.2813,102.5,1091.2813,98.5,1087.2813" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="1011.5" y1="1087.2813" y2="1087.2813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="108.5" y="1082.2153">4531, ICMP ping rsp.</text><path d="M1017,1068.1484 L1017,1093.1484 L1149,1093.1484 L1149,1078.1484 L1139,1068.1484 L1017,1068.1484 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1068.1484 L1139,1078.1484 L1149,1078.1484 L1139,1068.1484 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1085.2153">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,1118.4141,207.5,1122.4141,217.5,1126.4141,213.5,1122.4141" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="1122.4141" y2="1122.4141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="1117.3481">4532, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,1103.2813 L457,1128.2813 L563,1128.2813 L563,1113.2813 L553,1103.2813 L457,1103.2813 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1103.2813 L553,1113.2813 L563,1113.2813 L553,1103.2813 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1120.3481">UPF to gNB</text><polygon fill="#000000" points="440.5,1153.5469,450.5,1157.5469,440.5,1161.5469,444.5,1157.5469" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="1157.5469" y2="1157.5469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="1152.481">4535, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,1138.4141 L457,1163.4141 L563,1163.4141 L563,1148.4141 L553,1138.4141 L457,1138.4141 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1138.4141 L553,1148.4141 L563,1148.4141 L553,1138.4141 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1155.481">gNB to UPF</text><polygon fill="#000000" points="1000.5,1188.6797,1010.5,1192.6797,1000.5,1196.6797,1004.5,1192.6797" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="1006.5" y1="1192.6797" y2="1192.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="98.5" y="1187.6138">4536, ICMP ping req.</text><path d="M1017,1173.5469 L1017,1198.5469 L1149,1198.5469 L1149,1183.5469 L1139,1173.5469 L1017,1173.5469 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1173.5469 L1139,1183.5469 L1149,1183.5469 L1139,1173.5469 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1190.6138">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,1223.8125,1010.5,1227.8125,1000.5,1231.8125,1004.5,1227.8125" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="1227.8125" y2="1227.8125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="1222.7466">4537, ICMP ping req.</text><path d="M1017,1208.6797 L1017,1233.6797 L1143,1233.6797 L1143,1218.6797 L1133,1208.6797 L1017,1208.6797 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1208.6797 L1133,1218.6797 L1143,1218.6797 L1133,1208.6797 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1225.7466">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,1258.9453,453.5,1262.9453,463.5,1266.9453,459.5,1262.9453" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="1262.9453" y2="1262.9453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="1257.8794">4538, ICMP ping rsp.</text><path d="M1017,1243.8125 L1017,1268.8125 L1143,1268.8125 L1143,1253.8125 L1133,1243.8125 L1017,1243.8125 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1243.8125 L1133,1253.8125 L1143,1253.8125 L1133,1243.8125 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1260.8794">8.8.8.8 to UPF</text><polygon fill="#000000" points="102.5,1294.0781,92.5,1298.0781,102.5,1302.0781,98.5,1298.0781" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="1011.5" y1="1298.0781" y2="1298.0781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="108.5" y="1293.0122">4539, ICMP ping rsp.</text><path d="M1017,1278.9453 L1017,1303.9453 L1149,1303.9453 L1149,1288.9453 L1139,1278.9453 L1017,1278.9453 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1278.9453 L1139,1288.9453 L1149,1288.9453 L1139,1278.9453 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1296.0122">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,1329.2109,207.5,1333.2109,217.5,1337.2109,213.5,1333.2109" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="1333.2109" y2="1333.2109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="1328.145">4540, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,1314.0781 L457,1339.0781 L563,1339.0781 L563,1324.0781 L553,1314.0781 L457,1314.0781 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1314.0781 L553,1324.0781 L563,1324.0781 L553,1314.0781 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1331.145">UPF to gNB</text><polygon fill="#000000" points="440.5,1364.3438,450.5,1368.3438,440.5,1372.3438,444.5,1368.3438" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="1368.3438" y2="1368.3438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="1363.2778">4556, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,1349.2109 L457,1374.2109 L563,1374.2109 L563,1359.2109 L553,1349.2109 L457,1349.2109 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1349.2109 L553,1359.2109 L563,1359.2109 L553,1349.2109 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1366.2778">gNB to UPF</text><polygon fill="#000000" points="1000.5,1399.4766,1010.5,1403.4766,1000.5,1407.4766,1004.5,1403.4766" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="1006.5" y1="1403.4766" y2="1403.4766"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="98.5" y="1398.4106">4557, ICMP ping req.</text><path d="M1017,1384.3438 L1017,1409.3438 L1149,1409.3438 L1149,1394.3438 L1139,1384.3438 L1017,1384.3438 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1384.3438 L1139,1394.3438 L1149,1394.3438 L1139,1384.3438 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1401.4106">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,1434.6094,1010.5,1438.6094,1000.5,1442.6094,1004.5,1438.6094" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="1438.6094" y2="1438.6094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="1433.5435">4558, ICMP ping req.</text><path d="M1017,1419.4766 L1017,1444.4766 L1143,1444.4766 L1143,1429.4766 L1133,1419.4766 L1017,1419.4766 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1419.4766 L1133,1429.4766 L1143,1429.4766 L1133,1419.4766 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1436.5435">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,1469.7422,453.5,1473.7422,463.5,1477.7422,459.5,1473.7422" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="1473.7422" y2="1473.7422"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="1468.6763">4559, ICMP ping rsp.</text><path d="M1017,1454.6094 L1017,1479.6094 L1143,1479.6094 L1143,1464.6094 L1133,1454.6094 L1017,1454.6094 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1454.6094 L1133,1464.6094 L1143,1464.6094 L1133,1454.6094 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1471.6763">8.8.8.8 to UPF</text><polygon fill="#000000" points="102.5,1504.875,92.5,1508.875,102.5,1512.875,98.5,1508.875" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="1011.5" y1="1508.875" y2="1508.875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="108.5" y="1503.8091">4560, ICMP ping rsp.</text><path d="M1017,1489.7422 L1017,1514.7422 L1149,1514.7422 L1149,1499.7422 L1139,1489.7422 L1017,1489.7422 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1489.7422 L1139,1499.7422 L1149,1499.7422 L1139,1489.7422 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1506.8091">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,1540.0078,207.5,1544.0078,217.5,1548.0078,213.5,1544.0078" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="1544.0078" y2="1544.0078"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="1538.9419">4561, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,1524.875 L457,1549.875 L563,1549.875 L563,1534.875 L553,1524.875 L457,1524.875 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1524.875 L553,1534.875 L563,1534.875 L553,1524.875 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1541.9419">UPF to gNB</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="1576.1406" y2="1576.1406"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="1576.1406" y2="1589.1406"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="1589.1406" y2="1589.1406"/><polygon fill="#000000" points="515,1585.1406,505,1589.1406,515,1593.1406,511,1589.1406" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="1571.0747">4566, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,1563.5078 L815,1588.5078 L921,1588.5078 L921,1573.5078 L911,1563.5078 L815,1563.5078 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,1563.5078 L911,1573.5078 L921,1573.5078 L911,1563.5078 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="1580.5747">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="1618.2734" y2="1618.2734"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="1618.2734" y2="1631.2734"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="1631.2734" y2="1631.2734"/><polygon fill="#000000" points="515,1627.2734,505,1631.2734,515,1635.2734,511,1631.2734" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="1613.2075">4567, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,1605.6406 L815,1630.6406 L921,1630.6406 L921,1615.6406 L911,1605.6406 L815,1605.6406 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,1605.6406 L911,1615.6406 L921,1615.6406 L911,1605.6406 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="1622.7075">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="1660.4063" y2="1660.4063"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="1660.4063" y2="1673.4063"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="1673.4063" y2="1673.4063"/><polygon fill="#000000" points="515,1669.4063,505,1673.4063,515,1677.4063,511,1673.4063" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="1655.3403">4569, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,1647.7734 L815,1672.7734 L921,1672.7734 L921,1657.7734 L911,1647.7734 L815,1647.7734 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,1647.7734 L911,1657.7734 L921,1657.7734 L911,1647.7734 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="1664.8403">NRF to NRF</text><polygon fill="#000000" points="440.5,1701.5391,450.5,1705.5391,440.5,1709.5391,444.5,1705.5391" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="1705.5391" y2="1705.5391"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="1700.4731">4571, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,1686.4063 L457,1711.4063 L563,1711.4063 L563,1696.4063 L553,1686.4063 L457,1686.4063 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1686.4063 L553,1696.4063 L563,1696.4063 L553,1686.4063 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1703.4731">gNB to UPF</text><polygon fill="#000000" points="1000.5,1736.6719,1010.5,1740.6719,1000.5,1744.6719,1004.5,1740.6719" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="91.5" x2="1006.5" y1="1740.6719" y2="1740.6719"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="98.5" y="1735.606">4572, ICMP ping req.</text><path d="M1017,1721.5391 L1017,1746.5391 L1149,1746.5391 L1149,1731.5391 L1139,1721.5391 L1017,1721.5391 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1721.5391 L1139,1731.5391 L1149,1731.5391 L1139,1721.5391 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1738.606">UE_2 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,1771.8047,1010.5,1775.8047,1000.5,1779.8047,1004.5,1775.8047" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="1775.8047" y2="1775.8047"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="1770.7388">4573, ICMP ping req.</text><path d="M1017,1756.6719 L1017,1781.6719 L1143,1781.6719 L1143,1766.6719 L1133,1756.6719 L1017,1756.6719 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1756.6719 L1133,1766.6719 L1143,1766.6719 L1133,1756.6719 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1773.7388">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,1806.9375,453.5,1810.9375,463.5,1814.9375,459.5,1810.9375" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="1810.9375" y2="1810.9375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="1805.8716">4574, ICMP ping rsp.</text><path d="M1017,1791.8047 L1017,1816.8047 L1143,1816.8047 L1143,1801.8047 L1133,1791.8047 L1017,1791.8047 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1791.8047 L1133,1801.8047 L1143,1801.8047 L1133,1791.8047 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1808.8716">8.8.8.8 to UPF</text><polygon fill="#000000" points="102.5,1842.0703,92.5,1846.0703,102.5,1850.0703,98.5,1846.0703" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="96.5" x2="1011.5" y1="1846.0703" y2="1846.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="108.5" y="1841.0044">4575, ICMP ping rsp.</text><path d="M1017,1826.9375 L1017,1851.9375 L1149,1851.9375 L1149,1836.9375 L1139,1826.9375 L1017,1826.9375 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1826.9375 L1139,1836.9375 L1149,1836.9375 L1139,1826.9375 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1844.0044">8.8.8.8 to UE_2</text><polygon fill="#000000" points="217.5,1877.2031,207.5,1881.2031,217.5,1885.2031,213.5,1881.2031" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="1881.2031" y2="1881.2031"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="1876.1372">4576, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,1862.0703 L457,1887.0703 L563,1887.0703 L563,1872.0703 L553,1862.0703 L457,1862.0703 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1862.0703 L553,1872.0703 L563,1872.0703 L553,1862.0703 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1879.1372">UPF to gNB</text><polygon fill="#000000" points="440.5,1912.3359,450.5,1916.3359,440.5,1920.3359,444.5,1916.3359" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="1916.3359" y2="1916.3359"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="1911.27">4577, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,1897.2031 L457,1922.2031 L563,1922.2031 L563,1907.2031 L553,1897.2031 L457,1897.2031 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,1897.2031 L553,1907.2031 L563,1907.2031 L553,1897.2031 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="1914.27">gNB to UPF</text><polygon fill="#000000" points="1000.5,1947.4688,1010.5,1951.4688,1000.5,1955.4688,1004.5,1951.4688" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="1006.5" y1="1951.4688" y2="1951.4688"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="157.5" y="1946.4028">4578, ICMP ping req.</text><path d="M1017,1932.3359 L1017,1957.3359 L1149,1957.3359 L1149,1942.3359 L1139,1932.3359 L1017,1932.3359 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,1932.3359 L1139,1942.3359 L1149,1942.3359 L1139,1932.3359 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="1949.4028">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,1982.6016,1010.5,1986.6016,1000.5,1990.6016,1004.5,1986.6016" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="1986.6016" y2="1986.6016"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="1981.5356">4579, ICMP ping req.</text><path d="M1017,1967.4688 L1017,1992.4688 L1143,1992.4688 L1143,1977.4688 L1133,1967.4688 L1017,1967.4688 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,1967.4688 L1133,1977.4688 L1143,1977.4688 L1133,1967.4688 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="1984.5356">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,2017.7344,453.5,2021.7344,463.5,2025.7344,459.5,2021.7344" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="2021.7344" y2="2021.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="2016.6685">4580, ICMP ping rsp.</text><path d="M1017,2002.6016 L1017,2027.6016 L1143,2027.6016 L1143,2012.6016 L1133,2002.6016 L1017,2002.6016 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,2002.6016 L1133,2012.6016 L1143,2012.6016 L1133,2002.6016 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="2019.6685">8.8.8.8 to UPF</text><polygon fill="#000000" points="161.5,2052.8672,151.5,2056.8672,161.5,2060.8672,157.5,2056.8672" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="1011.5" y1="2056.8672" y2="2056.8672"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="167.5" y="2051.8013">4581, ICMP ping rsp.</text><path d="M1017,2037.7344 L1017,2062.7344 L1149,2062.7344 L1149,2047.7344 L1139,2037.7344 L1017,2037.7344 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,2037.7344 L1139,2047.7344 L1149,2047.7344 L1139,2037.7344 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="2054.8013">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,2088,207.5,2092,217.5,2096,213.5,2092" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="2092" y2="2092"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="2086.9341">4582, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,2072.8672 L457,2097.8672 L563,2097.8672 L563,2082.8672 L553,2072.8672 L457,2072.8672 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,2072.8672 L553,2082.8672 L563,2082.8672 L553,2072.8672 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="2089.9341">UPF to gNB</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2124.1328" y2="2124.1328"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2124.1328" y2="2137.1328"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2137.1328" y2="2137.1328"/><polygon fill="#000000" points="515,2133.1328,505,2137.1328,515,2141.1328,511,2137.1328" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2119.0669">4591, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2111.5 L815,2136.5 L921,2136.5 L921,2121.5 L911,2111.5 L815,2111.5 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2111.5 L911,2121.5 L921,2121.5 L911,2111.5 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2128.5669">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2166.2656" y2="2166.2656"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2166.2656" y2="2179.2656"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2179.2656" y2="2179.2656"/><polygon fill="#000000" points="515,2175.2656,505,2179.2656,515,2183.2656,511,2179.2656" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2161.1997">4592, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2153.6328 L815,2178.6328 L921,2178.6328 L921,2163.6328 L911,2153.6328 L815,2153.6328 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2153.6328 L911,2163.6328 L921,2163.6328 L911,2153.6328 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2170.6997">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2208.3984" y2="2208.3984"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2208.3984" y2="2221.3984"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2221.3984" y2="2221.3984"/><polygon fill="#000000" points="515,2217.3984,505,2221.3984,515,2225.3984,511,2221.3984" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2203.3325">4594, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2195.7656 L815,2220.7656 L921,2220.7656 L921,2205.7656 L911,2195.7656 L815,2195.7656 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2195.7656 L911,2205.7656 L921,2205.7656 L911,2195.7656 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2212.8325">NRF to NRF</text><polygon fill="#000000" points="440.5,2249.5313,450.5,2253.5313,440.5,2257.5313,444.5,2253.5313" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="2253.5313" y2="2253.5313"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="2248.4653">4617, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,2234.3984 L457,2259.3984 L563,2259.3984 L563,2244.3984 L553,2234.3984 L457,2234.3984 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,2234.3984 L553,2244.3984 L563,2244.3984 L553,2234.3984 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="2251.4653">gNB to UPF</text><polygon fill="#000000" points="1000.5,2284.6641,1010.5,2288.6641,1000.5,2292.6641,1004.5,2288.6641" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="1006.5" y1="2288.6641" y2="2288.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="157.5" y="2283.5981">4618, ICMP ping req.</text><path d="M1017,2269.5313 L1017,2294.5313 L1149,2294.5313 L1149,2279.5313 L1139,2269.5313 L1017,2269.5313 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,2269.5313 L1139,2279.5313 L1149,2279.5313 L1139,2269.5313 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="2286.5981">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,2319.7969,1010.5,2323.7969,1000.5,2327.7969,1004.5,2323.7969" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="2323.7969" y2="2323.7969"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="2318.731">4619, ICMP ping req.</text><path d="M1017,2304.6641 L1017,2329.6641 L1143,2329.6641 L1143,2314.6641 L1133,2304.6641 L1017,2304.6641 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,2304.6641 L1133,2314.6641 L1143,2314.6641 L1133,2304.6641 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="2321.731">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,2354.9297,453.5,2358.9297,463.5,2362.9297,459.5,2358.9297" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="2358.9297" y2="2358.9297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="2353.8638">4620, ICMP ping rsp.</text><path d="M1017,2339.7969 L1017,2364.7969 L1143,2364.7969 L1143,2349.7969 L1133,2339.7969 L1017,2339.7969 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,2339.7969 L1133,2349.7969 L1143,2349.7969 L1133,2339.7969 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="2356.8638">8.8.8.8 to UPF</text><polygon fill="#000000" points="161.5,2390.0625,151.5,2394.0625,161.5,2398.0625,157.5,2394.0625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="1011.5" y1="2394.0625" y2="2394.0625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="167.5" y="2388.9966">4621, ICMP ping rsp.</text><path d="M1017,2374.9297 L1017,2399.9297 L1149,2399.9297 L1149,2384.9297 L1139,2374.9297 L1017,2374.9297 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,2374.9297 L1139,2384.9297 L1149,2384.9297 L1139,2374.9297 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="2391.9966">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,2425.1953,207.5,2429.1953,217.5,2433.1953,213.5,2429.1953" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="2429.1953" y2="2429.1953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="2424.1294">4622, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,2410.0625 L457,2435.0625 L563,2435.0625 L563,2420.0625 L553,2410.0625 L457,2410.0625 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,2410.0625 L553,2420.0625 L563,2420.0625 L553,2410.0625 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="2427.1294">UPF to gNB</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2461.3281" y2="2461.3281"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2461.3281" y2="2474.3281"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2474.3281" y2="2474.3281"/><polygon fill="#000000" points="515,2470.3281,505,2474.3281,515,2478.3281,511,2474.3281" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2456.2622">4625, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2448.6953 L815,2473.6953 L921,2473.6953 L921,2458.6953 L911,2448.6953 L815,2448.6953 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2448.6953 L911,2458.6953 L921,2458.6953 L911,2448.6953 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2465.7622">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2503.4609" y2="2503.4609"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2503.4609" y2="2516.4609"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2516.4609" y2="2516.4609"/><polygon fill="#000000" points="515,2512.4609,505,2516.4609,515,2520.4609,511,2516.4609" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2498.395">4626, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2490.8281 L815,2515.8281 L921,2515.8281 L921,2500.8281 L911,2490.8281 L815,2490.8281 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2490.8281 L911,2500.8281 L921,2500.8281 L911,2490.8281 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2507.895">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2545.5938" y2="2545.5938"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2545.5938" y2="2558.5938"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2558.5938" y2="2558.5938"/><polygon fill="#000000" points="515,2554.5938,505,2558.5938,515,2562.5938,511,2558.5938" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2540.5278">4628, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2532.9609 L815,2557.9609 L921,2557.9609 L921,2542.9609 L911,2532.9609 L815,2532.9609 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2532.9609 L911,2542.9609 L921,2542.9609 L911,2532.9609 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2550.0278">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2587.7266" y2="2587.7266"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2587.7266" y2="2600.7266"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2600.7266" y2="2600.7266"/><polygon fill="#000000" points="515,2596.7266,505,2600.7266,515,2604.7266,511,2600.7266" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2582.6606">4630, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2575.0938 L815,2600.0938 L921,2600.0938 L921,2585.0938 L911,2575.0938 L815,2575.0938 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2575.0938 L911,2585.0938 L921,2585.0938 L911,2575.0938 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2592.1606">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2629.8594" y2="2629.8594"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2629.8594" y2="2642.8594"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2642.8594" y2="2642.8594"/><polygon fill="#000000" points="515,2638.8594,505,2642.8594,515,2646.8594,511,2642.8594" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2624.7935">4631, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2617.2266 L815,2642.2266 L921,2642.2266 L921,2627.2266 L911,2617.2266 L815,2617.2266 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2617.2266 L911,2627.2266 L921,2627.2266 L911,2617.2266 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2634.2935">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2671.9922" y2="2671.9922"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2671.9922" y2="2684.9922"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2684.9922" y2="2684.9922"/><polygon fill="#000000" points="515,2680.9922,505,2684.9922,515,2688.9922,511,2684.9922" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2666.9263">4633, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2659.3594 L815,2684.3594 L921,2684.3594 L921,2669.3594 L911,2659.3594 L815,2659.3594 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2659.3594 L911,2669.3594 L921,2669.3594 L911,2659.3594 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2676.4263">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2714.125" y2="2714.125"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2714.125" y2="2727.125"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2727.125" y2="2727.125"/><polygon fill="#000000" points="515,2723.125,505,2727.125,515,2731.125,511,2727.125" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2709.0591">4635, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2701.4922 L815,2726.4922 L921,2726.4922 L921,2711.4922 L911,2701.4922 L815,2701.4922 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2701.4922 L911,2711.4922 L921,2711.4922 L911,2701.4922 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2718.5591">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2756.2578" y2="2756.2578"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2756.2578" y2="2769.2578"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2769.2578" y2="2769.2578"/><polygon fill="#000000" points="515,2765.2578,505,2769.2578,515,2773.2578,511,2769.2578" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2751.1919">4636, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2743.625 L815,2768.625 L921,2768.625 L921,2753.625 L911,2743.625 L815,2743.625 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2743.625 L911,2753.625 L921,2753.625 L911,2743.625 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2760.6919">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2798.3906" y2="2798.3906"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2798.3906" y2="2811.3906"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2811.3906" y2="2811.3906"/><polygon fill="#000000" points="515,2807.3906,505,2811.3906,515,2815.3906,511,2811.3906" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2793.3247">4638, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2785.7578 L815,2810.7578 L921,2810.7578 L921,2795.7578 L911,2785.7578 L815,2785.7578 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2785.7578 L911,2795.7578 L921,2795.7578 L911,2785.7578 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2802.8247">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2840.5234" y2="2840.5234"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2840.5234" y2="2853.5234"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2853.5234" y2="2853.5234"/><polygon fill="#000000" points="515,2849.5234,505,2853.5234,515,2857.5234,511,2853.5234" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2835.4575">4640, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2827.8906 L815,2852.8906 L921,2852.8906 L921,2837.8906 L911,2827.8906 L815,2827.8906 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2827.8906 L911,2837.8906 L921,2837.8906 L911,2827.8906 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2844.9575">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2882.6563" y2="2882.6563"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2882.6563" y2="2895.6563"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2895.6563" y2="2895.6563"/><polygon fill="#000000" points="515,2891.6563,505,2895.6563,515,2899.6563,511,2895.6563" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2877.5903">4641, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2870.0234 L815,2895.0234 L921,2895.0234 L921,2880.0234 L911,2870.0234 L815,2870.0234 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2870.0234 L911,2880.0234 L921,2880.0234 L911,2870.0234 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2887.0903">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2924.7891" y2="2924.7891"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2924.7891" y2="2937.7891"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2937.7891" y2="2937.7891"/><polygon fill="#000000" points="515,2933.7891,505,2937.7891,515,2941.7891,511,2937.7891" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2919.7231">4643, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2912.1563 L815,2937.1563 L921,2937.1563 L921,2922.1563 L911,2912.1563 L815,2912.1563 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2912.1563 L911,2922.1563 L921,2922.1563 L911,2912.1563 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2929.2231">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="2966.9219" y2="2966.9219"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="2966.9219" y2="2979.9219"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="2979.9219" y2="2979.9219"/><polygon fill="#000000" points="515,2975.9219,505,2979.9219,515,2983.9219,511,2979.9219" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="2961.856">4645, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2954.2891 L815,2979.2891 L921,2979.2891 L921,2964.2891 L911,2954.2891 L815,2954.2891 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2954.2891 L911,2964.2891 L921,2964.2891 L911,2954.2891 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="2971.356">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="3009.0547" y2="3009.0547"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="3009.0547" y2="3022.0547"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="3022.0547" y2="3022.0547"/><polygon fill="#000000" points="515,3018.0547,505,3022.0547,515,3026.0547,511,3022.0547" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="3003.9888">4646, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,2996.4219 L815,3021.4219 L921,3021.4219 L921,3006.4219 L911,2996.4219 L815,2996.4219 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,2996.4219 L911,3006.4219 L921,3006.4219 L911,2996.4219 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="3013.4888">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="3051.1875" y2="3051.1875"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="3051.1875" y2="3064.1875"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="3064.1875" y2="3064.1875"/><polygon fill="#000000" points="515,3060.1875,505,3064.1875,515,3068.1875,511,3064.1875" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="3046.1216">4648, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,3038.5547 L815,3063.5547 L921,3063.5547 L921,3048.5547 L911,3038.5547 L815,3038.5547 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,3038.5547 L911,3048.5547 L921,3048.5547 L911,3038.5547 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="3055.6216">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="3093.3203" y2="3093.3203"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="3093.3203" y2="3106.3203"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="3106.3203" y2="3106.3203"/><polygon fill="#000000" points="515,3102.3203,505,3106.3203,515,3110.3203,511,3106.3203" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="3088.2544">4650, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,3080.6875 L815,3105.6875 L921,3105.6875 L921,3090.6875 L911,3080.6875 L815,3080.6875 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,3080.6875 L911,3090.6875 L921,3090.6875 L911,3080.6875 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="3097.7544">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="3135.4531" y2="3135.4531"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="3135.4531" y2="3148.4531"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="3148.4531" y2="3148.4531"/><polygon fill="#000000" points="515,3144.4531,505,3148.4531,515,3152.4531,511,3148.4531" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="3130.3872">4651, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,3122.8203 L815,3147.8203 L921,3147.8203 L921,3132.8203 L911,3122.8203 L815,3122.8203 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,3122.8203 L911,3132.8203 L921,3132.8203 L911,3122.8203 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="3139.8872">NRF to NRF</text><line style="stroke: #000000; stroke-width: 1.0;" x1="504" x2="546" y1="3177.5859" y2="3177.5859"/><line style="stroke: #000000; stroke-width: 1.0;" x1="546" x2="546" y1="3177.5859" y2="3190.5859"/><line style="stroke: #000000; stroke-width: 1.0;" x1="505" x2="546" y1="3190.5859" y2="3190.5859"/><polygon fill="#000000" points="515,3186.5859,505,3190.5859,515,3194.5859,511,3190.5859" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="292" x="511" y="3172.52">4653, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M815,3164.9531 L815,3189.9531 L921,3189.9531 L921,3174.9531 L911,3164.9531 L815,3164.9531 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,3164.9531 L911,3174.9531 L921,3174.9531 L911,3164.9531 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="821" y="3182.02">NRF to NRF</text><polygon fill="#000000" points="440.5,3218.7188,450.5,3222.7188,440.5,3226.7188,444.5,3222.7188" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="3222.7188" y2="3222.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="3217.6528">4655, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,3203.5859 L457,3228.5859 L563,3228.5859 L563,3213.5859 L553,3203.5859 L457,3203.5859 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,3203.5859 L553,3213.5859 L563,3213.5859 L553,3203.5859 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="3220.6528">gNB to UPF</text><polygon fill="#000000" points="1000.5,3253.8516,1010.5,3257.8516,1000.5,3261.8516,1004.5,3257.8516" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="1006.5" y1="3257.8516" y2="3257.8516"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="157.5" y="3252.7856">4656, ICMP ping req.</text><path d="M1017,3238.7188 L1017,3263.7188 L1149,3263.7188 L1149,3248.7188 L1139,3238.7188 L1017,3238.7188 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,3238.7188 L1139,3248.7188 L1149,3248.7188 L1139,3238.7188 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="3255.7856">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,3288.9844,1010.5,3292.9844,1000.5,3296.9844,1004.5,3292.9844" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="3292.9844" y2="3292.9844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="3287.9185">4657, ICMP ping req.</text><path d="M1017,3273.8516 L1017,3298.8516 L1143,3298.8516 L1143,3283.8516 L1133,3273.8516 L1017,3273.8516 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,3273.8516 L1133,3283.8516 L1143,3283.8516 L1133,3273.8516 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="3290.9185">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,3324.1172,453.5,3328.1172,463.5,3332.1172,459.5,3328.1172" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="3328.1172" y2="3328.1172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="3323.0513">4658, ICMP ping rsp.</text><path d="M1017,3308.9844 L1017,3333.9844 L1143,3333.9844 L1143,3318.9844 L1133,3308.9844 L1017,3308.9844 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,3308.9844 L1133,3318.9844 L1143,3318.9844 L1133,3308.9844 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="3326.0513">8.8.8.8 to UPF</text><polygon fill="#000000" points="161.5,3359.25,151.5,3363.25,161.5,3367.25,157.5,3363.25" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="1011.5" y1="3363.25" y2="3363.25"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="167.5" y="3358.1841">4659, ICMP ping rsp.</text><path d="M1017,3344.1172 L1017,3369.1172 L1149,3369.1172 L1149,3354.1172 L1139,3344.1172 L1017,3344.1172 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,3344.1172 L1139,3354.1172 L1149,3354.1172 L1139,3344.1172 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="3361.1841">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,3394.3828,207.5,3398.3828,217.5,3402.3828,213.5,3398.3828" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="3398.3828" y2="3398.3828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="3393.3169">4660, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,3379.25 L457,3404.25 L563,3404.25 L563,3389.25 L553,3379.25 L457,3379.25 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,3379.25 L553,3389.25 L563,3389.25 L553,3379.25 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="3396.3169">UPF to gNB</text><polygon fill="#000000" points="440.5,3429.5156,450.5,3433.5156,440.5,3437.5156,444.5,3433.5156" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="3433.5156" y2="3433.5156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="3428.4497">4663, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,3414.3828 L457,3439.3828 L563,3439.3828 L563,3424.3828 L553,3414.3828 L457,3414.3828 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,3414.3828 L553,3424.3828 L563,3424.3828 L553,3414.3828 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="3431.4497">gNB to UPF</text><polygon fill="#000000" points="1000.5,3464.6484,1010.5,3468.6484,1000.5,3472.6484,1004.5,3468.6484" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="1006.5" y1="3468.6484" y2="3468.6484"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="157.5" y="3463.5825">4664, ICMP ping req.</text><path d="M1017,3449.5156 L1017,3474.5156 L1149,3474.5156 L1149,3459.5156 L1139,3449.5156 L1017,3449.5156 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,3449.5156 L1139,3459.5156 L1149,3459.5156 L1139,3449.5156 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="3466.5825">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,3499.7813,1010.5,3503.7813,1000.5,3507.7813,1004.5,3503.7813" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="3503.7813" y2="3503.7813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="3498.7153">4665, ICMP ping req.</text><path d="M1017,3484.6484 L1017,3509.6484 L1143,3509.6484 L1143,3494.6484 L1133,3484.6484 L1017,3484.6484 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,3484.6484 L1133,3494.6484 L1143,3494.6484 L1133,3484.6484 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="3501.7153">UPF to 8.8.8.8</text><polygon fill="#000000" points="463.5,3534.9141,453.5,3538.9141,463.5,3542.9141,459.5,3538.9141" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="457.5" x2="1011.5" y1="3538.9141" y2="3538.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="469.5" y="3533.8481">4666, ICMP ping rsp.</text><path d="M1017,3519.7813 L1017,3544.7813 L1143,3544.7813 L1143,3529.7813 L1133,3519.7813 L1017,3519.7813 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,3519.7813 L1133,3529.7813 L1143,3529.7813 L1133,3519.7813 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="3536.8481">8.8.8.8 to UPF</text><polygon fill="#000000" points="161.5,3570.0469,151.5,3574.0469,161.5,3578.0469,157.5,3574.0469" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="155.5" x2="1011.5" y1="3574.0469" y2="3574.0469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="130" x="167.5" y="3568.981">4667, ICMP ping rsp.</text><path d="M1017,3554.9141 L1017,3579.9141 L1149,3579.9141 L1149,3564.9141 L1139,3554.9141 L1017,3554.9141 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,3554.9141 L1139,3564.9141 L1149,3564.9141 L1139,3554.9141 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="3571.981">8.8.8.8 to UE_3</text><polygon fill="#000000" points="217.5,3605.1797,207.5,3609.1797,217.5,3613.1797,213.5,3609.1797" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="211.5" x2="451.5" y1="3609.1797" y2="3609.1797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="223.5" y="3604.1138">4668, GTPv2,GTP&lt;ICMP&gt; ping rsp.</text><path d="M457,3590.0469 L457,3615.0469 L563,3615.0469 L563,3600.0469 L553,3590.0469 L457,3590.0469 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,3590.0469 L553,3600.0469 L563,3600.0469 L553,3590.0469 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="3607.1138">UPF to gNB</text><polygon fill="#000000" points="440.5,3640.3125,450.5,3644.3125,440.5,3648.3125,444.5,3644.3125" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="206.5" x2="446.5" y1="3644.3125" y2="3644.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="213.5" y="3639.2466">4676, GTPv2,GTP&lt;ICMP&gt; ping req.</text><path d="M457,3625.1797 L457,3650.1797 L563,3650.1797 L563,3635.1797 L553,3625.1797 L457,3625.1797 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M553,3625.1797 L553,3635.1797 L563,3635.1797 L553,3625.1797 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="463" y="3642.2466">gNB to UPF</text><polygon fill="#000000" points="1000.5,3675.4453,1010.5,3679.4453,1000.5,3683.4453,1004.5,3679.4453" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="150.5" x2="1006.5" y1="3679.4453" y2="3679.4453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="157.5" y="3674.3794">4677, ICMP ping req.</text><path d="M1017,3660.3125 L1017,3685.3125 L1149,3685.3125 L1149,3670.3125 L1139,3660.3125 L1017,3660.3125 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1139,3660.3125 L1139,3670.3125 L1149,3670.3125 L1139,3660.3125 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="111" x="1023" y="3677.3794">UE_3 to 8.8.8.8</text><polygon fill="#000000" points="1000.5,3710.5781,1010.5,3714.5781,1000.5,3718.5781,1004.5,3714.5781" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="452.5" x2="1006.5" y1="3714.5781" y2="3714.5781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="459.5" y="3709.5122">4678, ICMP ping req.</text><path d="M1017,3695.4453 L1017,3720.4453 L1143,3720.4453 L1143,3705.4453 L1133,3695.4453 L1017,3695.4453 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1133,3695.4453 L1133,3705.4453 L1143,3705.4453 L1133,3695.4453 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="1023" y="3712.5122">UPF to 8.8.8.8</text><!--MD5=[954e8d089b15fa71c23591dc0754935a]
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "UE_2"
+participant "UE_3"
+participant "gNB"
+participant "SMF"
+participant "UPF"
+participant "NRF"
+participant "BSF"
+participant "10.45.0.5"
+participant "PCF"
+participant "8.8.8.8"
+
+"UPF" -> "gNB": 4452, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4462, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 4463, ICMP ping req.
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4464, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4465, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_1": 4466, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_1**
+end note
+
+"UPF" -> "gNB": 4467, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4468, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 4469, ICMP ping req.
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4470, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4471, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_1": 4472, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_1**
+end note
+
+"UPF" -> "gNB": 4473, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4503, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_1" -> "8.8.8.8": 4504, ICMP ping req.
+
+note right #5C8001
+**UE_1 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4505, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4506, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_1": 4507, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_1**
+end note
+
+"UPF" -> "gNB": 4508, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4509, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 4510, ICMP ping req.
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4511, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4514, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 4515, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 4516, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4527, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 4528, ICMP ping req.
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4529, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4530, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 4531, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 4532, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4535, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 4536, ICMP ping req.
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4537, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4538, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 4539, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 4540, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4556, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 4557, ICMP ping req.
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4558, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4559, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 4560, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 4561, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"NRF" -> "NRF": 4566, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4567, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4569, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"gNB" -> "UPF": 4571, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_2" -> "8.8.8.8": 4572, ICMP ping req.
+
+note right #5C8001
+**UE_2 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4573, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4574, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_2": 4575, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_2**
+end note
+
+"UPF" -> "gNB": 4576, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4577, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 4578, ICMP ping req.
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4579, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4580, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 4581, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 4582, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"NRF" -> "NRF": 4591, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4592, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4594, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"gNB" -> "UPF": 4617, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 4618, ICMP ping req.
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4619, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4620, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 4621, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 4622, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"NRF" -> "NRF": 4625, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4626, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4628, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4630, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4631, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4633, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4635, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4636, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4638, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4640, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4641, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4643, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4645, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4646, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4648, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4650, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4651, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4653, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"gNB" -> "UPF": 4655, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 4656, ICMP ping req.
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4657, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4658, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 4659, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 4660, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4663, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 4664, ICMP ping req.
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4665, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4666, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE_3": 4667, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE_3**
+end note
+
+"UPF" -> "gNB": 4668, GTPv2,GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4676, GTPv2,GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UE_3" -> "8.8.8.8": 4677, ICMP ping req.
+
+note right #5C8001
+**UE_3 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4678, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 11:24:54 CET 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

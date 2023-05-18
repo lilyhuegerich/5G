@@ -1159,7 +1159,7 @@ def read_cleanup_and_load_pdml_file(file_path):
     parsed_et = ET.parse(file_path)
     logging.debug('Finished parsing PDML file')
     return parsed_et
-
+gtp_cheat=1
 
 def import_pdml(file_paths,
                 pod_mapping=None,
@@ -1252,6 +1252,8 @@ def import_pdml(file_paths,
                 first_timestamp = frame_timestamp
         except:
             frame_timestamp = None
+            
+        global gtp_cheat
 
         # Fixes #1 and #3, thanks cfalcken!
         # I wonder what would happen if we have IP-in-IP with different IP versions, but I wonder if anyone will really do something like that...
@@ -1262,7 +1264,7 @@ def import_pdml(file_paths,
             logging.debug('Skipping non-IP packet {0}'.format(idx))
             continue
         try:
-            ip_showname = packet.findall("proto[@name='ip']")[-1].attrib['showname']
+            ip_showname = packet.findall("proto[@name='ip']")[-gtp_cheat].attrib['showname']
             packet_type = 'ipv4'
         except:
             ip_showname = packet.findall("proto[@name='ipv6']")[-1].attrib['showname']
@@ -1280,10 +1282,11 @@ def import_pdml(file_paths,
         gtp_proto = packet.find("proto[@name='gtp']")
         if gtp_proto is not None:
             try:
-                ip_showname = packet.findall("proto[@name='ip']")[-2].attrib['showname']
+                ip_showname = packet.findall("proto[@name='ip']")[-(gtp_cheat+1)].attrib['showname']
                 packet_type = 'ipv4'
+                gtp_cheat=(gtp_cheat+1)%2
             except:
-                ip_showname = packet.findall("proto[@name='ipv6']")[-2].attrib['showname']
+                ip_showname = packet.findall("proto[@name='ipv6']")[-(gtp_cheat+1)].attrib['showname']
                 packet_type = 'ipv6'
             try:
                 logging.debug('{0} (GTP): {1}'.format(frame_number, ip_showname))

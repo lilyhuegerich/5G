@@ -1,0 +1,624 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_2"
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "BSF"
+participant "UDM"
+participant "NRF"
+participant "AUSF"
+participant "UDR"
+participant "PCF"
+participant "NSSF"
+
+"BSF" -> "NRF": 769, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 770, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 771, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 772, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"NRF" -> "BSF": 775, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 776, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"NSSF" -> "NRF": 779, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 780, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 781, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 782, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 785, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 786, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"gNB" -> "UPF": 809, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/1/modify
+
+note right #03B5AA
+**gNB to UPF**
+end note
+
+"UE_2" -> "SMF": 810, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/1/modify
+
+note right #03B5AA
+**UE_2 to SMF**
+end note
+
+"UPF" -> "SMF": 811, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/1/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 812, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/1/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 817, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 818, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 819, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 820, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UDR" -> "NRF": 823, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 824, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 825, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 826, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"PCF" -> "NRF": 827, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 828, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 829, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 830, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"NRF" -> "UDR": 835, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 836, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+"NRF" -> "PCF": 839, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 840, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"UPF" -> "gNB": 845, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 846, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**SMF to UE_2**
+end note
+
+"UPF" -> "gNB": 847, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 848, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UE_2**
+end note
+
+"gNB" -> "UPF": 900, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/2/modify
+
+note right #03B5AA
+**gNB to UPF**
+end note
+
+"UE_2" -> "SMF": 901, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/2/modify
+
+note right #03B5AA
+**UE_2 to SMF**
+end note
+
+"UPF" -> "SMF": 904, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/2/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 905, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/2/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 912, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 913, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 914, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 915, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "gNB": 927, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 928, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UE_2**
+end note
+
+"UPF" -> "gNB": 929, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 930, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UE_2**
+end note
+
+"gNB" -> "UPF": 981, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/3/modify
+
+note right #03B5AA
+**gNB to UPF**
+end note
+
+"UE_2" -> "SMF": 982, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/3/modify
+
+note right #03B5AA
+**UE_2 to SMF**
+end note
+
+"UPF" -> "SMF": 983, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/3/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 984, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/3/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 993, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 994, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 995, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 996, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "gNB": 1005, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 1006, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UE_2**
+end note
+
+"UPF" -> "gNB": 1007, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 1008, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UE_2**
+end note
+
+"SMF" -> "UPF": 1013, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 1014, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "gNB": 1017, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 1018, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UE_2**
+end note
+
+"gNB" -> "UPF": 1074, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/modify
+
+note right #03B5AA
+**gNB to UPF**
+end note
+
+"UE_2" -> "SMF": 1075, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/modify
+
+note right #03B5AA
+**UE_2 to SMF**
+end note
+
+"UPF" -> "SMF": 1076, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"UPF" -> "SMF": 1077, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/modify
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 1082, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 1083, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 1084, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 1085, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "gNB": 1098, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 1099, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**SMF to UE_2**
+end note
+
+"UPF" -> "gNB": 1100, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UPF to gNB**
+end note
+
+"SMF" -> "UE_2": 1101, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to UE_2**
+end note
+
+"SMF" -> "NRF": 1206, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"SMF" -> "NRF": 1207, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"SMF" -> "NRF": 1208, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"SMF" -> "NRF": 1209, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"NRF" -> "SMF": 1212, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to SMF**
+end note
+
+"NRF" -> "SMF": 1213, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to SMF**
+end note
+
+"AMF" -> "NRF": 1223, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 1224, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 1225, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 1226, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 1229, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"NRF" -> "AMF": 1230, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AUSF" -> "NRF": 1233, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 1234, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 1235, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 1236, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"UDM" -> "NRF": 1237, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"UDM" -> "NRF": 1238, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"UDM" -> "NRF": 1239, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"UDM" -> "NRF": 1240, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"NRF" -> "AUSF": 1245, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AUSF**
+end note
+
+"NRF" -> "AUSF": 1246, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AUSF**
+end note
+
+"NRF" -> "UDM": 1249, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDM**
+end note
+
+"NRF" -> "UDM": 1250, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDM**
+end note
+
+@enduml

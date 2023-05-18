@@ -71,10 +71,10 @@ servers:
         interfaces:
             n4:
                 fixed:  "10.0.2.15"
-    'UE_0':
+    'UE':
         interfaces:
-            n4:
-                fixed:  "10.45.0.1"
+#            n4:
+#                fixed:  "10.45.0.3"
 
             n5:
                 fixed:  "10.45.0.20"

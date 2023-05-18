@@ -1,0 +1,627 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE_1"
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+participant "AUSF"
+participant "UDM"
+participant "UDR"
+participant "NRF"
+participant "NSSF"
+participant "BSF"
+participant "PCF"
+participant "8.8.8.8"
+
+"NRF" -> "NRF": 3746, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+63.616s (16:12:53.364.712)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3748, HTTP/2 204 rsp.\n+63.616s (16:12:53.364.935)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3750, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/23a0d4cc-8c42-41ed-bf08-4305d2ff916b\n+63.624s (16:12:53.372.689)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3751, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+63.624s (16:12:53.372.713)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3753, HTTP/2 204 rsp.\n+63.624s (16:12:53.373.126)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3755, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24e9b6e6-8c42-41ed-99a9-194d71752aec\n+63.672s (16:12:53.420.516)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3756, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+63.672s (16:12:53.420.531)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3758, HTTP/2 204 rsp.\n+63.672s (16:12:53.420.727)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3760, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24eff830-8c42-41ed-8ebb-33a10a6f764e\n+63.692s (16:12:53.441.398)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3761, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+63.692s (16:12:53.441.422)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3763, HTTP/2 204 rsp.\n+63.693s (16:12:53.441.693)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3765, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24988348-8c42-41ed-8d27-598d027c90ee\n+63.716s (16:12:53.465.259)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3766, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+63.717s (16:12:53.465.442)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3768, HTTP/2 204 rsp.\n+63.717s (16:12:53.465.789)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3770, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/25047cba-8c42-41ed-af13-379882efa776\n+63.836s (16:12:53.584.534)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3771, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+63.836s (16:12:53.584.609)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 3773, HTTP/2 204 rsp.\n+63.836s (16:12:53.584.79)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"gNB" -> "AMF": 4016, NGAP NGSetup (21)\n+71.595s (16:13:1.344.387)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 4018, NGAP NGSetup (21)\n+71.596s (16:13:1.345.093)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"NRF" -> "NRF": 4029, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24944238-8c42-41ed-9898-098bb83ac6cd\n+73.114s (16:13:2.863.026)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4030, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.114s (16:13:2.863.059)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4032, HTTP/2 204 rsp.\n+73.114s (16:13:2.863.209)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4034, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24a8d18a-8c42-41ed-9d6b-0713a676495c\n+73.300s (16:13:3.48.73)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4035, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.300s (16:13:3.48.761)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4037, HTTP/2 204 rsp.\n+73.300s (16:13:3.48.904)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4040, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24ddd434-8c42-41ed-90dc-490cfe057891\n+73.624s (16:13:3.372.923)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4041, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.624s (16:13:3.372.955)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4043, HTTP/2 204 rsp.\n+73.624s (16:13:3.373.087)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4045, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/23a0d4cc-8c42-41ed-bf08-4305d2ff916b\n+73.626s (16:13:3.375.35)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4046, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.626s (16:13:3.375.384)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4048, HTTP/2 204 rsp.\n+73.627s (16:13:3.375.518)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4050, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24e9b6e6-8c42-41ed-99a9-194d71752aec\n+73.679s (16:13:3.428.417)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4051, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.680s (16:13:3.428.45)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4053, HTTP/2 204 rsp.\n+73.680s (16:13:3.428.583)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4055, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24eff830-8c42-41ed-8ebb-33a10a6f764e\n+73.700s (16:13:3.448.74)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4056, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.700s (16:13:3.448.796)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4058, HTTP/2 204 rsp.\n+73.700s (16:13:3.449.086)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4061, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/24988348-8c42-41ed-8d27-598d027c90ee\n+73.720s (16:13:3.468.822)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4062, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.720s (16:13:3.468.892)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4064, HTTP/2 204 rsp.\n+73.720s (16:13:3.469.024)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4068, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/25047cba-8c42-41ed-af13-379882efa776\n+73.845s (16:13:3.593.49)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4069, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+73.845s (16:13:3.593.524)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4071, HTTP/2 204 rsp.\n+73.845s (16:13:3.593.733)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"gNB" -> "AMF": 4102, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)\n+77.824s (16:13:7.572.706)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"NRF" -> "NRF": 4103, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances\n+77.848s (16:13:7.596.541)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4104, HTTP/2 200 rsp.\n+77.865s (16:13:7.614.159)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4106, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+77.865s (16:13:7.614.238)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"AUSF" -> "AUSF": 4117, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications\n+77.873s (16:13:7.621.765)
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 4119, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+77.873s (16:13:7.621.789)
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"NRF" -> "NRF": 4124, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances\n+77.885s (16:13:7.633.465)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4125, HTTP/2 200 rsp.\n+77.885s (16:13:7.634.06)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4127, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+77.885s (16:13:7.634.151)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"UDM" -> "UDM": 4141, HTTP/2 req.\nPOST  /nudm-ueau/v1/suci-0-901-70-0000-0-0-0000000001/security-information/generate-auth-data\n+77.935s (16:13:7.683.857)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4145, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+77.937s (16:13:7.686.201)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"NRF" -> "NRF": 4147, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances\n+77.942s (16:13:7.690.522)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4148, HTTP/2 200 rsp.\n+77.942s (16:13:7.690.699)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4150, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+77.942s (16:13:7.690.732)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"UDR" -> "UDR": 4163, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/authentication-data/authentication-subscription\n+77.960s (16:13:7.708.87)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4175, HTTP/2 200 rsp.\n+78.041s (16:13:7.790.341)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4176, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.041s (16:13:7.790.363)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 4179, HTTP/2 200 rsp.\n+78.044s (16:13:7.792.976)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4180, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.044s (16:13:7.793.004)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 4183, HTTP/2 201 rsp.\n+78.045s (16:13:7.794.249)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 4184, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.045s (16:13:7.794.284)
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AMF" -> "gNB": 4186, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)\n+78.048s (16:13:7.796.975)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 4187, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)\n+78.049s (16:13:7.798.226)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AUSF" -> "AUSF": 4188, HTTP/2 req.\nPUT  /nausf-auth/v1/ue-authentications/1/5g-aka-confirmation\n+78.051s (16:13:7.799.733)
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 4190, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.052s (16:13:7.801.064)
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 4192, HTTP/2 req.\nPOST  /nudm-ueau/v1/imsi-901700000000001/auth-events\n+78.053s (16:13:7.802.313)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4194, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.054s (16:13:7.802.766)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 4196, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000001/authentication-data/authentication-status\n+78.054s (16:13:7.803.238)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4198, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.055s (16:13:7.803.449)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4207, HTTP/2 204 rsp.\n+78.065s (16:13:7.813.537)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 4208, HTTP/2 201 rsp.\n+78.065s (16:13:7.813.714)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4209, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.065s (16:13:7.813.932)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 4211, HTTP/2 200 rsp.\n+78.065s (16:13:7.814.141)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 4212, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.065s (16:13:7.814.165)
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AMF" -> "gNB": 4214, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)\n+78.066s (16:13:7.815.036)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 4215, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)\n+78.067s (16:13:7.816.049)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"NRF" -> "NRF": 4216, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances\n+78.069s (16:13:7.818.258)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4217, HTTP/2 200 rsp.\n+78.069s (16:13:7.818.404)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4219, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.069s (16:13:7.818.429)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"UDM" -> "UDM": 4232, HTTP/2 req.\nPUT  /nudm-uecm/v1/imsi-901700000000001/registrations/amf-3gpp-access\n+78.072s (16:13:7.820.473)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4236, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.072s (16:13:7.821.259)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 4238, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000001/context-data/amf-3gpp-access\n+78.074s (16:13:7.823.084)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4239, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.074s (16:13:7.823.189)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4241, HTTP/2 204 rsp.\n+78.074s (16:13:7.823.316)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 4243, HTTP/2 201 rsp.\n+78.075s (16:13:7.823.484)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4244, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.075s (16:13:7.823.516)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"NRF" -> "NRF": 4246, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances\n+78.075s (16:13:7.824.346)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4247, HTTP/2 200 rsp.\n+78.076s (16:13:7.824.509)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 4248, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.076s (16:13:7.824.531)
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"UDM" -> "UDM": 4250, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000001/am-data\n+78.079s (16:13:7.827.63)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 4251, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/90170/provisioned-data/am-data\n+78.079s (16:13:7.827.776)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4254, HTTP/2 200 rsp.\n+78.087s (16:13:7.835.5)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 4255, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.087s (16:13:7.835.543)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 4257, HTTP/2 200 rsp.\n+78.089s (16:13:7.838.378)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4258, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+78.089s (16:13:7.838.418)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 4260, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000001/smf-select-data\n+78.090s (16:13:7.838.689)
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 4261, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/90170/provisioned-data/smf-selection-subscription-data\n+78.090s (16:13:7.838.803)
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+@enduml
