@@ -16,11 +16,11 @@ sudo ./end_me.sh #kill all proccesses from last run
 if [[ $mode == "Double_upf" ]]; then
 	sudo ip route del 10.0.21.0/24 dev veth_upf2
 	sudo ip route del local 10.0.21.1
-	sudo ip route add 10.0.21.0/24 dev enp0s3 #route to second upf
+	sudo ip route add 10.0.21.1 dev enp0s3 via 10.0.21.2 #route to second upf
 fi
 
-sudo ip route add 10.0.3.0/24 dev enp0s3 #route to amf
-sudo ip route add 10.0.17.0/24 dev enp0s3 # route to upf
+sudo ip route add 10.0.3.1 dev enp0s3 via 10.0.3.2 #route to amf
+sudo ip route add 10.0.17.1 dev enp0s3 via 10.0.17.2 # route to upf
 
 if [[ $mode == "Double_ran" ]]; then
 	sudo ip addr add 10.0.2.14 dev enp0s3 # addr for gnb 2
