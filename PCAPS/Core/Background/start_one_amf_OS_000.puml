@@ -43,11 +43,7 @@ end note
 
 note right #D7FEFC
 **AMF to AUSF**
-{
-  "supiOrSuci": "suci-0-901-70-0000-0-0-0000000004",
-  "servingNetworkName": "5G:mnc070.mcc901.3gppnetwork.org"
-}
-
+{"supiOrSuci": "suci-0-901-70-0000-0-0-0000000004",....}
 end note
 
 "AUSF" -> "AMF": 154, HTTP/2 201 rsp.
@@ -60,13 +56,9 @@ end note
 
 note right #D7FEFC
 **AUSF to AMF**
-{
-  "authType": "5G_AKA",
+{ "authType": "5G_AKA",
   "5gAuthData": {<UE_Authorization data>},
-  "_links": {
-    "5g-aka": {
-      "href": <uri>
-    }}}
+  "_links": { "5g-aka": {"href": <uri}}}
 end note
 
 "AMF" -> "gNB": 157, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)
@@ -103,8 +95,7 @@ end note
 
 note right #D7FEFC
 **AUSF to AMF**
-{ "authResult": "AUTHENTICATION_SUCCESS",
-  <UE_Data>}
+{ "authResult": "AUTHENTICATION_SUCCESS", <UE_Data>}
 end note
 
 "AMF" -> "gNB": 166, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)

@@ -1,0 +1,132 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "AMF"
+participant "SMF"
+participant "PCF"
+participant "UDR"
+participant "NRF"
+participant "BSF"
+
+"NRF" -> "PCF": 244, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"PCF" -> "NRF": 246, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 247, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 249, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"PCF" -> "NRF": 251, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 252, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 254, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"PCF" -> "NRF": 256, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 257, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 259, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"PCF" -> "NRF": 261, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 262, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 264, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"PCF" -> "NRF": 266, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 267, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 269, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"PCF" -> "NRF": 271, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 272, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 274, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+@enduml

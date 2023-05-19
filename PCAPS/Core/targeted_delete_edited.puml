@@ -56,6 +56,12 @@ end note
 
 "gNB" -> "UPF": 4335, PFCP req.\nPFCP Association Setup Request (5)
 
+note right #5C8001
+**gNB to UPF**
+end note
+
+"Malicious UE" -> "UPF": 4335, PFCP req.\nPFCP Association Setup Request (5)
+
 note right #FFC2D9
 **gNB to UPF**
 end note
@@ -80,9 +86,16 @@ end note
 
 "gNB" -> "UPF": 4341, PFCP req.\nPFCP Session Deletion Request (54)
 
+note right #5C8001
+**gNB to UPF**
+end note
+
+"Malicious UE" -> "UPF": 4341, PFCP req.\nPFCP Session Deletion Request (54)
+
 note right #FFC2D9
 **gNB to UPF**
 end note
+
 
 "UPF" -> "Malicious UE": 4343, PFCP rsp.\nPFCP Session Deletion Response (55)
 

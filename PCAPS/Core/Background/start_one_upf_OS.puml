@@ -1,0 +1,65 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE"
+participant "gNB"
+participant "UPF"
+participant "SMF"
+participant "8.8.8.8"
+
+"SMF" -> "UPF": 25, PFCP req.\nPFCP Session Establishment Request (50)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 26, PFCP rsp.\nPFCP Session Establishment Response (51)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 27, PFCP req.\nPFCP Session Modification Request (52)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 28, PFCP rsp.\nPFCP Session Modification Response (53)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"gNB" -> "UPF": 29, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UPF" -> "8.8.8.8": 30, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 31, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE": 32, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE**
+end note
+
+@enduml
