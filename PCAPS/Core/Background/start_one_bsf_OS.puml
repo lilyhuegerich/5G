@@ -1,0 +1,58 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "PCF"
+participant "BSF"
+
+
+"PCF" -> "BSF": 50, HTTP/2 req.\nPOST  /nbsf-management/v1/pcfBindings
+
+note right #03B5AA
+**PCF to BSF**
+end note
+
+"PCF" -> "BSF": 52, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to BSF**
+10.0.10.1 to 10.0.5.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "supi": "imsi-901700000000004",
+  "ipv4Addr": "10.45.0.2",
+  "dnn": "CustomSlice",
+  "pcfIpEndPoints": [
+    {
+      "ipv4Address": "10.0.10.1",
+      "port": 7777
+    }
+  ],
+  "snssai": {
+    "sst": 1,
+    "sd": "000001"
+  },
+  "suppFeat": "2"
+}
+
+end note
+
+"BSF" -> "PCF": 58, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**BSF to PCF**
+end note
+
+"BSF" -> "PCF": 59, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to PCF**
+end note
+
+@enduml

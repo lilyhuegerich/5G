@@ -1,0 +1,187 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "PCF"
+participant "UDM"
+participant "AUSF"
+participant "NRF"
+
+"NRF" -> "AMF": 311, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 317, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 318, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 320, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 324, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 325, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 327, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 335, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 336, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 338, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 344, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 345, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 347, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 351, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 352, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 354, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 362, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 363, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 365, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 369, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 370, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 372, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 378, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 379, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 381, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"AMF" -> "NRF": 389, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 390, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 392, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+@enduml
