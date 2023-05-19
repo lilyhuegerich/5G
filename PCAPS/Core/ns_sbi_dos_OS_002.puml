@@ -13,13 +13,13 @@ participant "gNB"
 participant "AMF"
 participant "SMF"
 participant "UPF"
-participant "BSF"
 participant "UDM"
+participant "NSSF"
 participant "NRF"
 participant "AUSF"
+participant "BSF"
 participant "UDR"
 participant "PCF"
-participant "NSSF"
 
 "BSF" -> "NRF": 1420, HTTP/2 req. or rsp. (no HTTP/2 headers)
 

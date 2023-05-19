@@ -14,66 +14,66 @@ participant "gNB"
 participant "SMF"
 participant "UPF"
 
-"gNB" -> "UPF": 164, GTP<ICMP> ping req.\n+21.451s (16:1:23.602.934)
+"gNB" -> "UPF": 164, GTP<ICMP> ping req.
 
 note right #5C8001
 **gNB to UPF**
 end note
 
-"UE" -> "8.8.8.8": 165, ICMP ping req.\n+21.452s (16:1:23.604.018)
+"UE" -> "8.8.8.8": 165, ICMP ping req.
 
 note right #5C8001
 **UE to 8.8.8.8**
 end note
 
-"UPF" -> "8.8.8.8": 166, ICMP ping req.\n+21.452s (16:1:23.604.057)
+"UPF" -> "8.8.8.8": 166, ICMP ping req.
 
 note right #5C8001
 **UPF to 8.8.8.8**
 end note
 
-"8.8.8.8" -> "UPF": 167, ICMP ping rsp.\n+21.476s (16:1:23.627.574)
+"8.8.8.8" -> "UPF": 167, ICMP ping rsp.
 
 note right #EDFEC2
 **8.8.8.8 to UPF**
 end note
 
-"8.8.8.8" -> "UE": 168, ICMP ping rsp.\n+21.476s (16:1:23.627.602)
+"8.8.8.8" -> "UE": 168, ICMP ping rsp.
 
 note right #EDFEC2
 **8.8.8.8 to UE**
 end note
 
-"UPF" -> "gNB": 169, GTP<ICMP> ping rsp.\n+21.476s (16:1:23.627.928)
+"UPF" -> "gNB": 169, GTP<ICMP> ping rsp.
 
 note right #EDFEC2
 **UPF to gNB**
 end note
-"Spoofed IPs 10.*.0.1" -> "UPF": 717, PFCP req.\nPFCP Association Setup Request (5)\n+78.542s (16:2:20.693.785)
+"Spoofed IPs 10.*.0.1" -> "UPF": 717, PFCP req.
 
 note right #FFC2D9
 **Spoofed IPs 10.*.0.1 to UPF**
 end note
 
-"UPF" -> "Spoofed IPs 10.*.0.1": 718, PFCP rsp.\nPFCP Association Setup Response (6)\n+78.547s (16:2:20.698.402)
+"UPF" -> "Spoofed IPs 10.*.0.1": 718, PFCP rsp.
 
 note right #FFEAC2
 **UPF to Spoofed IPs 10.*.0.1**
 end note
 
-"UPF" -> "SMF": 1110, PFCP req.\nPFCP Association Setup Request (5)\n+88.259s (16:2:30.410.702)
+"UPF" -> "SMF": 1110, PFCP req.\nPFCP Association Setup Request (5)
 
 note right #03B5AA
 **UPF to SMF**
 end note
 
-"SMF" -> "UPF": 1111, PFCP rsp.\nPFCP Association Setup Response (6)\n+88.267s (16:2:30.419.111)
+"SMF" -> "UPF": 1111, PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #D7FEFC
 **SMF to UPF**
 end note
 
-"gNB" -> "UPF": 1296, GTP<ICMP> ping req.\n+92.766s (16:2:34.918.138)
+"gNB" -> "UPF": 1296, GTP<ICMP> ping req.
 
 note right #5C8001
 **gNB to UPF**

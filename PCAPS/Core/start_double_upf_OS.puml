@@ -14,37 +14,37 @@ participant "UPF_2"
 participant "SGWU"
 participant "SGWC"
 
-"SGWC" -> "SGWU": 155, PFCP req.\nPFCP Association Setup Request (5)\n+2.506s (15:15:54.525.612)
+"SGWC" -> "SGWU": 155, PFCP req.\nPFCP Association Setup Request (5)
 
 note right #03B5AA
 **SGWC to SGWU**
 end note
 
-"SGWU" -> "SGWC": 156, PFCP rsp.\nPFCP Association Setup Response (6)\n+2.511s (15:15:54.530.106)
+"SGWU" -> "SGWC": 156, PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #D7FEFC
 **SGWU to SGWC**
 end note
 
-"SMF" -> "UPF": 646, PFCP req.\nPFCP Association Setup Request (5)\n+5.819s (15:15:57.838.658)
+"SMF" -> "UPF": 646, PFCP req.\nPFCP Association Setup Request (5)
 
 note right #03B5AA
 **SMF to UPF**
 end note
 
-"UPF" -> "SMF": 647, PFCP rsp.\nPFCP Association Setup Response (6)\n+5.820s (15:15:57.839.267)
+"UPF" -> "SMF": 647, PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #D7FEFC
 **UPF to SMF**
 end note
 
-"SMF" -> "UPF_2": 714, PFCP req.\nPFCP Association Setup Request (5)\n+11.795s (15:16:3.814.715)
+"SMF" -> "UPF_2": 714, PFCP req.\nPFCP Association Setup Request (5)
 
 note right #03B5AA
 **SMF to UPF_2**
 end note
 
-"UPF_2" -> "SMF": 715, PFCP rsp.\nPFCP Association Setup Response (6)\n+11.797s (15:16:3.816.355)
+"UPF_2" -> "SMF": 715, PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #D7FEFC
 **UPF_2 to SMF**

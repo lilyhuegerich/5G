@@ -20,127 +20,125 @@ participant "SGWC"
 
 participant "8.8.8.8"
 
-"gNB" -> "UPF": 4248, GTP<ICMP> ping req.\n+336.876s (19:37:15.511.346)
+"gNB" -> "UPF": 4248, GTP<ICMP> ping req.
 
 note right #5C8001
 **gNB to UPF**
 end note
 
-"Targeted UE" -> "8.8.8.8": 4249, ICMP ping req.\n+336.876s (19:37:15.511.446)
-
+"Targeted UE" -> "8.8.8.8": 4249, ICMP ping req.
 note right #5C8001
 **Targeted UE to 8.8.8.8**
 end note
 
-"UPF" -> "8.8.8.8": 4250, ICMP ping req.\n+336.876s (19:37:15.511.472)
-
+"UPF" -> "8.8.8.8": 4250, ICMP ping req.
 note right #5C8001
 **UPF to 8.8.8.8**
 end note
 
-"8.8.8.8" -> "UPF": 4251, ICMP ping rsp.\n+336.903s (19:37:15.538.321)
+"8.8.8.8" -> "UPF": 4251, ICMP ping rsp.
 
 note right #EDFEC2
 **8.8.8.8 to UPF**
 end note
 
-"8.8.8.8" -> "Targeted UE": 4252, ICMP ping rsp.\n+336.903s (19:37:15.538.348)
+"8.8.8.8" -> "Targeted UE": 4252, ICMP ping rsp.
 
 note right #EDFEC2
 **8.8.8.8 to Targeted UE**
 end note
 
-"UPF" -> "gNB": 4253, GTP<ICMP> ping rsp.\n+336.903s (19:37:15.538.465)
+"UPF" -> "gNB": 4253, GTP<ICMP> ping rsp.
 
 note right #EDFEC2
 **UPF to gNB**
 end note
 
-"gNB" -> "UPF": 4335, PFCP req.\nPFCP Association Setup Request (5)\n+345.330s (19:37:23.965.739)
+"gNB" -> "UPF": 4335, PFCP req.\nPFCP Association Setup Request (5)
 
 note right #FFC2D9
 **gNB to UPF**
 end note
 
-"UPF" -> "Malicious UE": 4337, PFCP rsp.\nPFCP Association Setup Response (6)\n+345.331s (19:37:23.966.094)
+"UPF" -> "Malicious UE": 4337, PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #FFEAC2
 **UPF to Malicious UE**
 end note
 
-"UPF" -> "gNB": 4338, PFCP rsp.\nPFCP Association Setup Response (6)\n+345.331s (19:37:23.966.152)
+"UPF" -> "gNB": 4338, PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #FFEAC2
 **UPF to gNB**
 end note
 
-"gNB" -> "UPF": 4339, <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Association Setup Response (6)\n+345.334s (19:37:23.970.004)
+"gNB" -> "UPF": 4339, <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Association Setup Response (6)
 
 note right #D7FEFC
 **gNB to UPF**
 end note
 
-"gNB" -> "UPF": 4341, PFCP req.\nPFCP Session Deletion Request (54)\n+345.344s (19:37:23.979.791)
+"gNB" -> "UPF": 4341, PFCP req.\nPFCP Session Deletion Request (54)
 
 note right #FFC2D9
 **gNB to UPF**
 end note
 
-"UPF" -> "Malicious UE": 4343, PFCP rsp.\nPFCP Session Deletion Response (55)\n+345.345s (19:37:23.980.052)
+"UPF" -> "Malicious UE": 4343, PFCP rsp.\nPFCP Session Deletion Response (55)
 
 note right #FFEAC2
 **UPF to Malicious UE**
 end note
 
-"UPF" -> "gNB": 4344, PFCP rsp.\nPFCP Session Deletion Response (55)\n+345.345s (19:37:23.980.203)
+"UPF" -> "gNB": 4344, PFCP rsp.\nPFCP Session Deletion Response (55)
 
 note right #FFEAC2
 **UPF to gNB**
 end note
 
-"gNB" -> "UPF": 4345, <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Session Deletion Response (55)\n+345.346s (19:37:23.981.585)
+"gNB" -> "UPF": 4345, <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Session Deletion Response (55)
 
 note right #D7FEFC
 **gNB to UPF**
 end note
 
-"gNB" -> "UPF": 4406, GTP<ICMP> ping req.\n+349.317s (19:37:27.952.887)
+"gNB" -> "UPF": 4406, GTP<ICMP> ping req.
 
 note right #5C8001
 **gNB to UPF**
 end note
 
-"Malicious UE" -> "8.8.8.8": 4407, ICMP ping req.\n+349.317s (19:37:27.953.008)
+"Malicious UE" -> "8.8.8.8": 4407, ICMP ping req.
 
 note right #5C8001
 **Malicious UE to 8.8.8.8**
 end note
 
-"UPF" -> "8.8.8.8": 4408, ICMP ping req.\n+349.318s (19:37:27.953.039)
+"UPF" -> "8.8.8.8": 4408, ICMP ping req.
 
 note right #5C8001
 **UPF to 8.8.8.8**
 end note
 
-"8.8.8.8" -> "UPF": 4409, ICMP ping rsp.\n+349.351s (19:37:27.986.845)
+"8.8.8.8" -> "UPF": 4409, ICMP ping rsp.
 
 note right #EDFEC2
 **8.8.8.8 to UPF**
 end note
 
-"8.8.8.8" -> "Malicious UE": 4410, ICMP ping rsp.\n+349.351s (19:37:27.986.99)
+"8.8.8.8" -> "Malicious UE": 4410, ICMP ping rsp.
 
 note right #EDFEC2
 **8.8.8.8 to Malicious UE**
 end note
 
-"UPF" -> "gNB": 4411, GTP<ICMP> ping rsp.\n+349.352s (19:37:27.987.329)
+"UPF" -> "gNB": 4411, GTP<ICMP> ping rsp.
 
 note right #EDFEC2
 **UPF to gNB**
 end note
 
-"gNB" -> "UPF": 4412, GTP<ICMP> ping req.\n+349.381s (19:37:28.16.781)
+"gNB" -> "UPF": 4412, GTP<ICMP> ping req.
 
 note right #5C8001
 **gNB to UPF**
