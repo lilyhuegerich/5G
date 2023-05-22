@@ -10,32 +10,66 @@ skinparam sequence {
 }
 participant "UE"
 participant "gNB"
-participant "UPF"
 participant "SMF"
+participant "UPF"
 participant "8.8.8.8"
 
 "SMF" -> "UPF": 25, PFCP req.\nPFCP Session Establishment Request (50)
 
 note right #03B5AA
 **SMF to UPF**
+ ...
+pfcp.msg_type: 'Message Type: PFCP Session Establishment Request (50)'
+ ...
+pfcp.seid: 'SEID: <Control_plane_SEID>'
+'Create PDR : [Grouped IE]':
+   ...
+   pfcp.network_instance: 'Network Instance: CustomSlice'
+   'UE IP Address : <UE_IP_Address>:
+   ...
+      pfcp.apply_action.forw: '.... ..1. = FORW (Forward): True'
+      pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'
+      ...
+   pfcp.outer_hdr_creation.teid: 'TEID: <TEID>'
+   pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: <SMF_IP_Address>
+   <Measurment, Reporting, and Volume Settings>
 end note
 
 "UPF" -> "SMF": 26, PFCP rsp.\nPFCP Session Establishment Response (51)
 
 note right #D7FEFC
 **UPF to SMF**
+...
+pfcp.msg_type: 'Message Type: PFCP Session Establishment Response (51)'
+pfcp.seid: 'SEID: <User_plane_SEID>'
+  ...
+  Cause : Request accepted(success):
+  ...
 end note
 
 "SMF" -> "UPF": 27, PFCP req.\nPFCP Session Modification Request (52)
 
 note right #03B5AA
 **SMF to UPF**
+ ...
+pfcp.msg_type: 'Message Type: PFCP Session Modification Request (52)'
+pfcp.seid: 'SEID: <User_plane_SEID>'
+Update FAR : [Grouped IE]:
+    ...
+    pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: <gNB_IP_Adress>'
+    ...
 end note
 
 "UPF" -> "SMF": 28, PFCP rsp.\nPFCP Session Modification Response (53)
 
 note right #D7FEFC
 **UPF to SMF**
+...
+pfcp.msg_type: 'Message Type: PFCP Session Modification Response (53)'
+pfcp.seid: 'SEID: <User_plane_SEID>'
+  ...
+  Cause : Request accepted(success):
+  ...
 end note
 
 "gNB" -> "UPF": 29, GTP<ICMP> ping req.
