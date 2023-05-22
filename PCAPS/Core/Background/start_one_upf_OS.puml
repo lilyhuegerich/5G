@@ -22,10 +22,10 @@ note right #03B5AA
 pfcp.msg_type: 'Message Type: PFCP Session Establishment Request (50)'
  ...
 pfcp.seid: 'SEID: <Control_plane_SEID>'
-'Create PDR : [Grouped IE]':
+Create PDR : [Grouped IE]:
    ...
    pfcp.network_instance: 'Network Instance: CustomSlice'
-   'UE IP Address : <UE_IP_Address>:
+   UE IP Address : <UE_IP_Address>:
    ...
       pfcp.apply_action.forw: '.... ..1. = FORW (Forward): True'
       pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'
