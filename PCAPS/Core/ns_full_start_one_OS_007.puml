@@ -8,6 +8,7 @@ skinparam sequence {
     ParticipantBorderColor white
     ParticipantBackgroundColor #e6e6e6
 }
+participant "UE_1"
 participant "gNB"
 participant "AMF"
 participant "SMF"
@@ -15,29 +16,29 @@ participant "UPF"
 participant "SGWU"
 participant "SGWC"
 participant "NRF"
+participant "UDR"
+participant "8.8.8.8"
 participant "BSF"
-participant "UDM"
 participant "NSSF"
 participant "AUSF"
-participant "8.8.8.8"
 participant "PCF"
-participant "UDR"
+participant "UDM"
 
 "NRF" -> "UDR": 2981, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDR**
 end note
 
 "NRF" -> "BSF": 2984, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to BSF**
 end note
 
 "NRF" -> "BSF": 2985, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to BSF**
 end note
 
@@ -55,13 +56,13 @@ end note
 
 "NRF" -> "PCF": 2992, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 2993, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
@@ -79,13 +80,13 @@ end note
 
 "PCF" -> "NRF": 2998, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
 "PCF" -> "NRF": 2999, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
@@ -115,25 +116,25 @@ end note
 
 "NSSF" -> "NRF": 3004, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NSSF to NRF**
 end note
 
 "NSSF" -> "NRF": 3005, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NSSF to NRF**
 end note
 
 "NRF" -> "PCF": 3012, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 3013, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
@@ -151,49 +152,49 @@ end note
 
 "NRF" -> "PCF": 3018, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 3019, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "NSSF": 3022, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to NSSF**
 end note
 
 "NRF" -> "NSSF": 3023, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to NSSF**
 end note
 
 "NRF" -> "PCF": 3026, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 3027, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 3028, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 3029, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 

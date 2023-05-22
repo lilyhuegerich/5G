@@ -8,6 +8,7 @@ skinparam sequence {
     ParticipantBorderColor white
     ParticipantBackgroundColor #e6e6e6
 }
+participant "UE_1"
 participant "gNB"
 participant "AMF"
 participant "SMF"
@@ -15,13 +16,13 @@ participant "UPF"
 participant "SGWU"
 participant "SGWC"
 participant "NRF"
+participant "UDR"
+participant "8.8.8.8"
 participant "BSF"
-participant "UDM"
 participant "NSSF"
 participant "AUSF"
-participant "8.8.8.8"
 participant "PCF"
-participant "UDR"
+participant "UDM"
 
 "NRF" -> "AUSF": 2299, HTTP/2 204 rsp.
 
@@ -43,13 +44,13 @@ end note
 
 "UDM" -> "NRF": 2304, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
 "UDM" -> "NRF": 2305, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
@@ -79,13 +80,13 @@ end note
 
 "SMF" -> "NRF": 2317, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
 "SMF" -> "NRF": 2318, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
@@ -115,13 +116,13 @@ end note
 
 "PCF" -> "NRF": 2351, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
 "PCF" -> "NRF": 2352, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
@@ -151,13 +152,13 @@ end note
 
 "NSSF" -> "NRF": 2371, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NSSF to NRF**
 end note
 
 "NSSF" -> "NRF": 2372, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NSSF to NRF**
 end note
 
@@ -187,13 +188,13 @@ end note
 
 "BSF" -> "NRF": 2386, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **BSF to NRF**
 end note
 
 "BSF" -> "NRF": 2387, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **BSF to NRF**
 end note
 
@@ -223,13 +224,13 @@ end note
 
 "UDR" -> "NRF": 2405, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDR to NRF**
 end note
 
 "UDR" -> "NRF": 2406, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDR to NRF**
 end note
 
@@ -251,10 +252,10 @@ note right #5C8001
 **gNB to UPF**
 end note
 
-"gNB" -> "UPF": 2579, GTP<ICMP> ping req.
+"UE_1" -> "8.8.8.8": 2579, GTP<ICMP> ping req.
 
 note right #5C8001
-**gNB to UPF**
+**UE_1 to 8.8.8.8**
 end note
 
 "UPF" -> "8.8.8.8": 2580, ICMP ping req.
@@ -287,10 +288,10 @@ note right #EDFEC2
 **UPF to gNB**
 end note
 
-"UPF" -> "gNB": 2585, GTP<ICMP> ping rsp.
+"8.8.8.8" -> "UE_1": 2585, GTP<ICMP> ping rsp.
 
 note right #EDFEC2
-**UPF to gNB**
+**8.8.8.8 to UE_1**
 end note
 
 "gNB" -> "UPF": 2588, GTP<ICMP> ping req.
@@ -299,10 +300,10 @@ note right #5C8001
 **gNB to UPF**
 end note
 
-"gNB" -> "UPF": 2589, GTP<ICMP> ping req.
+"UE_1" -> "8.8.8.8": 2589, GTP<ICMP> ping req.
 
 note right #5C8001
-**gNB to UPF**
+**UE_1 to 8.8.8.8**
 end note
 
 "AMF" -> "NRF": 2591, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3a52609e-f5a8-41ed-956c-a9071229793c
@@ -319,13 +320,13 @@ end note
 
 "AMF" -> "NRF": 2593, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
 "AMF" -> "NRF": 2594, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
@@ -335,10 +336,10 @@ note right #5C8001
 **gNB to UPF**
 end note
 
-"gNB" -> "UPF": 2606, GTP<ICMP> ping req.
+"UE_1" -> "8.8.8.8": 2606, GTP<ICMP> ping req.
 
 note right #5C8001
-**gNB to UPF**
+**UE_1 to 8.8.8.8**
 end note
 
 "AUSF" -> "NRF": 2608, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3b33a82e-f5a8-41ed-a7cf-ff7f762bc422
@@ -355,13 +356,13 @@ end note
 
 "AUSF" -> "NRF": 2610, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
 "AUSF" -> "NRF": 2611, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
@@ -379,13 +380,13 @@ end note
 
 "UDM" -> "NRF": 2614, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
 "UDM" -> "NRF": 2615, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
@@ -487,25 +488,25 @@ end note
 
 "UDM" -> "NRF": 2643, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
 "UDM" -> "NRF": 2644, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
 "AUSF" -> "NRF": 2645, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
 "AUSF" -> "NRF": 2646, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
@@ -515,10 +516,10 @@ note right #EDFEC2
 **UPF to gNB**
 end note
 
-"UPF" -> "gNB": 2662, GTP<ICMP> ping rsp.
+"8.8.8.8" -> "UE_1": 2662, GTP<ICMP> ping rsp.
 
 note right #EDFEC2
-**UPF to gNB**
+**8.8.8.8 to UE_1**
 end note
 
 "UPF" -> "gNB": 2663, GTP<ICMP> ping rsp.
@@ -527,10 +528,10 @@ note right #EDFEC2
 **UPF to gNB**
 end note
 
-"UPF" -> "gNB": 2664, GTP<ICMP> ping rsp.
+"8.8.8.8" -> "UE_1": 2664, GTP<ICMP> ping rsp.
 
 note right #EDFEC2
-**UPF to gNB**
+**8.8.8.8 to UE_1**
 end note
 
 "SMF" -> "NRF": 2667, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3a535a9e-f5a8-41ed-a2d6-e544d47350aa
@@ -547,13 +548,13 @@ end note
 
 "SMF" -> "NRF": 2669, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
 "SMF" -> "NRF": 2670, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
@@ -583,13 +584,13 @@ end note
 
 "BSF" -> "NRF": 2713, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **BSF to NRF**
 end note
 
 "BSF" -> "NRF": 2714, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **BSF to NRF**
 end note
 
@@ -607,13 +608,13 @@ end note
 
 "UDR" -> "NRF": 2718, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDR to NRF**
 end note
 
 "UDR" -> "NRF": 2719, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDR to NRF**
 end note
 
