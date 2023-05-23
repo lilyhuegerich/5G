@@ -1,0 +1,51 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Malicious_Actor"
+participant "PCF"
+participant "UDR"
+
+"Malicious_Actor" -> "PCF": 11, HTTP/2 req.\nPOST  /npcf-am-policy-control/v1/policies
+
+note right #FFC2D9
+**Malicious_Actor to PCF**
+end note
+
+"PCF" -> "UDR": 13, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000004/am-data
+
+note right #FFEAC2
+**PCF to UDR**
+end note
+
+"UDR" -> "PCF": 14, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to PCF**
+end note
+
+"UDR" -> "PCF": 16, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to PCF**
+end note
+
+"PCF" -> "Malicious_Actor": 24, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to Malicious_Actor**
+end note
+
+"PCF" -> "Malicious_Actor": 25, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to Malicious_Actor**
+end note
+
+@enduml

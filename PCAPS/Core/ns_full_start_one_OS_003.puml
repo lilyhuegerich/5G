@@ -18,17 +18,43 @@ participant "SGWC"
 participant "UDM"
 participant "UDR"
 participant "NRF"
-participant "8.8.8.8"
-participant "BSF"
 participant "NSSF"
-participant "AUSF"
+participant "BSF"
 participant "PCF"
+participant "8.8.8.8"
+participant "AUSF"
 
+"AMF" -> "UDM": 1689, HTTP/2 req.\nPUT  /nudm-uecm/v1/imsi-901700000000004/registrations/amf-3gpp-access
+
+note right #03B5AA
+**AMF to UDM**
+end note
+
+"AMF" -> "UDM": 1692, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to UDM**
+end note
 
 "AMF" -> "UDM": 1693, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AMF to UDM**
+10.0.3.1 to 10.0.15.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "amfInstanceId": "3a52609e-f5a8-41ed-956c-a9071229793c",
+  "deregCallbackUri": "http://10.0.3.1:7777/namf-callback/v1/imsi-901700000000004/dereg-notify",
+  "guami": {
+    "plmnId": {
+      "mcc": "901",
+      "mnc": "70"
+    },
+    "amfId": "020040"
+  },
+  "ratType": "NR"
+}
+
 end note
 
 "UDM" -> "UDR": 1705, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/context-data/amf-3gpp-access\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/context-data/amf-3gpp-access
@@ -37,7 +63,34 @@ note right #03B5AA
 **UDM to UDR**
 end note
 
+"UDM" -> "UDR": 1706, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/context-data/amf-3gpp-access\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/context-data/amf-3gpp-access
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
 "UDM" -> "UDR": 1709, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDR**
+10.0.15.1 to 10.0.16.1 (IPs)
+HTTP/2 stream 5 payload
+{
+  "amfInstanceId": "3a52609e-f5a8-41ed-956c-a9071229793c",
+  "deregCallbackUri": "http://10.0.3.1:7777/namf-callback/v1/imsi-901700000000004/dereg-notify",
+  "guami": {
+    "plmnId": {
+      "mcc": "901",
+      "mnc": "70"
+    },
+    "amfId": "020040"
+  },
+  "ratType": "NR"
+}
+
+end note
+
+"UDM" -> "UDR": 1710, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDM to UDR**
@@ -49,8 +102,19 @@ note right #D7FEFC
 **UDR to UDM**
 end note
 
+"UDR" -> "UDM": 1714, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
 
 "UDM" -> "AMF": 1719, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"UDM" -> "AMF": 1720, HTTP/2 201 rsp.
 
 note right #D7FEFC
 **UDM to AMF**
@@ -62,7 +126,19 @@ note right #D7FEFC
 **UDM to AMF**
 end note
 
+"UDM" -> "AMF": 1724, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
 "AMF" -> "NRF": 1725, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 1726, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
 
 note right #03B5AA
 **AMF to NRF**
@@ -74,8 +150,19 @@ note right #D7FEFC
 **NRF to AMF**
 end note
 
+"NRF" -> "AMF": 1728, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
 
 "NRF" -> "AMF": 1729, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
+"NRF" -> "AMF": 1730, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **NRF to AMF**
@@ -87,7 +174,19 @@ note right #03B5AA
 **AMF to UDM**
 end note
 
+"AMF" -> "UDM": 1734, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/am-data
+
+note right #03B5AA
+**AMF to UDM**
+end note
+
 "UDM" -> "UDR": 1735, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/am-data\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/am-data
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDM" -> "UDR": 1736, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/am-data\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/am-data
 
 note right #03B5AA
 **UDM to UDR**
@@ -99,7 +198,19 @@ note right #D7FEFC
 **UDR to UDM**
 end note
 
+"UDR" -> "UDM": 1741, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
 "UDR" -> "UDM": 1742, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 1743, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDR to UDM**
@@ -111,7 +222,19 @@ note right #D7FEFC
 **UDM to AMF**
 end note
 
+"UDM" -> "AMF": 1747, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
 "UDM" -> "AMF": 1748, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"UDM" -> "AMF": 1749, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDM to AMF**
@@ -123,15 +246,31 @@ note right #03B5AA
 **AMF to UDM**
 end note
 
+"AMF" -> "UDM": 1753, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/smf-select-data
 
-"UDM" -> "UDR": 1754, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/smf-selection-subscription-data
+note right #03B5AA
+**AMF to UDM**
+end note
+
+"UDM" -> "UDR": 1754, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/smf-selection-subscription-data\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/smf-selection-subscription-data
 
 note right #03B5AA
 **UDM to UDR**
 end note
 
+"UDM" -> "UDR": 1755, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/smf-selection-subscription-data\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/smf-selection-subscription-data
+
+note right #03B5AA
+**UDM to UDR**
+end note
 
 "UDR" -> "UDM": 1758, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 1759, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **UDR to UDM**
@@ -143,7 +282,19 @@ note right #D7FEFC
 **UDR to UDM**
 end note
 
+"UDR" -> "UDM": 1761, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
 "UDM" -> "AMF": 1764, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"UDM" -> "AMF": 1765, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **UDM to AMF**
@@ -153,10 +304,36 @@ end note
 
 note right #D7FEFC
 **UDM to AMF**
+10.0.15.1 to 10.0.3.1 (IPs)
+HTTP/2 stream 5 payload
+{
+  "subscribedSnssaiInfos": {
+    "{\n\t\"sst\":\t1,\n\t\"sd\":\t\"000001\"\n}": {
+      "dnnInfos": [
+        {
+          "dnn": "CustomSlice",
+          "defaultDnnIndicator": true
+        }
+      ]
+    }
+  }
+}
+
 end note
 
+"UDM" -> "AMF": 1767, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AMF**
+end note
 
 "AMF" -> "UDM": 1770, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/ue-context-in-smf-data
+
+note right #03B5AA
+**AMF to UDM**
+end note
+
+"AMF" -> "UDM": 1771, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/ue-context-in-smf-data
 
 note right #03B5AA
 **AMF to UDM**
@@ -168,7 +345,22 @@ note right #D7FEFC
 **UDM to AMF**
 end note
 
+"UDM" -> "AMF": 1773, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
 "UDM" -> "AMF": 1774, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AMF**
+10.0.15.1 to 10.0.3.1 (IPs)
+HTTP/2 stream 7 payload
+{}
+end note
+
+"UDM" -> "AMF": 1775, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDM to AMF**
@@ -180,13 +372,83 @@ note right #03B5AA
 **AMF to NRF**
 end note
 
+"AMF" -> "NRF": 1779, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
 "NRF" -> "AMF": 1780, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to AMF**
 end note
 
+"NRF" -> "AMF": 1781, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
 "NRF" -> "AMF": 1782, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AMF**
+10.0.8.1 to 10.0.3.1 (IPs)
+HTTP/2 stream 21 payload
+{
+  "validityPeriod": 3600,
+  "nfInstances": [
+    {
+      "nfInstanceId": "3bda8e00-f5a8-41ed-8b25-8778ac8a932f",
+      "nfType": "PCF",
+      "nfStatus": "REGISTERED",
+      "heartBeatTimer": 10,
+      "ipv4Addresses": [
+        "10.0.10.1"
+      ],
+      "allowedNfTypes": [
+        "AMF",
+        "SMF",
+        "SCP"
+      ],
+      "priority": 0,
+      "capacity": 100,
+      "load": 0,
+      "nfServiceList": {
+        "3bf0bde2-f5a8-41ed-8b25-8778ac8a932f": {
+          "serviceInstanceId": "3bf0bde2-f5a8-41ed-8b25-8778ac8a932f",
+          "serviceName": "npcf-am-policy-control",
+          "versions": [
+            {
+              "apiVersionInUri": "v1",
+              "apiFullVersion": "1.0.0"
+            }
+          ],
+          "scheme": "http",
+          "nfServiceStatus": "REGISTERED",
+          "ipEndPoints": [
+            {
+              "ipv4Address": "10.0.10.1",
+              "port": 7777
+            }
+          ],
+          "allowedNfTypes": [
+            "AMF"
+          ],
+          "priority": 0,
+          "capacity": 100,
+          "load": 0
+        }
+      },
+      "nfProfileChangesSupportInd": true
+    }
+  ]
+}
+
+end note
+
+"NRF" -> "AMF": 1783, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **NRF to AMF**
@@ -198,7 +460,72 @@ note right #03B5AA
 **AMF to PCF**
 end note
 
+"AMF" -> "PCF": 1809, HTTP/2 req.\nPOST  /npcf-am-policy-control/v1/policies
+
+note right #03B5AA
+**AMF to PCF**
+end note
+
 "AMF" -> "PCF": 1816, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to PCF**
+10.0.3.1 to 10.0.10.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "notificationUri": "http://10.0.3.1:7777/namf-callback/v1/imsi-901700000000004/am-policy-notify",
+  "supi": "imsi-901700000000004",
+  "accessType": "3GPP_ACCESS",
+  "pei": "imeisv-4370816125816151",
+  "userLoc": {
+    "nrLocation": {
+      "tai": {
+        "plmnId": {
+          "mcc": "901",
+          "mnc": "70"
+        },
+        "tac": "000001"
+      },
+      "ncgi": {
+        "plmnId": {
+          "mcc": "901",
+          "mnc": "70"
+        },
+        "nrCellId": "000000010"
+      },
+      "ueLocationTimestamp": "2023-05-18T18:17:40.286404Z"
+    }
+  },
+  "timeZone": "+02:00",
+  "servingPlmn": {
+    "mcc": "901",
+    "mnc": "70"
+  },
+  "ratType": "NR",
+  "ueAmbr": {
+    "uplink": "1048576 Kbps",
+    "downlink": "1048576 Kbps"
+  },
+  "allowedSnssais": [
+    {
+      "sst": 1,
+      "sd": "000001"
+    }
+  ],
+  "guami": {
+    "plmnId": {
+      "mcc": "901",
+      "mnc": "70"
+    },
+    "amfId": "020040"
+  },
+  "serviceName": "namf-callback",
+  "suppFeat": "4"
+}
+
+end note
+
+"AMF" -> "PCF": 1817, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AMF to PCF**
@@ -210,7 +537,19 @@ note right #03B5AA
 **PCF to NRF**
 end note
 
+"PCF" -> "NRF": 1825, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
 "NRF" -> "PCF": 1826, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 1827, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to PCF**
@@ -222,7 +561,19 @@ note right #D7FEFC
 **NRF to PCF**
 end note
 
+"NRF" -> "PCF": 1831, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
 "PCF" -> "UDR": 1856, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000004/am-data
+
+note right #03B5AA
+**PCF to UDR**
+end note
+
+"PCF" -> "UDR": 1857, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000004/am-data
 
 note right #03B5AA
 **PCF to UDR**
@@ -234,7 +585,22 @@ note right #D7FEFC
 **UDR to PCF**
 end note
 
+"UDR" -> "PCF": 1865, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to PCF**
+end note
+
 "UDR" -> "PCF": 1866, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to PCF**
+10.0.16.1 to 10.0.10.1 (IPs)
+HTTP/2 stream 1 payload
+{}
+end note
+
+"UDR" -> "PCF": 1867, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDR to PCF**
@@ -246,7 +612,19 @@ note right #D7FEFC
 **PCF to AMF**
 end note
 
+"PCF" -> "AMF": 1875, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to AMF**
+end note
+
 "PCF" -> "AMF": 1876, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to AMF**
+end note
+
+"PCF" -> "AMF": 1877, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **PCF to AMF**
@@ -282,12 +660,23 @@ note right #03B5AA
 **AMF to NRF**
 end note
 
+"AMF" -> "NRF": 1908, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
 "NRF" -> "AMF": 1909, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to AMF**
 end note
 
+"NRF" -> "AMF": 1910, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
 
 "NRF" -> "AMF": 1911, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
@@ -295,6 +684,11 @@ note right #D7FEFC
 **NRF to AMF**
 end note
 
+"NRF" -> "AMF": 1912, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AMF**
+end note
 
 "AMF" -> "NSSF": 1937, HTTP/2 req.\nGET  /nnssf-nsselection/v2/network-slice-information
 
@@ -302,6 +696,11 @@ note right #03B5AA
 **AMF to NSSF**
 end note
 
+"AMF" -> "NSSF": 1938, HTTP/2 req.\nGET  /nnssf-nsselection/v2/network-slice-information
+
+note right #03B5AA
+**AMF to NSSF**
+end note
 
 "NSSF" -> "AMF": 1943, HTTP/2 200 rsp.
 
@@ -309,13 +708,32 @@ note right #D7FEFC
 **NSSF to AMF**
 end note
 
-
-"NSSF" -> "AMF": 1945, HTTP/2 req. or rsp. (no HTTP/2 headers)
+"NSSF" -> "AMF": 1944, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NSSF to AMF**
 end note
 
+"NSSF" -> "AMF": 1945, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to AMF**
+10.0.9.1 to 10.0.3.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "nsiInformation": {
+    "nrfId": "http://10.0.8.1:7777/nnrf-disc/v1/nf-instances",
+    "nsiId": "1"
+  }
+}
+
+end note
+
+"NSSF" -> "AMF": 1946, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to AMF**
+end note
 
 "AMF" -> "NRF": 1949, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
 
@@ -323,8 +741,19 @@ note right #03B5AA
 **AMF to NRF**
 end note
 
+"AMF" -> "NRF": 1950, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**AMF to NRF**
+end note
 
 "NRF" -> "AMF": 1951, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
+"NRF" -> "AMF": 1952, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to AMF**
@@ -336,6 +765,11 @@ note right #D7FEFC
 **NRF to AMF**
 end note
 
+"NRF" -> "AMF": 1954, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AMF**
+end note
 
 "AMF" -> "gNB": 1957, NGAP DownlinkNASTransport (4),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment request (0xc1)
 
@@ -343,5 +777,16 @@ note right #285AA4
 **AMF to gNB**
 end note
 
+"AMF" -> "NRF": 1987, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3a52609e-f5a8-41ed-956c-a9071229793c
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 1988, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3a52609e-f5a8-41ed-956c-a9071229793c
+
+note right #03B5AA
+**AMF to NRF**
+end note
 
 @enduml

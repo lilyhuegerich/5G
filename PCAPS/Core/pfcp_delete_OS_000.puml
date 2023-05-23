@@ -1,0 +1,624 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+participant "NRF"
+participant "NSSF"
+participant "UDM"
+participant "PCF"
+participant "AUSF"
+participant "BSF"
+participant "UDR"
+
+"SGWC" -> "SGWU": 44, PFCP req.\nPFCP Association Setup Request (5)
+
+note right #03B5AA
+**SGWC to SGWU**
+end note
+
+"UPF" -> "SMF": 57, PFCP req.\nPFCP Association Setup Request (5)
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 92, PFCP req.\nPFCP Association Setup Request (5)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 93, PFCP rsp.\nPFCP Association Setup Response (6)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"NRF" -> "NRF": 152, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/4622fd2a-aa2b-41ed-89a2-7539e5f55232
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 156, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 173, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 175, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 176, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 177, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 179, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 180, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 199, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/4638dc30-aa2b-41ed-9c32-1f4ea3b9ee5a
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 203, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 215, HTTP/2 req.\nPOST  /nnrf-nfm/v1/nf-status-notify
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 217, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 219, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 220, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 227, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 228, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 230, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 231, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 233, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 234, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 276, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/4669fbe4-aa2b-41ed-bb75-e338a16e2445
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 280, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 283, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 284, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 286, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 287, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 289, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 290, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 291, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 292, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 294, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 295, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 318, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/467c279c-aa2b-41ed-a924-c31cc4a19dd5
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 322, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 325, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 326, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 339, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/46903124-aa2b-41ed-82d2-d1dd63902cc5
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 343, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 346, HTTP/2 req.\nPOST  /nnrf-nfm/v1/nf-status-notify
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 347, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 348, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 350, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 351, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 352, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"SGWC" -> "SGWU": 355, PFCP req.\nPFCP Association Setup Request (5)
+
+note right #03B5AA
+**SGWC to SGWU**
+end note
+
+"SGWU" -> "SGWC": 356, PFCP rsp.\nPFCP Association Setup Response (6)
+
+note right #D7FEFC
+**SGWU to SGWC**
+end note
+
+"NRF" -> "NRF": 380, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/46a955c8-aa2b-41ed-ab06-5728a76ba064
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 382, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 385, HTTP/2 req.\nPOST  /nnrf-nfm/v1/nf-status-notify
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 386, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 387, HTTP/2 req.\nPOST  /nnrf-nfm/v1/nf-status-notify
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 388, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 389, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 391, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 392, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 393, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 395, HTTP/2 400 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 396, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"UPF" -> "SMF": 402, PFCP req.\nPFCP Association Setup Request (5)
+
+note right #03B5AA
+**UPF to SMF**
+end note
+
+"SMF" -> "UPF": 403, PFCP rsp.\nPFCP Association Setup Response (6)
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"NRF" -> "NRF": 490, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/453c5bfe-aa2b-41ed-b620-7ff54019f07a
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 492, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 497, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 498, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 500, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 501, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 503, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 504, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 505, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 506, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 507, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 508, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 509, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 510, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 511, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 512, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 513, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 514, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 518, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 519, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 520, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 521, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 522, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 523, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 524, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 525, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 526, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 527, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 572, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/4622fd2a-aa2b-41ed-89a2-7539e5f55232
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 573, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 575, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 577, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/4638dc30-aa2b-41ed-9c32-1f4ea3b9ee5a
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 578, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 580, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 593, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/452f03be-aa2b-41ed-9a33-af5292c3f184
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 595, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Malicious_Actor"
+participant "AUSF"
+participant "UDM"
+
+
+
+"Malicious_Actor" -> "AUSF": 6, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications
+
+note right #FFC2D9
+**Malicious_Actor to AUSF**
+end note
+
+"AUSF" -> "UDM": 8, HTTP/2 req.\nPOST  /nudm-ueau/v1/suci-0-901-70-0000-0-0-00000001234/security-information/generate-auth-data
+
+note right #FFEAC2
+**AUSF to UDM**
+end note
+
+"AUSF" -> "UDM": 9, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to UDM**
+end note
+
+"UDM" -> "AUSF": 11, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**UDM to AUSF**
+end note
+
+"UDM" -> "AUSF": 12, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AUSF**
+end note
+
+"AUSF" -> "Malicious_Actor": 15, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**AUSF to Malicious_Actor**
+end note
+
+"AUSF" -> "Malicious_Actor": 16, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to Malicious_Actor**
+end note
+
+
+@enduml

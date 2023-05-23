@@ -1,0 +1,59 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Malicious_Actor"
+participant "UDM"
+participant "UDR"
+
+
+"Malicious_Actor" -> "UDM": 11, HTTP/2 req.\nPOST  /nudm-ueau/v1/imsi-901700000001234/auth-events
+
+note right #FFC2D9
+**Malicious_Actor to UDM**
+end note
+
+"UDM" -> "UDR": 13, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000001234/authentication-data/authentication-status
+
+note right #FFEAC2
+**UDM to UDR**
+end note
+
+"UDM" -> "UDR": 14, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 16, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 17, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDM" -> "Malicious_Actor": 20, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**UDM to Malicious_Actor**
+end note
+
+"UDM" -> "Malicious_Actor": 21, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to Malicious_Actor**
+end note
+
+
+@enduml

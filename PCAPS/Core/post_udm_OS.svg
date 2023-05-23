@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="358px" preserveAspectRatio="none" style="width:1263px;height:358px;" version="1.1" viewBox="0 0 1263 358" width="1263px" zoomAndPan="magnify"><defs/><g><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="68" x2="68" y1="34.2969" y2="318.4922"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="466.5" x2="466.5" y1="34.2969" y2="318.4922"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1134.5" x2="1134.5" y1="34.2969" y2="318.4922"/><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="120" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="15" y="22.9951">Malicious_Actor</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="120" x="8" y="317.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="15" y="337.4873">Malicious_Actor</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="47" x="443.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="450.5" y="22.9951">UDM</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="47" x="443.5" y="317.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="450.5" y="337.4873">UDM</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="45" x="1112.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="1119.5" y="22.9951">UDR</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="45" x="1112.5" y="317.4922"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="1119.5" y="337.4873">UDR</text><polygon fill="#000000" points="455,76.5625,465,80.5625,455,84.5625,459,80.5625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="68" x2="461" y1="80.5625" y2="80.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="75" y="60.3638">11, HTTP/2 req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="375" x="75" y="75.4966">POST  /nudm-ueau/v1/imsi-901700000001234/auth-events</text><path d="M472,53.8633 L472,78.8633 L666,78.8633 L666,63.8633 L656,53.8633 L472,53.8633 " fill="#FFC2D9" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M656,53.8633 L656,63.8633 L666,63.8633 L656,53.8633 " fill="#FFC2D9" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="173" x="478" y="70.9302">Malicious_Actor to UDM</text><polygon fill="#000000" points="1123,120.8281,1133,124.8281,1123,128.8281,1127,124.8281" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="467" x2="1129" y1="124.8281" y2="124.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="474" y="104.6294">13, HTTP/2 req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="644" x="474" y="119.7622">PUT  /nudr-dr/v1/subscription-data/imsi-901700000001234/authentication-data/authentication-status</text><path d="M1140,98.1289 L1140,123.1289 L1251,123.1289 L1251,108.1289 L1241,98.1289 L1140,98.1289 " fill="#FFEAC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1241,98.1289 L1241,108.1289 L1251,108.1289 L1241,98.1289 " fill="#FFEAC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="90" x="1146" y="115.1958">UDM to UDR</text><polygon fill="#000000" points="1123,152.9609,1133,156.9609,1123,160.9609,1127,156.9609" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="467" x2="1129" y1="156.9609" y2="156.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="276" x="474" y="151.895">14, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M1140,137.8281 L1140,162.8281 L1251,162.8281 L1251,147.8281 L1241,137.8281 L1140,137.8281 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1241,137.8281 L1241,147.8281 L1251,147.8281 L1241,137.8281 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="90" x="1146" y="154.895">UDM to UDR</text><polygon fill="#000000" points="478,188.0938,468,192.0938,478,196.0938,474,192.0938" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="472" x2="1134" y1="192.0938" y2="192.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="484" y="187.0278">16, HTTP/2 404 rsp.</text><path d="M1140,172.9609 L1140,197.9609 L1251,197.9609 L1251,182.9609 L1241,172.9609 L1140,172.9609 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1241,172.9609 L1241,182.9609 L1251,182.9609 L1241,172.9609 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="90" x="1146" y="190.0278">UDR to UDM</text><polygon fill="#000000" points="478,223.2266,468,227.2266,478,231.2266,474,227.2266" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="472" x2="1134" y1="227.2266" y2="227.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="276" x="484" y="222.1606">17, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M1140,208.0938 L1140,233.0938 L1251,233.0938 L1251,218.0938 L1241,208.0938 L1140,208.0938 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M1241,208.0938 L1241,218.0938 L1251,218.0938 L1241,208.0938 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="90" x="1146" y="225.1606">UDR to UDM</text><polygon fill="#000000" points="79,258.3594,69,262.3594,79,266.3594,75,262.3594" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="73" x2="466" y1="262.3594" y2="262.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="85" y="257.2935">20, HTTP/2 404 rsp.</text><path d="M472,243.2266 L472,268.2266 L666,268.2266 L666,253.2266 L656,243.2266 L472,243.2266 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M656,243.2266 L656,253.2266 L666,253.2266 L656,243.2266 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="173" x="478" y="260.2935">UDM to Malicious_Actor</text><polygon fill="#000000" points="79,293.4922,69,297.4922,79,301.4922,75,297.4922" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="73" x2="466" y1="297.4922" y2="297.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="276" x="85" y="292.4263">21, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M472,278.3594 L472,303.3594 L666,303.3594 L666,288.3594 L656,278.3594 L472,278.3594 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M656,278.3594 L656,288.3594 L666,288.3594 L656,278.3594 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="173" x="478" y="295.4263">UDM to Malicious_Actor</text><!--MD5=[f9fc2fe0a093119ffc1ea4fc506cb39b]
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Malicious_Actor"
+participant "UDM"
+participant "UDR"
+
+
+"Malicious_Actor" -> "UDM": 11, HTTP/2 req.\nPOST  /nudm-ueau/v1/imsi-901700000001234/auth-events
+
+note right #FFC2D9
+**Malicious_Actor to UDM**
+end note
+
+"UDM" -> "UDR": 13, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000001234/authentication-data/authentication-status
+
+note right #FFEAC2
+**UDM to UDR**
+end note
+
+"UDM" -> "UDR": 14, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 16, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 17, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDM" -> "Malicious_Actor": 20, HTTP/2 404 rsp.
+
+note right #D7FEFC
+**UDM to Malicious_Actor**
+end note
+
+"UDM" -> "Malicious_Actor": 21, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to Malicious_Actor**
+end note
+
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 11:24:54 CET 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

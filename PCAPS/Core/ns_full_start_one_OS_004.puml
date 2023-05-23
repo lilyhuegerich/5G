@@ -18,12 +18,35 @@ participant "SGWC"
 participant "UDM"
 participant "UDR"
 participant "NRF"
-participant "8.8.8.8"
-participant "BSF"
 participant "NSSF"
-participant "AUSF"
+participant "BSF"
 participant "PCF"
+participant "8.8.8.8"
+participant "AUSF"
 
+"AMF" -> "NRF": 1989, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 1990, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 1993, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
+"NRF" -> "AMF": 1994, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
 
 "gNB" -> "AMF": 1997, NGAP UplinkNASTransport (46),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)
 
@@ -37,7 +60,19 @@ note right #03B5AA
 **AMF to SMF**
 end note
 
+"AMF" -> "SMF": 2018, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts
+
+note right #03B5AA
+**AMF to SMF**
+end note
+
 "AMF" -> "SMF": 2021, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to SMF**
+end note
+
+"AMF" -> "SMF": 2022, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AMF to SMF**
@@ -49,14 +84,31 @@ note right #03B5AA
 **SMF to NRF**
 end note
 
+"SMF" -> "NRF": 2030, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
 "NRF" -> "SMF": 2031, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to SMF**
 end note
 
+"NRF" -> "SMF": 2032, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to SMF**
+end note
 
 "NRF" -> "SMF": 2033, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to SMF**
+end note
+
+"NRF" -> "SMF": 2034, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **NRF to SMF**
@@ -68,12 +120,37 @@ note right #03B5AA
 **SMF to UDM**
 end note
 
-"UDM" -> "UDR": 2065, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/sm-data
+"SMF" -> "UDM": 2062, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/sm-data
+
+note right #03B5AA
+**SMF to UDM**
+end note
+
+"UDM" -> "UDR": 2065, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/sm-data\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/sm-data
+
 note right #03B5AA
 **UDM to UDR**
 end note
 
+"UDM" -> "UDR": 2066, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/sm-data\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/sm-data
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 2070, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
 "UDR" -> "UDM": 2071, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 2072, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDR to UDM**
@@ -85,7 +162,19 @@ note right #D7FEFC
 **UDR to UDM**
 end note
 
+"UDM" -> "SMF": 2078, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to SMF**
+end note
+
 "UDM" -> "SMF": 2079, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to SMF**
+end note
+
+"UDM" -> "SMF": 2080, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDM to SMF**
@@ -97,13 +186,31 @@ note right #D7FEFC
 **UDM to SMF**
 end note
 
+"SMF" -> "NRF": 2088, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
 "SMF" -> "NRF": 2089, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
 
 note right #03B5AA
 **SMF to NRF**
 end note
 
+"NRF" -> "SMF": 2090, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to SMF**
+end note
+
 "NRF" -> "SMF": 2091, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to SMF**
+end note
+
+"NRF" -> "SMF": 2092, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **NRF to SMF**
@@ -113,6 +220,12 @@ end note
 
 note right #D7FEFC
 **NRF to SMF**
+end note
+
+"SMF" -> "AMF": 2096, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**SMF to AMF**
 end note
 
 "SMF" -> "AMF": 2097, HTTP/2 201 rsp.
@@ -127,8 +240,19 @@ note right #03B5AA
 **SMF to PCF**
 end note
 
+"SMF" -> "PCF": 2123, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies
+
+note right #03B5AA
+**SMF to PCF**
+end note
 
 "SMF" -> "PCF": 2130, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to PCF**
+end note
+
+"SMF" -> "PCF": 2131, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **SMF to PCF**
@@ -140,7 +264,25 @@ note right #03B5AA
 **PCF to UDR**
 end note
 
+"PCF" -> "UDR": 2135, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000004/sm-data
+
+note right #03B5AA
+**PCF to UDR**
+end note
+
+"UDR" -> "PCF": 2140, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to PCF**
+end note
+
 "UDR" -> "PCF": 2141, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to PCF**
+end note
+
+"UDR" -> "PCF": 2142, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDR to PCF**
@@ -152,13 +294,31 @@ note right #D7FEFC
 **UDR to PCF**
 end note
 
+"PCF" -> "NRF": 2146, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
 "PCF" -> "NRF": 2147, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
 
 note right #03B5AA
 **PCF to NRF**
 end note
 
+"NRF" -> "PCF": 2148, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
 "NRF" -> "PCF": 2149, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 2152, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **NRF to PCF**
@@ -176,6 +336,18 @@ note right #03B5AA
 **PCF to BSF**
 end note
 
+"PCF" -> "BSF": 2179, HTTP/2 req.\nPOST  /nbsf-management/v1/pcfBindings
+
+note right #03B5AA
+**PCF to BSF**
+end note
+
+"PCF" -> "BSF": 2186, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to BSF**
+end note
+
 "PCF" -> "BSF": 2187, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
@@ -188,6 +360,18 @@ note right #D7FEFC
 **BSF to PCF**
 end note
 
+"BSF" -> "PCF": 2193, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**BSF to PCF**
+end note
+
+"BSF" -> "PCF": 2194, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to PCF**
+end note
+
 "BSF" -> "PCF": 2195, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
@@ -195,6 +379,18 @@ note right #D7FEFC
 end note
 
 "PCF" -> "SMF": 2201, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to SMF**
+end note
+
+"PCF" -> "SMF": 2202, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to SMF**
+end note
+
+"PCF" -> "SMF": 2203, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **PCF to SMF**
@@ -218,6 +414,18 @@ note right #D7FEFC
 **UPF to SMF**
 end note
 
+"UPF" -> "SMF": 2210, PFCP rsp.\nPFCP Session Establishment Response (51)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "AMF": 2211, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to AMF**
+end note
+
 "SMF" -> "AMF": 2212, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
@@ -230,6 +438,18 @@ note right #D7FEFC
 **BSF to PCF**
 end note
 
+"BSF" -> "PCF": 2214, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to PCF**
+end note
+
+"SMF" -> "NRF": 2217, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
 "SMF" -> "NRF": 2218, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
 
 note right #03B5AA
@@ -237,6 +457,18 @@ note right #03B5AA
 end note
 
 "NRF" -> "SMF": 2219, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to SMF**
+end note
+
+"NRF" -> "SMF": 2220, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to SMF**
+end note
+
+"NRF" -> "SMF": 2221, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **NRF to SMF**
@@ -254,6 +486,18 @@ note right #03B5AA
 **SMF to AMF**
 end note
 
+"SMF" -> "AMF": 2248, HTTP/2 req.\nPOST  /namf-comm/v1/ue-contexts/imsi-901700000000004/n1-n2-messages
+
+note right #03B5AA
+**SMF to AMF**
+end note
+
+"SMF" -> "AMF": 2255, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to AMF**
+end note
+
 "SMF" -> "AMF": 2256, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
@@ -267,6 +511,18 @@ note right #CDDCF3
 end note
 
 "AMF" -> "SMF": 2263, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AMF to SMF**
+end note
+
+"AMF" -> "SMF": 2264, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AMF to SMF**
+end note
+
+"AMF" -> "SMF": 2267, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AMF to SMF**
@@ -290,7 +546,19 @@ note right #03B5AA
 **AMF to SMF**
 end note
 
+"AMF" -> "SMF": 2277, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/1/modify
+
+note right #03B5AA
+**AMF to SMF**
+end note
+
 "AMF" -> "SMF": 2278, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to SMF**
+end note
+
+"AMF" -> "SMF": 2279, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AMF to SMF**
@@ -308,10 +576,52 @@ note right #D7FEFC
 **UPF to SMF**
 end note
 
+"UPF" -> "SMF": 2285, PFCP rsp.\nPFCP Session Modification Response (53)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "AMF": 2286, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to AMF**
+end note
+
 "SMF" -> "AMF": 2287, HTTP/2 204 rsp.
 
 note right #D7FEFC
 **SMF to AMF**
+end note
+
+"AUSF" -> "NRF": 2292, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3b33a82e-f5a8-41ed-a7cf-ff7f762bc422
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 2293, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3b33a82e-f5a8-41ed-a7cf-ff7f762bc422
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 2294, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 2295, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to NRF**
+end note
+
+"NRF" -> "AUSF": 2298, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to AUSF**
 end note
 
 @enduml

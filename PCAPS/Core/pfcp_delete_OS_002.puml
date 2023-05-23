@@ -1,0 +1,624 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+participant "UDM"
+participant "UDR"
+participant "NRF"
+participant "NSSF"
+participant "PCF"
+participant "AUSF"
+participant "BSF"
+
+"UDM" -> "UDM": 1004, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 1006, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1007, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"NRF" -> "NRF": 1009, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1010, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1012, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"UDM" -> "UDM": 1025, HTTP/2 req.\nPUT  /nudm-uecm/v1/imsi-901700000000001/registrations/amf-3gpp-access
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1029, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1031, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000001/context-data/amf-3gpp-access
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1032, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1034, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1036, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1037, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"NRF" -> "NRF": 1039, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1040, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1041, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"UDM" -> "UDM": 1043, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000001/am-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1044, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/90170/provisioned-data/am-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1047, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1048, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1050, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1051, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1053, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000001/smf-select-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1054, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/90170/provisioned-data/smf-selection-subscription-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1057, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1058, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1060, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1061, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1063, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000001/ue-context-in-smf-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1064, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1065, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"NRF" -> "NRF": 1067, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1068, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1069, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"PCF" -> "PCF": 1082, HTTP/2 req.\nPOST  /npcf-am-policy-control/v1/policies
+
+note right #03B5AA
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1086, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"NRF" -> "NRF": 1092, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/46903124-aa2b-41ed-82d2-d1dd63902cc5
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1093, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1095, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1098, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1099, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1101, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"UDR" -> "UDR": 1114, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000001/am-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1119, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1120, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"PCF" -> "PCF": 1126, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1127, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"NRF" -> "NRF": 1137, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/46a955c8-aa2b-41ed-ab06-5728a76ba064
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1138, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1140, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1142, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1143, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1144, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NSSF" -> "NSSF": 1157, HTTP/2 req.\nGET  /nnssf-nsselection/v2/network-slice-information
+
+note right #03B5AA
+**NSSF to NSSF**
+end note
+
+"NSSF" -> "NSSF": 1160, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NSSF to NSSF**
+end note
+
+"NSSF" -> "NSSF": 1161, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NSSF**
+end note
+
+"NRF" -> "NRF": 1164, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1165, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1166, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"SMF" -> "SMF": 1179, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts
+
+note right #03B5AA
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 1183, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"NRF" -> "NRF": 1185, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1186, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1188, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"UDM" -> "UDM": 1201, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000001/sm-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1203, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000001/90170/provisioned-data/sm-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1207, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1208, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1211, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1212, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"NRF" -> "NRF": 1216, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1217, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1218, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"SMF" -> "SMF": 1220, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"PCF" -> "PCF": 1233, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies
+
+note right #03B5AA
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1237, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"UDR" -> "UDR": 1239, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000001/sm-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1243, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1244, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"NRF" -> "NRF": 1246, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1247, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1249, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"BSF" -> "BSF": 1260, HTTP/2 req.\nPOST  /nbsf-management/v1/pcfBindings
+
+note right #03B5AA
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 1262, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 1268, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 1270, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to BSF**
+end note
+
+"PCF" -> "PCF": 1277, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1278, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"SMF" -> "UPF": 1280, PFCP req.\nPFCP Session Establishment Request (50)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"SMF" -> "SMF": 1281, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"UPF" -> "SMF": 1282, PFCP rsp.\nPFCP Session Establishment Response (51)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"NRF" -> "NRF": 1283, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1284, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"NRF" -> "NRF": 1285, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NRF**
+end note
+
+"AMF" -> "AMF": 1298, HTTP/2 req.\nPOST  /namf-comm/v1/ue-contexts/imsi-901700000000001/n1-n2-messages
+
+note right #03B5AA
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 1303, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 1306, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 1307, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AMF**
+end note
+
+"SMF" -> "SMF": 1313, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/1/modify
+
+note right #03B5AA
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 1314, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+@enduml

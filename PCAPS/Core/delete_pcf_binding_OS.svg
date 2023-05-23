@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="244px" preserveAspectRatio="none" style="width:849px;height:244px;" version="1.1" viewBox="0 0 849 244" width="849px" zoomAndPan="magnify"><defs/><g><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="68" x2="68" y1="34.2969" y2="203.9609"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="428.5" x2="428.5" y1="34.2969" y2="203.9609"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="728.5" x2="728.5" y1="34.2969" y2="203.9609"/><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="120" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="15" y="22.9951">Malicious_Actor</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="120" x="8" y="202.9609"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="15" y="222.9561">Malicious_Actor</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="408.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="415.5" y="22.9951">PCF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="408.5" y="202.9609"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="415.5" y="222.9561">PCF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="708.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="715.5" y="22.9951">BSF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="708.5" y="202.9609"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="715.5" y="222.9561">BSF</text><polygon fill="#000000" points="417,76.5625,427,80.5625,417,84.5625,421,80.5625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="68" x2="423" y1="80.5625" y2="80.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="75" y="60.3638">11, HTTP/2 req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="337" x="75" y="75.4966">POST  /npcf-smpolicycontrol/v1/sm-policies/15/delete</text><path d="M434,53.8633 L434,78.8633 L623,78.8633 L623,63.8633 L613,53.8633 L434,53.8633 " fill="#FFC2D9" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M613,53.8633 L613,63.8633 L623,63.8633 L613,53.8633 " fill="#FFC2D9" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="168" x="440" y="70.9302">Malicious_Actor to PCF</text><polygon fill="#000000" points="717,108.6953,727,112.6953,717,116.6953,721,112.6953" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="429" x2="723" y1="112.6953" y2="112.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="276" x="436" y="107.6294">13, HTTP/2 req. or rsp. (no HTTP/2 headers)</text><path d="M734,93.5625 L734,118.5625 L837,118.5625 L837,103.5625 L827,93.5625 L734,93.5625 " fill="#FFEAC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M827,93.5625 L827,103.5625 L837,103.5625 L827,93.5625 " fill="#FFEAC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="740" y="110.6294">PCF to BSF</text><polygon fill="#000000" points="440,143.8281,430,147.8281,440,151.8281,436,147.8281" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="434" x2="728" y1="147.8281" y2="147.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="446" y="142.7622">15, HTTP/2 204 rsp.</text><path d="M734,128.6953 L734,153.6953 L837,153.6953 L837,138.6953 L827,128.6953 L734,128.6953 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M827,128.6953 L827,138.6953 L837,138.6953 L827,128.6953 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="740" y="145.7622">BSF to PCF</text><polygon fill="#000000" points="79,178.9609,69,182.9609,79,186.9609,75,182.9609" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="73" x2="428" y1="182.9609" y2="182.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="124" x="85" y="177.895">17, HTTP/2 204 rsp.</text><path d="M434,163.8281 L434,188.8281 L623,188.8281 L623,173.8281 L613,163.8281 L434,163.8281 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M613,163.8281 L613,173.8281 L623,173.8281 L613,163.8281 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="168" x="440" y="180.895">PCF to Malicious_Actor</text><!--MD5=[bcc59f8e54a75ea9a6882db8906d7908]
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Malicious_Actor"
+participant "PCF"
+participant "BSF"
+
+"Malicious_Actor" -> "PCF": 11, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies/15/delete
+
+note right #FFC2D9
+**Malicious_Actor to PCF**
+end note
+
+"PCF" -> "BSF": 13, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #FFEAC2
+**PCF to BSF**
+end note
+
+"BSF" -> "PCF": 15, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**BSF to PCF**
+end note
+
+"PCF" -> "Malicious_Actor": 17, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**PCF to Malicious_Actor**
+end note
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 11:24:54 CET 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

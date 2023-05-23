@@ -19,11 +19,154 @@ participant "AUSF"
 participant "UDM"
 participant "UDR"
 participant "NRF"
-participant "8.8.8.8"
-participant "BSF"
 participant "NSSF"
+participant "BSF"
 participant "PCF"
+participant "8.8.8.8"
 
+"PCF" -> "NRF": 1197, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 1198, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3bda8e00-f5a8-41ed-8b25-8778ac8a932f
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 1199, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 1200, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 1203, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 1204, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NSSF" -> "NRF": 1209, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 1210, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c1774e6-f5a8-41ed-ba4e-c32b10ea0d21
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 1211, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 1212, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 1215, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 1216, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"BSF" -> "NRF": 1256, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 1257, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3c96ae14-f5a8-41ed-8877-3100fc40cf52
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 1258, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 1259, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to NRF**
+end note
+
+"NRF" -> "BSF": 1262, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 1263, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"UDR" -> "NRF": 1266, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 1267, HTTP/2 req.\nPATCH  /nnrf-nfm/v1/nf-instances/3ca68154-f5a8-41ed-9303-53ed3db54da8
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 1268, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 1269, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to NRF**
+end note
+
+"NRF" -> "UDR": 1272, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 1273, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
 
 "gNB" -> "AMF": 1284, NGAP NGSetup (21)
 
@@ -47,21 +190,105 @@ end note
 
 note right #03B5AA
 **AMF to NRF**
+10.0.3.1 to 10.0.8.1 (IPs)
+HTTP/2 stream: 15
+:method: GET
+:path: /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&service-names=nausf-auth&target-nf-type=AUSF
+:scheme: http
+:authority: 10.0.8.1:7777
+accept: application/json,application/problem+json
+
+end note
+
+"AMF" -> "NRF": 1453, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**AMF to NRF**
 end note
 
 "NRF" -> "AMF": 1454, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to AMF**
+10.0.8.1 to 10.0.3.1 (IPs)
+HTTP/2 stream: 15
+:status: 200
+server: Open5GS v2.4.10
+date: Thu, 18 May 2023 18:17:40 GMT
+content-length: 859
+cache-control: max-age=3600
+content-type: application/json
+
 end note
 
-
-"NRF" -> "AMF": 1456, HTTP/2 req. or rsp. (no HTTP/2 headers)
+"NRF" -> "AMF": 1455, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to AMF**
 end note
 
+"NRF" -> "AMF": 1456, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AMF**
+10.0.8.1 to 10.0.3.1 (IPs)
+HTTP/2 stream 15 payload
+{
+  "validityPeriod": 3600,
+  "nfInstances": [
+    {
+      "nfInstanceId": "3b33a82e-f5a8-41ed-a7cf-ff7f762bc422",
+      "nfType": "AUSF",
+      "nfStatus": "REGISTERED",
+      "heartBeatTimer": 10,
+      "ipv4Addresses": [
+        "10.0.4.1"
+      ],
+      "allowedNfTypes": [
+        "AMF",
+        "SCP"
+      ],
+      "priority": 0,
+      "capacity": 100,
+      "load": 0,
+      "nfServiceList": {
+        "3b33ad1a-f5a8-41ed-a7cf-ff7f762bc422": {
+          "serviceInstanceId": "3b33ad1a-f5a8-41ed-a7cf-ff7f762bc422",
+          "serviceName": "nausf-auth",
+          "versions": [
+            {
+              "apiVersionInUri": "v1",
+              "apiFullVersion": "1.0.0"
+            }
+          ],
+          "scheme": "http",
+          "nfServiceStatus": "REGISTERED",
+          "ipEndPoints": [
+            {
+              "ipv4Address": "10.0.4.1",
+              "port": 7777
+            }
+          ],
+          "allowedNfTypes": [
+            "AMF"
+          ],
+          "priority": 0,
+          "capacity": 100,
+          "load": 0
+        }
+      },
+      "nfProfileChangesSupportInd": true
+    }
+  ]
+}
+
+end note
+
+"NRF" -> "AMF": 1457, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AMF**
+end note
 
 "AMF" -> "AUSF": 1478, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications
 
@@ -69,8 +296,19 @@ note right #03B5AA
 **AMF to AUSF**
 end note
 
+"AMF" -> "AUSF": 1479, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications
+
+note right #03B5AA
+**AMF to AUSF**
+end note
 
 "AMF" -> "AUSF": 1482, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AUSF**
+end note
+
+"AMF" -> "AUSF": 1483, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AMF to AUSF**
@@ -82,8 +320,19 @@ note right #03B5AA
 **AUSF to NRF**
 end note
 
+"AUSF" -> "NRF": 1491, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**AUSF to NRF**
+end note
 
 "NRF" -> "AUSF": 1492, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to AUSF**
+end note
+
+"NRF" -> "AUSF": 1493, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to AUSF**
@@ -95,13 +344,38 @@ note right #D7FEFC
 **NRF to AUSF**
 end note
 
+"NRF" -> "AUSF": 1497, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AUSF**
+end note
+
 "AUSF" -> "UDM": 1524, HTTP/2 req.\nPOST  /nudm-ueau/v1/suci-0-901-70-0000-0-0-0000000004/security-information/generate-auth-data
 
 note right #03B5AA
 **AUSF to UDM**
 end note
 
+"AUSF" -> "UDM": 1525, HTTP/2 req.\nPOST  /nudm-ueau/v1/suci-0-901-70-0000-0-0-0000000004/security-information/generate-auth-data
+
+note right #03B5AA
+**AUSF to UDM**
+end note
+
 "AUSF" -> "UDM": 1532, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to UDM**
+10.0.4.1 to 10.0.15.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "servingNetworkName": "5G:mnc070.mcc901.3gppnetwork.org",
+  "ausfInstanceId": "3b33a82e-f5a8-41ed-a7cf-ff7f762bc422"
+}
+
+end note
+
+"AUSF" -> "UDM": 1533, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AUSF to UDM**
@@ -113,8 +387,19 @@ note right #03B5AA
 **UDM to NRF**
 end note
 
+"UDM" -> "NRF": 1537, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances\nPATCH  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**UDM to NRF**
+end note
 
 "NRF" -> "UDM": 1538, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to UDM**
+end note
+
+"NRF" -> "UDM": 1539, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to UDM**
@@ -126,7 +411,27 @@ note right #D7FEFC
 **NRF to UDM**
 end note
 
+"NRF" -> "UDM": 1543, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to UDM**
+end note
+
 "UDM" -> "UDR": 1570, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/authentication-data/authentication-subscription
+
+note right #03B5AA
+**UDM to UDR**
+10.0.15.1 to 10.0.16.1 (IPs)
+HTTP/2 stream: 1
+:method: GET
+:path: /nudr-dr/v1/subscription-data/imsi-901700000000004/authentication-data/authentication-subscription
+:scheme: http
+:authority: 10.0.16.1:7777
+accept: application/json,application/problem+json
+
+end note
+
+"UDM" -> "UDR": 1571, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/authentication-data/authentication-subscription
 
 note right #03B5AA
 **UDM to UDR**
@@ -138,7 +443,31 @@ note right #D7FEFC
 **UDR to UDM**
 end note
 
+"UDR" -> "UDM": 1586, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
 "UDR" -> "UDM": 1587, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+10.0.16.1 to 10.0.15.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "authenticationMethod": "5G_AKA",
+  "encPermanentKey": "465b5ce8b199b49faa5f0a2ee238a6bc",
+  "sequenceNumber": {
+    "sqn": "000000001c21"
+  },
+  "authenticationManagementField": "8000",
+  "encOpcKey": "e8ed289deba952e4283b54e88e6183ca"
+}
+
+end note
+
+"UDR" -> "UDM": 1588, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDR to UDM**
@@ -150,7 +479,32 @@ note right #D7FEFC
 **UDM to AUSF**
 end note
 
+"UDM" -> "AUSF": 1594, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to AUSF**
+end note
+
 "UDM" -> "AUSF": 1595, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AUSF**
+10.0.15.1 to 10.0.4.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "authType": "5G_AKA",
+  "authenticationVector": {
+    "avType": "5G_HE_AKA",
+    "rand": "88db58ee72c176c35c8b46ab51b5f5f6",
+    "autn": "43d8fc3d7c588000ed34a59c3d466775",
+    "xresStar": "a71605260a595df7a671e7481e9c7f90",
+    "kausf": "f21a479f644598224b5ac561daf3061bbff3e4700910624dfcb5cb966f1ef8a7"
+  }
+}
+
+end note
+
+"UDM" -> "AUSF": 1596, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDM to AUSF**
@@ -162,7 +516,35 @@ note right #D7FEFC
 **AUSF to AMF**
 end note
 
+"AUSF" -> "AMF": 1602, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**AUSF to AMF**
+end note
+
 "AUSF" -> "AMF": 1603, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AMF**
+10.0.4.1 to 10.0.3.1 (IPs)
+HTTP/2 stream 1 payload
+{
+  "authType": "5G_AKA",
+  "5gAuthData": {
+    "rand": "88db58ee72c176c35c8b46ab51b5f5f6",
+    "hxresStar": "5e0579d290fd4ab79c3f172246471ff6",
+    "autn": "43d8fc3d7c588000ed34a59c3d466775"
+  },
+  "_links": {
+    "5g-aka": {
+      "href": "http://10.0.4.1:7777/nausf-auth/v1/ue-authentications/1/5g-aka-confirmation"
+    }
+  }
+}
+
+end note
+
+"AUSF" -> "AMF": 1604, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AUSF to AMF**
@@ -186,7 +568,25 @@ note right #03B5AA
 **AMF to AUSF**
 end note
 
+"AMF" -> "AUSF": 1612, HTTP/2 req.\nPUT  /nausf-auth/v1/ue-authentications/1/5g-aka-confirmation
+
+note right #03B5AA
+**AMF to AUSF**
+end note
+
 "AMF" -> "AUSF": 1615, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AUSF**
+10.0.3.1 to 10.0.4.1 (IPs)
+HTTP/2 stream 3 payload
+{
+  "resStar": "a71605260a595df7a671e7481e9c7f90"
+}
+
+end note
+
+"AMF" -> "AUSF": 1616, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AMF to AUSF**
@@ -198,7 +598,29 @@ note right #03B5AA
 **AUSF to UDM**
 end note
 
+"AUSF" -> "UDM": 1620, HTTP/2 req.\nPOST  /nudm-ueau/v1/imsi-901700000000004/auth-events
+
+note right #03B5AA
+**AUSF to UDM**
+end note
+
 "AUSF" -> "UDM": 1623, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to UDM**
+10.0.4.1 to 10.0.15.1 (IPs)
+HTTP/2 stream 3 payload
+{
+  "nfInstanceId": "3b33a82e-f5a8-41ed-a7cf-ff7f762bc422",
+  "success": true,
+  "timeStamp": "2023-05-18T20:17:40.436631+02:00",
+  "authType": "5G_AKA",
+  "servingNetworkName": "5G:mnc070.mcc901.3gppnetwork.org"
+}
+
+end note
+
+"AUSF" -> "UDM": 1624, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AUSF to UDM**
@@ -210,7 +632,29 @@ note right #03B5AA
 **UDM to UDR**
 end note
 
+"UDM" -> "UDR": 1628, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/authentication-data/authentication-status\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/authentication-data/authentication-status
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
 "UDM" -> "UDR": 1631, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDR**
+10.0.15.1 to 10.0.16.1 (IPs)
+HTTP/2 stream 3 payload
+{
+  "nfInstanceId": "3b33a82e-f5a8-41ed-a7cf-ff7f762bc422",
+  "success": true,
+  "timeStamp": "2023-05-18T20:17:40.436631+02:00",
+  "authType": "5G_AKA",
+  "servingNetworkName": "5G:mnc070.mcc901.3gppnetwork.org"
+}
+
+end note
+
+"UDM" -> "UDR": 1632, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **UDM to UDR**
@@ -222,6 +666,11 @@ note right #D7FEFC
 **UDR to UDM**
 end note
 
+"UDR" -> "UDM": 1643, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
 
 "UDM" -> "AUSF": 1644, HTTP/2 201 rsp.
 
@@ -229,13 +678,33 @@ note right #D7FEFC
 **UDM to AUSF**
 end note
 
-
-"UDM" -> "AUSF": 1646, HTTP/2 req. or rsp. (no HTTP/2 headers)
+"UDM" -> "AUSF": 1645, HTTP/2 201 rsp.
 
 note right #D7FEFC
 **UDM to AUSF**
 end note
 
+"UDM" -> "AUSF": 1646, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AUSF**
+10.0.15.1 to 10.0.4.1 (IPs)
+HTTP/2 stream 3 payload
+{
+  "nfInstanceId": "3b33a82e-f5a8-41ed-a7cf-ff7f762bc422",
+  "success": true,
+  "timeStamp": "2023-05-18T20:17:40.436631+02:00",
+  "authType": "5G_AKA",
+  "servingNetworkName": "5G:mnc070.mcc901.3gppnetwork.org"
+}
+
+end note
+
+"UDM" -> "AUSF": 1647, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AUSF**
+end note
 
 "AUSF" -> "AMF": 1650, HTTP/2 200 rsp.
 
@@ -243,8 +712,27 @@ note right #D7FEFC
 **AUSF to AMF**
 end note
 
+"AUSF" -> "AMF": 1651, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AUSF to AMF**
+end note
 
 "AUSF" -> "AMF": 1652, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AMF**
+10.0.4.1 to 10.0.3.1 (IPs)
+HTTP/2 stream 3 payload
+{
+  "authResult": "AUTHENTICATION_SUCCESS",
+  "supi": "imsi-901700000000004",
+  "kseaf": "1cdf00f5ca862ccddbc0a46edd06b36d0008f5708e275941a707e3f89984bb25"
+}
+
+end note
+
+"AUSF" -> "AMF": 1653, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **AUSF to AMF**
@@ -268,13 +756,31 @@ note right #03B5AA
 **AMF to NRF**
 end note
 
+"AMF" -> "NRF": 1663, HTTP/2 req.\nGET  /nnrf-disc/v1/nf-instances
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
 "NRF" -> "AMF": 1664, HTTP/2 200 rsp.
 
 note right #D7FEFC
 **NRF to AMF**
 end note
 
+"NRF" -> "AMF": 1665, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
 "NRF" -> "AMF": 1666, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
+"NRF" -> "AMF": 1667, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
 note right #D7FEFC
 **NRF to AMF**

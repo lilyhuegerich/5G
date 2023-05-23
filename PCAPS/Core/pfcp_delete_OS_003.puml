@@ -1,0 +1,654 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "SGWU"
+participant "SGWC"
+participant "AUSF"
+participant "UDM"
+participant "UDR"
+participant "NSSF"
+participant "PCF"
+participant "BSF"
+participant "NRF"
+
+"SMF" -> "UPF": 1316, PFCP req.\nPFCP Session Modification Request (52)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1317, PFCP rsp.\nPFCP Session Modification Response (53)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "SMF": 1318, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"AUSF" -> "AUSF": 1353, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1354, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 1356, HTTP/2 req.\nPOST  /nudm-ueau/v1/suci-0-901-70-0000-0-0-0000000002/security-information/generate-auth-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1357, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1359, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000002/authentication-data/authentication-subscription
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1363, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1364, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1366, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1367, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 1369, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1370, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1372, HTTP/2 req.\nPUT  /nausf-auth/v1/ue-authentications/2/5g-aka-confirmation
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1373, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 1375, HTTP/2 req.\nPOST  /nudm-ueau/v1/imsi-901700000000002/auth-events
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1376, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1378, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000002/authentication-data/authentication-status
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1379, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1387, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1388, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1389, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 1391, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1392, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 1394, HTTP/2 req.\nPUT  /nudm-uecm/v1/imsi-901700000000002/registrations/amf-3gpp-access
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1395, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1397, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000002/context-data/amf-3gpp-access
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1398, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1400, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1401, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1402, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1404, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000002/am-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1405, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000002/90170/provisioned-data/am-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1408, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1409, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1411, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1412, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1414, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000002/smf-select-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1415, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000002/90170/provisioned-data/smf-selection-subscription-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1418, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1419, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1421, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1422, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1424, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000002/ue-context-in-smf-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1425, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1426, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"PCF" -> "PCF": 1428, HTTP/2 req.\nPOST  /npcf-am-policy-control/v1/policies
+
+note right #03B5AA
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1429, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"UDR" -> "UDR": 1434, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000002/am-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1437, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1438, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"PCF" -> "PCF": 1442, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1443, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"SMF" -> "SMF": 1449, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts
+
+note right #03B5AA
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 1450, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"UDM" -> "UDM": 1452, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000002/sm-data
+
+note right #03B5AA
+**UDM to UDM**
+10.0.15.1 to 10.0.15.1 (IPs)
+HTTP/2 stream: 3
+:method: GET
+:path: /nudm-sdm/v2/imsi-901700000000002/sm-data?single-nssai={
+	"sst":	1
+}&dnn=iot
+:scheme: http
+:authority: 10.0.15.1:7777
+accept: application/json,application/problem+json
+
+end note
+
+"UDR" -> "UDR": 1454, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000002/90170/provisioned-data/sm-data
+
+note right #03B5AA
+**UDR to UDR**
+10.0.16.1 to 10.0.16.1 (IPs)
+HTTP/2 stream: 23
+:method: GET
+:path: /nudr-dr/v1/subscription-data/imsi-901700000000002/90170/provisioned-data/sm-data?single-nssai={
+	"sst":	1
+}&dnn=iot
+:scheme: http
+:authority: 10.0.16.1:7777
+accept: application/json,application/problem+json
+
+end note
+
+"UDR" -> "UDR": 1458, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1459, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1461, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1462, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"SMF" -> "SMF": 1464, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"PCF" -> "PCF": 1466, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies
+
+note right #03B5AA
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1467, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"SMF" -> "SMF": 1468, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"UDR" -> "UDR": 1471, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000002/sm-data
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1474, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1475, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"BSF" -> "BSF": 1477, HTTP/2 req.\nPOST  /nbsf-management/v1/pcfBindings
+
+note right #03B5AA
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 1479, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 1481, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 1482, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**BSF to BSF**
+end note
+
+"PCF" -> "PCF": 1487, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 1488, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"SMF" -> "UPF": 1490, PFCP req.\nPFCP Session Establishment Request (50)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1491, PFCP rsp.\nPFCP Session Establishment Response (51)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"AMF" -> "AMF": 1492, HTTP/2 req.\nPOST  /namf-comm/v1/ue-contexts/imsi-901700000000002/n1-n2-messages
+
+note right #03B5AA
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 1493, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 1495, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AMF to AMF**
+end note
+
+"AMF" -> "AMF": 1496, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AMF**
+end note
+
+"SMF" -> "SMF": 1498, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/2/modify
+
+note right #03B5AA
+**SMF to SMF**
+end note
+
+"SMF" -> "SMF": 1499, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"SMF" -> "UPF": 1501, PFCP req.\nPFCP Session Modification Request (52)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 1502, PFCP rsp.\nPFCP Session Modification Response (53)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "SMF": 1503, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to SMF**
+end note
+
+"AUSF" -> "AUSF": 1510, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1511, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 1513, HTTP/2 req.\nPOST  /nudm-ueau/v1/suci-0-901-70-0000-0-0-0000000003/security-information/generate-auth-data
+
+note right #03B5AA
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1514, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDR" -> "UDR": 1516, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000003/authentication-data/authentication-subscription
+
+note right #03B5AA
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1520, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDR" -> "UDR": 1521, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDR**
+end note
+
+"UDM" -> "UDM": 1523, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"UDM" -> "UDM": 1524, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDM**
+end note
+
+"AUSF" -> "AUSF": 1526, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1527, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1529, HTTP/2 req.\nPUT  /nausf-auth/v1/ue-authentications/3/5g-aka-confirmation
+
+note right #03B5AA
+**AUSF to AUSF**
+end note
+
+"AUSF" -> "AUSF": 1530, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AUSF**
+end note
+
+"UDM" -> "UDM": 1532, HTTP/2 req.\nPOST  /nudm-ueau/v1/imsi-901700000000003/auth-events
+
+note right #03B5AA
+**UDM to UDM**
+10.0.15.1 to 10.0.15.1 (IPs)
+HTTP/2 stream: 11
+:method: POST
+:path: /nudm-ueau/v1/imsi-901700000000003/auth-events
+:scheme: http
+:authority: 10.0.15.1:7777
+accept: application/json,application/problem+json
+content-type: application/json
+content-length: 209
+
+end note
+
+@enduml
