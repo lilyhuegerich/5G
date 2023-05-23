@@ -18,8 +18,9 @@ if [[ $mode == "Double_upf" ]]; then
 	sudo ip route del local 10.0.21.1
 	sudo ip route add 10.0.21.1 dev enp0s3 via 10.0.21.2 #route to second upf
 fi
-
+sudo ip route add 10.0.3.2 dev enp0s3
 sudo ip route add 10.0.3.1 dev enp0s3 via 10.0.3.2 #route to amf
+sudo ip route add 10.0.17.2 dev enp0s3
 sudo ip route add 10.0.17.1 dev enp0s3 via 10.0.17.2 # route to upf
 
 if [[ $mode == "Double_ran" ]]; then
