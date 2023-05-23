@@ -1,0 +1,618 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "NSSF"
+participant "NRF"
+
+"NSSF" -> "NRF": 1, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 2, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 4, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 6, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 7, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 9, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 11, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 12, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 14, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 16, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 17, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 19, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 21, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 22, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 24, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 26, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 27, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 29, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 31, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 32, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 34, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 36, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 37, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 39, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 41, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 42, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 44, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 46, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 47, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 49, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 51, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 52, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 54, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 56, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 57, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 59, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 61, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 62, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 64, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 66, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 67, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 69, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 71, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 72, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 74, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 76, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 77, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 79, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 81, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 82, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 84, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 86, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 87, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 89, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 91, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 92, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 94, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 96, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 97, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 99, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 101, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 102, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 104, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 106, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 107, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 109, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 111, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 112, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 114, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 116, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 117, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 119, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 121, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 122, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 124, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 126, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 127, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 129, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 131, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 132, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 134, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 136, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 137, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 139, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 141, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 142, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 144, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 146, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 147, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 149, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 151, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 152, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 154, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 156, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 157, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 159, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 161, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+10.0.9.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NSSF" -> "NRF": 162, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 164, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+10.0.8.1 to 10.0.9.1 (IPs)
+
+end note
+
+"NSSF" -> "NRF": 166, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+@enduml

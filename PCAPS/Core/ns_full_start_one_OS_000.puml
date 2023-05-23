@@ -8,6 +8,7 @@ skinparam sequence {
     ParticipantBorderColor white
     ParticipantBackgroundColor #e6e6e6
 }
+participant "UE_1"
 participant "gNB"
 participant "AMF"
 participant "SMF"
@@ -15,13 +16,13 @@ participant "UPF"
 participant "SGWU"
 participant "SGWC"
 participant "NRF"
+participant "UDR"
+participant "8.8.8.8"
 participant "BSF"
-participant "UDM"
 participant "NSSF"
 participant "AUSF"
-participant "8.8.8.8"
 participant "PCF"
-participant "UDR"
+participant "UDM"
 
 "SGWC" -> "SGWU": 301, PFCP req.\nPFCP Association Setup Request (5)
 
@@ -61,13 +62,13 @@ end note
 
 "AUSF" -> "NRF": 396, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
 "AUSF" -> "NRF": 397, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
@@ -85,25 +86,25 @@ end note
 
 "NRF" -> "AUSF": 404, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AUSF**
 end note
 
 "NRF" -> "AUSF": 405, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AUSF**
 end note
 
 "NRF" -> "AUSF": 406, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AUSF**
 end note
 
 "NRF" -> "AUSF": 407, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AUSF**
 end note
 
@@ -121,13 +122,13 @@ end note
 
 "AUSF" -> "NRF": 416, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
 "AUSF" -> "NRF": 417, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
@@ -145,13 +146,13 @@ end note
 
 "NRF" -> "AUSF": 422, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AUSF**
 end note
 
 "NRF" -> "AUSF": 423, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AUSF**
 end note
 
@@ -165,123 +166,17 @@ end note
 
 note right #03B5AA
 **UDM to NRF**
-10.0.15.1 to 10.0.8.1 (IPs)
-HTTP/2 stream: 1
-:method: PUT
-:path: /nnrf-nfm/v1/nf-instances/3b55f82a-f5a8-41ed-a1f8-a1fff7d9ed8f
-:scheme: http
-:authority: 10.0.8.1:7777
-accept: application/json,application/problem+json
-content-type: application/json
-content-length: 1647
-
 end note
 
 "UDM" -> "NRF": 466, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
-10.0.15.1 to 10.0.8.1 (IPs)
-HTTP/2 stream 1 payload
-{
-  "nfInstanceId": "3b55f82a-f5a8-41ed-a1f8-a1fff7d9ed8f",
-  "nfType": "UDM",
-  "nfStatus": "REGISTERED",
-  "ipv4Addresses": [
-    "10.0.15.1"
-  ],
-  "allowedNfTypes": [
-    "AMF",
-    "SMF",
-    "AUSF",
-    "SCP"
-  ],
-  "priority": 0,
-  "capacity": 100,
-  "load": 0,
-  "nfServiceList": {
-    "3b55feba-f5a8-41ed-a1f8-a1fff7d9ed8f": {
-      "serviceInstanceId": "3b55feba-f5a8-41ed-a1f8-a1fff7d9ed8f",
-      "serviceName": "nudm-ueau",
-      "versions": [
-        {
-          "apiVersionInUri": "v1",
-          "apiFullVersion": "1.0.0"
-        }
-      ],
-      "scheme": "http",
-      "nfServiceStatus": "REGISTERED",
-      "ipEndPoints": [
-        {
-          "ipv4Address": "10.0.15.1",
-          "port": 7777
-        }
-      ],
-      "allowedNfTypes": [
-        "AUSF"
-      ],
-      "priority": 0,
-      "capacity": 100,
-      "load": 0
-    },
-    "3b56b756-f5a8-41ed-a1f8-a1fff7d9ed8f": {
-      "serviceInstanceId": "3b56b756-f5a8-41ed-a1f8-a1fff7d9ed8f",
-      "serviceName": "nudm-uecm",
-      "versions": [
-        {
-          "apiVersionInUri": "v1",
-          "apiFullVersion": "1.0.0"
-        }
-      ],
-      "scheme": "http",
-      "nfServiceStatus": "REGISTERED",
-      "ipEndPoints": [
-        {
-          "ipv4Address": "10.0.15.1",
-          "port": 7777
-        }
-      ],
-      "allowedNfTypes": [
-        "AMF"
-      ],
-      "priority": 0,
-      "capacity": 100,
-      "load": 0
-    },
-    "3b56b828-f5a8-41ed-a1f8-a1fff7d9ed8f": {
-      "serviceInstanceId": "3b56b828-f5a8-41ed-a1f8-a1fff7d9ed8f",
-      "serviceName": "nudm-sdm",
-      "versions": [
-        {
-          "apiVersionInUri": "v2",
-          "apiFullVersion": "2.0.0"
-        }
-      ],
-      "scheme": "http",
-      "nfServiceStatus": "REGISTERED",
-      "ipEndPoints": [
-        {
-          "ipv4Address": "10.0.15.1",
-          "port": 7777
-        }
-      ],
-      "allowedNfTypes": [
-        "AMF",
-        "SMF"
-      ],
-      "priority": 0,
-      "capacity": 100,
-      "load": 0
-    }
-  },
-  "nfProfileChangesSupportInd": true
-}
-
 end note
 
 "UDM" -> "NRF": 467, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
@@ -289,15 +184,6 @@ end note
 
 note right #D7FEFC
 **NRF to UDM**
-10.0.8.1 to 10.0.15.1 (IPs)
-HTTP/2 stream: 1
-:status: 201
-server: Open5GS v2.4.10
-date: Thu, 18 May 2023 18:17:21 GMT
-content-length: 157
-location: /nnrf-nfm/v1/nf-instances/3b55f82a-f5a8-41ed-a1f8-a1fff7d9ed8f
-content-type: application/json
-
 end note
 
 "NRF" -> "UDM": 473, HTTP/2 201 rsp.
@@ -308,13 +194,13 @@ end note
 
 "NRF" -> "UDM": 474, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDM**
 end note
 
 "NRF" -> "UDM": 475, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDM**
 end note
 
@@ -322,83 +208,30 @@ end note
 
 note right #03B5AA
 **UDM to NRF**
-10.0.15.1 to 10.0.8.1 (IPs)
-HTTP/2 stream: 3
-:method: POST
-:path: /nnrf-nfm/v1/subscriptions
-:scheme: http
-:authority: 10.0.8.1:7777
-content-type: application/json
-accept: application/json,application/problem+json
-content-length: 231
-
 end note
 
 "UDM" -> "NRF": 477, HTTP/2 req.\nPOST  /nnrf-nfm/v1/subscriptions
 
 note right #03B5AA
 **UDM to NRF**
-10.0.15.1 to 10.0.8.1 (IPs)
-HTTP/2 stream: 3
-:method: POST
-:path: /nnrf-nfm/v1/subscriptions
-:scheme: http
-:authority: 10.0.8.1:7777
-content-type: application/json
-accept: application/json,application/problem+json
-content-length: 231
-
 end note
 
 "UDM" -> "NRF": 478, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
-10.0.15.1 to 10.0.8.1 (IPs)
-HTTP/2 stream 3 payload
-{
-  "nfStatusNotificationUri": "http://10.0.15.1:7777/nnrf-nfm/v1/nf-status-notify",
-  "reqNfInstanceId": "3b55f82a-f5a8-41ed-a1f8-a1fff7d9ed8f",
-  "subscrCond": {
-    "nfType": "UDR"
-  },
-  "reqNfType": "UDM",
-  "requesterFeatures": "1"
-}
-
 end note
 
 "UDM" -> "NRF": 479, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
-10.0.15.1 to 10.0.8.1 (IPs)
-HTTP/2 stream 3 payload
-{
-  "nfStatusNotificationUri": "http://10.0.15.1:7777/nnrf-nfm/v1/nf-status-notify",
-  "reqNfInstanceId": "3b55f82a-f5a8-41ed-a1f8-a1fff7d9ed8f",
-  "subscrCond": {
-    "nfType": "UDR"
-  },
-  "reqNfType": "UDM",
-  "requesterFeatures": "1"
-}
-
 end note
 
 "NRF" -> "UDM": 482, HTTP/2 201 rsp.
 
 note right #D7FEFC
 **NRF to UDM**
-10.0.8.1 to 10.0.15.1 (IPs)
-HTTP/2 stream: 3
-:status: 201
-server: Open5GS v2.4.10
-date: Thu, 18 May 2023 18:17:21 GMT
-content-length: 346
-location: /nnrf-nfm/v1/subscriptions
-content-type: application/json
-
 end note
 
 "NRF" -> "UDM": 483, HTTP/2 201 rsp.
@@ -409,27 +242,13 @@ end note
 
 "NRF" -> "UDM": 484, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDM**
-10.0.8.1 to 10.0.15.1 (IPs)
-HTTP/2 stream 3 payload
-{
-  "nfStatusNotificationUri": "http://10.0.15.1:7777/nnrf-nfm/v1/nf-status-notify",
-  "reqNfInstanceId": "3b55f82a-f5a8-41ed-a1f8-a1fff7d9ed8f",
-  "subscrCond": {
-    "nfType": "UDR"
-  },
-  "subscriptionId": "3b699b28-f5a8-41ed-9363-e1286cdc5296",
-  "validityTime": "2023-05-19T20:17:21.844211+02:00",
-  "reqNfType": "UDM",
-  "nrfSupportedFeatures": "1"
-}
-
 end note
 
 "NRF" -> "UDM": 485, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDM**
 end note
 
@@ -465,13 +284,13 @@ end note
 
 "PCF" -> "NRF": 548, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
 "PCF" -> "NRF": 549, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
@@ -489,13 +308,13 @@ end note
 
 "NRF" -> "PCF": 556, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 557, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
@@ -513,13 +332,13 @@ end note
 
 "PCF" -> "NRF": 562, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
 "PCF" -> "NRF": 563, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
@@ -537,13 +356,13 @@ end note
 
 "NRF" -> "PCF": 568, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 569, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
@@ -561,13 +380,13 @@ end note
 
 "PCF" -> "NRF": 572, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
 "PCF" -> "NRF": 573, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **PCF to NRF**
 end note
 
@@ -585,13 +404,13 @@ end note
 
 "NRF" -> "PCF": 578, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
 "NRF" -> "PCF": 579, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to PCF**
 end note
 
@@ -609,13 +428,13 @@ end note
 
 "NSSF" -> "NRF": 612, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NSSF to NRF**
 end note
 
 "NSSF" -> "NRF": 613, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NSSF to NRF**
 end note
 
@@ -633,25 +452,25 @@ end note
 
 "NRF" -> "NSSF": 620, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to NSSF**
 end note
 
 "NRF" -> "NSSF": 621, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to NSSF**
 end note
 
 "NRF" -> "NSSF": 622, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to NSSF**
 end note
 
 "NRF" -> "NSSF": 623, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to NSSF**
 end note
 
@@ -681,13 +500,13 @@ end note
 
 "BSF" -> "NRF": 668, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **BSF to NRF**
 end note
 
 "BSF" -> "NRF": 669, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **BSF to NRF**
 end note
 
@@ -705,25 +524,25 @@ end note
 
 "NRF" -> "BSF": 676, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to BSF**
 end note
 
 "NRF" -> "BSF": 677, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to BSF**
 end note
 
 "NRF" -> "BSF": 678, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to BSF**
 end note
 
 "NRF" -> "BSF": 679, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to BSF**
 end note
 
@@ -741,13 +560,13 @@ end note
 
 "UDR" -> "NRF": 741, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDR to NRF**
 end note
 
 "UDR" -> "NRF": 742, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDR to NRF**
 end note
 
@@ -765,25 +584,25 @@ end note
 
 "NRF" -> "UDR": 749, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDR**
 end note
 
 "NRF" -> "UDR": 750, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDR**
 end note
 
 "NRF" -> "UDR": 757, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDR**
 end note
 
 "NRF" -> "UDR": 758, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to UDR**
 end note
 

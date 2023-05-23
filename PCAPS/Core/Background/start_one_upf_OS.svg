@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="875px" preserveAspectRatio="none" style="width:948px;height:875px;" version="1.1" viewBox="0 0 948 875" width="948px" zoomAndPan="magnify"><defs/><g><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="24" x2="24" y1="34.2969" y2="835.6094"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="72" x2="72" y1="34.2969" y2="835.6094"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="125" x2="125" y1="34.2969" y2="835.6094"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="426" x2="426" y1="34.2969" y2="835.6094"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="565.5" x2="565.5" y1="34.2969" y2="835.6094"/><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="33" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="19" x="15" y="22.9951">UE</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="33" x="8" y="834.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="19" x="15" y="854.6045">UE</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="51" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="58" y="22.9951">gNB</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="51" y="834.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="58" y="854.6045">gNB</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="104" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="111" y="22.9951">SMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="43" x="104" y="834.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="111" y="854.6045">SMF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="406" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="413" y="22.9951">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="41" x="406" y="834.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="27" x="413" y="854.6045">UPF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="62" x="534.5" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="541.5" y="22.9951">8.8.8.8</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="62" x="534.5" y="834.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="541.5" y="854.6045">8.8.8.8</text><polygon fill="#000000" points="414.5,185.4922,424.5,189.4922,414.5,193.4922,418.5,189.4922" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="125.5" x2="420.5" y1="189.4922" y2="189.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="132.5" y="169.2935">25, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="267" x="132.5" y="184.4263">PFCP Session Establishment Request (50)</text><path d="M431,49.2969 L431,301.2969 L926,301.2969 L926,59.2969 L916,49.2969 L431,49.2969 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M916,49.2969 L916,59.2969 L926,59.2969 L916,49.2969 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="437" y="66.3638">SMF to UPF</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="441" y="81.4966">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="474" x="437" y="96.6294">pfcp.msg_type: 'Message Type: PFCP Session Establishment Request (50)'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="441" y="111.7622">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="256" x="437" y="126.895">pfcp.seid: 'SEID: &lt;Control_plane_SEID&gt;'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="169" x="437" y="142.0278">Create PDR : [Grouped IE]:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="449" y="157.1606">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="354" x="449" y="172.2935">pfcp.network_instance: 'Network Instance: CustomSlice'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="449" y="187.4263">UE IP Address : &lt;UE_IP_Address&gt;:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="449" y="202.5591">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="350" x="461" y="217.6919">pfcp.apply_action.forw: '.... ..1. = FORW (Forward): True'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="339" x="461" y="232.8247">pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="461" y="247.9575">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="280" x="449" y="263.0903">pfcp.outer_hdr_creation.teid: 'TEID: &lt;TEID&gt;'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="409" x="449" y="278.2231">pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: &lt;SMF_IP_Address&gt;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="314" x="449" y="293.356">&lt;Measurment, Reporting, and Volume Settings&gt;</text><polygon fill="#000000" points="136.5,375.9531,126.5,379.9531,136.5,383.9531,132.5,379.9531" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="130.5" x2="425.5" y1="379.9531" y2="379.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="142.5" y="359.7544">26, PFCP rsp.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="277" x="142.5" y="374.8872">PFCP Session Establishment Response (51)</text><path d="M431,311.4219 L431,419.4219 L936,419.4219 L936,321.4219 L926,311.4219 L431,311.4219 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M926,311.4219 L926,321.4219 L936,321.4219 L926,311.4219 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="437" y="328.4888">UPF to SMF</text><line style="stroke: #FFFFFF; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="432" x2="935" y1="331.5547" y2="331.5547"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="484" x="437" y="347.6216">pfcp.msg_type: 'Message Type: PFCP Session Establishment Response (51)'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="240" x="437" y="362.7544">pfcp.seid: 'SEID: &lt;User_plane_SEID&gt;'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="445" y="377.8872">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="232" x="445" y="393.02">Cause : Request accepted(success):</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="445" y="408.1528">...</text><polygon fill="#000000" points="414.5,505.8828,424.5,509.8828,414.5,513.8828,418.5,509.8828" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="125.5" x2="420.5" y1="509.8828" y2="509.8828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="132.5" y="489.6841">27, PFCP req.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="252" x="132.5" y="504.8169">PFCP Session Modification Request (52)</text><path d="M431,430.2188 L431,561.2188 L911,561.2188 L911,440.2188 L901,430.2188 L431,430.2188 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M901,430.2188 L901,440.2188 L911,440.2188 L901,430.2188 " fill="#03B5AA" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="437" y="447.2856">SMF to UPF</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="441" y="462.4185">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="459" x="437" y="477.5513">pfcp.msg_type: 'Message Type: PFCP Session Modification Request (52)'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="240" x="437" y="492.6841">pfcp.seid: 'SEID: &lt;User_plane_SEID&gt;'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="171" x="437" y="507.8169">Update FAR : [Grouped IE]:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="453" y="522.9497">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="404" x="453" y="538.0825">pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: &lt;gNB_IP_Adress&gt;'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="453" y="553.2153">...</text><polygon fill="#000000" points="136.5,635.8125,126.5,639.8125,136.5,643.8125,132.5,639.8125" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="130.5" x2="425.5" y1="639.8125" y2="639.8125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="142.5" y="619.6138">28, PFCP rsp.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="262" x="142.5" y="634.7466">PFCP Session Modification Response (53)</text><path d="M431,571.2813 L431,679.2813 L921,679.2813 L921,581.2813 L911,571.2813 L431,571.2813 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M911,571.2813 L911,581.2813 L921,581.2813 L911,571.2813 " fill="#D7FEFC" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="437" y="588.3481">UPF to SMF</text><line style="stroke: #FFFFFF; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="432" x2="920" y1="591.4141" y2="591.4141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="469" x="437" y="607.481">pfcp.msg_type: 'Message Type: PFCP Session Modification Response (53)'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="240" x="437" y="622.6138">pfcp.seid: 'SEID: &lt;User_plane_SEID&gt;'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="445" y="637.7466">...</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="232" x="445" y="652.8794">Cause : Request accepted(success):</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="445" y="668.0122">...</text><polygon fill="#000000" points="414.5,705.2109,424.5,709.2109,414.5,713.2109,418.5,709.2109" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="72.5" x2="420.5" y1="709.2109" y2="709.2109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="162" x="79.5" y="704.145">29, GTP&lt;ICMP&gt; ping req.</text><path d="M431,690.0781 L431,715.0781 L537,715.0781 L537,700.0781 L527,690.0781 L431,690.0781 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M527,690.0781 L527,700.0781 L537,700.0781 L527,690.0781 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="437" y="707.145">gNB to UPF</text><polygon fill="#000000" points="553.5,740.3438,563.5,744.3438,553.5,748.3438,557.5,744.3438" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="426.5" x2="559.5" y1="744.3438" y2="744.3438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="115" x="433.5" y="739.2778">30, ICMP ping req.</text><path d="M570,725.2109 L570,750.2109 L696,750.2109 L696,735.2109 L686,725.2109 L570,725.2109 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M686,725.2109 L686,735.2109 L696,735.2109 L686,725.2109 " fill="#5C8001" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="576" y="742.2778">UPF to 8.8.8.8</text><polygon fill="#000000" points="437.5,775.4766,427.5,779.4766,437.5,783.4766,433.5,779.4766" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="431.5" x2="564.5" y1="779.4766" y2="779.4766"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="114" x="443.5" y="774.4106">31, ICMP ping rsp.</text><path d="M570,760.3438 L570,785.3438 L696,785.3438 L696,770.3438 L686,760.3438 L570,760.3438 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M686,760.3438 L686,770.3438 L696,770.3438 L686,760.3438 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="576" y="777.4106">8.8.8.8 to UPF</text><polygon fill="#000000" points="35.5,810.6094,25.5,814.6094,35.5,818.6094,31.5,814.6094" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="29.5" x2="564.5" y1="814.6094" y2="814.6094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="161" x="41.5" y="809.5435">32, GTP&lt;ICMP&gt; ping rsp.</text><path d="M570,795.4766 L570,820.4766 L686,820.4766 L686,805.4766 L676,795.4766 L570,795.4766 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M676,795.4766 L676,805.4766 L686,805.4766 L676,795.4766 " fill="#EDFEC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="95" x="576" y="812.5435">8.8.8.8 to UE</text><!--MD5=[5e1b52db38184ded08f7620941153419]
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UE"
+participant "gNB"
+participant "SMF"
+participant "UPF"
+participant "8.8.8.8"
+
+"SMF" -> "UPF": 25, PFCP req.\nPFCP Session Establishment Request (50)
+
+note right #03B5AA
+**SMF to UPF**
+ ...
+pfcp.msg_type: 'Message Type: PFCP Session Establishment Request (50)'
+ ...
+pfcp.seid: 'SEID: <Control_plane_SEID>'
+Create PDR : [Grouped IE]:
+   ...
+   pfcp.network_instance: 'Network Instance: CustomSlice'
+   UE IP Address : <UE_IP_Address>:
+   ...
+      pfcp.apply_action.forw: '.... ..1. = FORW (Forward): True'
+      pfcp.apply_action.drop: '.... ...0 = DROP (Drop): False'
+      ...
+   pfcp.outer_hdr_creation.teid: 'TEID: <TEID>'
+   pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: <SMF_IP_Address>
+   <Measurment, Reporting, and Volume Settings>
+end note
+
+"UPF" -> "SMF": 26, PFCP rsp.\nPFCP Session Establishment Response (51)
+
+note right #D7FEFC
+**UPF to SMF**
+...
+pfcp.msg_type: 'Message Type: PFCP Session Establishment Response (51)'
+pfcp.seid: 'SEID: <User_plane_SEID>'
+  ...
+  Cause : Request accepted(success):
+  ...
+end note
+
+"SMF" -> "UPF": 27, PFCP req.\nPFCP Session Modification Request (52)
+
+note right #03B5AA
+**SMF to UPF**
+ ...
+pfcp.msg_type: 'Message Type: PFCP Session Modification Request (52)'
+pfcp.seid: 'SEID: <User_plane_SEID>'
+Update FAR : [Grouped IE]:
+    ...
+    pfcp.outer_hdr_creation.ipv4: 'IPv4 Address: <gNB_IP_Adress>'
+    ...
+end note
+
+"UPF" -> "SMF": 28, PFCP rsp.\nPFCP Session Modification Response (53)
+
+note right #D7FEFC
+**UPF to SMF**
+...
+pfcp.msg_type: 'Message Type: PFCP Session Modification Response (53)'
+pfcp.seid: 'SEID: <User_plane_SEID>'
+  ...
+  Cause : Request accepted(success):
+  ...
+end note
+
+"gNB" -> "UPF": 29, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"UPF" -> "8.8.8.8": 30, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 31, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UE": 32, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UE**
+end note
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 11:24:54 CET 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

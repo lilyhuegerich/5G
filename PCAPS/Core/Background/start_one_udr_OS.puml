@@ -1,0 +1,238 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "UDR"
+participant "UDM"
+participant "PCF"
+
+"UDM" -> "UDR": 41, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/authentication-data/authentication-subscription
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 54, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 55, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+{ "authenticationMethod": "5G_AKA",
+  "encPermanentKey": "465b5ce8b199b49faa5f0a2ee238a6bc",
+  "sequenceNumber": {
+    "sqn": "000000001d41"
+  },
+  "authenticationManagementField": "8000",
+  "encOpcKey": "e8ed289deba952e4283b54e88e6183ca"}
+
+end note
+
+"UDM" -> "UDR": 57, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/authentication-data/authentication-status
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDM" -> "UDR": 58, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 66, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDM" -> "UDR": 67, HTTP/2 req.\nPUT  /nudr-dr/v1/subscription-data/imsi-901700000000004/context-data/amf-3gpp-access
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDM" -> "UDR": 68, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to UDR**
+{"amfInstanceId": "b822f9a4-f687-41ed-a876-f17e422b22ff",
+  "deregCallbackUri": "http://10.0.3.1:7777/namf-callback/v1/imsi-901700000000004/dereg-notify",
+  "guami": {
+    "plmnId": {
+      "mcc": "901",
+      "mnc": "70"
+    },
+    "amfId": "020040"
+  },
+  "ratType": "NR"}
+end note
+
+"UDR" -> "UDM": 70, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDM" -> "UDR": 71, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/am-data
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 74, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 75, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+{"subscribedUeAmbr": {
+    "uplink": "1048576 Kbps",
+    "downlink": "1048576 Kbps"
+  },
+  "nssai": {
+    "defaultSingleNssais": [
+      {
+        "sst": 1,
+        "sd": "000001"}]}}
+end note
+
+"UDM" -> "UDR": 77, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/smf-selection-subscription-data
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 80, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 81, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+{ "subscribedSnssaiInfos": {
+    "{\n\t\"sst\":\t1,\n\t\"sd\":\t\"000001\"\n}": {
+      "dnnInfos": [
+        { "dnn": "CustomSlice",
+          "defaultDnnIndicator": true}]}}}
+end note
+
+"PCF" -> "UDR": 93, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000004/am-data
+
+note right #03B5AA
+**PCF to UDR**
+end note
+
+"UDR" -> "PCF": 103, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to PCF**
+end note
+
+"UDR" -> "PCF": 104, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to PCF**
+10.0.16.1 to 10.0.10.1 (IPs)
+HTTP/2 stream 1 payload
+{}
+end note
+
+"UDM" -> "UDR": 107, HTTP/2 req.\nGET  /nudr-dr/v1/subscription-data/imsi-901700000000004/90170/provisioned-data/sm-data
+
+note right #03B5AA
+**UDM to UDR**
+end note
+
+"UDR" -> "UDM": 111, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to UDM**
+end note
+
+"UDR" -> "UDM": 112, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to UDM**
+[{ "singleNssai": {
+      "sst": 1,
+      "sd": "000001"
+    },
+    "dnnConfigurations": {
+      "CustomSlice": {
+        "pduSessionTypes": {
+          "defaultSessionType": "IPV4V6",
+          "allowedSessionTypes": [
+            "IPV4",
+            "IPV6",
+            "IPV4V6"
+          ]
+        },
+        "sscModes": {
+          "defaultSscMode": "SSC_MODE_1",
+          "allowedSscModes": [
+            "SSC_MODE_1",
+            "SSC_MODE_2",
+            "SSC_MODE_3"
+          ]
+        },
+        "5gQosProfile": {
+          "5qi": 9,
+          "arp": {
+            "priorityLevel": 8,
+            "preemptCap": "NOT_PREEMPT",
+            "preemptVuln": "NOT_PREEMPTABLE"
+          },
+          "priorityLevel": 8
+        },
+        "sessionAmbr": {
+          "uplink": "1048576 Kbps",
+          "downlink": "1048576 Kbps"}}}}]
+end note
+
+"PCF" -> "UDR": 114, HTTP/2 req.\nGET  /nudr-dr/v1/policy-data/ues/imsi-901700000000004/sm-data
+
+note right #03B5AA
+**PCF to UDR**
+end note
+
+"UDR" -> "PCF": 117, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDR to PCF**
+end note
+
+"UDR" -> "PCF": 118, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDR to PCF**
+{"smPolicySnssaiData": {
+    "{\n\t\"sst\":\t1,\n\t\"sd\":\t\"000001\"\n}": {
+      "snssai": {
+        "sst": 1,
+        "sd": "000001"
+      },
+      "smPolicyDnnData": {
+        "CustomSlice": {
+          "dnn": "CustomSlice"}}}}
+
+end note
+
+@enduml

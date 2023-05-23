@@ -13,13 +13,13 @@ participant "gNB"
 participant "AMF"
 participant "SMF"
 participant "UPF"
-participant "BSF"
 participant "UDM"
+participant "NSSF"
 participant "NRF"
 participant "AUSF"
+participant "BSF"
 participant "UDR"
 participant "PCF"
-participant "NSSF"
 
 "SMF" -> "PCF": 4125, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies/4/delete
 

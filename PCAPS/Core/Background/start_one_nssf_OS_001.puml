@@ -1,0 +1,100 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "NSSF"
+participant "NRF"
+
+"NSSF" -> "NRF": 167, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 169, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 171, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 172, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 174, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 176, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 177, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 179, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 181, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 182, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 184, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NSSF" -> "NRF": 186, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+10.0.9.1 to 10.0.8.1 (IPs)
+
+end note
+
+"NSSF" -> "NRF": 187, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 189, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+@enduml

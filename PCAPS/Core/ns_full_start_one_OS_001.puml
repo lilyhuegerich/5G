@@ -8,6 +8,7 @@ skinparam sequence {
     ParticipantBorderColor white
     ParticipantBackgroundColor #e6e6e6
 }
+participant "UE_1"
 participant "gNB"
 participant "AMF"
 participant "SMF"
@@ -15,13 +16,13 @@ participant "UPF"
 participant "SGWU"
 participant "SGWC"
 participant "NRF"
+participant "UDR"
+participant "8.8.8.8"
 participant "BSF"
-participant "UDM"
 participant "NSSF"
 participant "AUSF"
-participant "8.8.8.8"
 participant "PCF"
-participant "UDR"
+participant "UDM"
 
 "AMF" -> "NRF": 971, HTTP/2 req.\nPUT  /nnrf-nfm/v1/nf-instances/3a52609e-f5a8-41ed-956c-a9071229793c
 
@@ -31,13 +32,13 @@ end note
 
 "AMF" -> "NRF": 974, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
 "AMF" -> "NRF": 975, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
@@ -55,13 +56,13 @@ end note
 
 "NRF" -> "AMF": 986, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
 "NRF" -> "AMF": 987, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
@@ -79,13 +80,13 @@ end note
 
 "AMF" -> "NRF": 992, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
 "AMF" -> "NRF": 993, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
@@ -103,13 +104,13 @@ end note
 
 "AMF" -> "NRF": 996, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
 "AMF" -> "NRF": 997, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
@@ -127,13 +128,13 @@ end note
 
 "AMF" -> "NRF": 1000, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
 "AMF" -> "NRF": 1001, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
@@ -151,13 +152,13 @@ end note
 
 "AMF" -> "NRF": 1004, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
 "AMF" -> "NRF": 1005, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
@@ -175,13 +176,13 @@ end note
 
 "AMF" -> "NRF": 1008, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
 "AMF" -> "NRF": 1009, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AMF to NRF**
 end note
 
@@ -211,13 +212,13 @@ end note
 
 "NRF" -> "AMF": 1016, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
 "NRF" -> "AMF": 1017, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
@@ -235,13 +236,13 @@ end note
 
 "NRF" -> "AMF": 1022, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
 "NRF" -> "AMF": 1023, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
@@ -259,13 +260,13 @@ end note
 
 "NRF" -> "AMF": 1028, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
 "NRF" -> "AMF": 1029, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
@@ -283,13 +284,13 @@ end note
 
 "NRF" -> "AMF": 1034, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
 "NRF" -> "AMF": 1035, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
@@ -307,13 +308,13 @@ end note
 
 "NRF" -> "AMF": 1040, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
 "NRF" -> "AMF": 1041, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
@@ -331,13 +332,13 @@ end note
 
 "NRF" -> "AMF": 1046, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
 "NRF" -> "AMF": 1047, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to AMF**
 end note
 
@@ -355,13 +356,13 @@ end note
 
 "AUSF" -> "NRF": 1082, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
 "AUSF" -> "NRF": 1083, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **AUSF to NRF**
 end note
 
@@ -391,13 +392,13 @@ end note
 
 "UDM" -> "NRF": 1096, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
 "UDM" -> "NRF": 1097, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **UDM to NRF**
 end note
 
@@ -433,13 +434,13 @@ end note
 
 "SMF" -> "NRF": 1128, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
 "SMF" -> "NRF": 1129, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
@@ -469,13 +470,13 @@ end note
 
 "NRF" -> "SMF": 1146, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 
 "NRF" -> "SMF": 1147, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 
@@ -493,13 +494,13 @@ end note
 
 "SMF" -> "NRF": 1154, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
 "SMF" -> "NRF": 1155, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
@@ -517,13 +518,13 @@ end note
 
 "SMF" -> "NRF": 1158, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
 "SMF" -> "NRF": 1159, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
@@ -541,13 +542,13 @@ end note
 
 "SMF" -> "NRF": 1162, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
 "SMF" -> "NRF": 1163, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **SMF to NRF**
 end note
 
@@ -565,13 +566,13 @@ end note
 
 "NRF" -> "SMF": 1168, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 
 "NRF" -> "SMF": 1169, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 
@@ -589,13 +590,13 @@ end note
 
 "NRF" -> "SMF": 1174, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 
 "NRF" -> "SMF": 1175, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 
@@ -613,13 +614,13 @@ end note
 
 "NRF" -> "SMF": 1180, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 
 "NRF" -> "SMF": 1181, HTTP/2 req. or rsp. (no HTTP/2 headers)
 
-note right #03B5AA
+note right #D7FEFC
 **NRF to SMF**
 end note
 

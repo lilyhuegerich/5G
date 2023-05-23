@@ -1,0 +1,627 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "gNB"
+participant "AMF"
+participant "SMF"
+participant "UPF"
+participant "UDR"
+participant "10.45.0.11"
+participant "NRF"
+participant "UDM"
+participant "8.8.8.8"
+participant "AUSF"
+participant "10.45.0.10"
+participant "BSF"
+participant "10.45.0.9"
+participant "NSSF"
+participant "PCF"
+
+"gNB" -> "UPF": 1, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.10" -> "8.8.8.8": 2, GTP<ICMP> ping req.
+
+note right #5C8001
+**10.45.0.10 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 3, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 5, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 6, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"UPF" -> "gNB": 7, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"8.8.8.8" -> "10.45.0.10": 8, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.10**
+end note
+
+"gNB" -> "UPF": 17, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.10" -> "8.8.8.8": 18, GTP<ICMP> ping req.
+
+note right #5C8001
+**10.45.0.10 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 19, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 20, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 21, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 22, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"UPF" -> "gNB": 23, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"8.8.8.8" -> "10.45.0.10": 24, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.10**
+end note
+
+"gNB" -> "UPF": 32, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.10" -> "8.8.8.8": 33, GTP<ICMP> ping req.
+
+note right #5C8001
+**10.45.0.10 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 34, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 35, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 41, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 42, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"UPF" -> "gNB": 43, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"8.8.8.8" -> "10.45.0.10": 44, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.10**
+end note
+
+"SMF" -> "NRF": 64, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"SMF" -> "NRF": 65, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"SMF" -> "NRF": 66, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"SMF" -> "NRF": 67, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**SMF to NRF**
+end note
+
+"NRF" -> "SMF": 70, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to SMF**
+end note
+
+"NRF" -> "SMF": 71, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to SMF**
+end note
+
+"gNB" -> "AMF": 74, NGAP UplinkNASTransport (46),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 76, NGAP DownlinkNASTransport (4),\nNAS 5GMM status (0x64)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"AMF" -> "NRF": 107, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 108, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 109, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"AMF" -> "NRF": 110, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AMF to NRF**
+end note
+
+"NRF" -> "AMF": 113, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to AMF**
+end note
+
+"NRF" -> "AMF": 114, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AMF**
+end note
+
+"gNB" -> "UPF": 140, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.10" -> "8.8.8.8": 141, GTP<ICMP> ping req.
+
+note right #5C8001
+**10.45.0.10 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 142, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 143, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 144, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 145, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"UPF" -> "gNB": 146, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"8.8.8.8" -> "10.45.0.10": 147, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.10**
+end note
+
+"gNB" -> "UPF": 148, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.11" -> "8.8.8.8": 149, GTP<ICMP> ping req.
+
+note right #5C8001
+**10.45.0.11 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 150, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 151, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 152, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 153, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"UPF" -> "gNB": 154, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"8.8.8.8" -> "10.45.0.11": 155, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.11**
+end note
+
+"AUSF" -> "NRF": 156, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 157, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 158, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"AUSF" -> "NRF": 159, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**AUSF to NRF**
+end note
+
+"NRF" -> "AUSF": 162, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to AUSF**
+end note
+
+"NRF" -> "AUSF": 163, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to AUSF**
+end note
+
+"UDM" -> "NRF": 166, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"UDM" -> "NRF": 167, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"UDM" -> "NRF": 168, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"UDM" -> "NRF": 169, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to NRF**
+end note
+
+"NRF" -> "UDM": 172, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to UDM**
+end note
+
+"NRF" -> "UDM": 173, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDM**
+end note
+
+"gNB" -> "UPF": 176, GTP<ICMP> ping req.
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"10.45.0.11" -> "8.8.8.8": 177, GTP<ICMP> ping req.
+
+note right #5C8001
+**10.45.0.11 to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 178, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 179, ICMP ping req.
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 180, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "UPF": 181, ICMP ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"UPF" -> "gNB": 182, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"8.8.8.8" -> "10.45.0.11": 183, GTP<ICMP> ping rsp.
+
+note right #EDFEC2
+**8.8.8.8 to 10.45.0.11**
+end note
+
+"SMF" -> "UPF": 184, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"SMF" -> "UPF": 185, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"NSSF" -> "NRF": 186, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 187, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 188, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NSSF" -> "NRF": 189, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NSSF to NRF**
+end note
+
+"NRF" -> "NSSF": 192, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to NSSF**
+end note
+
+"NRF" -> "NSSF": 193, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to NSSF**
+end note
+
+"PCF" -> "NRF": 196, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 197, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 198, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"PCF" -> "NRF": 199, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**PCF to NRF**
+end note
+
+"NRF" -> "PCF": 202, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to PCF**
+end note
+
+"NRF" -> "PCF": 203, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to PCF**
+end note
+
+"BSF" -> "NRF": 206, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 207, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 208, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"BSF" -> "NRF": 209, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**BSF to NRF**
+end note
+
+"NRF" -> "BSF": 212, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to BSF**
+end note
+
+"NRF" -> "BSF": 213, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to BSF**
+end note
+
+"UDR" -> "NRF": 229, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 230, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 231, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"UDR" -> "NRF": 232, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDR to NRF**
+end note
+
+"NRF" -> "UDR": 235, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**NRF to UDR**
+end note
+
+"NRF" -> "UDR": 236, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**NRF to UDR**
+end note
+
+@enduml

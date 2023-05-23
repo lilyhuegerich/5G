@@ -1,0 +1,324 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "gNB"
+participant "AMF"
+participant "AUSF"
+participant "SMF"
+participant "PCF"
+participant "UDM"
+
+"gNB" -> "AMF": 121, NGAP NGSetup (21)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 123, NGAP NGSetup (21)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 125, NGAP InitialUEMessage (15),\nNAS Registration request (0x41)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "AUSF": 143, HTTP/2 req.\nPOST  /nausf-auth/v1/ue-authentications
+
+note right #03B5AA
+**AMF to AUSF**
+end note
+
+"AMF" -> "AUSF": 145, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AUSF**
+{"supiOrSuci": "suci-0-901-70-0000-0-0-0000000004",....}
+end note
+
+"AUSF" -> "AMF": 154, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**AUSF to AMF**
+end note
+
+"AUSF" -> "AMF": 155, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AMF**
+{ "authType": "5G_AKA",
+  "5gAuthData": {<UE_Authorization data>},
+  "_links": { "5g-aka": {"href": <uri}}}
+end note
+
+"AMF" -> "gNB": 157, NGAP DownlinkNASTransport (4),\nNAS Authentication request (0x56)
+
+note right #285AA4
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 158, NGAP UplinkNASTransport (46),\nNAS Authentication response (0x57)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "AUSF": 159, HTTP/2 req.\nPUT  /nausf-auth/v1/ue-authentications/1/5g-aka-confirmation
+
+note right #03B5AA
+**AMF to AUSF**
+end note
+
+"AMF" -> "AUSF": 161, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to AUSF**
+end note
+
+"AUSF" -> "AMF": 163, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AUSF to AMF**
+end note
+
+"AUSF" -> "AMF": 164, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AUSF to AMF**
+{ "authResult": "AUTHENTICATION_SUCCESS", <UE_Data>}
+end note
+
+"AMF" -> "gNB": 166, NGAP DownlinkNASTransport (4),\nNAS Security mode command (0x5d)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 167, NGAP UplinkNASTransport (46),\nNAS Security mode complete (0x5e),\nNAS Registration request (0x41)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "UDM": 182, HTTP/2 req.\nPUT  /nudm-uecm/v1/imsi-901700000000004/registrations/amf-3gpp-access
+
+note right #03B5AA
+**AMF to UDM**
+end note
+
+"AMF" -> "UDM": 186, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to UDM**
+{<UE_Data>}
+end note
+
+"UDM" -> "AMF": 189, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"UDM" -> "AMF": 190, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #03B5AA
+**UDM to AMF**
+end note
+
+"AMF" -> "UDM": 192, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/am-data
+
+note right #03B5AA
+**AMF to UDM**
+end note
+
+"UDM" -> "AMF": 193, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"UDM" -> "AMF": 194, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AMF**
+{<UE_Slice_Data>}
+end note
+
+"AMF" -> "UDM": 196, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/smf-select-data
+
+note right #03B5AA
+**AMF to UDM**
+end note
+
+"UDM" -> "AMF": 197, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"UDM" -> "AMF": 198, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AMF**
+{<UE_Slice_Data>}
+end note
+
+"AMF" -> "UDM": 200, HTTP/2 req.\nGET  /nudm-sdm/v2/imsi-901700000000004/ue-context-in-smf-data
+
+note right #03B5AA
+**AMF to UDM**
+end note
+
+"UDM" -> "AMF": 201, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"UDM" -> "AMF": 202, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**UDM to AMF**
+end note
+
+"AMF" -> "PCF": 218, HTTP/2 req.\nPOST  /npcf-am-policy-control/v1/policies
+
+note right #03B5AA
+**AMF to PCF**
+end note
+
+"AMF" -> "PCF": 222, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to PCF**
+{<UE_Data>}
+end note
+
+"PCF" -> "AMF": 225, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**PCF to AMF**
+end note
+
+"PCF" -> "AMF": 226, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**PCF to AMF**
+end note
+
+"AMF" -> "gNB": 228, NGAP InitialContextSetup (14),\nNAS Registration accept (0x42)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"gNB" -> "AMF": 229, NGAP InitialContextSetup (14)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"gNB" -> "AMF": 231, NGAP UplinkNASTransport (46),\nNAS Registration complete (0x43),\nNAS UL NAS transport (0x67),\nNAS PDU session establishment request (0xc1)
+
+note right #285AA4
+**gNB to AMF**
+end note
+
+"AMF" -> "gNB": 232, NGAP DownlinkNASTransport (4),\nNAS Configuration update command (0x54)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"AMF" -> "SMF": 233, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts
+
+note right #03B5AA
+**AMF to SMF**
+end note
+
+"AMF" -> "SMF": 235, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to SMF**
+{<UE_Data_with_Slice_Data>}
+end note
+
+"SMF" -> "AMF": 237, HTTP/2 201 rsp.
+
+note right #D7FEFC
+**SMF to AMF**
+end note
+
+"SMF" -> "AMF": 239, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+end note
+
+"SMF" -> "AMF": 253, HTTP/2 req.\nPOST  /namf-comm/v1/ue-contexts/imsi-901700000000004/n1-n2-messages
+
+note right #03B5AA
+**SMF to AMF**
+end note
+
+"SMF" -> "AMF": 255, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**SMF to AMF**
+{<NGAP_Data>}
+end note
+
+"AMF" -> "gNB": 261, NGAP PDUSessionResourceSetup (29),\nNAS DL NAS transport (0x68),\nNAS PDU session establishment accept (0xc2)
+
+note right #CDDCF3
+**AMF to gNB**
+end note
+
+"AMF" -> "SMF": 262, HTTP/2 200 rsp.
+
+note right #D7FEFC
+**AMF to SMF**
+end note
+
+"AMF" -> "SMF": 263, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to SMF**
+{"cause": "N1_N2_TRANSFER_INITIATED"}
+end note
+
+"gNB" -> "AMF": 266, NGAP PDUSessionResourceSetup (29)
+
+note right #CDDCF3
+**gNB to AMF**
+end note
+
+"AMF" -> "SMF": 267, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/2/modify
+
+note right #03B5AA
+**AMF to SMF**
+end note
+
+"AMF" -> "SMF": 269, HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #D7FEFC
+**AMF to SMF**
+{..."n2SmInfoType": "PDU_RES_SETUP_RSP"}
+end note
+
+"SMF" -> "AMF": 271, HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to AMF**
+end note
+
+@enduml
