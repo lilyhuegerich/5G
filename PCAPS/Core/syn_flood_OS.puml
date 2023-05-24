@@ -1,0 +1,32 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Attacker Spoofing Unreachable IP"
+participant "NF"
+participant "Unreachable IP"
+
+
+"Attacker Spoofing Unreachable IP"-> "NF": 1, TCP
+
+note right #FFC2D9
+**Unreachable IP to NF**
+Unreachable IP to <NF_IP> (IPs)
+Flags: 0x002 (SYN)
+end note
+
+"NF" -> "Unreachable IP": 2, TCP
+
+note right #FFEAC2
+**NF to Unreachable IP**
+<NF_IP> to Unreachable IP (IPs)
+Flags: 0x014 (RST, ACK)
+end note
+
+@enduml

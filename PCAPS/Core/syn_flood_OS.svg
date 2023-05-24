@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="225px" preserveAspectRatio="none" style="width:605px;height:225px;" version="1.1" viewBox="0 0 605 225" width="605px" zoomAndPan="magnify"><defs/><g><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="129" x2="129" y1="34.2969" y2="185.0938"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="277" x2="277" y1="34.2969" y2="185.0938"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="361" x2="361" y1="34.2969" y2="185.0938"/><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="243" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="229" x="15" y="22.9951">Attacker Spoofing Unreachable IP</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="243" x="8" y="184.0938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="229" x="15" y="204.0889">Attacker Spoofing Unreachable IP</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="32" x="261" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="18" x="268" y="22.9951">NF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="32" x="261" y="184.0938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="18" x="268" y="204.0889">NF</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="117" x="303" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="310" y="22.9951">Unreachable IP</text><rect fill="#E6E6E6" height="30.2969" style="stroke: #FFFFFF; stroke-width: 1.5;" width="117" x="303" y="184.0938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="310" y="204.0889">Unreachable IP</text><polygon fill="#000000" points="265,79.5625,275,83.5625,265,87.5625,269,83.5625" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="129.5" x2="271" y1="83.5625" y2="83.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="40" x="136.5" y="78.4966">1, TCP</text><path d="M282,49.2969 L282,104.2969 L509,104.2969 L509,59.2969 L499,49.2969 L282,49.2969 " fill="#FFC2D9" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M499,49.2969 L499,59.2969 L509,59.2969 L499,49.2969 " fill="#FFC2D9" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="156" x="288" y="66.3638">Unreachable IP to NF</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="206" x="288" y="81.4966">Unreachable IP to &lt;NF_IP&gt; (IPs)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="288" y="96.6294">Flags: 0x002 (SYN)</text><polygon fill="#000000" points="349.5,144.9609,359.5,148.9609,349.5,152.9609,353.5,148.9609" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="277" x2="355.5" y1="148.9609" y2="148.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="40" x="284" y="143.895">2, TCP</text><path d="M366,114.6953 L366,169.6953 L593,169.6953 L593,124.6953 L583,114.6953 L366,114.6953 " fill="#FFEAC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M583,114.6953 L583,124.6953 L593,124.6953 L583,114.6953 " fill="#FFEAC2" style="stroke: #FFFFFF; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="156" x="372" y="131.7622">NF to Unreachable IP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="206" x="372" y="146.895">&lt;NF_IP&gt; to Unreachable IP (IPs)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="372" y="162.0278">Flags: 0x014 (RST, ACK)</text><!--MD5=[e3ffc11dd7364607a2802a180de04075]
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Attacker Spoofing Unreachable IP"
+participant "NF"
+participant "Unreachable IP"
+
+
+"Attacker Spoofing Unreachable IP"-> "NF": 1, TCP
+
+note right #FFC2D9
+**Unreachable IP to NF**
+Unreachable IP to <NF_IP> (IPs)
+Flags: 0x002 (SYN)
+end note
+
+"NF" -> "Unreachable IP": 2, TCP
+
+note right #FFEAC2
+**NF to Unreachable IP**
+<NF_IP> to Unreachable IP (IPs)
+Flags: 0x014 (RST, ACK)
+end note
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 11:24:54 CET 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.18+10-post-Ubuntu-0ubuntu120.04.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

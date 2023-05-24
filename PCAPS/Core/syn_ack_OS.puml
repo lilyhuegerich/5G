@@ -1,0 +1,39 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Attacker Spoofing NF_2" 
+participant "NF_1"
+participant "NF_2"
+
+
+"Attacker Spoofing NF_2" -> "NF_1": 1, TCP
+note right #FFC2D9
+**Attacker Spoofing NF_2 to NF_1** 
+<NF_2_IP> to <NF_1_IP> (IPs)
+Flags: 0x002 (SYN)
+end note
+
+"NF_1" -> "NF_2": 2, TCP
+
+note right #FFEAC2
+**NF_1 to NF_2**
+<NF_1_IP> to <NF_2_IP> (IPs)
+Flags: 0x012 (SYN, ACK)
+end note
+
+"NF_2" -> "NF_1": 3, TCP
+
+note right #F29E00
+**NF_2 to NF_1**
+<NF_2_IP> to <NF_1_IP> (IPs)
+Flags: 0x004 (RST)
+end note
+
+@enduml
