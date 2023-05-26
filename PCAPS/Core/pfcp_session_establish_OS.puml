@@ -38,18 +38,17 @@ note right #D7FEFC
 **UPF to gNB**
 end note
 
-"Malicious_UE" -> "UPF": 8, PFCP req.\nPFCP Session Establishment Request (50)
-
-note right #FFC2D9
-**Malicious_UE to UPF**
-end note
-
-"gNB" -> "UPF": 9, GTP<PFCP req.>\nPFCP Association Setup Request (5)
+"gNB" -> "UPF": 8, GTP<PFCP req.>\nPFCP Association Setup Request (5)
 
 note right #03B5AA
 **gNB to UPF**
 end note
 
+"Malicious_UE" -> "UPF": 9, PFCP req.\nPFCP Session Establishment Request (50)
+
+note right #FFC2D9
+**Malicious_UE to UPF**
+end note
 
 "UPF" -> "Malicious_UE": 10, PFCP rsp.\nPFCP Session Establishment Response (51)
 
