@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in /usr/share/wireshark or at https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob_plain;f=pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/3.2.3" time="Sat May 27 01:14:17 2023" capture_file="/home/lily/5G/PCAPS/Core/pfcp_session_establish.pcapng">
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="1" showname="Number" value="1" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:36.946399690 CEST" showname="Captured Time" value="1685141736.946399690" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 1: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.1, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="43" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1299" size="3" pos="46" show="1299" value="000513"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:48.000000000 UTC" size="8" pos="50" value="00600004e818f728">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:48.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:48.000000000 CEST" value="e818f728"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 3" size="0" pos="42" show="3"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="2" showname="Number" value="2" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:36.946197030 CEST" showname="Captured Time" value="1685141736.946197030" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 2: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: fe:af:2b:9d:3d:de, Dst: 5e:77:0f:70:3a:7b" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.14.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="43" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1280" size="3" pos="46" show="1280" value="000500"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="50" value="00600004e818f72f">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 4" size="0" pos="42" show="4"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="3" showname="Number" value="3" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:36.948277882 CEST" showname="Captured Time" value="1685141736.948277882" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 3: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: fe:af:2b:9d:3d:de, Dst: 5e:77:0f:70:3a:7b" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.14.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="43" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1299" size="3" pos="46" show="1299" value="000513"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="50" value="00600004e818f72f">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 1" size="0" pos="42" show="1"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.001878192 seconds" size="0" pos="42" show="0.001878192"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="4" showname="Number" value="4" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:36.950143841 CEST" showname="Captured Time" value="1685141736.950143841" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 4: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.1, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="43" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1280" size="3" pos="46" show="1280" value="000500"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:48.000000000 UTC" size="8" pos="50" value="00600004e818f728">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:48.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:48.000000000 CEST" value="e818f728"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 2" size="0" pos="42" show="2"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.003946811 seconds" size="0" pos="42" show="0.003946811"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="102">
+    <field name="num" pos="0" show="5" showname="Number" value="5" size="102"/>
+    <field name="len" pos="0" show="102" showname="Frame Length" value="66" size="102"/>
+    <field name="caplen" pos="0" show="102" showname="Captured Length" value="66" size="102"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:40.899930948 CEST" showname="Captured Time" value="1685141740.899930948" size="102"/>
+  </proto>
+  <proto name="frame" showname="Frame 5: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface veth_upf, id 0" size="102" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.45.0.9, Dst: 10.0.17.1" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="78">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="86">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="86" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="86" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="86" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Association Setup Request (5)" size="1" pos="87" show="5" value="05"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="88" show="12" value="000c"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000001" size="8" pos="90" show="0x0000000000000001" value="0000000000000001"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 60" size="3" pos="98" show="60" value="00003c"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="101" show="0" value="00"/>
+    <field name="pfcp.response_in" showname="Response In: 6" size="0" pos="86" show="6"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="124">
+    <field name="num" pos="0" show="6" showname="Number" value="6" size="124"/>
+    <field name="len" pos="0" show="124" showname="Frame Length" value="7c" size="124"/>
+    <field name="caplen" pos="0" show="124" showname="Captured Length" value="7c" size="124"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:40.906858848 CEST" showname="Captured Time" value="1685141740.906858848" size="124"/>
+  </proto>
+  <proto name="frame" showname="Frame 6: 124 bytes on wire (992 bits), 124 bytes captured (992 bits) on interface veth_upf, id 0" size="124" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: fe:af:2b:9d:3d:de, Dst: 5e:77:0f:70:3a:7b" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.2.15" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.45.0.9" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="78">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="38" pos="86">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="86" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="86" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Association Setup Response (6)" size="1" pos="87" show="6" value="06"/>
+    <field name="pfcp.length" showname="Length: 34" size="2" pos="88" show="34" value="0022"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 60" size="3" pos="90" show="60" value="00003c"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="93" show="0" value="00"/>
+    <field name="" show="Node ID : IPv4 address: 10.0.17.1" size="9" pos="94" value="003c0005000a001101">
+      <field name="pfcp.ie_type" showname="IE Type: Node ID (60)" size="2" pos="94" show="60" value="003c"/>
+      <field name="pfcp.ie_len" showname="IE Length: 5" size="2" pos="96" show="5" value="0005"/>
+      <field name="pfcp.spare_h1" showname="0000 .... = Spare: 0" size="1" pos="98" show="0" value="0" unmaskedvalue="00"/>
+      <field name="pfcp.node_id_type" showname=".... 0000 = Node ID Type: IPv4 address (0)" size="1" pos="98" show="0" value="0" unmaskedvalue="00"/>
+      <field name="pfcp.node_id_ipv4" showname="Node ID IPv4: 10.0.17.1" size="4" pos="99" show="10.0.17.1" value="0a001101"/>
+    </field>
+    <field name="" show="Cause : Request accepted(success)" size="5" pos="103" value="0013000101">
+      <field name="pfcp.ie_type" showname="IE Type: Cause (19)" size="2" pos="103" show="19" value="0013"/>
+      <field name="pfcp.ie_len" showname="IE Length: 1" size="2" pos="105" show="1" value="0001"/>
+      <field name="pfcp.cause" showname="Cause: Request accepted(success) (1)" size="1" pos="107" show="1" value="01"/>
+    </field>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="108" value="00600004e818f72f">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="108" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="110" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="112" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+    </field>
+    <field name="" show="UP Function Features : " size="8" pos="116" value="002b000410011004">
+      <field name="pfcp.ie_type" showname="IE Type: UP Function Features (43)" size="2" pos="116" show="43" value="002b"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="118" show="4" value="0004"/>
+      <field name="pfcp.up_function_features.treu" showname="0... .... = TREU: Not supported" size="1" pos="120" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.heeu" showname=".0.. .... = HEEU: Not supported" size="1" pos="120" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.pfdm" showname="..0. .... = PFDM: Not supported" size="1" pos="120" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.ftup" showname="...1 .... = FTUP: Supported" size="1" pos="120" show="1" value="1" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.trst" showname=".... 0... = TRST: Not supported" size="1" pos="120" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.dlbd" showname=".... .0.. = DLBD: Not supported" size="1" pos="120" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.ddnd" showname=".... ..0. = DDND: Not supported" size="1" pos="120" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.bucp" showname=".... ...0 = BUCP: Not supported" size="1" pos="120" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.epfar" showname="0... .... = EPFAR: Not supported" size="1" pos="121" show="0" value="0" unmaskedvalue="01"/>
+      <field name="pfcp.up_function_features.pfde" showname=".0.. .... = PFDE: Not supported" size="1" pos="121" show="0" value="0" unmaskedvalue="01"/>
+      <field name="pfcp.up_function_features.frrt" showname="..0. .... = FRRT: Not supported" size="1" pos="121" show="0" value="0" unmaskedvalue="01"/>
+      <field name="pfcp.up_function_features.trace" showname="...0 .... = TRACE: Not supported" size="1" pos="121" show="0" value="0" unmaskedvalue="01"/>
+      <field name="pfcp.up_function_features.quoac" showname=".... 0... = QUOAC: Not supported" size="1" pos="121" show="0" value="0" unmaskedvalue="01"/>
+      <field name="pfcp.up_function_features.udbc" showname=".... .0.. = UDBC: Not supported" size="1" pos="121" show="0" value="0" unmaskedvalue="01"/>
+      <field name="pfcp.up_function_features.pdiu" showname=".... ..0. = PDIU: Not supported" size="1" pos="121" show="0" value="0" unmaskedvalue="01"/>
+      <field name="pfcp.up_function_features.empu" showname=".... ...1 = EMPU: Supported" size="1" pos="121" show="1" value="1" unmaskedvalue="01"/>
+      <field name="pfcp.spare_b7_b4" showname="0001 .... = Spare: 1" size="1" pos="122" show="1" value="1" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.sset" showname=".... 0... = SSET: Not supported" size="1" pos="122" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.ueip" showname=".... .0.. = UEIP: Not supported" size="1" pos="122" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.adpdp" showname=".... ..0. = ADPDP: Not supported" size="1" pos="122" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.up_function_features.dpdra" showname=".... ...0 = DPDRA: Not supported" size="1" pos="122" show="0" value="0" unmaskedvalue="10"/>
+      <field name="pfcp.spare" showname="Spare: 4" size="1" pos="123" show="4" value="04"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 5" size="0" pos="86" show="5"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.006927900 seconds" size="0" pos="86" show="0.006927900"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="152">
+    <field name="num" pos="0" show="7" showname="Number" value="7" size="152"/>
+    <field name="len" pos="0" show="152" showname="Frame Length" value="98" size="152"/>
+    <field name="caplen" pos="0" show="152" showname="Captured Length" value="98" size="152"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:40.908421461 CEST" showname="Captured Time" value="1685141740.908421461" size="152"/>
+  </proto>
+  <proto name="frame" showname="Frame 7: 152 bytes on wire (1216 bits), 152 bytes captured (1216 bits) on interface veth_upf, id 0" size="152" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.45.0.9, Dst: 10.0.17.1" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="74" pos="78">
+    <field name="icmp.type" showname="Type: 3 (Destination unreachable)" size="1" pos="78" show="3" value="03"/>
+    <field name="icmp.code" showname="Code: 3 (Port unreachable)" size="1" pos="79" show="3" value="03"/>
+    <field name="icmp.checksum" showname="Checksum: 0x2273 [correct]" size="2" pos="80" show="0x00002273" value="2273"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="80" show="1"/>
+    <field name="icmp.unused" showname="Unused: 00000000" size="4" pos="82" show="00:00:00:00" value="00000000"/>
+    <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.45.0.9" size="20" pos="86">
+      <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="86" show="4" value="4" unmaskedvalue="45"/>
+      <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="86" show="20" value="45"/>
+      <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="87" show="0x00000000" value="00">
+        <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="87" show="0" value="0" unmaskedvalue="00"/>
+        <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="87" show="0" value="0" unmaskedvalue="00"/>
+      </field>
+      <field name="ip.len" showname="Total Length: 66" size="2" pos="88" show="66" value="0042"/>
+      <field name="ip.id" showname="Identification: 0xbdab (48555)" size="2" pos="90" show="0x0000bdab" value="bdab"/>
+      <field name="ip.flags" showname="Flags: 0x4000, Don&#x27;t fragment" size="2" pos="92" show="0x00004000" value="4000">
+        <field name="ip.flags.rb" showname="0... .... .... .... = Reserved bit: Not set" size="2" pos="92" show="0" value="0" unmaskedvalue="4000"/>
+        <field name="ip.flags.df" showname=".1.. .... .... .... = Don&#x27;t fragment: Set" size="2" pos="92" show="1" value="1" unmaskedvalue="4000"/>
+        <field name="ip.flags.mf" showname="..0. .... .... .... = More fragments: Not set" size="2" pos="92" show="0" value="0" unmaskedvalue="4000"/>
+      </field>
+      <field name="ip.frag_offset" showname="Fragment offset: 0" size="2" pos="92" show="0" value="4000"/>
+      <field name="ip.ttl" showname="Time to live: 64" size="1" pos="94" show="64" value="40"/>
+      <field name="ip.proto" showname="Protocol: UDP (17)" size="1" pos="95" show="17" value="11"/>
+      <field name="ip.checksum" showname="Header checksum: 0x57c9 [validation disabled]" size="2" pos="96" show="0x000057c9" value="57c9"/>
+      <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="96" show="2"/>
+      <field name="ip.src" showname="Source: 10.0.17.1" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.addr" showname="Source or Destination Address: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.src_host" showname="Source Host: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.host" showname="Source or Destination Host: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.dst" showname="Destination: 10.45.0.9" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.addr" showname="Source or Destination Address: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.dst_host" showname="Destination Host: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.host" showname="Source or Destination Host: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+    </proto>
+    <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="106">
+      <field name="udp.srcport" showname="Source Port: 8805" size="2" pos="106" show="8805" value="2265"/>
+      <field name="udp.dstport" showname="Destination Port: 8805" size="2" pos="108" show="8805" value="2265"/>
+      <field name="udp.port" showname="Source or Destination Port: 8805" hide="yes" size="2" pos="106" show="8805" value="2265"/>
+      <field name="udp.port" showname="Source or Destination Port: 8805" hide="yes" size="2" pos="108" show="8805" value="2265"/>
+      <field name="udp.length" showname="Length: 46" size="2" pos="110" show="46" value="002e"/>
+      <field name="udp.checksum" showname="Checksum: 0x242b [unverified]" size="2" pos="112" show="0x0000242b" value="242b"/>
+      <field name="udp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="112" show="2"/>
+      <field name="udp.stream" showname="Stream index: 2" size="0" pos="114" show="2"/>
+    </proto>
+    <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="38" pos="114">
+      <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="114" show="0x00000020" value="20">
+        <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="114" show="1" value="1" unmaskedvalue="20"/>
+        <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+      </field>
+      <field name="pfcp.msg_type" showname="Message Type: PFCP Association Setup Response (6)" size="1" pos="115" show="6" value="06"/>
+      <field name="pfcp.length" showname="Length: 34" size="2" pos="116" show="34" value="0022"/>
+      <field name="pfcp.seqno" showname="Sequence Number: 60" size="3" pos="118" show="60" value="00003c"/>
+      <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="121" show="0" value="00"/>
+      <field name="" show="Node ID : IPv4 address: 10.0.17.1" size="9" pos="122" value="003c0005000a001101">
+        <field name="pfcp.ie_type" showname="IE Type: Node ID (60)" size="2" pos="122" show="60" value="003c"/>
+        <field name="pfcp.ie_len" showname="IE Length: 5" size="2" pos="124" show="5" value="0005"/>
+        <field name="pfcp.spare_h1" showname="0000 .... = Spare: 0" size="1" pos="126" show="0" value="0" unmaskedvalue="00"/>
+        <field name="pfcp.node_id_type" showname=".... 0000 = Node ID Type: IPv4 address (0)" size="1" pos="126" show="0" value="0" unmaskedvalue="00"/>
+        <field name="pfcp.node_id_ipv4" showname="Node ID IPv4: 10.0.17.1" size="4" pos="127" show="10.0.17.1" value="0a001101"/>
+      </field>
+      <field name="" show="Cause : Request accepted(success)" size="5" pos="131" value="0013000101">
+        <field name="pfcp.ie_type" showname="IE Type: Cause (19)" size="2" pos="131" show="19" value="0013"/>
+        <field name="pfcp.ie_len" showname="IE Length: 1" size="2" pos="133" show="1" value="0001"/>
+        <field name="pfcp.cause" showname="Cause: Request accepted(success) (1)" size="1" pos="135" show="1" value="01"/>
+      </field>
+      <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="136" value="00600004e818f72f">
+        <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="136" show="96" value="0060"/>
+        <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="138" show="4" value="0004"/>
+        <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="140" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+      </field>
+      <field name="" show="UP Function Features : " size="8" pos="144" value="002b000410011004">
+        <field name="pfcp.ie_type" showname="IE Type: UP Function Features (43)" size="2" pos="144" show="43" value="002b"/>
+        <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="146" show="4" value="0004"/>
+        <field name="pfcp.up_function_features.treu" showname="0... .... = TREU: Not supported" size="1" pos="148" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.heeu" showname=".0.. .... = HEEU: Not supported" size="1" pos="148" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.pfdm" showname="..0. .... = PFDM: Not supported" size="1" pos="148" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.ftup" showname="...1 .... = FTUP: Supported" size="1" pos="148" show="1" value="1" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.trst" showname=".... 0... = TRST: Not supported" size="1" pos="148" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.dlbd" showname=".... .0.. = DLBD: Not supported" size="1" pos="148" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.ddnd" showname=".... ..0. = DDND: Not supported" size="1" pos="148" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.bucp" showname=".... ...0 = BUCP: Not supported" size="1" pos="148" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.epfar" showname="0... .... = EPFAR: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="01"/>
+        <field name="pfcp.up_function_features.pfde" showname=".0.. .... = PFDE: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="01"/>
+        <field name="pfcp.up_function_features.frrt" showname="..0. .... = FRRT: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="01"/>
+        <field name="pfcp.up_function_features.trace" showname="...0 .... = TRACE: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="01"/>
+        <field name="pfcp.up_function_features.quoac" showname=".... 0... = QUOAC: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="01"/>
+        <field name="pfcp.up_function_features.udbc" showname=".... .0.. = UDBC: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="01"/>
+        <field name="pfcp.up_function_features.pdiu" showname=".... ..0. = PDIU: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="01"/>
+        <field name="pfcp.up_function_features.empu" showname=".... ...1 = EMPU: Supported" size="1" pos="149" show="1" value="1" unmaskedvalue="01"/>
+        <field name="pfcp.spare_b7_b4" showname="0001 .... = Spare: 1" size="1" pos="150" show="1" value="1" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.sset" showname=".... 0... = SSET: Not supported" size="1" pos="150" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.ueip" showname=".... .0.. = UEIP: Not supported" size="1" pos="150" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.adpdp" showname=".... ..0. = ADPDP: Not supported" size="1" pos="150" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.up_function_features.dpdra" showname=".... ...0 = DPDRA: Not supported" size="1" pos="150" show="0" value="0" unmaskedvalue="10"/>
+        <field name="pfcp.spare" showname="Spare: 4" size="1" pos="151" show="4" value="04"/>
+      </field>
+    </proto>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="157">
+    <field name="num" pos="0" show="8" showname="Number" value="8" size="157"/>
+    <field name="len" pos="0" show="157" showname="Frame Length" value="9d" size="157"/>
+    <field name="caplen" pos="0" show="157" showname="Captured Length" value="9d" size="157"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:40.944053062 CEST" showname="Captured Time" value="1685141740.944053062" size="157"/>
+  </proto>
+  <proto name="frame" showname="Frame 8: 157 bytes on wire (1256 bits), 157 bytes captured (1256 bits) on interface veth_upf, id 0" size="157" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.45.0.9, Dst: 10.0.17.1" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="78">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="71" pos="86">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="86" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="86" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="86" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Establishment Request (50)" size="1" pos="87" show="50" value="32"/>
+    <field name="pfcp.length" showname="Length: 67" size="2" pos="88" show="67" value="0043"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000009" size="8" pos="90" show="0x0000000000000009" value="0000000000000009"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 61" size="3" pos="98" show="61" value="00003d"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="101" show="0" value="00"/>
+    <field name="" show="Create FAR : [Grouped IE]" size="17" pos="102" value="0003000d002c000102006c000400000001">
+      <field name="pfcp.ie_type" showname="IE Type: Create FAR (3)" size="2" pos="102" show="3" value="0003"/>
+      <field name="pfcp.ie_len" showname="IE Length: 13" size="2" pos="104" show="13" value="000d"/>
+      <field name="" show="Apply Action : " size="5" pos="106" value="002c000102">
+        <field name="pfcp.ie_type" showname="IE Type: Apply Action (44)" size="2" pos="106" show="44" value="002c"/>
+        <field name="pfcp.ie_len" showname="IE Length: 1" size="2" pos="108" show="1" value="0001"/>
+        <field name="pfcp.apply_action_flags" showname="Flags: 0x02, FORW (Forward)" size="1" pos="110" show="0x00000002" value="02">
+          <field name="pfcp.spare_b7_b5" showname="000. .... = Spare: 0" size="1" pos="110" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.apply_action.dupl" showname="...0 .... = DUPL (Duplicate): False" size="1" pos="110" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.apply_action.nocp" showname=".... 0... = NOCP (Notify the CP function): False" size="1" pos="110" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.apply_action.buff" showname=".... .0.. = BUFF (Buffer): False" size="1" pos="110" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.apply_action.forw" showname=".... ..1. = FORW (Forward): True" size="1" pos="110" show="1" value="1" unmaskedvalue="02"/>
+          <field name="pfcp.apply_action.drop" showname=".... ...0 = DROP (Drop): False" size="1" pos="110" show="0" value="0" unmaskedvalue="02"/>
+        </field>
+      </field>
+      <field name="" show="FAR ID : Dynamic by CP 1" size="8" pos="111" value="006c000400000001">
+        <field name="pfcp.ie_type" showname="IE Type: FAR ID (108)" size="2" pos="111" show="108" value="006c"/>
+        <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="113" show="4" value="0004"/>
+        <field name="pfcp.far_id_flg" showname="0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP" size="4" pos="115" show="0" value="0" unmaskedvalue="00000001"/>
+        <field name="pfcp.far_id" showname=".000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1" size="4" pos="115" show="1" value="1" unmaskedvalue="00000001"/>
+      </field>
+    </field>
+    <field name="" show="Create PDR : [Grouped IE]" size="38" pos="119" value="00010022003800020003006c0004000000010002001000140001010016000706616363657373">
+      <field name="pfcp.ie_type" showname="IE Type: Create PDR (1)" size="2" pos="119" show="1" value="0001"/>
+      <field name="pfcp.ie_len" showname="IE Length: 34" size="2" pos="121" show="34" value="0022"/>
+      <field name="" show="PDR ID : 3" size="6" pos="123" value="003800020003">
+        <field name="pfcp.ie_type" showname="IE Type: PDR ID (56)" size="2" pos="123" show="56" value="0038"/>
+        <field name="pfcp.ie_len" showname="IE Length: 2" size="2" pos="125" show="2" value="0002"/>
+        <field name="pfcp.pdr_id" showname="Rule ID: 3" size="2" pos="127" show="3" value="0003"/>
+      </field>
+      <field name="" show="FAR ID : Dynamic by CP 1" size="8" pos="129" value="006c000400000001">
+        <field name="pfcp.ie_type" showname="IE Type: FAR ID (108)" size="2" pos="129" show="108" value="006c"/>
+        <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="131" show="4" value="0004"/>
+        <field name="pfcp.far_id_flg" showname="0... .... .... .... .... .... .... .... = Allocation type: Dynamic by CP" size="4" pos="133" show="0" value="0" unmaskedvalue="00000001"/>
+        <field name="pfcp.far_id" showname=".000 0000 0000 0000 0000 0000 0000 0001 = FAR ID: 1" size="4" pos="133" show="1" value="1" unmaskedvalue="00000001"/>
+      </field>
+      <field name="" show="PDI : [Grouped IE]" size="20" pos="137" value="0002001000140001010016000706616363657373">
+        <field name="pfcp.ie_type" showname="IE Type: PDI (2)" size="2" pos="137" show="2" value="0002"/>
+        <field name="pfcp.ie_len" showname="IE Length: 16" size="2" pos="139" show="16" value="0010"/>
+        <field name="" show="Source Interface : Core" size="5" pos="141" value="0014000101">
+          <field name="pfcp.ie_type" showname="IE Type: Source Interface (20)" size="2" pos="141" show="20" value="0014"/>
+          <field name="pfcp.ie_len" showname="IE Length: 1" size="2" pos="143" show="1" value="0001"/>
+          <field name="pfcp.spare_h1" showname="0000 .... = Spare: 0" size="1" pos="145" show="0" value="0" unmaskedvalue="01"/>
+          <field name="pfcp.source_interface" showname=".... 0001 = Source Interface: Core (1)" size="1" pos="145" show="1" value="1" unmaskedvalue="01"/>
+        </field>
+        <field name="" show="Network Instance : access" size="11" pos="146" value="0016000706616363657373">
+          <field name="pfcp.ie_type" showname="IE Type: Network Instance (22)" size="2" pos="146" show="22" value="0016"/>
+          <field name="pfcp.ie_len" showname="IE Length: 7" size="2" pos="148" show="7" value="0007"/>
+          <field name="pfcp.network_instance" showname="Network Instance: access" size="7" pos="150" show="access" value="06616363657373"/>
+        </field>
+      </field>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 9" size="0" pos="86" show="9"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="133">
+    <field name="num" pos="0" show="9" showname="Number" value="9" size="133"/>
+    <field name="len" pos="0" show="133" showname="Frame Length" value="85" size="133"/>
+    <field name="caplen" pos="0" show="133" showname="Captured Length" value="85" size="133"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:40.944392187 CEST" showname="Captured Time" value="1685141740.944392187" size="133"/>
+  </proto>
+  <proto name="frame" showname="Frame 9: 133 bytes on wire (1064 bits), 133 bytes captured (1064 bits) on interface veth_upf, id 0" size="133" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: fe:af:2b:9d:3d:de, Dst: 5e:77:0f:70:3a:7b" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.2.15" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.45.0.9" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="78">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="47" pos="86">
+    <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="86" show="0x00000021" value="21">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="86" show="1" value="1" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="86" show="0" value="0" unmaskedvalue="21"/>
+      <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="86" show="1" value="1" unmaskedvalue="21"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Session Establishment Response (51)" size="1" pos="87" show="51" value="33"/>
+    <field name="pfcp.length" showname="Length: 43" size="2" pos="88" show="43" value="002b"/>
+    <field name="pfcp.seid" showname="SEID: 0x0000000000000009" size="8" pos="90" show="0x0000000000000009" value="0000000000000009"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 61" size="3" pos="98" show="61" value="00003d"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="101" show="0" value="00"/>
+    <field name="" show="Node ID : IPv4 address: 10.0.17.1" size="9" pos="102" value="003c0005000a001101">
+      <field name="pfcp.ie_type" showname="IE Type: Node ID (60)" size="2" pos="102" show="60" value="003c"/>
+      <field name="pfcp.ie_len" showname="IE Length: 5" size="2" pos="104" show="5" value="0005"/>
+      <field name="pfcp.spare_h1" showname="0000 .... = Spare: 0" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+      <field name="pfcp.node_id_type" showname=".... 0000 = Node ID Type: IPv4 address (0)" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+      <field name="pfcp.node_id_ipv4" showname="Node ID IPv4: 10.0.17.1" size="4" pos="107" show="10.0.17.1" value="0a001101"/>
+    </field>
+    <field name="" show="Cause : Request accepted(success)" size="5" pos="111" value="0013000101">
+      <field name="pfcp.ie_type" showname="IE Type: Cause (19)" size="2" pos="111" show="19" value="0013"/>
+      <field name="pfcp.ie_len" showname="IE Length: 1" size="2" pos="113" show="1" value="0001"/>
+      <field name="pfcp.cause" showname="Cause: Request accepted(success) (1)" size="1" pos="115" show="1" value="01"/>
+    </field>
+    <field name="" show="F-SEID : SEID: 0x0000000000000009, IPv4 10.0.17.1" size="17" pos="116" value="0039000d0200000000000000090a001101">
+      <field name="pfcp.ie_type" showname="IE Type: F-SEID (57)" size="2" pos="116" show="57" value="0039"/>
+      <field name="pfcp.ie_len" showname="IE Length: 13" size="2" pos="118" show="13" value="000d"/>
+      <field name="pfcp.f_seid_flags" showname="Flags: 0x02, V4 (IPv4)" size="1" pos="120" show="0x00000002" value="02">
+        <field name="pfcp.spare_b7" showname="0... .... = Spare: 0" size="1" pos="120" show="0" value="0" unmaskedvalue="02"/>
+        <field name="pfcp.spare_b6" showname=".0.. .... = Spare: 0" size="1" pos="120" show="0" value="0" unmaskedvalue="02"/>
+        <field name="pfcp.spare_b5" showname="..0. .... = Spare: 0" size="1" pos="120" show="0" value="0" unmaskedvalue="02"/>
+        <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="120" show="0" value="0" unmaskedvalue="02"/>
+        <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="120" show="0" value="0" unmaskedvalue="02"/>
+        <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="120" show="0" value="0" unmaskedvalue="02"/>
+        <field name="pfcp.f_seid_flags.v4" showname=".... ..1. = V4 (IPv4): Present" size="1" pos="120" show="1" value="1" unmaskedvalue="02"/>
+        <field name="pfcp.f_seid_flags.v6" showname=".... ...0 = V6 (IPv6): Not Present" size="1" pos="120" show="0" value="0" unmaskedvalue="02"/>
+      </field>
+      <field name="pfcp.seid" showname="SEID: 0x0000000000000009" size="8" pos="121" show="0x0000000000000009" value="0000000000000009"/>
+      <field name="pfcp.f_seid.ipv4" showname="IPv4 address: 10.0.17.1" size="4" pos="129" show="10.0.17.1" value="0a001101"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 8" size="0" pos="86" show="8"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.000339125 seconds" size="0" pos="86" show="0.000339125"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="161">
+    <field name="num" pos="0" show="10" showname="Number" value="a" size="161"/>
+    <field name="len" pos="0" show="161" showname="Frame Length" value="a1" size="161"/>
+    <field name="caplen" pos="0" show="161" showname="Captured Length" value="a1" size="161"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:40.945943687 CEST" showname="Captured Time" value="1685141740.945943687" size="161"/>
+  </proto>
+  <proto name="frame" showname="Frame 10: 161 bytes on wire (1288 bits), 161 bytes captured (1288 bits) on interface veth_upf, id 0" size="161" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.45.0.9, Dst: 10.0.17.1" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="83" pos="78">
+    <field name="icmp.type" showname="Type: 3 (Destination unreachable)" size="1" pos="78" show="3" value="03"/>
+    <field name="icmp.code" showname="Code: 3 (Port unreachable)" size="1" pos="79" show="3" value="03"/>
+    <field name="icmp.checksum" showname="Checksum: 0x227c [correct]" size="2" pos="80" show="0x0000227c" value="227c"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="80" show="1"/>
+    <field name="icmp.unused" showname="Unused: 00000000" size="4" pos="82" show="00:00:00:00" value="00000000"/>
+    <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.45.0.9" size="20" pos="86">
+      <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="86" show="4" value="4" unmaskedvalue="45"/>
+      <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="86" show="20" value="45"/>
+      <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="87" show="0x00000000" value="00">
+        <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="87" show="0" value="0" unmaskedvalue="00"/>
+        <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="87" show="0" value="0" unmaskedvalue="00"/>
+      </field>
+      <field name="ip.len" showname="Total Length: 75" size="2" pos="88" show="75" value="004b"/>
+      <field name="ip.id" showname="Identification: 0xbdb6 (48566)" size="2" pos="90" show="0x0000bdb6" value="bdb6"/>
+      <field name="ip.flags" showname="Flags: 0x4000, Don&#x27;t fragment" size="2" pos="92" show="0x00004000" value="4000">
+        <field name="ip.flags.rb" showname="0... .... .... .... = Reserved bit: Not set" size="2" pos="92" show="0" value="0" unmaskedvalue="4000"/>
+        <field name="ip.flags.df" showname=".1.. .... .... .... = Don&#x27;t fragment: Set" size="2" pos="92" show="1" value="1" unmaskedvalue="4000"/>
+        <field name="ip.flags.mf" showname="..0. .... .... .... = More fragments: Not set" size="2" pos="92" show="0" value="0" unmaskedvalue="4000"/>
+      </field>
+      <field name="ip.frag_offset" showname="Fragment offset: 0" size="2" pos="92" show="0" value="4000"/>
+      <field name="ip.ttl" showname="Time to live: 64" size="1" pos="94" show="64" value="40"/>
+      <field name="ip.proto" showname="Protocol: UDP (17)" size="1" pos="95" show="17" value="11"/>
+      <field name="ip.checksum" showname="Header checksum: 0x57b5 [validation disabled]" size="2" pos="96" show="0x000057b5" value="57b5"/>
+      <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="96" show="2"/>
+      <field name="ip.src" showname="Source: 10.0.17.1" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.addr" showname="Source or Destination Address: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.src_host" showname="Source Host: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.host" showname="Source or Destination Host: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.dst" showname="Destination: 10.45.0.9" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.addr" showname="Source or Destination Address: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.dst_host" showname="Destination Host: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.host" showname="Source or Destination Host: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+    </proto>
+    <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="106">
+      <field name="udp.srcport" showname="Source Port: 8805" size="2" pos="106" show="8805" value="2265"/>
+      <field name="udp.dstport" showname="Destination Port: 8805" size="2" pos="108" show="8805" value="2265"/>
+      <field name="udp.port" showname="Source or Destination Port: 8805" hide="yes" size="2" pos="106" show="8805" value="2265"/>
+      <field name="udp.port" showname="Source or Destination Port: 8805" hide="yes" size="2" pos="108" show="8805" value="2265"/>
+      <field name="udp.length" showname="Length: 55" size="2" pos="110" show="55" value="0037"/>
+      <field name="udp.checksum" showname="Checksum: 0x155a [unverified]" size="2" pos="112" show="0x0000155a" value="155a"/>
+      <field name="udp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="112" show="2"/>
+      <field name="udp.stream" showname="Stream index: 2" size="0" pos="114" show="2"/>
+    </proto>
+    <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="47" pos="114">
+      <field name="pfcp.flags" showname="Flags: 0x21, SEID (S)" size="1" pos="114" show="0x00000021" value="21">
+        <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="114" show="1" value="1" unmaskedvalue="21"/>
+        <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="21"/>
+        <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="21"/>
+        <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="21"/>
+        <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="114" show="0" value="0" unmaskedvalue="21"/>
+        <field name="pfcp.s" showname=".... ...1 = SEID (S): True" size="1" pos="114" show="1" value="1" unmaskedvalue="21"/>
+      </field>
+      <field name="pfcp.msg_type" showname="Message Type: PFCP Session Establishment Response (51)" size="1" pos="115" show="51" value="33"/>
+      <field name="pfcp.length" showname="Length: 43" size="2" pos="116" show="43" value="002b"/>
+      <field name="pfcp.seid" showname="SEID: 0x0000000000000009" size="8" pos="118" show="0x0000000000000009" value="0000000000000009"/>
+      <field name="pfcp.seqno" showname="Sequence Number: 61" size="3" pos="126" show="61" value="00003d"/>
+      <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="129" show="0" value="00"/>
+      <field name="" show="Node ID : IPv4 address: 10.0.17.1" size="9" pos="130" value="003c0005000a001101">
+        <field name="pfcp.ie_type" showname="IE Type: Node ID (60)" size="2" pos="130" show="60" value="003c"/>
+        <field name="pfcp.ie_len" showname="IE Length: 5" size="2" pos="132" show="5" value="0005"/>
+        <field name="pfcp.spare_h1" showname="0000 .... = Spare: 0" size="1" pos="134" show="0" value="0" unmaskedvalue="00"/>
+        <field name="pfcp.node_id_type" showname=".... 0000 = Node ID Type: IPv4 address (0)" size="1" pos="134" show="0" value="0" unmaskedvalue="00"/>
+        <field name="pfcp.node_id_ipv4" showname="Node ID IPv4: 10.0.17.1" size="4" pos="135" show="10.0.17.1" value="0a001101"/>
+      </field>
+      <field name="" show="Cause : Request accepted(success)" size="5" pos="139" value="0013000101">
+        <field name="pfcp.ie_type" showname="IE Type: Cause (19)" size="2" pos="139" show="19" value="0013"/>
+        <field name="pfcp.ie_len" showname="IE Length: 1" size="2" pos="141" show="1" value="0001"/>
+        <field name="pfcp.cause" showname="Cause: Request accepted(success) (1)" size="1" pos="143" show="1" value="01"/>
+      </field>
+      <field name="" show="F-SEID : SEID: 0x0000000000000009, IPv4 10.0.17.1" size="17" pos="144" value="0039000d0200000000000000090a001101">
+        <field name="pfcp.ie_type" showname="IE Type: F-SEID (57)" size="2" pos="144" show="57" value="0039"/>
+        <field name="pfcp.ie_len" showname="IE Length: 13" size="2" pos="146" show="13" value="000d"/>
+        <field name="pfcp.f_seid_flags" showname="Flags: 0x02, V4 (IPv4)" size="1" pos="148" show="0x00000002" value="02">
+          <field name="pfcp.spare_b7" showname="0... .... = Spare: 0" size="1" pos="148" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.spare_b6" showname=".0.. .... = Spare: 0" size="1" pos="148" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.spare_b5" showname="..0. .... = Spare: 0" size="1" pos="148" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="148" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="148" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="148" show="0" value="0" unmaskedvalue="02"/>
+          <field name="pfcp.f_seid_flags.v4" showname=".... ..1. = V4 (IPv4): Present" size="1" pos="148" show="1" value="1" unmaskedvalue="02"/>
+          <field name="pfcp.f_seid_flags.v6" showname=".... ...0 = V6 (IPv6): Not Present" size="1" pos="148" show="0" value="0" unmaskedvalue="02"/>
+        </field>
+        <field name="pfcp.seid" showname="SEID: 0x0000000000000009" size="8" pos="149" show="0x0000000000000009" value="0000000000000009"/>
+        <field name="pfcp.f_seid.ipv4" showname="IPv4 address: 10.0.17.1" size="4" pos="157" show="10.0.17.1" value="0a001101"/>
+      </field>
+    </proto>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="13" showname="Number" value="d" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:47.963143447 CEST" showname="Captured Time" value="1685141747.963143447" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 13: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: fe:af:2b:9d:3d:de, Dst: 5e:77:0f:70:3a:7b" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.14.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="43" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1281" size="3" pos="46" show="1281" value="000501"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="50" value="00600004e818f72f">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 14" size="0" pos="42" show="14"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="14" showname="Number" value="e" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:47.963256389 CEST" showname="Captured Time" value="1685141747.963256389" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 14: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.1, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="43" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1281" size="3" pos="46" show="1281" value="000501"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:48.000000000 UTC" size="8" pos="50" value="00600004e818f728">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:48.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:48.000000000 CEST" value="e818f728"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 13" size="0" pos="42" show="13"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.000112942 seconds" size="0" pos="42" show="0.000112942"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="15" showname="Number" value="f" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:47.963282220 CEST" showname="Captured Time" value="1685141747.963282220" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 15: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.14.1, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="43" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1300" size="3" pos="46" show="1300" value="000514"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:48.000000000 UTC" size="8" pos="50" value="00600004e818f728">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:48.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:48.000000000 CEST" value="e818f728"/>
+    </field>
+    <field name="pfcp.response_in" showname="Response In: 16" size="0" pos="42" show="16"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="58">
+    <field name="num" pos="0" show="16" showname="Number" value="10" size="58"/>
+    <field name="len" pos="0" show="58" showname="Frame Length" value="3a" size="58"/>
+    <field name="caplen" pos="0" show="58" showname="Captured Length" value="3a" size="58"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:47.963368095 CEST" showname="Captured Time" value="1685141747.963368095" size="58"/>
+  </proto>
+  <proto name="frame" showname="Frame 16: 58 bytes on wire (464 bits), 58 bytes captured (464 bits) on interface veth_upf, id 0" size="58" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: fe:af:2b:9d:3d:de, Dst: 5e:77:0f:70:3a:7b" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.14.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="42">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="42" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="42" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="42" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Response (2)" size="1" pos="43" show="2" value="02"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="44" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1300" size="3" pos="46" show="1300" value="000514"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="49" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="50" value="00600004e818f72f">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="50" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="52" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="54" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+    </field>
+    <field name="pfcp.response_to" showname="Response To: 15" size="0" pos="42" show="15"/>
+    <field name="pfcp.response_time" showname="Response Time: 0.000085875 seconds" size="0" pos="42" show="0.000085875"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="102">
+    <field name="num" pos="0" show="17" showname="Number" value="11" size="102"/>
+    <field name="len" pos="0" show="102" showname="Frame Length" value="66" size="102"/>
+    <field name="caplen" pos="0" show="102" showname="Captured Length" value="66" size="102"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:51.912870345 CEST" showname="Captured Time" value="1685141751.912870345" size="102"/>
+  </proto>
+  <proto name="frame" showname="Frame 17: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface veth_upf, id 0" size="102" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: fe:af:2b:9d:3d:de, Dst: 5e:77:0f:70:3a:7b" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.0.2.15" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.45.0.9" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="78">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="86">
+    <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="86" show="0x00000020" value="20">
+      <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="86" show="1" value="1" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+      <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="86" show="0" value="0" unmaskedvalue="20"/>
+    </field>
+    <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="87" show="1" value="01"/>
+    <field name="pfcp.length" showname="Length: 12" size="2" pos="88" show="12" value="000c"/>
+    <field name="pfcp.seqno" showname="Sequence Number: 1282" size="3" pos="90" show="1282" value="000502"/>
+    <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="93" show="0" value="00"/>
+    <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="94" value="00600004e818f72f">
+      <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="94" show="96" value="0060"/>
+      <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="96" show="4" value="0004"/>
+      <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="98" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="130">
+    <field name="num" pos="0" show="18" showname="Number" value="12" size="130"/>
+    <field name="len" pos="0" show="130" showname="Frame Length" value="82" size="130"/>
+    <field name="caplen" pos="0" show="130" showname="Captured Length" value="82" size="130"/>
+    <field name="timestamp" pos="0" show="May 27, 2023 00:55:51.916551927 CEST" showname="Captured Time" value="1685141751.916551927" size="130"/>
+  </proto>
+  <proto name="frame" showname="Frame 18: 130 bytes on wire (1040 bits), 130 bytes captured (1040 bits) on interface veth_upf, id 0" size="130" pos="0">
+    <field name="filtered" value="frame" />
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: 5e:77:0f:70:3a:7b, Dst: fe:af:2b:9d:3d:de" size="14" pos="0">
+    <field name="filtered" value="eth" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.17.1" size="20" pos="14">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 2152, Dst Port: 2152" size="8" pos="34">
+    <field name="filtered" value="udp" />
+  </proto>
+  <proto name="gtp" showname="GPRS Tunneling Protocol" size="16" pos="42">
+    <field name="filtered" value="gtp" />
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 10.45.0.9, Dst: 10.0.17.1" size="20" pos="58">
+    <field name="filtered" value="ip" />
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="52" pos="78">
+    <field name="icmp.type" showname="Type: 3 (Destination unreachable)" size="1" pos="78" show="3" value="03"/>
+    <field name="icmp.code" showname="Code: 3 (Port unreachable)" size="1" pos="79" show="3" value="03"/>
+    <field name="icmp.checksum" showname="Checksum: 0x225d [correct]" size="2" pos="80" show="0x0000225d" value="225d"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="80" show="1"/>
+    <field name="icmp.unused" showname="Unused: 00000000" size="4" pos="82" show="00:00:00:00" value="00000000"/>
+    <proto name="ip" showname="Internet Protocol Version 4, Src: 10.0.17.1, Dst: 10.45.0.9" size="20" pos="86">
+      <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="86" show="4" value="4" unmaskedvalue="45"/>
+      <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="86" show="20" value="45"/>
+      <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="87" show="0x00000000" value="00">
+        <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="87" show="0" value="0" unmaskedvalue="00"/>
+        <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="87" show="0" value="0" unmaskedvalue="00"/>
+      </field>
+      <field name="ip.len" showname="Total Length: 44" size="2" pos="88" show="44" value="002c"/>
+      <field name="ip.id" showname="Identification: 0xc322 (49954)" size="2" pos="90" show="0x0000c322" value="c322"/>
+      <field name="ip.flags" showname="Flags: 0x4000, Don&#x27;t fragment" size="2" pos="92" show="0x00004000" value="4000">
+        <field name="ip.flags.rb" showname="0... .... .... .... = Reserved bit: Not set" size="2" pos="92" show="0" value="0" unmaskedvalue="4000"/>
+        <field name="ip.flags.df" showname=".1.. .... .... .... = Don&#x27;t fragment: Set" size="2" pos="92" show="1" value="1" unmaskedvalue="4000"/>
+        <field name="ip.flags.mf" showname="..0. .... .... .... = More fragments: Not set" size="2" pos="92" show="0" value="0" unmaskedvalue="4000"/>
+      </field>
+      <field name="ip.frag_offset" showname="Fragment offset: 0" size="2" pos="92" show="0" value="4000"/>
+      <field name="ip.ttl" showname="Time to live: 64" size="1" pos="94" show="64" value="40"/>
+      <field name="ip.proto" showname="Protocol: UDP (17)" size="1" pos="95" show="17" value="11"/>
+      <field name="ip.checksum" showname="Header checksum: 0x5268 [validation disabled]" size="2" pos="96" show="0x00005268" value="5268"/>
+      <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="96" show="2"/>
+      <field name="ip.src" showname="Source: 10.0.17.1" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.addr" showname="Source or Destination Address: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.src_host" showname="Source Host: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.host" showname="Source or Destination Host: 10.0.17.1" hide="yes" size="4" pos="98" show="10.0.17.1" value="0a001101"/>
+      <field name="ip.dst" showname="Destination: 10.45.0.9" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.addr" showname="Source or Destination Address: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.dst_host" showname="Destination Host: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+      <field name="ip.host" showname="Source or Destination Host: 10.45.0.9" hide="yes" size="4" pos="102" show="10.45.0.9" value="0a2d0009"/>
+    </proto>
+    <proto name="udp" showname="User Datagram Protocol, Src Port: 8805, Dst Port: 8805" size="8" pos="106">
+      <field name="udp.srcport" showname="Source Port: 8805" size="2" pos="106" show="8805" value="2265"/>
+      <field name="udp.dstport" showname="Destination Port: 8805" size="2" pos="108" show="8805" value="2265"/>
+      <field name="udp.port" showname="Source or Destination Port: 8805" hide="yes" size="2" pos="106" show="8805" value="2265"/>
+      <field name="udp.port" showname="Source or Destination Port: 8805" hide="yes" size="2" pos="108" show="8805" value="2265"/>
+      <field name="udp.length" showname="Length: 24" size="2" pos="110" show="24" value="0018"/>
+      <field name="udp.checksum" showname="Checksum: 0x93fe [unverified]" size="2" pos="112" show="0x000093fe" value="93fe"/>
+      <field name="udp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="112" show="2"/>
+      <field name="udp.stream" showname="Stream index: 2" size="0" pos="114" show="2"/>
+    </proto>
+    <proto name="pfcp" showname="Packet Forwarding Control Protocol" size="16" pos="114">
+      <field name="pfcp.flags" showname="Flags: 0x20" size="1" pos="114" show="0x00000020" value="20">
+        <field name="pfcp.version" showname="001. .... = Version: 1" size="1" pos="114" show="1" value="1" unmaskedvalue="20"/>
+        <field name="pfcp.spare_b4" showname="...0 .... = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.spare_b3" showname=".... 0... = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.spare_b2" showname=".... .0.. = Spare: 0" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.mp_flag" showname=".... ..0. = Message Priority (MP): False" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+        <field name="pfcp.s" showname=".... ...0 = SEID (S): False" size="1" pos="114" show="0" value="0" unmaskedvalue="20"/>
+      </field>
+      <field name="pfcp.msg_type" showname="Message Type: PFCP Heartbeat Request (1)" size="1" pos="115" show="1" value="01"/>
+      <field name="pfcp.length" showname="Length: 12" size="2" pos="116" show="12" value="000c"/>
+      <field name="pfcp.seqno" showname="Sequence Number: 1282" size="3" pos="118" show="1282" value="000502"/>
+      <field name="pfcp.spare_oct" showname="Spare: 0" size="1" pos="121" show="0" value="00"/>
+      <field name="" show="Recovery Time Stamp : May 24, 2023 20:50:55.000000000 UTC" size="8" pos="122" value="00600004e818f72f">
+        <field name="pfcp.ie_type" showname="IE Type: Recovery Time Stamp (96)" size="2" pos="122" show="96" value="0060"/>
+        <field name="pfcp.ie_len" showname="IE Length: 4" size="2" pos="124" show="4" value="0004"/>
+        <field name="pfcp.recovery_time_stamp" showname="Recovery Time Stamp: May 24, 2023 20:50:55.000000000 UTC" size="4" pos="126" show="May 24, 2023 22:50:55.000000000 CEST" value="e818f72f"/>
+      </field>
+    </proto>
+  </proto>
+</packet>
+
+
+</pdml>

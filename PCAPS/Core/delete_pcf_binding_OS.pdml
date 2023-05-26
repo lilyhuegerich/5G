@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
 <!-- You can find pdml2html.xsl in /usr/share/wireshark or at https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob_plain;f=pdml2html.xsl. -->
-<pdml version="0" creator="wireshark/3.2.3" time="Tue May 23 23:45:27 2023" capture_file="/home/lily/5G/PCAPS/Core/delete_pcf_binding.pcapng">
+<pdml version="0" creator="wireshark/3.2.3" time="Thu May 25 01:55:15 2023" capture_file="/home/lily/5G/PCAPS/Core/delete_pcf_binding.pcapng">
 <packet>
   <proto name="geninfo" pos="0" showname="General information" size="132">
     <field name="num" pos="0" show="1" showname="Number" value="1" size="132"/>
