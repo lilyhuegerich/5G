@@ -23,7 +23,7 @@ end note
 "Malicious_UE" -> "UPF": 5, PFCP req.\nPFCP Association Setup Request (5)
 
 note right #FFC2D9
-**gNB to UPF**
+**Malicious_UE to UPF**
 end note
 
 "UPF" -> "Malicious_UE": 6, PFCP rsp.\nPFCP Association Setup Response (6)
