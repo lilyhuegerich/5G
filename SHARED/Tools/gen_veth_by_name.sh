@@ -36,13 +36,13 @@ done
 
 let start++
 
-ip_addr="10.0.$start.1/24"
+ip_addr="10.0.$start.2/24"
 
-ip_short="10.0.$start.1"
+ip_short="10.0.$start.2"
 
-peer_ip_addr="10.0.$start.2/24"
+peer_ip_addr="10.0.$start.1/24"
 
-peer_ip_short="10.0.$start.2"
+peer_ip_short="10.0.$start.1"
 
 sudo ip netns add "$net_name"
 
