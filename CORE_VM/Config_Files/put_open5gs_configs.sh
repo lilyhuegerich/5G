@@ -17,15 +17,23 @@ else
 	sudo cp *.yaml /etc/open5gs
 fi
 
-if [ -f change_state_off_all_open5gs_services.sh ]; then
-	./change_state_off_all_open5gs_services.sh
-else
-	cd /home/lily/5G/CORE_VM/Config_Files #change me
-	../Start_Scripts/change_state_off_all_open5gs_services.sh #restart all services
-fi
+cd ../../Start_Scripts
+./end_nfs.sh
 sleep 2
-cd /home/lily/5G/CORE_VM/Config_Files #change me
-../Start_Scripts/health_check.sh $name
+./start_nfs.sh
+sleep 1
+./health_check.sh
+
+
+#if [ -f change_state_off_all_open5gs_services.sh ]; then
+#	./change_state_off_all_open5gs_services.sh
+#else
+#	cd /home/lily/5G/CORE_VM/Config_Files #change me
+#	../Start_Scripts/change_state_off_all_open5gs_services.sh #restart all services
+#fi
+#sleep 2
+#cd /home/lily/5G/CORE_VM/Config_Files #change me
+#../Start_Scripts/health_check.sh $name
 
 #src_dir="/home/lily/5G/CORE_VM/Config_Files" #change me
 #dst_dir="/etc/open5gs"
