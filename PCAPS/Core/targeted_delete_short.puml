@@ -10,70 +10,66 @@ skinparam sequence {
 }
 
 participant "Malicious UE"
-participant "Targeted UE"
 participant "gNB"
-participant "AMF"
-participant "SMF"
-participant "UPF"
-participant "SGWU"
-participant "SGWC"
+participant "User Plane Function (UPF)"
 
-"gNB" -> "UPF": 4335, PFCP req.\nPFCP Association Setup Request (5)
+
+"gNB" -> "User Plane Function (UPF)": PFCP req.\nPFCP Association Setup Request (5)
 
 note right #03B5AA
 **gNB to UPF**
 end note
 
-"Malicious UE" -> "UPF": 4335, PFCP req.\nPFCP Association Setup Request (5)
+"Malicious UE" -> "User Plane Function (UPF)":  PFCP req.\nPFCP Association Setup Request (5)
 
 note right #FFC2D9
 **gNB to UPF**
 end note
 
-"UPF" -> "Malicious UE": 4337, PFCP rsp.\nPFCP Association Setup Response (6)
+"User Plane Function (UPF)" -> "Malicious UE": PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #FFEAC2
 **UPF to Malicious UE**
 end note
 
-"UPF" -> "gNB": 4338, PFCP rsp.\nPFCP Association Setup Response (6)
+"User Plane Function (UPF)" -> "gNB": PFCP rsp.\nPFCP Association Setup Response (6)
 
 note right #FFEAC2
 **UPF to gNB**
 end note
 
-"gNB" -> "UPF": 4339, <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Association Setup Response (6)
+"gNB" -> "User Plane Function (UPF)":  <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Association Setup Response (6)
 
 note right #D7FEFC
 **gNB to UPF**
 end note
 
-"gNB" -> "UPF": 4341, PFCP req.\nPFCP Session Deletion Request (54)
+"gNB" -> "User Plane Function (UPF)": PFCP req.\nPFCP Session Deletion Request (54)
 
 note right #03B5AA
 **gNB to UPF**
 end note
 
-"Malicious UE" -> "UPF": 4341, PFCP req.\nPFCP Session Deletion Request (54)
+"Malicious UE" -> "User Plane Function (UPF)": PFCP req.\nPFCP Session Deletion Request (54)
 
 note right #FFC2D9
 **gNB to UPF**
 end note
 
 
-"UPF" -> "Malicious UE": 4343, PFCP rsp.\nPFCP Session Deletion Response (55)
+"User Plane Function (UPF)" -> "Malicious UE": PFCP rsp.\nPFCP Session Deletion Response (55)
 
 note right #FFEAC2
 **UPF to Malicious UE**
 end note
 
-"UPF" -> "gNB": 4344, PFCP rsp.\nPFCP Session Deletion Response (55)
+"User Plane Function (UPF)" -> "gNB": PFCP rsp.\nPFCP Session Deletion Response (55)
 
 note right #FFEAC2
 **UPF to gNB**
 end note
 
-"gNB" -> "UPF": 4345, <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Session Deletion Response (55)
+"gNB" -> "User Plane Function (UPF)": 4345, <PORT_UNREACHABLE> PFCP,GTP<ICMP> rsp.\nPFCP Session Deletion Response (55)
 
 note right #D7FEFC
 **gNB to UPF**
