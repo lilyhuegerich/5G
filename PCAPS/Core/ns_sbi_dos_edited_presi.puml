@@ -1,0 +1,116 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Malicious_UE"
+participant "gNB"
+participant "User Plane Function (UPF)"
+participant "Session Management Function (SMF)"
+participant "Policy Control Function (PCF)"
+participant "Binding Support Function (BSF)"
+
+
+"gNB" -> "User Plane Function (UPF)": HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/release
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"Malicious_UE" -> "Session Management Function (SMF)": HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/release
+
+note right #FFC2D9
+**Malicious_UE to SMF**
+end note
+
+"User Plane Function (UPF)" -> "Session Management Function (SMF)": HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/release
+
+note right #03B5AA
+**UPF to SMF**
+end note
+"Session Management Function (SMF)" -> "Policy Control Function (PCF)": HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies/4/delete
+
+note right #FFEAC2
+**SMF to PCF**
+end note
+
+"Session Management Function (SMF)" -> "Policy Control Function (PCF)": HTTP/2 req. or rsp. (no HTTP/2 headers)
+
+note right #FFEAC2
+**SMF to PCF**
+end note
+
+"Policy Control Function (PCF)" -> "Binding Support Function (BSF)": HTTP/2 req.\nDELETE  /nbsf-management/v1/pcfBindings/4
+
+note right #03B5AA
+**PCF to BSF**
+end note
+
+"Binding Support Function (BSF)" -> "Policy Control Function (PCF)": HTTP/2 204 rsp.
+
+note right #D7FEFC
+**BSF to PCF**
+end note
+
+"Policy Control Function (PCF)" -> "Session Management Function (SMF)": HTTP/2 204 rsp.
+
+note right #D7FEFC
+**PCF to SMF**
+end note
+
+
+"Session Management Function (SMF)" -> "User Plane Function (UPF)": PFCP req.\nPFCP Session Deletion Request (54)
+
+note right #FFEAC2
+**SMF to UPF**
+end note
+
+"User Plane Function (UPF)" -> "Session Management Function (SMF)": PFCP rsp.\nPFCP Session Deletion Response (55)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+
+"Session Management Function (SMF)" -> "User Plane Function (UPF)": HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"User Plane Function (UPF)" -> "gNB": HTTP/2 204 rsp.
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"Session Management Function (SMF)" -> "Malicious_UE": HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to Malicious_UE**
+end note
+
+"Session Management Function (SMF)" -> "User Plane Function (UPF)": HTTP/2 204 rsp.
+
+note right #D7FEFC
+**SMF to UPF**
+end note
+
+"User Plane Function (UPF)" -> "gNB": HTTP/2 204 rsp.
+
+note right  #EDFEC2
+**UPF to gNB**
+end note
+
+"Session Management Function (SMF)" -> "Malicious_UE": HTTP/2 204 rsp.
+
+note right #FFEAC2
+**SMF to Malicious_UE**
+end note
+
+@enduml
