@@ -42,15 +42,15 @@ sessions:
     apn: 'iot'
     slice:
       sst: 1
-
+      sd: 0x000001
 # Configured NSSAI for this UE by HPLMN
 configured-nssai:
   - sst: 1
-
+    sd: 0x000001
 # Default Configured NSSAI for this UE
 default-nssai:
   - sst: 1
-    sd: 1
+    sd: 0x000001
 # Supported integrity algorithms by this UE
 integrity:
   IA1: true
