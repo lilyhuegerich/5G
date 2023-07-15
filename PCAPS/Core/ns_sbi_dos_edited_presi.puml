@@ -91,24 +91,6 @@ end note
 
 "Session Management Function (SMF)" -> "Malicious_UE": HTTP/2 204 rsp.
 
-note right #D7FEFC
-**SMF to Malicious_UE**
-end note
-
-"Session Management Function (SMF)" -> "User Plane Function (UPF)": HTTP/2 204 rsp.
-
-note right #D7FEFC
-**SMF to UPF**
-end note
-
-"User Plane Function (UPF)" -> "gNB": HTTP/2 204 rsp.
-
-note right  #EDFEC2
-**UPF to gNB**
-end note
-
-"Session Management Function (SMF)" -> "Malicious_UE": HTTP/2 204 rsp.
-
 note right #FFEAC2
 **SMF to Malicious_UE**
 end note

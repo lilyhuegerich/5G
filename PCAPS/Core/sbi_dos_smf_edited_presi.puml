@@ -1,0 +1,242 @@
+@startuml
+skinparam shadowing false
+skinparam NoteBorderColor white
+skinparam sequence {
+    ArrowColor black
+    LifeLineBorderColor black
+    LifeLineBackgroundColor black
+    ParticipantBorderColor white
+    ParticipantBackgroundColor #e6e6e6
+}
+participant "Malicious UE"
+participant "Targeted UE"
+participant "gNB"
+participant "SMF"
+participant "UPF"
+participant "BSF"
+participant "PCF"
+participant "8.8.8.8"
+
+
+"gNB" -> "UPF": 3822, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/modify\n+241.496s (15:25:40.201.307)
+
+note right #FFC2D9
+**gNB to UPF**
+end note
+
+"Malicious UE" -> "SMF": 3824, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/modify\n+241.496s (15:25:40.201.728)
+
+note right #FFC2D9
+**Malicious UE to SMF**
+end note
+
+"SMF" -> "Malicious UE": 3829, HTTP/2 400 rsp.\n+241.499s (15:25:40.204.94)
+
+note right #FFEAC2
+**SMF to Malicious UE**
+10.0.14.1 to 10.45.0.2 (IPs)
+HTTP/2 stream: 13
+:status: 400
+server: Open5GS v2.4.10
+date: Thu, 06 Apr 2023 13:25:40 GMT
+content-length: 98
+content-type: application/json
+
+end note
+
+"SMF" -> "Malicious UE": 3830, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+241.499s (15:25:40.204.978)
+
+note right #FFEAC2
+**SMF to Malicious UE**
+10.0.14.1 to 10.45.0.2 (IPs)
+HTTP/2 stream 13 payload
+{
+  "error": {
+    "title": "No UpdateData",
+    "status": 400,
+    "detail": "imsi-901700000000004"
+  }
+}
+
+end note
+
+"UPF" -> "gNB": 3836, HTTP/2 400 rsp.\n+241.512s (15:25:40.217.528)
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"UPF" -> "gNB": 3838, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+241.513s (15:25:40.219.197)
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4077, GTP<ICMP> ping req.\n+249.907s (15:25:48.612.716)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"Targeted UE" -> "8.8.8.8": 4078, ICMP ping req.\n+249.907s (15:25:48.613.21)
+
+note right #5C8001
+**Targeted UE to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4079, ICMP ping req.\n+249.907s (15:25:48.613.257)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4080, ICMP ping rsp.\n+249.930s (15:25:48.636.074)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "Targeted UE": 4081, ICMP ping rsp.\n+249.930s (15:25:48.636.105)
+
+note right #EDFEC2
+**8.8.8.8 to Targeted UE**
+end note
+
+"UPF" -> "gNB": 4082, GTP<ICMP> ping rsp.\n+249.930s (15:25:48.636.231)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+"gNB" -> "UPF": 4277, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/release\n+265.596s (15:26:4.301.647)
+
+note right #FFC2D9
+**gNB to UPF**
+end note
+
+"Malicious UE" -> "SMF": 4278, HTTP/2 req.\nPOST  /nsmf-pdusession/v1/sm-contexts/4/release\n+265.596s (15:26:4.301.858)
+
+note right #FFC2D9
+**Malicious UE to SMF**
+end note
+
+"PCF" -> "PCF": 4290, HTTP/2 req.\nPOST  /npcf-smpolicycontrol/v1/sm-policies/4/delete\n+265.597s (15:26:4.302.78)
+
+note right #03B5AA
+**PCF to PCF**
+end note
+
+"PCF" -> "PCF": 4292, HTTP/2 req. or rsp. (no HTTP/2 headers)\n+265.597s (15:26:4.302.795)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"BSF" -> "BSF": 4308, HTTP/2 req.\nDELETE  /nbsf-management/v1/pcfBindings/4\n+265.598s (15:26:4.303.727)
+
+note right #03B5AA
+**BSF to BSF**
+end note
+
+"BSF" -> "BSF": 4316, HTTP/2 204 rsp.\n+265.599s (15:26:4.304.384)
+
+note right #D7FEFC
+**BSF to BSF**
+end note
+
+"PCF" -> "PCF": 4321, HTTP/2 204 rsp.\n+265.599s (15:26:4.304.663)
+
+note right #D7FEFC
+**PCF to PCF**
+end note
+
+"SMF" -> "UPF": 4325, PFCP req.\nPFCP Session Deletion Request (54)\n+265.607s (15:26:4.313.02)
+
+note right #03B5AA
+**SMF to UPF**
+end note
+
+"UPF" -> "SMF": 4326, PFCP rsp.\nPFCP Session Deletion Response (55)\n+265.608s (15:26:4.313.321)
+
+note right #D7FEFC
+**UPF to SMF**
+end note
+
+"SMF" -> "Malicious UE": 4328, HTTP/2 204 rsp.\n+265.610s (15:26:4.316.156)
+
+note right #D7FEFC
+**SMF to Malicious UE**
+end note
+
+"SMF" -> "Malicious UE": 4330, HTTP/2 204 rsp.\n+265.628s (15:26:4.333.941)
+
+note right #D7FEFC
+**SMF to Malicious UE**
+end note
+
+"UPF" -> "gNB": 4331, HTTP/2 204 rsp.\n+265.637s (15:26:4.343.089)
+
+note right #D7FEFC
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4447, GTP<ICMP> ping req.\n+270.460s (15:26:9.165.895)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"Malicious UE" -> "8.8.8.8": 4448, ICMP ping req.\n+270.461s (15:26:9.166.724)
+
+note right #5C8001
+**Malicious UE to 8.8.8.8**
+end note
+
+"UPF" -> "8.8.8.8": 4449, ICMP ping req.\n+270.461s (15:26:9.166.773)
+
+note right #5C8001
+**UPF to 8.8.8.8**
+end note
+
+"8.8.8.8" -> "UPF": 4450, ICMP ping rsp.\n+270.494s (15:26:9.200.102)
+
+note right #EDFEC2
+**8.8.8.8 to UPF**
+end note
+
+"8.8.8.8" -> "Malicious UE": 4451, ICMP ping rsp.\n+270.494s (15:26:9.200.175)
+
+note right #EDFEC2
+**8.8.8.8 to Malicious UE**
+end note
+
+"UPF" -> "gNB": 4452, GTP<ICMP> ping rsp.\n+270.495s (15:26:9.200.502)
+
+note right #EDFEC2
+**UPF to gNB**
+end note
+
+"gNB" -> "UPF": 4682, GTP<ICMP> ping req.\n+281.693s (15:26:20.398.516)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"gNB" -> "UPF": 4683, GTP<ICMP> ping req.\n+282.722s (15:26:21.428.224)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"gNB" -> "UPF": 4721, GTP<ICMP> ping req.\n+283.749s (15:26:22.455.154)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+"gNB" -> "UPF": 4722, GTP<ICMP> ping req.\n+284.776s (15:26:23.482.051)
+
+note right #5C8001
+**gNB to UPF**
+end note
+
+@enduml
